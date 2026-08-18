@@ -119,6 +119,20 @@ Retrieved for this library: 2026-08-18.
 | ATAG Report Tool | https://www.w3.org/WAI/atag/report-tool/ |
 | Authoring tools list | https://www.w3.org/WAI/tools-list/authoring/ |
 
+## Bloom (learning theory — not accessibility standards)
+
+| Document | Status | URL |
+| --- | --- | --- |
+| Bloom et al., *Taxonomy… Handbook I* (1956) | Copyrighted book | Borrow: https://archive.org/details/taxonomyofeducat0000bloo_o9o7 |
+| Krathwohl, Bloom, & Masia, *Handbook II* (1964) | Copyrighted book | Library / used market |
+| Anderson & Krathwohl (Eds.), *A taxonomy for learning, teaching, and assessing* (2001) | Copyrighted book | Library |
+| Krathwohl (2002), *Theory Into Practice* 41(4) | Journal overview of the revision | https://doi.org/10.1207/s15430421tip4104_2 |
+| Bloom, “Learning for Mastery” (1968) | Copyrighted article; ERIC reprint | https://eric.ed.gov/?id=ED053419 |
+| ERIC full-text PDF (personal use) | ED053419 | https://files.eric.ed.gov/fulltext/ED053419.pdf |
+| Carroll (1963), “A model of school learning” | Journal article Bloom builds on | *Teachers College Record, 64*, 723–733 |
+| Waterloo CTE, *Bloom’s Taxonomy* | CC BY-NC 4.0 teaching tip | https://uwaterloo.ca/centre-for-teaching-excellence/catalogs/tip-sheets/blooms-taxonomy |
+| ERIC copyright policy | — | https://eric.ed.gov/?copyright |
+
 ## Related WAI-ARIA (implementation, not a substitute for WCAG)
 
 | Document | URL |
