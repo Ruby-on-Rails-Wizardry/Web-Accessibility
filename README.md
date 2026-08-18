@@ -12,7 +12,7 @@ Start here:
 | How to work with an agent without holding 80+ criteria in your head | [docs/agents/reducing-cognitive-load.md](docs/agents/reducing-cognitive-load.md) |
 | The local document library | [docs/README.md](docs/README.md) |
 | Official source URLs and license notes | [docs/SOURCES.md](docs/SOURCES.md) |
-| Bloom taxonomy + *Learning for Mastery* | [docs/learning/README.md](docs/learning/README.md) |
+| Bloom taxonomy + *Learning for Mastery* | [Science-of-Math/Learning-for-Mastery](https://github.com/Science-of-Math/Learning-for-Mastery) ([local pointer](docs/learning/README.md)) |
 
 ## What this is
 

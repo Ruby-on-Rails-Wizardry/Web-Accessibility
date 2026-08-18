@@ -137,3 +137,9 @@ Local: [../evaluation/wcag-em.md](../evaluation/wcag-em.md).
 6. Optional: one Content Usable pass (clear purpose, undo, no re-entry).
 
 If that list still feels like too much, the unit of work is too big. Shrink the surface.
+
+## Related: Bloom (separate repo)
+
+Outcome language and “teach until the bar is met” live in [Science-of-Math/Learning-for-Mastery](https://github.com/Science-of-Math/Learning-for-Mastery). Local clone: `~/Science-of-Math/Learning-for-Mastery`. Pointer: [../learning/README.md](../learning/README.md).
+
+When pitching a task, say the taxonomy level (Remember vs Apply vs Evaluate). When a first pass fails, treat it as formative: prescribe the next surface, do not sort the developer on a curve. Do **not** copy those notes back into this repo.

@@ -48,11 +48,7 @@ Every file starts with a **source block**: official URL, document status, and li
 
 ### Learning theory (Bloom)
 
-Not accessibility standards. Vocabulary for outcomes, and a model for teaching to a defined bar.
-
-- [learning/README.md](learning/README.md) — index and copyright note
-- [learning/blooms-taxonomy.md](learning/blooms-taxonomy.md) — 1956 taxonomy and 2001 revision
-- [learning/learning-for-mastery.md](learning/learning-for-mastery.md) — Bloom (1968), with ERIC link
+Lives in **[Science-of-Math/Learning-for-Mastery](https://github.com/Science-of-Math/Learning-for-Mastery)**. Local clone: `~/Science-of-Math/Learning-for-Mastery`. Pointer only: [learning/README.md](learning/README.md).
 
 ## Official live tools (not copied)
 
