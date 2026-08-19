@@ -1,0 +1,34 @@
+<header class="site-header" data-controller="nav">
+  <div class="site-header__inner">
+    <a href="<%= url_for("/") %>" class="site-wordmark">
+      <img src="<%= image_path('mark.svg') %>" width="32" height="32" alt="">
+      <span><%= site.title %></span>
+    </a>
+
+    <button
+      type="button"
+      class="site-nav__toggle"
+      data-nav-target="button"
+      data-action="nav#toggle"
+      aria-expanded="false"
+      aria-controls="site-nav"
+    >
+      Menu
+    </button>
+
+    <nav id="site-nav" class="site-nav" data-nav-target="menu" aria-label="Primary">
+      <ul>
+        <% nav_items.each do |item| %>
+          <li>
+            <%= link_to item.title, item.path,
+                  class: nav_current?(item.path) ? "is-current" : nil,
+                  "aria-current": (nav_current?(item.path) ? "page" : nil) %>
+          </li>
+        <% end %>
+        <% if site.repo.to_s.strip != "" %>
+          <li><%= link_to "Source", site.repo, target: "_blank", rel: "noopener" %></li>
+        <% end %>
+      </ul>
+    </nav>
+  </div>
+</header>

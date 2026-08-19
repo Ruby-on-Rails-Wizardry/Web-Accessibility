@@ -1,0 +1,68 @@
+#!/usr/bin/env bash
+# Configure remotes: GitHub (default), GitLab (cloud backup), ami (LAN bare mirror).
+# Safe to re-run (idempotent).
+set -euo pipefail
+
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+cd "${ROOT}"
+
+REPO="${REPO:-$(basename "${ROOT}")}"
+GITHUB_URL="${GITHUB_URL:-git@github.com:Ruby-on-Rails-Wizardry/${REPO}.git}"
+GITLAB_URL="${GITLAB_URL:-git@gitlab.com:ruby-on-rails-wizardry/${REPO}.git}"
+AMI_URL="${AMI_URL:-git@ami:Ruby-on-Rails-Wizardry/${REPO}.git}"
+BRANCH="${BRANCH:-master}"
+
+log() { printf 'setup-remotes: %s\n' "$*" >&2; }
+
+if ! git rev-parse --git-dir >/dev/null 2>&1; then
+  echo "error: not a git repository: ${ROOT}" >&2
+  exit 1
+fi
+
+ensure_remote() {
+  local name="$1" url="$2"
+  if git remote get-url "${name}" >/dev/null 2>&1; then
+    git remote set-url "${name}" "${url}"
+    log "updated remote ${name} → ${url}"
+  else
+    git remote add "${name}" "${url}"
+    log "added remote ${name} → ${url}"
+  fi
+}
+
+ensure_remote github "${GITHUB_URL}"
+ensure_remote gitlab "${GITLAB_URL}"
+ensure_remote ami "${AMI_URL}"
+
+if git remote get-url origin >/dev/null 2>&1; then
+  log "removing remote origin (use github as default)"
+  git remote remove origin
+fi
+
+while git config --local --get-all remote.github.pushurl >/dev/null 2>&1; do
+  git config --local --unset-all remote.github.pushurl || break
+done
+git remote set-url --push github "${GITHUB_URL}" 2>/dev/null \
+  || git config --local remote.github.pushurl "${GITHUB_URL}"
+git remote set-url --add --push github "${GITLAB_URL}"
+log "github push URLs: GitHub (primary) + GitLab (backup); ami is separate"
+
+git fetch github 2>/dev/null || log "warning: git fetch github failed (network or empty remote)"
+git fetch gitlab 2>/dev/null || log "warning: git fetch gitlab failed (network or empty remote)"
+git fetch ami 2>/dev/null || log "warning: git fetch ami failed (LAN down or empty bare)"
+
+if git show-ref --verify --quiet "refs/heads/${BRANCH}"; then
+  if git show-ref --verify --quiet "refs/remotes/github/${BRANCH}"; then
+    git branch --set-upstream-to="github/${BRANCH}" "${BRANCH}"
+    log "branch ${BRANCH} tracks github/${BRANCH}"
+  else
+    log "warning: github/${BRANCH} not found yet — push with: git push -u github ${BRANCH}"
+  fi
+fi
+
+git config --local remote.pushDefault github
+git config --local checkout.defaultRemote github
+
+echo
+git remote -v
+log "done"

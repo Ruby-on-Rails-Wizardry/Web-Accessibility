@@ -1,0 +1,33 @@
+---
+title: The web is for everyone
+description: The web was designed to work for all people, whatever their hardware, software, language, location, or ability.
+node: web-for-everyone
+---
+
+Tim Berners-Lee: “The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect.”
+
+When a site only works with a mouse, a certain screen, or a certain pair of ears, **we** put a barrier on a medium that did not have to have one. That is the opposite of [comparable access](/learn/comparable-access/).
+
+## Contrast
+
+**Worse:** “If they cannot use a mouse, this site is not for them.”
+
+**Better:** Functionality is available from the keyboard. The site does not assume one body and one device.
+
+## Official texts
+
+- [WAI: Introduction to Web Accessibility](https://www.w3.org/WAI/fundamentals/accessibility-intro/)
+- WAI also cites the [CRPD](https://www.ohchr.org/en/instruments-mechanisms/instruments/convention-rights-persons-disabilities) when it treats access to ICT as a basic human right.
+
+<div class="todo-box" markdown="1">
+
+## Still to write (Learning for Mastery)
+
+Draft mastery: The learner can restate universality in their own words and point at one unnecessary assumption (mouse-only, vision-only) in a short scenario.
+
+- [ ] Confirm the one-line mastery criterion
+- [ ] Locator item (scenario)
+- [ ] Constructed item
+- [ ] Isomorphic retest item
+
+</div>

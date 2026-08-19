@@ -1,7 +1,14 @@
+.bundle
+.cache
 .DS_Store
-*~
+.sass-cache
+build/
+.ruby-lsp/
 *.swp
+*~
 
 # Copyrighted originals fetched for personal reference
+source/docs/learning/originals/*.pdf
+source/docs/learning/originals/*.txt
 docs/learning/originals/*.pdf
 docs/learning/originals/*.txt

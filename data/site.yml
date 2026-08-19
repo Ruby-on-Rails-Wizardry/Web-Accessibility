@@ -1,0 +1,25 @@
+title: "Web Accessibility"
+tagline: "Section 508, WCAG, and ADA notes mapped into requirement profiles"
+description: "A local library of official Section 508, WCAG, ADA, and related accessibility documentation, mapped into requirement profiles so a developer working with an agent can hit the right bar."
+url: "https://ruby-on-rails-wizardry.github.io/Web-Accessibility"
+org: "Ruby on Rails Wizardry"
+org_url: "https://github.com/Ruby-on-Rails-Wizardry"
+repo: "https://github.com/Ruby-on-Rails-Wizardry/Web-Accessibility"
+footer: "© 2026 Ruby on Rails Wizardry"
+accent: "#b91c1c"
+
+nav:
+  - title: Home
+    path: /
+  - title: Tree
+    path: /learn/
+  - title: Library
+    path: /docs/
+  - title: Profiles
+    path: /docs/profiles/
+  - title: Catalog
+    path: /docs/wcag/success-criteria/
+  - title: Agents
+    path: /docs/agents/
+  - title: Sources
+    path: /docs/SOURCES/

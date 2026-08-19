@@ -1,0 +1,15 @@
+<% wrap_layout :layout do %>
+  <article class="prose" data-controller="toc">
+    <header class="prose__header">
+      <h1><%= current_page.data.title %></h1>
+      <% if current_page.data.description %>
+        <p class="lede"><%= current_page.data.description %></p>
+      <% end %>
+    </header>
+    <nav class="toc" aria-label="On this page">
+      <h2>On this page</h2>
+      <ol data-toc-target="list"></ol>
+    </nav>
+    <%= yield %>
+  </article>
+<% end %>

@@ -1,0 +1,21 @@
+// Compact Rouge / middleman-syntax theme for dark code blocks.
+
+.highlight {
+  background: var(--code-bg);
+  color: var(--code-ink);
+  border-radius: var(--radius);
+  overflow: auto;
+
+  .c, .ch, .cm, .c1, .cs { color: #a8a29e; font-style: italic; }
+  .k, .kc, .kd, .kn, .kp, .kr, .kt { color: #fda4af; }
+  .o, .ow { color: #e7e5e4; }
+  .n, .na, .nb, .nc, .nd, .ni, .ne, .nf, .nl, .nn, .nx, .py { color: #fafaf9; }
+  .nc, .nn { color: #fdba74; }
+  .nf { color: #93c5fd; }
+  .s, .sa, .sb, .sc, .dl, .sd, .s2, .se, .sh, .si, .sx, .sr, .s1, .ss { color: #86efac; }
+  .m, .mb, .mf, .mh, .mi, .il, .mo { color: #fde68a; }
+  .p { color: #d6d3d1; }
+  .err { color: #fecaca; }
+  .gd { color: #fecaca; }
+  .gi { color: #bbf7d0; }
+}

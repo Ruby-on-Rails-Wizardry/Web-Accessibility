@@ -1,0 +1,93 @@
+---
+title: Home
+---
+
+<section class="hero">
+  <p class="eyebrow">Ruby on Rails Wizardry</p>
+  <h1><%= site.title %></h1>
+  <p class="lede"><%= site.tagline %></p>
+  <p>
+    <%= link_to "Open the tree", "/learn/", class: "button" %>
+    <%= link_to "Open the library", "/docs/", class: "button button--ghost" %>
+    <%= link_to "Pick a profile", "/docs/profiles/", class: "button button--ghost" %>
+  </p>
+</section>
+
+<section class="grid" aria-label="Start here">
+  <article class="card">
+    <h2>What do I study next</h2>
+    <p>
+      A knowledge tree, not a locked course. Open any node.
+      Evaluation and study items will hang off these pages as we write them.
+    </p>
+    <p><%= link_to "Knowledge tree", "/learn/" %></p>
+  </article>
+
+  <article class="card">
+    <h2>Which bar applies</h2>
+    <p>
+      Federal ICT is Revised 508 (WCAG 2.0 AA plus ICT chapters).
+      State and local web is ADA Title II (WCAG 2.1 AA).
+      Current practice is WCAG 2.2 AA. Those are different checklists.
+    </p>
+    <p><%= link_to "Requirement profiles", "/docs/profiles/" %></p>
+  </article>
+
+  <article class="card">
+    <h2>Work with an agent</h2>
+    <p>
+      Name a profile and a surface. Load only the criteria that apply.
+      Do not dump the whole standard into one prompt.
+    </p>
+    <p><%= link_to "Reducing cognitive load", "/docs/agents/" %></p>
+  </article>
+
+  <article class="card">
+    <h2>Official texts, nearby</h2>
+    <p>
+      Local markdown copies of W3C, Access Board, GSA, and DOJ material,
+      each with a source URL, status, and license notice.
+    </p>
+    <p><%= link_to "Library map", "/docs/" %> · <%= link_to "Sources", "/docs/SOURCES/" %></p>
+  </article>
+</section>
+
+<section data-controller="disclose" data-action="toggle->disclose#toggle">
+  <h2>Official standards at a glance</h2>
+  <p>One profile at a time. Open a card, then follow its local files.</p>
+
+  <details data-disclose-target="item" open>
+    <summary>Revised Section 508 — WCAG 2.0 A + AA</summary>
+    <p>
+      Binds U.S. federal agencies and ICT they develop, procure, maintain, or use.
+      Technical bar is WCAG 2.0 Level A + AA, plus ICT hardware / software / authoring / support chapters.
+    </p>
+    <p><%= link_to "Revised standards", "/docs/section-508/" %></p>
+  </details>
+
+  <details data-disclose-target="item">
+    <summary>ADA Title II web and mobile — WCAG 2.1 AA</summary>
+    <p>
+      Binds U.S. state and local governments (and contractors providing their services).
+      After the 2026 IFR, compliance dates are 26 Apr 2027 (≥50k) and 26 Apr 2028 (smaller / special districts).
+    </p>
+    <p><%= link_to "Title II web and mobile", "/docs/ada/" %></p>
+  </details>
+
+  <details data-disclose-target="item">
+    <summary>Current WCAG practice — 2.2 AA</summary>
+    <p>
+      Latest WCAG 2 Recommendation (also ISO/IEC 40500:2025).
+      Content that meets 2.2 also meets 2.1 and 2.0 (with the 4.1.1 Parsing note).
+    </p>
+    <p><%= link_to "WCAG overview", "/docs/wcag/" %></p>
+  </details>
+
+  <details data-disclose-target="item">
+    <summary>Enhanced / AAA</summary>
+    <p>
+      Selected Level AAA criteria. Optional; W3C does not recommend requiring AAA for entire sites.
+    </p>
+    <p><%= link_to "Conformance", "/docs/wcag/conformance/" %></p>
+  </details>
+</section>

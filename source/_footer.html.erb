@@ -1,0 +1,8 @@
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <p><%= site.footer %></p>
+    <% if site.org_url.to_s.strip != "" %>
+      <p><%= link_to site.org, site.org_url %></p>
+    <% end %>
+  </div>
+</footer>

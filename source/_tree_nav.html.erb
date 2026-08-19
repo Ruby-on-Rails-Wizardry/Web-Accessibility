@@ -1,0 +1,51 @@
+<% node = current_tree_node %>
+<nav class="tree-nav" aria-label="On the knowledge tree">
+  <p class="tree-nav__index"><%= link_to "Knowledge tree", "/learn/" %></p>
+  <% if node %>
+    <% spine = Array(node.spine) %>
+    <% if spine.any? %>
+      <h2>Trace</h2>
+      <ol class="tree-nav__spine">
+        <% spine.each do |id| %>
+          <li>
+            <% if id.to_s == node.id.to_s %>
+              <%= tree_lookup(id)&.title || id %>
+            <% else %>
+              <%= tree_link(id) %>
+            <% end %>
+          </li>
+        <% end %>
+      </ol>
+    <% end %>
+
+    <% prereqs = Array(node.prereqs) %>
+    <% if prereqs.any? %>
+      <h2>Before this</h2>
+      <ul>
+        <% prereqs.each do |id| %>
+          <li><%= tree_link(id) %></li>
+        <% end %>
+      </ul>
+    <% end %>
+
+    <% children = Array(node.children) %>
+    <% if children.any? %>
+      <h2>Next on the tree</h2>
+      <ul>
+        <% children.each do |id| %>
+          <li><%= tree_link(id) %></li>
+        <% end %>
+      </ul>
+    <% end %>
+
+    <% library = Array(node.library) %>
+    <% if library.any? %>
+      <h2>In the library</h2>
+      <ul>
+        <% library.each do |item| %>
+          <li><%= link_to item.title, item.path %></li>
+        <% end %>
+      </ul>
+    <% end %>
+  <% end %>
+</nav>

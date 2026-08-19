@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Refresh vendored Turbo + Stimulus ESM into source/javascripts/.
+set -euo pipefail
+
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+DEST="${ROOT}/source/javascripts"
+STIMULUS_VERSION="${STIMULUS_VERSION:-3.2.2}"
+TURBO_VERSION="${TURBO_VERSION:-8.0.23}"
+
+mkdir -p "${DEST}"
+curl -fsSL "https://cdn.jsdelivr.net/npm/@hotwired/stimulus@${STIMULUS_VERSION}/dist/stimulus.js" \
+  -o "${DEST}/stimulus.js"
+curl -fsSL "https://cdn.jsdelivr.net/npm/@hotwired/turbo@${TURBO_VERSION}/dist/turbo.es2017-esm.js" \
+  -o "${DEST}/turbo.es2017-esm.js"
+
+printf 'vendor-hotwire: Stimulus %s + Turbo %s → %s\n' \
+  "${STIMULUS_VERSION}" "${TURBO_VERSION}" "${DEST}"
+wc -c "${DEST}/stimulus.js" "${DEST}/turbo.es2017-esm.js"

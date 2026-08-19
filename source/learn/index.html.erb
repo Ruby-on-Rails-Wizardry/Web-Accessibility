@@ -1,0 +1,43 @@
+---
+title: Knowledge tree
+description: Open any node. Guidance names what to study next toward the aim you chose. Nothing here is locked.
+---
+
+<p>
+  These pages define the nodes. The official library stays under
+  <%= link_to "Docs", "/docs/" %>. Evaluation items (locator questions,
+  constructed mastery tasks, retests) are still to write — each node lists
+  what is missing.
+</p>
+
+<p>
+  Implied aim, if you name none: mastery of the whole subject. You may
+  still start anywhere.
+</p>
+
+<% tree_layers.each do |layer| %>
+  <%
+    heading =
+      case layer
+      when 0 then "Root"
+      when 1 then "Worth and access"
+      when 2 then "How the web shuts people out"
+      when 3 then "Which bar"
+      else "First patterns"
+      end
+  %>
+  <section class="tree-map" aria-labelledby="layer-<%= layer %>">
+    <h2 id="layer-<%= layer %>"><%= heading %></h2>
+    <ul>
+      <% tree_nodes_in_layer(layer).each do |node| %>
+        <li>
+          <%= link_to node.title, node.path %>
+          <% prereqs = Array(node.prereqs) %>
+          <% if prereqs.any? %>
+            <span> — after <%= prereqs.map { |id| tree_lookup(id)&.title || id }.join(", ") %></span>
+          <% end %>
+        </li>
+      <% end %>
+    </ul>
+  </section>
+<% end %>

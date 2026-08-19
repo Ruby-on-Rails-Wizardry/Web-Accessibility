@@ -1,0 +1,12 @@
+// Entry module: Turbo Drive + Stimulus.
+// Pins: Stimulus 3.2.2, Turbo 8.0.23 — refresh with bin/vendor-hotwire.
+import * as Turbo from "./turbo.es2017-esm.js"
+import { Application } from "./stimulus.js"
+
+window.Turbo = Turbo
+window.Stimulus = Application.start()
+
+<% Pathname.new(__FILE__).dirname.glob("*_controller.js").map(&:basename).sort.each do |file| %>
+import <%= ident = file.to_s.sub(/\.js\z/, "") %> from "./<%= file %>"
+Stimulus.register("<%= ident.sub(/_controller\z/, "").tr("_", "-") %>", <%= ident %>)
+<% end %>
