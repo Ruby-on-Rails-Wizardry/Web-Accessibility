@@ -11,7 +11,7 @@ After a [visible label](/learn/visible-label/): when the person submits and some
 
 Color or an icon alone fails [color is not the only cue](/learn/color-not-only-cue/). Move focus or use a [status message](/learn/status-messages/) so AT hears it.
 
-Official pair: Failure [F105](https://www.w3.org/WAI/WCAG22/Techniques/failures/F105); Sufficient [G83](https://www.w3.org/WAI/WCAG22/Techniques/general/G83), [G84](https://www.w3.org/WAI/WCAG22/Techniques/general/G84), [G177](https://www.w3.org/WAI/WCAG22/Techniques/general/G177). Understanding: [Error Identification](https://www.w3.org/WAI/WCAG22/Understanding/error-identification), [Error Suggestion](https://www.w3.org/WAI/WCAG22/Understanding/error-suggestion).
+Official pair: Failure [F81](https://www.w3.org/WAI/WCAG22/Techniques/failures/F81) (color-only error); Sufficient [G83](https://www.w3.org/WAI/WCAG22/Techniques/general/G83), [G84](https://www.w3.org/WAI/WCAG22/Techniques/general/G84), [G177](https://www.w3.org/WAI/WCAG22/Techniques/general/G177). Understanding: [Error Identification](https://www.w3.org/WAI/WCAG22/Understanding/error-identification), [Error Suggestion](https://www.w3.org/WAI/WCAG22/Understanding/error-suggestion).
 
 ## Contrast
 

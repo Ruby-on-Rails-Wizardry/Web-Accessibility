@@ -94,7 +94,7 @@ No locator/constructed **format** is coded yet (no YAML of items, no quiz UI). F
 
 Media sisters not given their own node (mentioned under captions): **1.2.1** audio-only/video-only, **1.2.3** / **1.2.5** audio description, **1.2.4** live captions.
 
-Still not tree nodes: AAA criteria, 508 hardware / functional performance, COGA-only patterns, full Techniques catalog (hundreds of IDs). Official Understanding/Techniques URLs stay on the pattern pages.
+Still not tree nodes: AAA criteria, 508 hardware / functional performance, COGA-only patterns. Technique **IDs** are indexed at [source/docs/wcag/techniques-index.html.md](source/docs/wcag/techniques-index.html.md) (`data/techniques.yml`); we do not make a learn page per ID.
 
 - **Publish** — `bundle exec rake publish` to GitHub Pages (`data/site.yml` already has `ruby-on-rails-wizardry.github.io/Web-Accessibility`). Confirm the Pages source before the first run.
 - **Do not commit `build/`** — it is gitignored; a local build may still sit on disk.

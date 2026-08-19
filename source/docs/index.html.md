@@ -27,6 +27,7 @@ Study order and first principles live on the **[knowledge tree](/learn/)**. This
 - [wcag/principles.md](wcag/principles/) — Perceivable, Operable, Understandable, Robust
 - [wcag/documents.md](wcag/documents/) — standard vs Understanding vs Techniques vs ACT vs supplemental
 - [wcag/success-criteria.md](wcag/success-criteria/) — full catalog with level, version, and legal-profile tags
+- [wcag/techniques-index.md](wcag/techniques-index/) — all WCAG 2.2 technique IDs; which ones this tree cites
 - [wcag/whats-new-2.1.md](wcag/whats-new-2.1/) — 17 criteria added in 2.1
 - [wcag/whats-new-2.2.md](wcag/whats-new-2.2/) — 9 criteria added in 2.2; 4.1.1 removed
 - [wcag/understanding-intro.md](wcag/understanding-intro/) — how Understanding docs work

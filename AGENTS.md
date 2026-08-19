@@ -24,6 +24,7 @@ bundle exec middleman build    # ./build
 | --- | --- |
 | Which bar | `source/docs/profiles/requirement-profiles.html.md` |
 | Full SC catalog | `source/docs/wcag/success-criteria.html.md` |
+| Technique ID index | `source/docs/wcag/techniques-index.html.md` + `data/techniques.yml` |
 | Agent workflow | `source/docs/agents/reducing-cognitive-load.html.md` |
 | Sources / licenses | `source/docs/SOURCES.html.md` |
 | Knowledge tree | `data/tree.yml` + `source/learn/` |

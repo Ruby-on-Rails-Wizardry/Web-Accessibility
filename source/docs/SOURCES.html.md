@@ -43,6 +43,7 @@ Retrieved for this library: 2026-08-18.
 | Understanding Conformance | https://www.w3.org/WAI/WCAG22/Understanding/conformance |
 | Understanding Techniques | https://www.w3.org/WAI/WCAG22/Understanding/understanding-techniques |
 | Techniques for WCAG 2.2 | https://www.w3.org/WAI/WCAG22/Techniques/ |
+| Local technique ID index | [techniques-index](/docs/wcag/techniques-index/) — also `data/techniques.yml` |
 | ACT Rules | https://www.w3.org/WAI/standards-guidelines/act/rules/ |
 | Accessibility Principles | https://www.w3.org/WAI/fundamentals/accessibility-principles/ |
 | Essential Components of Web Accessibility | https://www.w3.org/WAI/fundamentals/components/ |

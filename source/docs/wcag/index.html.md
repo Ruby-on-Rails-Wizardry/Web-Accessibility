@@ -10,6 +10,7 @@ W3C’s shared technical standard for web content. Content that conforms to 2.2 
 - [Principles (POUR)](principles/)
 - [The WCAG 2 documents](documents/) — standard vs Understanding vs Techniques
 - [Success criteria catalog](success-criteria/) — level, version, and legal-profile tags
+- [Technique ID index](techniques-index/) — ARIA, C, F, G, H, PDF, SCR, … plus which tree nodes cite them
 - [What’s new in 2.1](whats-new-2.1/)
 - [What’s new in 2.2](whats-new-2.2/)
 - [Understanding intro](understanding-intro/)
