@@ -25,6 +25,7 @@ If the project has mixed obligations (federal vendor + public state site), pick 
 | Developer is doing | Agent reads |
 | --- | --- |
 | Choosing the bar | `source/docs/profiles/requirement-profiles.html.md` only |
+| Looking up a term | `source/docs/definitions/` (DHS training + E103.4 / GSA / WCAG glossary). Do not invent a definition. |
 | Implementing a surface | Catalog rows for that surface + those Understanding URLs |
 | Writing a conformance note | `source/docs/wcag/conformance.html.md` + profile card |
 | Building an authoring tool / generator | `source/docs/authoring-tools/atag.html.md` + 508 §504 |

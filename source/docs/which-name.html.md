@@ -25,6 +25,7 @@ Name a **profile** (`section-508-web`, `ada-title-ii`, `wcag-22-aa`) and a **sur
 - [docs/profiles/requirement-profiles.md](/docs/profiles/requirement-profiles/)
 - [docs/wcag/success-criteria.md](/docs/wcag/success-criteria/)
 - [docs/agents/reducing-cognitive-load.md](/docs/agents/reducing-cognitive-load/)
+- [docs/definitions/](/docs/definitions/) — official terms; DHS training at https://www.dhs.gov/508-training
 
 ## Official starting URLs
 
@@ -33,5 +34,7 @@ Name a **profile** (`section-508-web`, `ada-title-ii`, `wcag-22-aa`) and a **sur
 - Revised 508 Standards: https://www.access-board.gov/ict/
 - Section508.gov: https://www.section508.gov/
 - ADA Title II fact sheet: https://www.ada.gov/resources/2024-03-08-web-rule/
+- DHS Section 508 Training: https://www.dhs.gov/508-training
+- Access Board defined terms: https://www.access-board.gov/ict/#E103-defined-terms
 
 Full bibliography: [docs/SOURCES.md](/docs/SOURCES/).

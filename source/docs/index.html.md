@@ -40,6 +40,12 @@ Study order and first principles live on the **[knowledge tree](/learn/)**. This
 - [section-508/applicability-conformance.md](section-508/applicability-conformance/) — scoping, exceptions, authoring tools
 - [section-508/laws-and-policies.md](section-508/laws-and-policies/) — statute, FAR, related Rehab Act sections, OMB memos
 
+### Definitions (training + official term lists)
+
+- [definitions/](definitions/) — which list to use
+- [definitions/dhs-508-training.md](definitions/dhs-508-training/) — DHS free courses (Trusted Tester, documents, IT PM). Reference: https://www.dhs.gov/508-training
+- [definitions/defined-terms.md](definitions/defined-terms/) — Access Board E103.4, GSA glossary, WCAG glossary pointer
+
 ### ADA Title II (U.S. DOJ)
 
 - [ada/title-ii-web-mobile.md](ada/title-ii-web-mobile/) — WCAG 2.1 AA for state and local web and mobile apps
@@ -72,3 +78,6 @@ These are interactive; use the official sites rather than a static snapshot:
 | Revised 508 Standards (full text) | https://www.access-board.gov/ict/ |
 | ICT Testing Baseline | https://ictbaseline.access-board.gov/ |
 | Section508.gov develop / test | https://www.section508.gov/develop/ |
+| DHS Section 508 Training (Trusted Tester and others) | https://www.dhs.gov/508-training |
+| DHS CXD Training Portal | https://training.section508testing.net/ |
+| Glossary of Section 508 Terms | https://www.section508.gov/tools/glossary/ |

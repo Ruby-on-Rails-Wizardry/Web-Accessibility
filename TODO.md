@@ -21,6 +21,7 @@ Study guides with source blocks. Not the dated official specs.
 | ADA Title II | web and mobile rule |
 | Cognitive | overview, Content Usable |
 | Evaluation / ATAG | WCAG-EM, ATAG |
+| Definitions | DHS 508 Training (`dhs.gov/508-training`), E103.4 defined terms, GSA glossary pointer |
 | Profiles / agents | requirement profiles, reducing cognitive load |
 | Orientation | which-name (508 vs WCAG vs ADA) |
 | Bloom | **pointer only** → [Science-of-Math/Learning-for-Mastery](https://github.com/Science-of-Math/Learning-for-Mastery) (`~/Science-of-Math/Learning-for-Mastery`) |

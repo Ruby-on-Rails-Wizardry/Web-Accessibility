@@ -53,6 +53,7 @@ Changelog: https://github.com/w3c/wai-wcag-em/
 - [Section508.gov testing overview](https://www.section508.gov/test/testing-overview)
 - [ICT Testing Baseline](https://ictbaseline.access-board.gov/)
 - Harmonized web/software test methods: https://www.section508.gov/test/web-software
+- [DHS Section 508 Training](https://www.dhs.gov/508-training) — Trusted Tester and related courses; local [../definitions/dhs-508-training.md](../definitions/dhs-508-training/)
 
 ## Agent usage
 

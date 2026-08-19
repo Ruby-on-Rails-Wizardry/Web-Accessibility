@@ -127,6 +127,8 @@ nodes:
   library:
   - title: WCAG, 508, and ADA — which name
     path: /docs/which-name/
+  - title: Definitions (DHS training + official terms)
+    path: /docs/definitions/
 - id: profiles
   title: Requirement profiles
   path: /learn/profiles/

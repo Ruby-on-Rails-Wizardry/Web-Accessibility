@@ -43,6 +43,7 @@ Retrieved for this library: 2026-08-18.
 | Understanding Conformance | https://www.w3.org/WAI/WCAG22/Understanding/conformance |
 | Understanding Techniques | https://www.w3.org/WAI/WCAG22/Understanding/understanding-techniques |
 | Techniques for WCAG 2.2 | https://www.w3.org/WAI/WCAG22/Techniques/ |
+| WCAG 2.2 Glossary | https://www.w3.org/TR/WCAG22/#glossary |
 | Local technique ID index | [techniques-index](/docs/wcag/techniques-index/) — also `data/techniques.yml` |
 | ACT Rules | https://www.w3.org/WAI/standards-guidelines/act/rules/ |
 | Accessibility Principles | https://www.w3.org/WAI/fundamentals/accessibility-principles/ |
@@ -85,6 +86,11 @@ Retrieved for this library: 2026-08-18.
 | Involving Users in Evaluating Web Accessibility | Informative | https://www.w3.org/WAI/test-evaluate/involving-users/ |
 | ICT Testing Baseline Portfolio | Access Board | https://ictbaseline.access-board.gov/ |
 | Section508.gov testing overview | GSA | https://www.section508.gov/test/testing-overview |
+| DHS Section 508 Training | DHS; last updated 25 June 2025 | https://www.dhs.gov/508-training |
+| DHS CXD Training Portal | Course host | https://training.section508testing.net/ |
+| DHS Trusted Tester Conformance Test Process | DHS; last updated 3 April 2025 | https://www.dhs.gov/trusted-tester |
+| DHS Trusted Tester Process & Certification (GSA) | GSA | https://www.section508.gov/test/trusted-tester/ |
+| Trusted Tester 5.1 (process) | Section508Coordinators GitHub | https://github.com/Section508Coordinators/TrustedTester5.1 |
 
 ## Section 508 program (GSA / Access Board)
 
@@ -102,6 +108,10 @@ Retrieved for this library: 2026-08-18.
 | FAR Section 508 update (11 August 2021) | https://www.federalregister.gov/documents/2021/08/11/2021-16363/federal-acquisition-regulation-section-508-based-standards-in-information-and-communication |
 | OMB M-24-08 Strengthening Digital Accessibility | https://bidenwhitehouse.archives.gov/omb/management/ofcio/m-24-08-strengthening-digital-accessibility-and-the-management-of-section-508-of-the-rehabilitation-act/ |
 | Access Board news: WCAG 2.2 now available | https://www.access-board.gov/news/2023/11/27/w3c-wcag-2-2-now-available/ |
+| Glossary of Section 508 Terms | https://www.section508.gov/tools/glossary/ |
+| Commonly Used Acronyms and Abbreviations | https://www.section508.gov/tools/acronyms-abbreviations/ |
+| E103.4 Defined Terms (Revised 508 Standards) | https://www.access-board.gov/ict/#E103-defined-terms |
+| Local definitions scope | [definitions](/docs/definitions/) |
 
 ## ADA Title II (DOJ)
 

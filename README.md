@@ -12,6 +12,7 @@ Start here:
 | --- | --- | --- |
 | Which bar applies to this project | [/docs/profiles/](source/docs/profiles/index.html.md) | [source/docs/profiles/requirement-profiles.html.md](source/docs/profiles/requirement-profiles.html.md) |
 | How to work with an agent | [/docs/agents/](source/docs/agents/index.html.md) | [source/docs/agents/reducing-cognitive-load.html.md](source/docs/agents/reducing-cognitive-load.html.md) |
+| Definitions and 508 training | [/docs/definitions/](source/docs/definitions/index.html.md) | [DHS 508 Training](source/docs/definitions/dhs-508-training.html.md) · [defined terms](source/docs/definitions/defined-terms.html.md) |
 | Knowledge tree (what to study next) | [/learn/](source/learn/index.html.erb) | [source/learn/](source/learn/) + [data/tree.yml](data/tree.yml) |
 | The document library | [/docs/](source/docs/index.html.md) | [source/docs/](source/docs/) |
 | Official source URLs and license notes | [/docs/SOURCES/](source/docs/SOURCES.html.md) | [source/docs/SOURCES.html.md](source/docs/SOURCES.html.md) |

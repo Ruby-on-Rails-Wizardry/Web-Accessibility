@@ -46,7 +46,7 @@ Copyright © the date of each source document, World Wide Web Consortium. https:
 
 ## United States government works
 
-Material from [Section508.gov](https://www.section508.gov/), [Access Board](https://www.access-board.gov/), and [ADA.gov](https://www.ada.gov/) is a work of the U.S. government and is generally not subject to copyright in the United States (17 U.S.C. § 105). Third-party trademarks or embedded copyrighted figures, if any, remain with their owners.
+Material from [Section508.gov](https://www.section508.gov/), [Access Board](https://www.access-board.gov/), [ADA.gov](https://www.ada.gov/), and [DHS.gov](https://www.dhs.gov/) (including [Section 508 Training](https://www.dhs.gov/508-training)) is a work of the U.S. government and is generally not subject to copyright in the United States (17 U.S.C. § 105). Third-party trademarks or embedded copyrighted figures, if any, remain with their owners. VPAT® is a trademark of the Information Technology Industry Council.
 
 ADA.gov fact sheets are informal guidance and are not themselves the regulation. The binding text is in the Code of Federal Regulations and the Federal Register publications cited in each file.
 
