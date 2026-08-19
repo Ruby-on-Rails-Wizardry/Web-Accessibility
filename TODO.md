@@ -31,25 +31,29 @@ Intentionally not snapshotted (live official tools): Quickref, full Understandin
 
 Middleman 4 site from the org template. Turbo + Stimulus. Knowledge tree, docs layouts, nav in `data/site.yml`. Save point: `8a7c057`.
 
-### Knowledge tree (18 nodes, all have a page)
+### Knowledge tree (60 nodes, all have a page)
 
 Tree ids match `source/learn/*.html.md` one-for-one.
 
-| Layer | Kind | Nodes |
+| Layer | Kind | Count |
 | --- | --- | --- |
-| 0 Root | foundation | equal-worth |
-| 1 Worth and access | foundation | not-identical-capacity, comparable-access |
-| 2 How the web shuts people out | foundation | web-for-everyone, pour, who-is-shut-out |
-| 3 Which bar | orientation | which-name, profiles, conformance |
-| 4 First patterns | pattern | accessible-name, visible-label, placeholder-not-label, decorative-vs-informative-image, color-not-only-cue, headings, native-control, keyboard-access, visible-focus |
+| 0 Root | foundation | 1 (equal-worth) |
+| 1 Worth and access | foundation | 2 |
+| 2 How the web shuts people out | foundation | 3 |
+| 3 Which bar | orientation | 3 |
+| 4 Patterns | pattern | 51 |
 
-Each node has a short teaching page (why, contrast worse/better, official links) **and** an unfinished mastery box.
+Pattern nodes are **concepts**, not one page per W3C technique ID. Each Contrast section cites official Failure and/or Sufficient techniques.
+
+**Added after the first 9 patterns** (A/AA ideas that had no node): page-title, language-of-page, language-of-parts, skip-link, lists, data-tables, meaningful-sequence, link-purpose, multiple-ways, consistent-navigation, consistent-help, captions, audio-control, contrast-text, contrast-ui, resize-text, reflow, text-spacing, images-of-text, sensory-characteristics, form-errors, input-purpose, label-in-name, error-prevention, redundant-entry, accessible-authentication, focus-order, focus-not-obscured, character-key-shortcuts, target-size, pointer-gestures, dragging, pointer-cancellation, motion-actuation, pause-stop-hide, timing-adjustable, three-flashes, status-messages, name-role-value, no-unexpected-change, orientation, content-on-hover.
+
+Each node has a short teaching page **and** an unfinished mastery box.
 
 ---
 
-## Next — finish Learning for Mastery on existing nodes
+## Next — finish Learning for Mastery on every node
 
-Do this **before** adding new tree nodes. Same four checks on every page; draft one-liners are already on the page.
+Do this **before** growing the tree again. Same four checks on every page; draft one-liners are already in the `todo-box`.
 
 For each node:
 
@@ -86,10 +90,12 @@ No locator/constructed **format** is coded yet (no YAML of items, no quiz UI). F
 
 ---
 
-## Later — only after the 18 boxes close
+## Later — after mastery items exist on the spine (and then the rest)
 
-- **More pattern nodes** (not in the tree yet): form labels/errors, contrast, reflow/text spacing, status messages, target size / dragging, accessible authentication. Add a `data/tree.yml` node **when** the page exists.
-- **W3C Techniques good/bad index** — one Failure + one Sufficient per A/AA criterion, citing official URLs (RuboCop-shaped; we did not copy Techniques locally).
+Media sisters not given their own node (mentioned under captions): **1.2.1** audio-only/video-only, **1.2.3** / **1.2.5** audio description, **1.2.4** live captions.
+
+Still not tree nodes: AAA criteria, 508 hardware / functional performance, COGA-only patterns, full Techniques catalog (hundreds of IDs). Official Understanding/Techniques URLs stay on the pattern pages.
+
 - **Publish** — `bundle exec rake publish` to GitHub Pages (`data/site.yml` already has `ruby-on-rails-wizardry.github.io/Web-Accessibility`). Confirm the Pages source before the first run.
 - **Do not commit `build/`** — it is gitignored; a local build may still sit on disk.
 

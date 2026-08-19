@@ -3,300 +3,961 @@
 # kind: foundation | orientation | pattern
 
 nodes:
-  - id: equal-worth
-    title: Equal worth and respect
-    path: /learn/equal-worth/
-    kind: foundation
-    layer: 0
-    prereqs: []
-    children:
-      - not-identical-capacity
-      - comparable-access
-    spine:
-      - equal-worth
-    library: []
-
-  - id: not-identical-capacity
-    title: Worth is not identical capacity
-    path: /learn/not-identical-capacity/
-    kind: foundation
-    layer: 1
-    prereqs:
-      - equal-worth
-    children: []
-    spine:
-      - equal-worth
-      - not-identical-capacity
-    library: []
-
-  - id: comparable-access
-    title: Comparable access to what we offer
-    path: /learn/comparable-access/
-    kind: foundation
-    layer: 1
-    prereqs:
-      - equal-worth
-    children:
-      - web-for-everyone
-      - pour
-      - who-is-shut-out
-    spine:
-      - equal-worth
-      - comparable-access
-    library:
-      - title: Section 508 law
-        path: /docs/section-508/
-
-  - id: web-for-everyone
-    title: The web is for everyone
-    path: /learn/web-for-everyone/
-    kind: foundation
-    layer: 2
-    prereqs:
-      - comparable-access
-    children:
-      - pour
-    spine:
-      - equal-worth
-      - comparable-access
-      - web-for-everyone
-    library: []
-
-  - id: pour
-    title: POUR
-    path: /learn/pour/
-    kind: foundation
-    layer: 2
-    prereqs:
-      - comparable-access
-    children:
-      - accessible-name
-      - decorative-vs-informative-image
-      - color-not-only-cue
-      - headings
-      - native-control
-      - keyboard-access
-    spine:
-      - equal-worth
-      - comparable-access
-      - pour
-    library:
-      - title: Accessibility principles (POUR)
-        path: /docs/wcag/principles/
-
-  - id: who-is-shut-out
-    title: Who is shut out
-    path: /learn/who-is-shut-out/
-    kind: foundation
-    layer: 2
-    prereqs:
-      - comparable-access
-    children:
-      - which-name
-    spine:
-      - equal-worth
-      - comparable-access
-      - who-is-shut-out
-    library:
-      - title: Cognitive accessibility overview
-        path: /docs/cognitive/
-
-  - id: which-name
-    title: Which name to use
-    path: /learn/which-name/
-    kind: orientation
-    layer: 3
-    prereqs:
-      - who-is-shut-out
-    children:
-      - profiles
-    spine:
-      - equal-worth
-      - comparable-access
-      - which-name
-    library:
-      - title: WCAG, 508, and ADA — which name
-        path: /docs/which-name/
-
-  - id: profiles
-    title: Requirement profiles
-    path: /learn/profiles/
-    kind: orientation
-    layer: 3
-    prereqs:
-      - which-name
-    children:
-      - conformance
-    spine:
-      - equal-worth
-      - comparable-access
-      - which-name
-      - profiles
-    library:
-      - title: Profile cards
-        path: /docs/profiles/requirement-profiles/
-
-  - id: conformance
-    title: Conformance is a page and a process
-    path: /learn/conformance/
-    kind: orientation
-    layer: 3
-    prereqs:
-      - profiles
-    children: []
-    spine:
-      - equal-worth
-      - comparable-access
-      - profiles
-      - conformance
-    library:
-      - title: Understanding WCAG 2 conformance
-        path: /docs/wcag/conformance/
-
-  - id: accessible-name
-    title: Accessible name
-    path: /learn/accessible-name/
-    kind: pattern
-    layer: 4
-    prereqs:
-      - pour
-    children:
-      - visible-label
-    spine:
-      - equal-worth
-      - comparable-access
-      - pour
-      - accessible-name
-    library:
-      - title: Success criteria catalog
-        path: /docs/wcag/success-criteria/
-
-  - id: visible-label
-    title: Visible label is the programmatic name
-    path: /learn/visible-label/
-    kind: pattern
-    layer: 4
-    prereqs:
-      - accessible-name
-      - native-control
-    children:
-      - placeholder-not-label
-    spine:
-      - equal-worth
-      - comparable-access
-      - pour
-      - accessible-name
-      - visible-label
-    library: []
-
-  - id: placeholder-not-label
-    title: Placeholder is not a label
-    path: /learn/placeholder-not-label/
-    kind: pattern
-    layer: 4
-    prereqs:
-      - visible-label
-    children: []
-    spine:
-      - equal-worth
-      - comparable-access
-      - pour
-      - visible-label
-      - placeholder-not-label
-    library: []
-
-  - id: decorative-vs-informative-image
-    title: Decorative vs informative image
-    path: /learn/decorative-vs-informative-image/
-    kind: pattern
-    layer: 4
-    prereqs:
-      - pour
-    children: []
-    spine:
-      - equal-worth
-      - comparable-access
-      - pour
-      - decorative-vs-informative-image
-    library: []
-
-  - id: color-not-only-cue
-    title: Color is not the only cue
-    path: /learn/color-not-only-cue/
-    kind: pattern
-    layer: 4
-    prereqs:
-      - pour
-      - not-identical-capacity
-    children: []
-    spine:
-      - equal-worth
-      - comparable-access
-      - pour
-      - color-not-only-cue
-    library: []
-
-  - id: headings
-    title: Headings name the structure
-    path: /learn/headings/
-    kind: pattern
-    layer: 4
-    prereqs:
-      - pour
-    children: []
-    spine:
-      - equal-worth
-      - comparable-access
-      - pour
-      - headings
-    library: []
-
-  - id: native-control
-    title: Native control before a custom widget
-    path: /learn/native-control/
-    kind: pattern
-    layer: 4
-    prereqs:
-      - pour
-    children:
-      - visible-label
-    spine:
-      - equal-worth
-      - comparable-access
-      - pour
-      - native-control
-    library:
-      - title: ATAG 2.0
-        path: /docs/authoring-tools/atag/
-
-  - id: keyboard-access
-    title: Keyboard can reach it
-    path: /learn/keyboard-access/
-    kind: pattern
-    layer: 4
-    prereqs:
-      - pour
-    children:
-      - visible-focus
-    spine:
-      - equal-worth
-      - comparable-access
-      - pour
-      - keyboard-access
-    library: []
-
-  - id: visible-focus
-    title: Focus must be visible
-    path: /learn/visible-focus/
-    kind: pattern
-    layer: 4
-    prereqs:
-      - keyboard-access
-    children: []
-    spine:
-      - equal-worth
-      - comparable-access
-      - pour
-      - keyboard-access
-      - visible-focus
-    library: []
+- id: equal-worth
+  title: Equal worth and respect
+  path: /learn/equal-worth/
+  kind: foundation
+  layer: 0
+  prereqs: []
+  children:
+  - not-identical-capacity
+  - comparable-access
+  spine:
+  - equal-worth
+  library: []
+- id: not-identical-capacity
+  title: Worth is not identical capacity
+  path: /learn/not-identical-capacity/
+  kind: foundation
+  layer: 1
+  prereqs:
+  - equal-worth
+  children: []
+  spine:
+  - equal-worth
+  - not-identical-capacity
+  library: []
+- id: comparable-access
+  title: Comparable access to what we offer
+  path: /learn/comparable-access/
+  kind: foundation
+  layer: 1
+  prereqs:
+  - equal-worth
+  children:
+  - web-for-everyone
+  - pour
+  - who-is-shut-out
+  spine:
+  - equal-worth
+  - comparable-access
+  library:
+  - title: Section 508 law
+    path: /docs/section-508/
+- id: web-for-everyone
+  title: The web is for everyone
+  path: /learn/web-for-everyone/
+  kind: foundation
+  layer: 2
+  prereqs:
+  - comparable-access
+  children:
+  - pour
+  spine:
+  - equal-worth
+  - comparable-access
+  - web-for-everyone
+  library: []
+- id: pour
+  title: POUR
+  path: /learn/pour/
+  kind: foundation
+  layer: 2
+  prereqs:
+  - comparable-access
+  children:
+  - accessible-name
+  - decorative-vs-informative-image
+  - color-not-only-cue
+  - headings
+  - native-control
+  - keyboard-access
+  - page-title
+  - language-of-page
+  - skip-link
+  - lists
+  - captions
+  - audio-control
+  - resize-text
+  - pause-stop-hide
+  - three-flashes
+  - timing-adjustable
+  - target-size
+  - pointer-gestures
+  - no-unexpected-change
+  - status-messages
+  - orientation
+  - content-on-hover
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  library:
+  - title: Accessibility principles (POUR)
+    path: /docs/wcag/principles/
+- id: who-is-shut-out
+  title: Who is shut out
+  path: /learn/who-is-shut-out/
+  kind: foundation
+  layer: 2
+  prereqs:
+  - comparable-access
+  children:
+  - which-name
+  spine:
+  - equal-worth
+  - comparable-access
+  - who-is-shut-out
+  library:
+  - title: Cognitive accessibility overview
+    path: /docs/cognitive/
+- id: which-name
+  title: Which name to use
+  path: /learn/which-name/
+  kind: orientation
+  layer: 3
+  prereqs:
+  - who-is-shut-out
+  children:
+  - profiles
+  spine:
+  - equal-worth
+  - comparable-access
+  - which-name
+  library:
+  - title: WCAG, 508, and ADA — which name
+    path: /docs/which-name/
+- id: profiles
+  title: Requirement profiles
+  path: /learn/profiles/
+  kind: orientation
+  layer: 3
+  prereqs:
+  - which-name
+  children:
+  - conformance
+  spine:
+  - equal-worth
+  - comparable-access
+  - which-name
+  - profiles
+  library:
+  - title: Profile cards
+    path: /docs/profiles/requirement-profiles/
+- id: conformance
+  title: Conformance is a page and a process
+  path: /learn/conformance/
+  kind: orientation
+  layer: 3
+  prereqs:
+  - profiles
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - profiles
+  - conformance
+  library:
+  - title: Understanding WCAG 2 conformance
+    path: /docs/wcag/conformance/
+- id: accessible-name
+  title: Accessible name
+  path: /learn/accessible-name/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - pour
+  children:
+  - visible-label
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - accessible-name
+  library:
+  - title: Success criteria catalog
+    path: /docs/wcag/success-criteria/
+- id: visible-label
+  title: Visible label is the programmatic name
+  path: /learn/visible-label/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - accessible-name
+  - native-control
+  children:
+  - placeholder-not-label
+  - form-errors
+  - input-purpose
+  - label-in-name
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - accessible-name
+  - visible-label
+  library: []
+- id: placeholder-not-label
+  title: Placeholder is not a label
+  path: /learn/placeholder-not-label/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - visible-label
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - visible-label
+  - placeholder-not-label
+  library: []
+- id: decorative-vs-informative-image
+  title: Decorative vs informative image
+  path: /learn/decorative-vs-informative-image/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - pour
+  children:
+  - images-of-text
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - decorative-vs-informative-image
+  library: []
+- id: color-not-only-cue
+  title: Color is not the only cue
+  path: /learn/color-not-only-cue/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - pour
+  - not-identical-capacity
+  children:
+  - contrast-text
+  - sensory-characteristics
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - color-not-only-cue
+  library: []
+- id: headings
+  title: Headings name the structure
+  path: /learn/headings/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - pour
+  children:
+  - data-tables
+  - meaningful-sequence
+  - link-purpose
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - headings
+  library: []
+- id: native-control
+  title: Native control before a custom widget
+  path: /learn/native-control/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - pour
+  children:
+  - visible-label
+  - name-role-value
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - native-control
+  library:
+  - title: ATAG 2.0
+    path: /docs/authoring-tools/atag/
+- id: keyboard-access
+  title: Keyboard can reach it
+  path: /learn/keyboard-access/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - pour
+  children:
+  - visible-focus
+  - focus-order
+  - character-key-shortcuts
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - keyboard-access
+  library: []
+- id: visible-focus
+  title: Focus must be visible
+  path: /learn/visible-focus/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - keyboard-access
+  children:
+  - focus-not-obscured
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - keyboard-access
+  - visible-focus
+  library: []
+- id: page-title
+  title: The document has a unique title
+  path: /learn/page-title/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - pour
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - page-title
+  library: &id001
+  - &id002
+    title: Success criteria catalog
+    path: /docs/wcag/success-criteria/
+- id: language-of-page
+  title: The page language is declared
+  path: /learn/language-of-page/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - pour
+  children:
+  - language-of-parts
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - language-of-page
+  library: *id001
+- id: language-of-parts
+  title: Language of parts
+  path: /learn/language-of-parts/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - language-of-page
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - language-of-page
+  - language-of-parts
+  library: *id001
+- id: skip-link
+  title: Skip past repeated blocks
+  path: /learn/skip-link/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - pour
+  children:
+  - multiple-ways
+  - consistent-navigation
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - skip-link
+  library: *id001
+- id: lists
+  title: Lists are lists
+  path: /learn/lists/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - pour
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - lists
+  library: *id001
+- id: data-tables
+  title: Data tables have headers
+  path: /learn/data-tables/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - headings
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - headings
+  - data-tables
+  library: *id001
+- id: meaningful-sequence
+  title: Meaningful sequence
+  path: /learn/meaningful-sequence/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - headings
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - headings
+  - meaningful-sequence
+  library: *id001
+- id: link-purpose
+  title: Link purpose in context
+  path: /learn/link-purpose/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - headings
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - headings
+  - link-purpose
+  library: *id001
+- id: multiple-ways
+  title: More than one way to find a page
+  path: /learn/multiple-ways/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - skip-link
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - skip-link
+  - multiple-ways
+  library: *id001
+- id: consistent-navigation
+  title: Consistent navigation and names
+  path: /learn/consistent-navigation/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - skip-link
+  children:
+  - consistent-help
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - skip-link
+  - consistent-navigation
+  library: *id001
+- id: consistent-help
+  title: Help stays in the same place
+  path: /learn/consistent-help/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - consistent-navigation
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - skip-link
+  - consistent-navigation
+  - consistent-help
+  library: &id004
+  - *id002
+  - title: What's new in WCAG 2.2
+    path: /docs/wcag/whats-new-2.2/
+- id: captions
+  title: Captions for prerecorded video
+  path: /learn/captions/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - pour
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - captions
+  library: *id001
+- id: audio-control
+  title: Audio does not play unchecked
+  path: /learn/audio-control/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - pour
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - audio-control
+  library: *id001
+- id: contrast-text
+  title: Text contrast
+  path: /learn/contrast-text/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - color-not-only-cue
+  children:
+  - contrast-ui
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - color-not-only-cue
+  - contrast-text
+  library: *id001
+- id: contrast-ui
+  title: Non-text contrast
+  path: /learn/contrast-ui/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - contrast-text
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - color-not-only-cue
+  - contrast-text
+  - contrast-ui
+  library: &id003
+  - *id002
+  - title: What's new in WCAG 2.1
+    path: /docs/wcag/whats-new-2.1/
+- id: resize-text
+  title: Text can resize
+  path: /learn/resize-text/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - pour
+  children:
+  - reflow
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - resize-text
+  library: *id001
+- id: reflow
+  title: Reflow
+  path: /learn/reflow/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - resize-text
+  children:
+  - text-spacing
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - resize-text
+  - reflow
+  library: *id003
+- id: text-spacing
+  title: Text spacing
+  path: /learn/text-spacing/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - reflow
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - resize-text
+  - reflow
+  - text-spacing
+  library: *id003
+- id: images-of-text
+  title: Prefer real text to an image of text
+  path: /learn/images-of-text/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - decorative-vs-informative-image
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - decorative-vs-informative-image
+  - images-of-text
+  library: *id001
+- id: sensory-characteristics
+  title: Not only shape, size, or sound
+  path: /learn/sensory-characteristics/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - color-not-only-cue
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - color-not-only-cue
+  - sensory-characteristics
+  library: *id001
+- id: form-errors
+  title: Errors are identified in text
+  path: /learn/form-errors/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - visible-label
+  children:
+  - error-prevention
+  - redundant-entry
+  - accessible-authentication
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - accessible-name
+  - visible-label
+  - form-errors
+  library: *id001
+- id: input-purpose
+  title: Identify input purpose
+  path: /learn/input-purpose/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - visible-label
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - accessible-name
+  - visible-label
+  - input-purpose
+  library: *id003
+- id: label-in-name
+  title: Visible label is in the name
+  path: /learn/label-in-name/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - visible-label
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - accessible-name
+  - visible-label
+  - label-in-name
+  library: *id003
+- id: error-prevention
+  title: Review before an irreversible submit
+  path: /learn/error-prevention/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - form-errors
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - accessible-name
+  - visible-label
+  - form-errors
+  - error-prevention
+  library: *id001
+- id: redundant-entry
+  title: Do not ask for the same data twice
+  path: /learn/redundant-entry/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - form-errors
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - accessible-name
+  - visible-label
+  - form-errors
+  - redundant-entry
+  library: *id004
+- id: accessible-authentication
+  title: Accessible authentication
+  path: /learn/accessible-authentication/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - form-errors
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - accessible-name
+  - visible-label
+  - form-errors
+  - accessible-authentication
+  library: *id004
+- id: focus-order
+  title: Focus order matches meaning
+  path: /learn/focus-order/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - keyboard-access
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - keyboard-access
+  - focus-order
+  library: *id001
+- id: focus-not-obscured
+  title: Focus is not hidden behind chrome
+  path: /learn/focus-not-obscured/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - visible-focus
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - keyboard-access
+  - visible-focus
+  - focus-not-obscured
+  library: *id004
+- id: character-key-shortcuts
+  title: Single-key shortcuts can be turned off
+  path: /learn/character-key-shortcuts/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - keyboard-access
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - keyboard-access
+  - character-key-shortcuts
+  library: *id003
+- id: target-size
+  title: Target size
+  path: /learn/target-size/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - pour
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - target-size
+  library: *id004
+- id: pointer-gestures
+  title: No path-only gesture
+  path: /learn/pointer-gestures/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - pour
+  children:
+  - pointer-cancellation
+  - dragging
+  - motion-actuation
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - pointer-gestures
+  library: *id003
+- id: dragging
+  title: Dragging has a simple alternative
+  path: /learn/dragging/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - pointer-gestures
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - pointer-gestures
+  - dragging
+  library: *id004
+- id: pointer-cancellation
+  title: Pointer cancellation
+  path: /learn/pointer-cancellation/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - pointer-gestures
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - pointer-gestures
+  - pointer-cancellation
+  library: *id003
+- id: motion-actuation
+  title: Motion is not the only input
+  path: /learn/motion-actuation/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - pointer-gestures
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - pointer-gestures
+  - motion-actuation
+  library: *id003
+- id: pause-stop-hide
+  title: Pause, stop, or hide movement
+  path: /learn/pause-stop-hide/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - pour
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - pause-stop-hide
+  library: *id001
+- id: timing-adjustable
+  title: Time limits can be extended
+  path: /learn/timing-adjustable/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - pour
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - timing-adjustable
+  library: *id001
+- id: three-flashes
+  title: Nothing flashes more than three times
+  path: /learn/three-flashes/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - pour
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - three-flashes
+  library: *id001
+- id: status-messages
+  title: Status messages are announced
+  path: /learn/status-messages/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - pour
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - status-messages
+  library: *id003
+- id: name-role-value
+  title: Name, role, and value
+  path: /learn/name-role-value/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - native-control
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - native-control
+  - name-role-value
+  library: *id001
+- id: no-unexpected-change
+  title: No unexpected change of context
+  path: /learn/no-unexpected-change/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - pour
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - no-unexpected-change
+  library: *id001
+- id: orientation
+  title: Do not lock orientation
+  path: /learn/orientation/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - pour
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - orientation
+  library: *id003
+- id: content-on-hover
+  title: Content on hover or focus
+  path: /learn/content-on-hover/
+  kind: pattern
+  layer: 4
+  prereqs:
+  - pour
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - content-on-hover
+  library: *id003
