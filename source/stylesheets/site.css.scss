@@ -16,6 +16,12 @@
   --measure: 72rem;
   --prose: 42rem;
   --radius: 0.5rem;
+  --header-height: 64px;
+  --header-bg: #ffffff;
+  --header-line: #e4e4e4;
+  --header-ink: #202124;
+  --header-muted: #909090;
+  --header-font: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
 *,
@@ -87,9 +93,10 @@ a:focus-visible {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: color-mix(in srgb, var(--bg) 92%, transparent);
-  backdrop-filter: blur(8px);
-  border-bottom: 1px solid var(--line);
+  height: var(--header-height);
+  overflow: visible;
+  background: var(--header-bg);
+  border-bottom: 1px solid var(--header-line);
 }
 
 .site-header__inner,
@@ -104,22 +111,41 @@ a:focus-visible {
 }
 
 .site-header__inner {
-  min-height: 3.5rem;
+  height: var(--header-height);
 }
 
 .site-wordmark {
   display: inline-flex;
   align-items: center;
-  gap: 0.6rem;
-  color: var(--ink);
-  font-family: var(--font-ui);
-  font-weight: 650;
-  letter-spacing: -0.02em;
+  gap: 8px;
+  min-width: 0;
+  color: var(--header-ink);
+  font-family: var(--header-font);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0;
   text-decoration: none;
+}
+
+.site-wordmark:hover,
+.site-wordmark:focus-visible {
+  color: var(--header-ink);
 }
 
 .site-wordmark img {
   display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.site-wordmark span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .site-nav ul {
@@ -129,18 +155,19 @@ a:focus-visible {
   margin: 0;
   padding: 0;
   list-style: none;
-  font-family: var(--font-ui);
-  font-size: 0.95rem;
+  font-family: var(--header-font);
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .site-nav a {
-  color: var(--muted);
+  color: var(--header-muted);
   text-decoration: none;
 }
 
 .site-nav a:hover,
 .site-nav a.is-current {
-  color: var(--ink);
+  color: var(--header-ink);
 }
 
 .site-nav a.is-current {
@@ -302,7 +329,7 @@ summary {
   grid-column: 2;
   grid-row: 1 / span 20;
   position: sticky;
-  top: 4.5rem;
+  top: calc(var(--header-height) + 0.75rem);
   font-family: var(--font-ui);
   font-size: 0.85rem;
 }
@@ -424,8 +451,8 @@ summary {
     left: 0;
     right: 0;
     top: 100%;
-    background: var(--bg-elev);
-    border-bottom: 1px solid var(--line);
+    background: var(--header-bg);
+    border-bottom: 1px solid var(--header-line);
     padding: 0.75rem 1rem 1rem;
   }
 

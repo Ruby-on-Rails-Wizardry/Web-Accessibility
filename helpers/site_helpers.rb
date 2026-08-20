@@ -65,4 +65,18 @@ module SiteHelpers
     color = site.accent.to_s.strip
     color.empty? ? "#b91c1c" : color
   end
+
+  def org_name
+    name = site.org.to_s.strip
+    name.empty? ? "Ruby on Rails Wizardry" : name
+  end
+
+  # Wordmark goes to the org GitHub Pages home. Satellite sites set
+  # `pages_url` so this is not rewritten as a relative in-site link.
+  def org_home
+    url = site.pages_url.to_s.strip
+    return url_for("/") if url.empty? || url == "/"
+
+    url
+  end
 end

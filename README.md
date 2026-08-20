@@ -82,7 +82,7 @@ Details: [source/docs/agents/reducing-cognitive-load.html.md](source/docs/agents
 
 | File | What to change |
 |------|----------------|
-| `data/site.yml` | Title, tagline, nav, footer, accent color, repo URL |
+| `data/site.yml` | Title, tagline, nav, footer, accent color, repo URL. Header wordmark is always `org` + `mark.jpg` (Skool icon), linking to `pages_url`. |
 | `source/docs/` | Markdown documentation (`docs` layout) |
 | `source/javascripts/*_controller.js` | Stimulus controllers (auto-registered) |
 | `source/stylesheets/site.css.scss` | Theme (`--accent` and other CSS variables) |

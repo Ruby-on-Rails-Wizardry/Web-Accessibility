@@ -4,6 +4,7 @@ description: "A local library of official Section 508, WCAG, ADA, and related ac
 url: "https://ruby-on-rails-wizardry.github.io/Web-Accessibility"
 org: "Ruby on Rails Wizardry"
 org_url: "https://github.com/Ruby-on-Rails-Wizardry"
+pages_url: "https://ruby-on-rails-wizardry.github.io/"
 repo: "https://github.com/Ruby-on-Rails-Wizardry/Web-Accessibility"
 footer: "© 2026 Ruby on Rails Wizardry"
 accent: "#b91c1c"

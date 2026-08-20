@@ -37,7 +37,7 @@ When implementing accessibility work **in another project**, name a profile (`se
 
 ## Conventions
 
-1. Put site identity (title, nav, footer, accent) in **`data/site.yml`**, not in the layout.
+1. Put site identity (title, nav, footer, accent) in **`data/site.yml`**, not in the layout. The header wordmark is the org name (`org`) and Skool wizard portrait (`mark.jpg`), linking to `pages_url`. `title` is the document-site name in `<title>` and copy, not the wordmark.
 2. Prefer **Markdown** under `source/docs/` for the official-docs library (`docs` layout). Knowledge-tree nodes live under **`source/learn/`** (`learn` layout). The graph is **`data/tree.yml`** (ids, prereqs, children, spine, library links). Add a node there when you add a page. Use ERB for chrome and interactive demos.
 3. Every library page keeps its **source block** (official URL, status, license) after the frontmatter.
 4. New Stimulus controller: `source/javascripts/name_controller.js`. `site.js.erb` registers it as `name` (`copy_code` → `copy-code`).
