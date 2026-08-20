@@ -30,6 +30,7 @@ Name a **profile** (`section-508-web`, `ada-title-ii`, `wcag-22-aa`) and a **sur
 ## Official starting URLs
 
 - WCAG 2.2: https://www.w3.org/TR/WCAG22/
+- W3C Web Accessibility Initiative (WAI): https://www.w3.org/WAI/
 - How to Meet WCAG: https://www.w3.org/WAI/WCAG22/quickref/
 - Revised 508 Standards: https://www.access-board.gov/ict/
 - Section508.gov: https://www.section508.gov/

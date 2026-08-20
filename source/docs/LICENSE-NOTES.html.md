@@ -27,6 +27,7 @@ These local markdown files are supporting materials for developers and agents. T
 W3C material in this repo includes content copied from or derived from:
 
 - [Web Content Accessibility Guidelines (WCAG) 2.2](https://www.w3.org/TR/WCAG22/)
+- [W3C Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/)
 - [WCAG 2 Overview](https://www.w3.org/WAI/standards-guidelines/wcag/)
 - [WCAG 2 at a Glance](https://www.w3.org/WAI/standards-guidelines/wcag/glance/)
 - [The WCAG 2 Documents](https://www.w3.org/WAI/standards-guidelines/wcag/docs/)

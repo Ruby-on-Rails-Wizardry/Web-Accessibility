@@ -7,6 +7,15 @@ Master bibliography for this library. Prefer the **dated** URL when you need a s
 
 Retrieved for this library: 2026-08-18.
 
+## Primary W3C sources
+
+| Document | Role | URL |
+| --- | --- | --- |
+| Web Content Accessibility Guidelines (WCAG) 2.2 | Normative Recommendation | https://www.w3.org/TR/WCAG22/ |
+| W3C Web Accessibility Initiative (WAI) | Official WAI portal | https://www.w3.org/WAI/ |
+
+WCAG 2.2 is the technical standard this library maps. WAI is the home for supporting material (Understanding, Techniques, Quick Reference, overviews). Individual WAI documents are listed below.
+
 ## Normative / regulatory
 
 | Document | Publisher | Status | URL |
@@ -31,6 +40,7 @@ Retrieved for this library: 2026-08-18.
 
 | Document | URL |
 | --- | --- |
+| W3C Web Accessibility Initiative (WAI) | https://www.w3.org/WAI/ |
 | WCAG 2 Overview | https://www.w3.org/WAI/standards-guidelines/wcag/ |
 | WCAG 2 FAQ | https://www.w3.org/WAI/standards-guidelines/wcag/faq/ |
 | The WCAG 2 Documents | https://www.w3.org/WAI/standards-guidelines/wcag/docs/ |
