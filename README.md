@@ -29,9 +29,21 @@ bundle exec middleman serve
 Open http://localhost:4567.
 
 ```bash
-bundle exec middleman build    # ./build
-# GitHub Pages (gh-pages branch), once you want it public:
-# bundle exec rake publish
+bundle exec middleman build    # ./build (gitignored)
+```
+
+## Publish
+
+Live site: [https://ruby-on-rails-wizardry.github.io/Web-Accessibility/](https://ruby-on-rails-wizardry.github.io/Web-Accessibility/)
+
+Push `master` to GitHub. The **Deploy GitHub Pages** workflow builds Middleman and deploys this repo as a [project site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-a-site) (URL is `org.github.io/repo`). Relative links and assets are on so the `/Web-Accessibility/` prefix works. Manual rebuild: Actions → Deploy GitHub Pages → Run workflow.
+
+The org splash is a separate repo, [ruby-on-rails-wizardry.github.io](https://github.com/Ruby-on-Rails-Wizardry/ruby-on-rails-wizardry.github.io). This library stays the source of truth; Pages is the generated site, not a second content tree.
+
+Local fallback (writes a `gh-pages` branch; the live site is Actions, not that branch):
+
+```bash
+bundle exec rake publish
 ```
 
 ## What this is

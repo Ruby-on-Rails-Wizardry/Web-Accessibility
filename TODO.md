@@ -97,7 +97,7 @@ Media sisters not given their own node (mentioned under captions): **1.2.1** aud
 
 Still not tree nodes: AAA criteria, 508 hardware / functional performance, COGA-only patterns. Technique **IDs** are indexed at [source/docs/wcag/techniques-index.html.md](source/docs/wcag/techniques-index.html.md) (`data/techniques.yml`); we do not make a learn page per ID.
 
-- **Publish** — `bundle exec rake publish` to GitHub Pages (`data/site.yml` already has `ruby-on-rails-wizardry.github.io/Web-Accessibility`). Confirm the Pages source before the first run.
+- **Publish** — GitHub Pages from Actions on this repo: [https://ruby-on-rails-wizardry.github.io/Web-Accessibility/](https://ruby-on-rails-wizardry.github.io/Web-Accessibility/). Workflow: `.github/workflows/pages.yml`.
 - **Do not commit `build/`** — it is gitignored; a local build may still sit on disk.
 
 Out of scope unless asked: submodule of Learning-for-Mastery; republishing Bloom/WCAG copyrighted full texts.

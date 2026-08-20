@@ -3,6 +3,44 @@ module SiteHelpers
     data.site
   end
 
+  # Directory-index URLs like `/learn/` do not match sitemap paths
+  # (`learn/index.html`), so Middleman would leave them root-absolute.
+  # Resolve them to resources so `relative_links` works on GitHub Pages.
+  def url_for(path_or_resource, options={})
+    resource, extras = resolve_sitemap_resource(path_or_resource)
+    super(resource, extras.merge(options))
+  end
+
+  def resolve_sitemap_resource(path_or_resource)
+    extras = {}
+    return [path_or_resource, extras] unless path_or_resource.is_a?(String)
+
+    href = path_or_resource
+    return [path_or_resource, extras] if href.empty? || href.start_with?("#", "mailto:", "tel:", "http://", "https://", "//")
+
+    path, fragment = href.split("#", 2)
+    path, query = path.split("?", 2)
+    extras[:query] = query if query
+    extras[:fragment] = fragment if fragment
+    return [path_or_resource, extras] if path.nil? || path.empty?
+
+    resource =
+      sitemap.find_resource_by_path(path) ||
+      sitemap.find_resource_by_destination_path(path.sub(%r{\A/}, "")) ||
+      sitemap.find_resource_by_destination_path(path)
+
+    if resource.nil? && path.end_with?("/")
+      index = File.join(path.sub(%r{/\z}, ""), "index.html").sub(%r{\A/}, "")
+      resource =
+        sitemap.find_resource_by_destination_path(index) ||
+        sitemap.find_resource_by_path("/#{index}") ||
+        sitemap.find_resource_by_path(index)
+    end
+
+    [resource || path_or_resource, extras]
+  end
+
+
   def page_title
     parts = [current_page.data.title, site.title].compact
     parts.uniq.join(" · ")

@@ -50,3 +50,8 @@ configure :build do
   # filenames and cannot be rewritten by asset_hash.
   activate :asset_hash, ignore: [%r{javascripts/}]
 end
+
+# GitHub Pages may still treat the artifact as Jekyll unless this file exists.
+after_build do |builder|
+  File.write(File.join(config[:build_dir], ".nojekyll"), "")
+end

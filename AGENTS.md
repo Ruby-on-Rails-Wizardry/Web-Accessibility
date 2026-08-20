@@ -18,6 +18,8 @@ bundle exec middleman serve    # http://localhost:4567
 bundle exec middleman build    # ./build
 ```
 
+Live: [https://ruby-on-rails-wizardry.github.io/Web-Accessibility/](https://ruby-on-rails-wizardry.github.io/Web-Accessibility/) (GitHub Actions on push to `master`).
+
 ## Library (read these, do not reinvent them)
 
 | Need | File |
