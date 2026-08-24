@@ -1,9 +1,8 @@
 <header class="site-header" data-controller="nav">
   <div class="site-header__inner">
-    <a href="<%= org_home %>" class="site-wordmark">
-      <img src="<%= image_path('mark.jpg') %>" width="40" height="40" alt="">
-      <span><%= org_name %></span>
-    </a>
+    <%= link_to site.title, "/",
+          class: ["site-title", (nav_current?("/") ? "is-current" : nil)].compact.join(" "),
+          "aria-current": (nav_current?("/") ? "page" : nil) %>
 
     <button
       type="button"
@@ -30,5 +29,14 @@
         <% end %>
       </ul>
     </nav>
+
+    <a
+      href="<%= org_home %>"
+      class="site-org"
+      title="Ruby on Rails Wizardry"
+      aria-label="Ruby on Rails Wizardry"
+    >
+      <img src="<%= image_path('mark.jpg') %>" width="40" height="40" alt="">
+    </a>
   </div>
 </header>

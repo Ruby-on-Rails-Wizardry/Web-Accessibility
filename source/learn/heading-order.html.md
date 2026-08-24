@@ -23,6 +23,8 @@ Change the size with CSS. Keep the level honest.
 
 `h4` because it looked smaller. The outline skips `h2` and `h3`.
 
+<p><a href="bad/" data-turbo="false">Open this example alone</a> and check the heading list with tools. That page is supposed to fail.</p>
+
 </div>
 
 <div class="example example--good" markdown="1">
@@ -36,6 +38,8 @@ Change the size with CSS. Keep the level honest.
 ```
 
 Same visual size via CSS if you need it. The levels match the sections.
+
+<p><a href="good/" data-turbo="false">Open this example alone</a> and check the heading list with the same tools.</p>
 
 </div>
 

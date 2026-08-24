@@ -79,4 +79,34 @@ module SiteHelpers
 
     url
   end
+
+  # Directory trail under /docs/, for the sidebar breadcrumb.
+  def docs_crumbs
+    url = current_page.url.to_s
+    url = "/#{url}" unless url.start_with?("/")
+    url = url.sub(%r{/index\.html\z}, "/")
+    url = url.sub(%r{\.html\z}, "/")
+    url += "/" unless url.end_with?("/")
+
+    return [] unless url == "/docs/" || url.start_with?("/docs/")
+
+    prefixes = ["/docs/"]
+    acc = "/docs"
+    url.sub(%r{\A/docs/?}, "").split("/").reject(&:empty?).each do |segment|
+      acc = "#{acc}/#{segment}"
+      prefixes << "#{acc}/"
+    end
+
+    prefixes.map do |prefix|
+      resource, = resolve_sitemap_resource(prefix)
+      title = resource.data.title.to_s.strip if resource.respond_to?(:data)
+      title = File.basename(prefix.chomp("/")).tr("-", " ") if title.nil? || title.empty?
+      title = "Library" if prefix == "/docs/"
+      {
+        title: title,
+        path: prefix,
+        current: prefix == url
+      }
+    end
+  end
 end

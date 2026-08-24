@@ -6,10 +6,15 @@
         <p class="lede"><%= current_page.data.description %></p>
       <% end %>
     </header>
-    <nav class="toc" aria-label="On this page">
-      <h2>On this page</h2>
-      <ol data-toc-target="list"></ol>
-    </nav>
-    <%= yield %>
+    <aside class="prose__aside">
+      <%= partial "docs_nav" %>
+      <nav class="toc" aria-label="On this page">
+        <h2>On this page</h2>
+        <ol data-toc-target="list"></ol>
+      </nav>
+    </aside>
+    <div class="prose__body">
+      <%= yield %>
+    </div>
   </article>
 <% end %>

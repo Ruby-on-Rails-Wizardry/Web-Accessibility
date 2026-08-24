@@ -7,8 +7,10 @@ description: Open any node. Walk down to a rule page for one requirement with ba
   These pages define the nodes. The official library stays under
   <%= link_to "Docs", "/docs/" %>. Walk down to a <strong>rule</strong>
   page for one requirement with bad and good examples on the same page.
-  Evaluation items (locator questions, constructed mastery tasks, retests)
-  are still to write — each node lists what is missing.
+  Some rules have a further leaf: a live page with only that example, so
+  you can check it with a heading list, WAVE, or axe. Evaluation items
+  (locator questions, constructed mastery tasks, retests) are still to
+  write — each study node lists what is missing.
 </p>
 
 <p>
@@ -65,7 +67,8 @@ description: Open any node. Walk down to a rule page for one requirement with ba
   <h2 id="layer-rules">Rules</h2>
   <p>
     One rule each. Bad and good on the same page. Some rules have
-    narrower children; the leaf is still the cop.
+    narrower children; the cop is still the rule. Isolated examples
+    (open alone) sit under the rule they illustrate.
   </p>
   <ul>
     <% tree_nodes_of_kind("rule").each do |node| %>
@@ -74,6 +77,14 @@ description: Open any node. Walk down to a rule page for one requirement with ba
         <% prereqs = Array(node.prereqs) %>
         <% if prereqs.any? %>
           <span> — after <%= prereqs.map { |id| tree_lookup(id)&.title || id }.join(", ") %></span>
+        <% end %>
+        <% example_ids = tree_example_ids(node) %>
+        <% if example_ids.any? %>
+          <ul>
+            <% example_ids.each do |id| %>
+              <li><%= link_to tree_lookup(id)&.title || id, tree_lookup(id)&.path || id, "data-turbo": "false" %></li>
+            <% end %>
+          </ul>
         <% end %>
       </li>
     <% end %>

@@ -107,7 +107,7 @@ ITI’s template for evaluating a product against accessibility standards. Vendo
 
 ### ANDI
 
-[Accessible Name and Description Inspector](https://www.ssa.gov/accessibility/andi/help/install.html), developed by the Social Security Administration. Manual inspection tool used in version 5 of DHS Trusted Tester.
+[Accessible Name and Description Inspector](https://www.ssa.gov/accessibility/andi/help/install.html), developed by the Social Security Administration. Manual inspection tool used in version 5 of DHS Trusted Tester. Library note: [testing tools — ANDI](/docs/evaluation/testing-tools/andi/).
 
 ### Trusted Tester Process
 

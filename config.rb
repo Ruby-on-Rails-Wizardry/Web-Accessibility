@@ -43,6 +43,8 @@ page "/404.html", directory_index: false
 page "/docs/*", layout: "docs"
 page "/learn/*", layout: "learn"
 page "/learn/index.html", layout: "learn"
+page "/learn/*/bad.html", layout: "example"
+page "/learn/*/good.html", layout: "example"
 
 configure :build do
   activate :minify_css

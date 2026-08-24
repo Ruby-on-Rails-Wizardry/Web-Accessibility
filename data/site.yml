@@ -10,8 +10,6 @@ footer: "© 2026 Ruby on Rails Wizardry"
 accent: "#b91c1c"
 
 nav:
-  - title: Home
-    path: /
   - title: Tree
     path: /learn/
   - title: Library

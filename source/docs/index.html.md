@@ -58,6 +58,7 @@ Study order and first principles live on the **[knowledge tree](/learn/)**. This
 ### Evaluation and authoring tools
 
 - [evaluation/wcag-em.md](evaluation/wcag-em/) — WCAG-EM 2.0 evaluation process
+- [evaluation/testing-tools/](evaluation/testing-tools/) — DevTools, axe (install), WAVE, ANDI, screen reader
 - [authoring-tools/atag.md](authoring-tools/atag/) — ATAG 2.0 for IDEs, CMS, and agents that generate content
 
 ### Learning theory (Bloom)

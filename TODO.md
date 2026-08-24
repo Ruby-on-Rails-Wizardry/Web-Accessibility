@@ -1,6 +1,6 @@
 # Project TODO
 
-Last inventoried 2026-08-24. Knowledge-tree graph: `data/tree.yml`. Pages: `source/learn/<id>.html.md`. Official library: `source/docs/`.
+Last inventoried 2026-08-24. Knowledge-tree graph: `data/tree.yml`. Pages: `source/learn/<id>.html.md`. Official library: `source/docs/`. Internal (not published): `notes/`.
 
 There is **no other TODO file**. Per-node checklists live in a `todo-box` at the bottom of each learn page. This file is the whole-project view.
 
@@ -21,6 +21,7 @@ Study guides with source blocks. Not the dated official specs.
 | ADA Title II | web and mobile rule |
 | Cognitive | overview, Content Usable |
 | Evaluation / ATAG | WCAG-EM, ATAG |
+| Testing tools | index, DevTools, axe (install), WAVE, ANDI, screen reader (`source/docs/evaluation/testing-tools/`) |
 | Definitions | DHS 508 Training (`dhs.gov/508-training`), E103.4 defined terms, GSA glossary pointer |
 | Profiles / agents | requirement profiles, reducing cognitive load |
 | Orientation | which-name (508 vs WCAG vs ADA) |
@@ -32,9 +33,9 @@ Intentionally not snapshotted (live official tools): Quickref, full Understandin
 
 Middleman 4 site from the org template. Turbo + Stimulus. Knowledge tree, docs layouts, nav in `data/site.yml`. Save point: `8a7c057`.
 
-### Knowledge tree (73 nodes, all have a page)
+### Knowledge tree (75 nodes, all have a page)
 
-Tree ids match `source/learn/*.html.md` one-for-one.
+Study nodes live at `source/learn/<id>.html.md`. Isolated examples live at `source/learn/<rule>/{bad,good}.html.erb`.
 
 | Layer | Kind | Count |
 | --- | --- | --- |
@@ -44,10 +45,13 @@ Tree ids match `source/learn/*.html.md` one-for-one.
 | 3 Which bar | orientation | 3 |
 | 4 Families / rules | pattern + rule | 51 |
 | 5 Split rules | rule | 13 |
+| 6 Isolated examples | example | 2 (`heading-order` bad / good) |
 
 `kind: pattern` is a **family** (not one cop). Six families: decorative-vs-informative-image, headings, keyboard-access, form-errors, consistent-navigation, no-unexpected-change.
 
 `kind: rule` is one requirement with **The rule**, Bad, Good, Not a pass, and Official (profile tags). Not one page per W3C technique ID.
+
+`kind: example` is a **live specimen**: same site header as the rest of the site; no extra headings in `<main>`, so a heading list / WAVE / axe still sees only that markup. Edit on the page (Stimulus `specimen`) lets the learner change the HTML and apply it, then check again. First pair is `heading-order`. Other HTML-example rules can grow the same `{bad,good}` leaves later. Example nodes do not get a mastery `todo-box`.
 
 **Split out of families (2026-08-24):** informative-image-alt, decorative-image-silent, functional-image-names-action, heading-elements, heading-order, keyboard-operable, no-keyboard-trap, error-identification, error-suggestion, consistent-nav-order, consistent-identification, no-change-on-focus, no-change-on-input.
 
@@ -94,11 +98,19 @@ No locator/constructed **format** is coded yet (no YAML of items, no quiz UI). F
 
 ---
 
+## Later — built-in browser tools on the knowledge tree
+
+Library pointer exists: [source/docs/evaluation/testing-tools/devtools.html.md](source/docs/evaluation/testing-tools/devtools.html.md). A deeper **learn-tree** section (how to read the Accessibility Tree as a skill, with practice on specimens) is still unwritten. Nothing to install.
+
+---
+
 ## Later — after mastery items exist on the spine (and then the rest)
 
 Media sisters not given their own node (mentioned under captions): **1.2.1** audio-only/video-only, **1.2.3** / **1.2.5** audio description, **1.2.4** live captions.
 
 Still not tree nodes: AAA criteria, 508 hardware / functional performance, COGA-only patterns. Technique **IDs** are indexed at [source/docs/wcag/techniques-index.html.md](source/docs/wcag/techniques-index.html.md) (`data/techniques.yml`); we do not make a learn page per ID.
+
+Isolated `{bad,good}` leaves for other rules that already have HTML snippets (heading-elements, visible-label, native-control, …) — same `example` layout as heading-order.
 
 - **Publish** — GitHub Pages from Actions on this repo: [https://ruby-on-rails-wizardry.github.io/Web-Accessibility/](https://ruby-on-rails-wizardry.github.io/Web-Accessibility/). Workflow: `.github/workflows/pages.yml`.
 - **Do not commit `build/`** — it is gitignored; a local build may still sit on disk.

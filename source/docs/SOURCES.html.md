@@ -94,6 +94,8 @@ WCAG 2.2 is the technical standard this library maps. WAI is the home for suppor
 | WCAG-EM Report Tool | Official tool | https://www.w3.org/WAI/eval/report-tool/ |
 | Easy Checks | Preliminary review | https://www.w3.org/WAI/test-evaluate/preliminary/ |
 | Involving Users in Evaluating Web Accessibility | Informative | https://www.w3.org/WAI/test-evaluate/involving-users/ |
+| How People with Disabilities Use the Web | Informative | https://www.w3.org/WAI/people-use-web/ |
+| WebAIM Screen Reader User Survey #10 | WebAIM, 2024 | https://webaim.org/projects/screenreadersurvey10/ |
 | ICT Testing Baseline Portfolio | Access Board | https://ictbaseline.access-board.gov/ |
 | Section508.gov testing overview | GSA | https://www.section508.gov/test/testing-overview |
 | DHS Section 508 Training | DHS; last updated 25 June 2025 | https://www.dhs.gov/508-training |
@@ -101,6 +103,13 @@ WCAG 2.2 is the technical standard this library maps. WAI is the home for suppor
 | DHS Trusted Tester Conformance Test Process | DHS; last updated 3 April 2025 | https://www.dhs.gov/trusted-tester |
 | DHS Trusted Tester Process & Certification (GSA) | GSA | https://www.section508.gov/test/trusted-tester/ |
 | Trusted Tester 5.1 (process) | Section508Coordinators GitHub | https://github.com/Section508Coordinators/TrustedTester5.1 |
+| Chrome DevTools accessibility | Chrome Developers | https://developer.chrome.com/docs/devtools/accessibility/reference |
+| axe DevTools extension | Deque | https://www.deque.com/axe/devtools/extension/ |
+| axe DevTools Chrome Web Store | Deque / Google | https://chromewebstore.google.com/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd |
+| WAVE | WebAIM | https://wave.webaim.org/ |
+| WAVE browser extensions | WebAIM | https://wave.webaim.org/extension/ |
+| WAVE Evaluation Tool (Chrome Web Store) | WebAIM / Google | https://chromewebstore.google.com/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh |
+| ANDI install | U.S. Social Security Administration | https://www.ssa.gov/accessibility/andi/help/install.html |
 
 ## Section 508 program (GSA / Access Board)
 

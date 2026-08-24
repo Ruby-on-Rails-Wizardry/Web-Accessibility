@@ -36,4 +36,28 @@ module TreeHelpers
   def tree_nodes_of_kind(kind)
     tree_nodes.select { |node| node.kind.to_s == kind.to_s }
   end
+
+  def tree_example_ids(node)
+    Array(node&.children).select { |id| tree_lookup(id)&.kind.to_s == "example" }
+  end
+
+  def tree_next_ids(node)
+    Array(node&.children).reject { |id| tree_lookup(id)&.kind.to_s == "example" }
+  end
+
+  def specimen_variant
+    current_page.data.specimen.to_s
+  end
+
+  def specimen_parent_node
+    tree_lookup(current_page.data.of)
+  end
+
+  def specimen_other_node
+    of = current_page.data.of.to_s
+    return if of.empty? || specimen_variant.empty?
+
+    other = specimen_variant == "bad" ? "good" : "bad"
+    tree_lookup("#{of}-#{other}")
+  end
 end

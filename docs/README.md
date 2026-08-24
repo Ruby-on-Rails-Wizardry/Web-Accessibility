@@ -10,3 +10,5 @@ The library now lives under **[source/docs/](../source/docs/)** as Middleman pag
 | `docs/SOURCES.md` | [source/docs/SOURCES.html.md](../source/docs/SOURCES.html.md) |
 
 Serve the site with `bundle exec middleman serve` (http://localhost:4567).
+
+Internal lab notes (not built): **[notes/](../notes/)**.

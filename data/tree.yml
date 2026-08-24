@@ -1,7 +1,9 @@
-# Knowledge tree. Pages live under source/learn/<id>.html.md.
+# Knowledge tree. Study pages live under source/learn/<id>.html.md.
+# Isolated examples live under source/learn/<rule>/{bad,good}.html.erb.
 # prereqs / children are node ids. spine is the first-principles trace.
-# kind: foundation | orientation | pattern | rule
+# kind: foundation | orientation | pattern | rule | example
 # pattern = a family of rules. rule = one cop (bad and good on the same page).
+# example = live specimen of that rule, opened alone so tools see only that markup.
 
 nodes:
 - id: equal-worth
@@ -1042,7 +1044,9 @@ nodes:
   layer: 5
   prereqs:
   - heading-elements
-  children: []
+  children:
+  - heading-order-bad
+  - heading-order-good
   spine:
   - equal-worth
   - comparable-access
@@ -1051,6 +1055,40 @@ nodes:
   - heading-elements
   - heading-order
   library: *id001
+- id: heading-order-bad
+  title: Bad example — skipped heading levels
+  path: /learn/heading-order/bad/
+  kind: example
+  layer: 6
+  prereqs:
+  - heading-order
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - headings
+  - heading-elements
+  - heading-order
+  - heading-order-bad
+  library: []
+- id: heading-order-good
+  title: Good example — nested heading levels
+  path: /learn/heading-order/good/
+  kind: example
+  layer: 6
+  prereqs:
+  - heading-order
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - headings
+  - heading-elements
+  - heading-order
+  - heading-order-good
+  library: []
 - id: keyboard-operable
   title: Keyboard can operate it
   path: /learn/keyboard-operable/

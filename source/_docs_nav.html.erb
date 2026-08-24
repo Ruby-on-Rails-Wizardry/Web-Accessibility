@@ -1,0 +1,17 @@
+<% crumbs = docs_crumbs %>
+<% if crumbs.length > 1 %>
+<nav class="tree-nav docs-nav" aria-label="In the library">
+  <h2>Where you are</h2>
+  <ol class="docs-nav__crumbs">
+    <% crumbs.each_with_index do |crumb, index| %>
+      <li<%= " class=\"is-current\"" if crumb[:current] %> style="padding-left: <%= index * 0.65 %>rem">
+        <% if crumb[:current] %>
+          <%= crumb[:title] %>
+        <% else %>
+          <%= link_to crumb[:title], crumb[:path] %>
+        <% end %>
+      </li>
+    <% end %>
+  </ol>
+</nav>
+<% end %>

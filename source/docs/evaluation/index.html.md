@@ -1,9 +1,10 @@
 ---
 title: Evaluation
-description: WCAG-EM 2.0 evaluation process, plus federal 508 testing.
+description: WCAG-EM 2.0 evaluation process, federal 508 testing, and checkers used with this library.
 ---
 
 - [WCAG-EM](wcag-em/) — W3C evaluation methodology (sites, apps, kiosks)
+- [Testing tools](testing-tools/) — DevTools, axe, WAVE, ANDI, screen reader
 - [DHS Section 508 Training](../definitions/dhs-508-training/) — Trusted Tester certification and related courses. Reference: https://www.dhs.gov/508-training
 
-WCAG-EM is how you *plan* a WCAG audit. Trusted Tester is a federal **508** test process aligned to the [ICT Testing Baseline](https://ictbaseline.access-board.gov/). They are not the same checklist.
+WCAG-EM is how you *plan* a WCAG audit. Trusted Tester is a federal **508** test process aligned to the [ICT Testing Baseline](https://ictbaseline.access-board.gov/). They are not the same checklist. [Testing tools](testing-tools/) are checkers and AT you run on a page; they do not replace either process.
