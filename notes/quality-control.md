@@ -18,7 +18,7 @@ Apply when the page type has that job. A hub is not a specimen; a specimen is no
 
 6. Tree id in frontmatter matches `data/tree.yml`. Trace / before / next / library in the sidebar.
 7. `kind: rule` has The rule, Bad, Good on the page (or points at child rules if it is a family).
-8. Isolated examples, if any, are linked under **Check with tools** and are not the only way off the page.
+8. Isolated examples, if any, are linked from the rule page body. Sidebar: **Where you are**, previous/next on the tree, and a **Testing tools** link. Do not orphan a leaf.
 
 ### Isolated examples (`example` layout)
 

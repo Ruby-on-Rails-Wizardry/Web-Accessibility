@@ -422,12 +422,20 @@ summary {
   margin: 0 0 0.5rem;
 }
 
+.tree-nav__index:not(:first-child) {
+  margin-top: 0.7rem;
+}
+
 .tree-nav h2 {
   margin: 0.7rem 0 0.25rem;
   font-size: 0.75rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--muted);
+}
+
+.tree-nav h2:first-child {
+  margin-top: 0;
 }
 
 .tree-nav ul,

@@ -45,6 +45,41 @@ module TreeHelpers
     Array(node&.children).reject { |id| tree_lookup(id)&.kind.to_s == "example" }
   end
 
+  def tree_parent_node(node)
+    return if node.nil?
+
+    tree_nodes.find { |candidate| Array(candidate.children).map(&:to_s).include?(node.id.to_s) }
+  end
+
+  def tree_previous_id(node)
+    return if node.nil?
+
+    spine = Array(node.spine).map(&:to_s)
+    index = spine.index(node.id.to_s)
+    return spine[index - 1] if index && index.positive?
+
+    Array(node.prereqs).last
+  end
+
+  def tree_following_id(node)
+    return if node.nil?
+
+    kids = tree_next_ids(node)
+    return kids.first if kids.any?
+
+    current = node
+    while current
+      parent = tree_parent_node(current)
+      return if parent.nil?
+
+      siblings = tree_next_ids(parent)
+      index = siblings.index { |id| id.to_s == current.id.to_s }
+      return siblings[index + 1] if index && siblings[index + 1]
+
+      current = parent
+    end
+  end
+
   def specimen_variant
     current_page.data.specimen.to_s
   end
