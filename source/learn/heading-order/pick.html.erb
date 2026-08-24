@@ -7,28 +7,29 @@ practice: pick
 of: heading-order
 check_rules:
   - heading-order
-practice_note: Choose the example that nests headings in order. Then Check.
+practice_note: Each card shows the HTML and how it renders. Pick the one that nests headings in order.
 ---
+<%
+  examples = [
+    "<h1>Permits</h1>\n<h4>Residential</h4>\n<h4>Commercial</h4>",
+    "<h1>Permits</h1>\n<h2>Residential</h2>\n<h2>Commercial</h2>"
+  ]
+%>
 <fieldset class="practice-choices">
   <legend class="practice-choices__legend">Examples</legend>
   <div class="practice-choices__grid">
-    <label class="practice-choice">
-      <input type="radio" name="practice-pick" data-check-target="choice">
-      <span class="practice-choice__name">Example A</span>
-      <div class="practice-choice__preview" data-check-target="section">
-        <h1>Permits</h1>
-        <h4>Residential</h4>
-        <h4>Commercial</h4>
-      </div>
-    </label>
-    <label class="practice-choice">
-      <input type="radio" name="practice-pick" data-check-target="choice">
-      <span class="practice-choice__name">Example B</span>
-      <div class="practice-choice__preview" data-check-target="section">
-        <h1>Permits</h1>
-        <h2>Residential</h2>
-        <h2>Commercial</h2>
-      </div>
-    </label>
+    <% examples.each_with_index do |html, index| %>
+      <% letter = ("A".ord + index).chr %>
+      <label class="practice-choice">
+        <input type="radio" name="practice-pick" data-check-target="choice" aria-label="Example <%= letter %>">
+        <span class="practice-choice__name">Example <%= letter %></span>
+        <span class="practice-choice__caption">HTML</span>
+        <pre class="practice-choice__source"><code><%= CGI.escapeHTML(html) %></code></pre>
+        <span class="practice-choice__caption">Rendered</span>
+        <div class="practice-choice__preview" data-check-target="section">
+          <%= html.html_safe %>
+        </div>
+      </label>
+    <% end %>
   </div>
 </fieldset>

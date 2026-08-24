@@ -29,7 +29,7 @@ Apply when the page type has that job. A hub is not a specimen; a specimen is no
 
 ### Practice (`practice` layout)
 
-18. **Pick:** two unlabeled-as-good/bad live examples; learner chooses, then **Check** scores the chosen section.
+18. **Pick:** two unlabeled-as-good/bad live examples; each card shows the HTML and how it renders. Learner chooses, then **Check** scores the chosen rendered section.
 19. **Fix:** `<main>` is the specimen; editor may open on load; **Check** applies then scores `<main>`.
 20. Check results live outside `<main>`. Chrome uses no heading elements. Failures list rules with links. This prototype catalogs **heading-order** only.
 21. Sidebar: Where you are (tree → rule → this page), both examples, both practice leaves, Testing tools. Do not orphan.

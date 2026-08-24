@@ -143,8 +143,11 @@ export default class extends Controller {
     }
 
     cards.forEach((card, index) => {
+      const label = `Example ${String.fromCharCode(65 + index)}`
       const name = card.querySelector(".practice-choice__name")
-      if (name) name.textContent = `Example ${String.fromCharCode(65 + index)}`
+      const input = card.querySelector("input")
+      if (name) name.textContent = label
+      if (input) input.setAttribute("aria-label", label)
       parent.append(card)
     })
   }

@@ -784,8 +784,42 @@ summary {
   color: var(--muted);
 }
 
+.practice-choice__caption {
+  display: block;
+  margin: 0.65rem 0 0.3rem;
+  font-family: var(--font-ui);
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.practice-choice__source {
+  margin: 0;
+  padding: 0.55rem 0.65rem;
+  border-radius: var(--radius);
+  background: var(--code-bg);
+  color: var(--code-ink);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  line-height: 1.4;
+  overflow-x: auto;
+  white-space: pre;
+}
+
+.practice-choice__source code {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
 .practice-choice__preview {
-  margin-top: 0.55rem;
+  margin: 0;
+  padding: 0.55rem 0.65rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg);
 }
 
 .practice-choice__preview h1,
