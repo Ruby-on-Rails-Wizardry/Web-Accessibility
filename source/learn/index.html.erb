@@ -1,13 +1,14 @@
 ---
 title: Knowledge tree
-description: Open any node. Guidance names what to study next toward the aim you chose. Nothing here is locked.
+description: Open any node. Walk down to a rule page for one requirement with bad and good examples. Nothing here is locked.
 ---
 
 <p>
   These pages define the nodes. The official library stays under
-  <%= link_to "Docs", "/docs/" %>. Evaluation items (locator questions,
-  constructed mastery tasks, retests) are still to write — each node lists
-  what is missing.
+  <%= link_to "Docs", "/docs/" %>. Walk down to a <strong>rule</strong>
+  page for one requirement with bad and good examples on the same page.
+  Evaluation items (locator questions, constructed mastery tasks, retests)
+  are still to write — each node lists what is missing.
 </p>
 
 <p>
@@ -15,7 +16,7 @@ description: Open any node. Guidance names what to study next toward the aim you
   still start anywhere.
 </p>
 
-<% tree_layers.each do |layer| %>
+<% tree_layers.select { |layer| layer < 4 }.each do |layer| %>
   <%
     heading =
       case layer
@@ -23,7 +24,6 @@ description: Open any node. Guidance names what to study next toward the aim you
       when 1 then "Worth and access"
       when 2 then "How the web shuts people out"
       when 3 then "Which bar"
-      else "Patterns"
       end
   %>
   <section class="tree-map" aria-labelledby="layer-<%= layer %>">
@@ -41,3 +41,41 @@ description: Open any node. Guidance names what to study next toward the aim you
     </ul>
   </section>
 <% end %>
+
+<section class="tree-map" aria-labelledby="layer-patterns">
+  <h2 id="layer-patterns">Patterns</h2>
+  <p>
+    A family, not a single cop. Open a child for one rule with bad and
+    good examples.
+  </p>
+  <ul>
+    <% tree_nodes_of_kind("pattern").each do |node| %>
+      <li>
+        <%= link_to node.title, node.path %>
+        <% children = Array(node.children) %>
+        <% if children.any? %>
+          <span> — then <%= children.map { |id| tree_lookup(id)&.title || id }.join(", ") %></span>
+        <% end %>
+      </li>
+    <% end %>
+  </ul>
+</section>
+
+<section class="tree-map" aria-labelledby="layer-rules">
+  <h2 id="layer-rules">Rules</h2>
+  <p>
+    One rule each. Bad and good on the same page. Some rules have
+    narrower children; the leaf is still the cop.
+  </p>
+  <ul>
+    <% tree_nodes_of_kind("rule").each do |node| %>
+      <li>
+        <%= link_to node.title, node.path %>
+        <% prereqs = Array(node.prereqs) %>
+        <% if prereqs.any? %>
+          <span> — after <%= prereqs.map { |id| tree_lookup(id)&.title || id }.join(", ") %></span>
+        <% end %>
+      </li>
+    <% end %>
+  </ul>
+</section>

@@ -10,11 +10,25 @@ The person is not a mascot and not an enemy. They are trying to complete the [sa
 
 W3C’s *How People with Disabilities Use the Web* is the official set of stories. Cognitive and learning disabilities are only partly covered by WCAG success criteria; see the library’s [cognitive](/docs/cognitive/) notes after the profile passes.
 
-## Contrast
+<div class="examples" markdown="1">
 
-**Worse:** “Nobody here uses a screen reader.” The next visitor might. So might you, next year.
+<div class="example example--bad" markdown="1">
 
-**Better:** Name who cannot finish *this* screen if we ship it as-is.
+## Bad
+
+“Nobody here uses a screen reader.” The next visitor might. So might you, next year.
+
+</div>
+
+<div class="example example--good" markdown="1">
+
+## Good
+
+Name who cannot finish *this* screen if we ship it as-is.
+
+</div>
+
+</div>
 
 ## Official texts
 

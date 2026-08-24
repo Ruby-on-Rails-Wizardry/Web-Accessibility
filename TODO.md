@@ -1,10 +1,10 @@
 # Project TODO
 
-Last inventoried 2026-08-18. Knowledge-tree graph: `data/tree.yml`. Pages: `source/learn/<id>.html.md`. Official library: `source/docs/`.
+Last inventoried 2026-08-24. Knowledge-tree graph: `data/tree.yml`. Pages: `source/learn/<id>.html.md`. Official library: `source/docs/`.
 
 There is **no other TODO file**. Per-node checklists live in a `todo-box` at the bottom of each learn page. This file is the whole-project view.
 
-The `/learn/` index already states the current gap: teaching pages exist; **evaluation items are still to write**.
+The `/learn/` index already states the current gap: teaching pages (including one-rule leaves with bad/good examples) exist; **evaluation items are still to write**.
 
 ---
 
@@ -32,7 +32,7 @@ Intentionally not snapshotted (live official tools): Quickref, full Understandin
 
 Middleman 4 site from the org template. Turbo + Stimulus. Knowledge tree, docs layouts, nav in `data/site.yml`. Save point: `8a7c057`.
 
-### Knowledge tree (60 nodes, all have a page)
+### Knowledge tree (73 nodes, all have a page)
 
 Tree ids match `source/learn/*.html.md` one-for-one.
 
@@ -42,19 +42,22 @@ Tree ids match `source/learn/*.html.md` one-for-one.
 | 1 Worth and access | foundation | 2 |
 | 2 How the web shuts people out | foundation | 3 |
 | 3 Which bar | orientation | 3 |
-| 4 Patterns | pattern | 51 |
+| 4 Families / rules | pattern + rule | 51 |
+| 5 Split rules | rule | 13 |
 
-Pattern nodes are **concepts**, not one page per W3C technique ID. Each Contrast section cites official Failure and/or Sufficient techniques.
+`kind: pattern` is a **family** (not one cop). Six families: decorative-vs-informative-image, headings, keyboard-access, form-errors, consistent-navigation, no-unexpected-change.
 
-**Added after the first 9 patterns** (A/AA ideas that had no node): page-title, language-of-page, language-of-parts, skip-link, lists, data-tables, meaningful-sequence, link-purpose, multiple-ways, consistent-navigation, consistent-help, captions, audio-control, contrast-text, contrast-ui, resize-text, reflow, text-spacing, images-of-text, sensory-characteristics, form-errors, input-purpose, label-in-name, error-prevention, redundant-entry, accessible-authentication, focus-order, focus-not-obscured, character-key-shortcuts, target-size, pointer-gestures, dragging, pointer-cancellation, motion-actuation, pause-stop-hide, timing-adjustable, three-flashes, status-messages, name-role-value, no-unexpected-change, orientation, content-on-hover.
+`kind: rule` is one requirement with **The rule**, Bad, Good, Not a pass, and Official (profile tags). Not one page per W3C technique ID.
 
-Each node has a short teaching page **and** an unfinished mastery box.
+**Split out of families (2026-08-24):** informative-image-alt, decorative-image-silent, functional-image-names-action, heading-elements, heading-order, keyboard-operable, no-keyboard-trap, error-identification, error-suggestion, consistent-nav-order, consistent-identification, no-change-on-focus, no-change-on-input.
+
+Each node has a teaching page **and** an unfinished mastery box.
 
 ---
 
 ## Next — finish Learning for Mastery on every node
 
-Do this **before** growing the tree again. Same four checks on every page; draft one-liners are already in the `todo-box`.
+Rule leaves now exist. Same four checks on every page; draft one-liners are already in the `todo-box`.
 
 For each node:
 

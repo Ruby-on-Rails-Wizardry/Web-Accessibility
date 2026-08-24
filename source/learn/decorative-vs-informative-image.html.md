@@ -1,43 +1,29 @@
 ---
 title: Decorative vs informative image
-description: If the image adds information, it needs a text alternative. If it does not, it must be silent.
+description: Classify the image first. The matching alt rule is a child of this page.
 node: decorative-vs-informative-image
 ---
 
-[Perceivable](/learn/pour/): the information in the picture has to be available without seeing the picture.
+This is a **family**, not one cop. [Perceivable](/learn/pour/): the information in the picture has to be available without seeing the picture. Pick the class, then open the child that states that class’s rule.
 
-- **Informative** — the image says something the nearby text does not. Give an equivalent short `alt` (or a longer pattern if needed).
-- **Decorative** — it repeats the text or is only ornament. `alt=""` (and not inside a lone link).
-- **Functional** — the image *is* the control (a linked logo). The `alt` names the destination or the action, not “logo.”
+- [Informative image needs a text alternative](/learn/informative-image-alt/) — the picture says something the nearby text does not.
+- [Decorative image is silent](/learn/decorative-image-silent/) — ornament, or it repeats the text.
+- [Functional image names the action](/learn/functional-image-names-action/) — the image *is* the control.
+- [Prefer real text to an image of text](/learn/images-of-text/) — a later, related rule.
 
-This node is smaller than all of **1.1.1**. Meaningful wording of `alt` is a later, harder item (rubric).
+Meaningful wording of `alt` (how *good* the alternative is) is a later, harder item. This family is the classification and the matching `alt` pattern.
 
-## Contrast
-
-```html
-<!-- worse: empty alt on an informative chart -->
-<img src="revenue.png">
-
-<!-- better -->
-<img src="revenue.png" alt="Revenue rose from 2 million to 3 million between 2024 and 2025">
-
-<!-- worse: noisy decoration -->
-<img src="swirl.svg" alt="decorative swirl">
-
-<!-- better -->
-<img src="swirl.svg" alt="">
-```
+Every child is part of **1.1.1 Non-text Content**. This page is smaller than all of 1.1.1.
 
 <div class="todo-box" markdown="1">
 
 ## Still to write (Learning for Mastery)
 
-Draft mastery: Given an image in context, the learner can classify decorative vs informative vs functional and supply a silent or naming `alt` that matches.
+Draft mastery: Given an image in context, the learner can classify decorative vs informative vs functional and open the matching rule.
 
 - [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item (classify, then write or empty the alt)
+- [ ] Locator item (classify)
+- [ ] Constructed item lives on the child rules
 - [ ] Isomorphic retest item
-- [ ] Rubric for “more meaningful” alt (later)
 
 </div>

@@ -2,21 +2,46 @@
 title: Dragging has a simple alternative
 description: Anything that requires hold-and-drag also needs a tap, click, or button path.
 node: dragging
+rule: Give every drag action a tap, click, or button alternative.
 ---
-
-WCAG **2.2** AA (**2.5.7**). Not in 508 or ADA Title II.
 
 [Pointer gestures](/learn/pointer-gestures/) are multipoint or path-shaped. This node is **drag**: press, move, release. People with tremor cannot do that reliably.
 
-Provide a single-pointer way that is **not** a drag (up/down buttons, a select, a tap to pick then tap to drop), unless dragging is essential or the user agent owns it.
+Provide a single-pointer way that is **not** a drag (up/down buttons, a select, a tap to pick then tap to drop), unless dragging is essential or the user agent owns it. This is a WCAG 2.2 bar.
 
-Official: [Understanding Dragging Movements](https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements). Sufficient [G219](https://www.w3.org/WAI/WCAG22/Techniques/general/G219).
+<div class="examples" markdown="1">
 
-## Contrast
+<div class="example example--bad" markdown="1">
 
-**Worse:** A kanban card can only change columns by dragging.
+## Bad
 
-**Better:** Each card also has “Move to…” with a list of columns.
+A kanban card can only change columns by dragging.
+
+Hold, move, release is the only pointer path. Tremor or a simple pointer cannot finish the move.
+
+</div>
+
+<div class="example example--good" markdown="1">
+
+## Good
+
+Each card also has “Move to…” with a list of columns.
+
+A click or tap completes the same action. Drag may remain as an extra.
+
+</div>
+
+</div>
+
+## Not a pass
+
+Arrow keys without a click/tap path still fail this rule — keyboard is [2.1.1](/learn/keyboard-operable/). A drag that snaps to a column after a long-press is still a drag. “Tap to pick, then drag to drop” is not a non-drag alternative.
+
+## Official
+
+**2.5.7 Dragging Movements** (AA). WCAG 2.2 only — in `wcag-22-aa`, not `section-508-web` or `ada-title-ii`.
+
+Sufficient [G219](https://www.w3.org/WAI/WCAG22/Techniques/general/G219). Understanding: [Dragging Movements](https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements).
 
 <div class="todo-box" markdown="1">
 

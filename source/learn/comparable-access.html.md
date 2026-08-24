@@ -10,11 +10,25 @@ It does not mean everyone can hold every job. That is [worth is not identical ca
 
 A “special” alternate is not automatically respect. WCAG conforming alternate versions and 508 alternatives are **tightly constrained**. Prefer one interface that works.
 
-## Contrast
+<div class="examples" markdown="1">
 
-**Worse:** The visual form works. A separate, stale “accessible version” is linked in the footer and missing half the fields.
+<div class="example example--bad" markdown="1">
 
-**Better:** One form. A keyboard user and a screen-reader user can submit the same fields.
+## Bad
+
+The visual form works. A separate, stale “accessible version” is linked in the footer and missing half the fields.
+
+</div>
+
+<div class="example example--good" markdown="1">
+
+## Good
+
+One form. A keyboard user and a screen-reader user can submit the same fields.
+
+</div>
+
+</div>
 
 ## Official texts
 

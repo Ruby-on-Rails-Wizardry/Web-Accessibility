@@ -10,11 +10,25 @@ A concrete pattern later on this tree (a `for`/`id` pair, a meaningful `alt`) is
 
 This is not a claim that every person can perform every job. That distinction is the next node: [Worth is not identical capacity](/learn/not-identical-capacity/).
 
-## Contrast
+<div class="examples" markdown="1">
 
-**Worse:** “We’ll add accessibility later.” The person who cannot complete the task is treated as optional.
+<div class="example example--bad" markdown="1">
 
-**Better:** This person is owed the same task we offered everyone else, unless the *ability is the task*.
+## Bad
+
+“We’ll add accessibility later.” The person who cannot complete the task is treated as optional.
+
+</div>
+
+<div class="example example--good" markdown="1">
+
+## Good
+
+This person is owed the same task we offered everyone else, unless the *ability is the task*.
+
+</div>
+
+</div>
 
 Good and bad here are **situations**, not snippets.
 

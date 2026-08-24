@@ -1,30 +1,55 @@
 ---
 title: Non-text contrast
-description: The border or icon that tells you “this is a field” or “this is the selected tab” needs 3:1 against adjacent colors.
+description: >-
+  The border or icon that tells you “this is a field” or “this is the
+  selected tab” needs 3:1 against adjacent colors.
 node: contrast-ui
+rule: >-
+  Give controls, states, and needed graphics a 3:1 contrast edge against
+  adjacent colors.
 ---
 
-WCAG **2.1** (in ADA Title II and `wcag-22-aa`; not in Section 508’s 2.0 bar).
+[Text contrast](/learn/contrast-text/) is 4.5:1 for words. This node is **3:1** for the border that says “this is a field,” the icon that is the only name of a button, and restyled focus, selected, or checked states.
 
-[Text contrast](/learn/contrast-text/) is 4.5:1 for words. This node is **3:1** for:
+A washed-out input edge shuts out people with low vision who cannot find the box. Inactive components and essential photographic presentation are excepted.
 
-- Visual information needed to identify a control (an input’s border)
-- States you must see (focus, selected, checked) when you restyle them
-- Parts of a graphic required to understand it
+<div class="examples" markdown="1">
 
-Inactive components and essential photographic presentation are excepted.
+<div class="example example--bad" markdown="1">
 
-Hooks: **1.4.11 Non-text Contrast**. Official: [Understanding Non-text Contrast](https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast). Sufficient examples include [G195](https://www.w3.org/WAI/WCAG22/Techniques/general/G195) (related focus) and [G207](https://www.w3.org/WAI/WCAG22/Techniques/general/G207).
-
-## Contrast
+## Bad
 
 ```css
-/* worse: 1px #eee border on #fff — the field is almost invisible */
 input { border: 1px solid #eee; }
+```
 
-/* better: a 3:1 edge */
+A 1px `#eee` border on white makes the field almost invisible.
+
+</div>
+
+<div class="example example--good" markdown="1">
+
+## Good
+
+```css
 input { border: 1px solid #767676; }
 ```
+
+The edge meets 3:1 against the adjacent background.
+
+</div>
+
+</div>
+
+## Not a pass
+
+Passing text contrast on the label does not save a washed-out field border. A 1px `#eee` focus ring on white still fails even if `outline` exists. A custom checkbox whose checked mark is only a pale tint fails this rule; disabled controls are the exception, not unreadably faint active ones.
+
+## Official
+
+**1.4.11 Non-text Contrast** (AA). In `ada-title-ii` (2.1 AA) and `wcag-22-aa` (2.2 AA). Not in `section-508-web` (WCAG 2.0 AA). 2.1-only.
+
+Understanding: [Non-text Contrast](https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast). Sufficient examples include [G195](https://www.w3.org/WAI/WCAG22/Techniques/general/G195) (related focus) and [G207](https://www.w3.org/WAI/WCAG22/Techniques/general/G207).
 
 <div class="todo-box" markdown="1">
 

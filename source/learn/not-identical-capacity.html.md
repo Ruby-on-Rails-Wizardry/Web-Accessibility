@@ -17,11 +17,25 @@ That does not make anyone worth less. It means they may not be **otherwise quali
 | We are **offering** information or a service | [Comparable access](/learn/comparable-access/). Do not add barriers that are not the task. Most web and ICT work. |
 | The **ability is the task** | You may require that ability. |
 
-## Contrast
+<div class="examples" markdown="1">
 
-**Worse:** “Color-blind people cannot use forms, so skip labels.” Using color as the only cue on a form is not an essential occupational limit.
+<div class="example example--bad" markdown="1">
 
-**Better:** Fitness can be essential to firefighting. *Watching* a film on a site (captions, descriptions) is not the same question as *being* the picture editor.
+## Bad
+
+“Color-blind people cannot use forms, so skip labels.” Using color as the only cue on a form is not an essential occupational limit.
+
+</div>
+
+<div class="example example--good" markdown="1">
+
+## Good
+
+Fitness can be essential to firefighting. *Watching* a film on a site (captions, descriptions) is not the same question as *being* the picture editor.
+
+</div>
+
+</div>
 
 ## Official texts
 

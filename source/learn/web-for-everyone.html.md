@@ -8,11 +8,25 @@ Tim Berners-Lee: “The power of the Web is in its universality. Access by every
 
 When a site only works with a mouse, a certain screen, or a certain pair of ears, **we** put a barrier on a medium that did not have to have one. That is the opposite of [comparable access](/learn/comparable-access/).
 
-## Contrast
+<div class="examples" markdown="1">
 
-**Worse:** “If they cannot use a mouse, this site is not for them.”
+<div class="example example--bad" markdown="1">
 
-**Better:** Functionality is available from the keyboard. The site does not assume one body and one device.
+## Bad
+
+“If they cannot use a mouse, this site is not for them.”
+
+</div>
+
+<div class="example example--good" markdown="1">
+
+## Good
+
+Functionality is available from the keyboard. The site does not assume one body and one device.
+
+</div>
+
+</div>
 
 ## Official texts
 

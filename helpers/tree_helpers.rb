@@ -32,4 +32,8 @@ module TreeHelpers
   def tree_layers
     tree_nodes.map { |node| node.layer.to_i }.uniq.sort
   end
+
+  def tree_nodes_of_kind(kind)
+    tree_nodes.select { |node| node.kind.to_s == kind.to_s }
+  end
 end

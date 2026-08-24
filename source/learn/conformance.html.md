@@ -10,11 +10,25 @@ GSA’s 508 reading: fail one of the applicable success criteria and the **page*
 
 Official explanation: [Understanding WCAG 2 conformance](/docs/wcag/conformance/).
 
-## Contrast
+<div class="examples" markdown="1">
 
-**Worse:** “The new modal is accessible, so we are done.”
+<div class="example example--bad" markdown="1">
 
-**Better:** The modal, the page it sits on, and the process that uses it are all in scope.
+## Bad
+
+“The new modal is accessible, so we are done.”
+
+</div>
+
+<div class="example example--good" markdown="1">
+
+## Good
+
+The modal, the page it sits on, and the process that uses it are all in scope.
+
+</div>
+
+</div>
 
 <div class="todo-box" markdown="1">
 

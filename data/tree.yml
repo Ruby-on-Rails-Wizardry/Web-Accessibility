@@ -1,6 +1,7 @@
 # Knowledge tree. Pages live under source/learn/<id>.html.md.
 # prereqs / children are node ids. spine is the first-principles trace.
-# kind: foundation | orientation | pattern
+# kind: foundation | orientation | pattern | rule
+# pattern = a family of rules. rule = one cop (bad and good on the same page).
 
 nodes:
 - id: equal-worth
@@ -165,7 +166,7 @@ nodes:
 - id: accessible-name
   title: Accessible name
   path: /learn/accessible-name/
-  kind: pattern
+  kind: rule
   layer: 4
   prereqs:
   - pour
@@ -182,7 +183,7 @@ nodes:
 - id: visible-label
   title: Visible label is the programmatic name
   path: /learn/visible-label/
-  kind: pattern
+  kind: rule
   layer: 4
   prereqs:
   - accessible-name
@@ -202,7 +203,7 @@ nodes:
 - id: placeholder-not-label
   title: Placeholder is not a label
   path: /learn/placeholder-not-label/
-  kind: pattern
+  kind: rule
   layer: 4
   prereqs:
   - visible-label
@@ -222,6 +223,9 @@ nodes:
   prereqs:
   - pour
   children:
+  - informative-image-alt
+  - decorative-image-silent
+  - functional-image-names-action
   - images-of-text
   spine:
   - equal-worth
@@ -232,7 +236,7 @@ nodes:
 - id: color-not-only-cue
   title: Color is not the only cue
   path: /learn/color-not-only-cue/
-  kind: pattern
+  kind: rule
   layer: 4
   prereqs:
   - pour
@@ -254,6 +258,7 @@ nodes:
   prereqs:
   - pour
   children:
+  - heading-elements
   - data-tables
   - meaningful-sequence
   - link-purpose
@@ -266,7 +271,7 @@ nodes:
 - id: native-control
   title: Native control before a custom widget
   path: /learn/native-control/
-  kind: pattern
+  kind: rule
   layer: 4
   prereqs:
   - pour
@@ -289,6 +294,7 @@ nodes:
   prereqs:
   - pour
   children:
+  - keyboard-operable
   - visible-focus
   - focus-order
   - character-key-shortcuts
@@ -301,7 +307,7 @@ nodes:
 - id: visible-focus
   title: Focus must be visible
   path: /learn/visible-focus/
-  kind: pattern
+  kind: rule
   layer: 4
   prereqs:
   - keyboard-access
@@ -317,7 +323,7 @@ nodes:
 - id: page-title
   title: The document has a unique title
   path: /learn/page-title/
-  kind: pattern
+  kind: rule
   layer: 4
   prereqs:
   - pour
@@ -334,7 +340,7 @@ nodes:
 - id: language-of-page
   title: The page language is declared
   path: /learn/language-of-page/
-  kind: pattern
+  kind: rule
   layer: 4
   prereqs:
   - pour
@@ -349,7 +355,7 @@ nodes:
 - id: language-of-parts
   title: Language of parts
   path: /learn/language-of-parts/
-  kind: pattern
+  kind: rule
   layer: 4
   prereqs:
   - language-of-page
@@ -364,7 +370,7 @@ nodes:
 - id: skip-link
   title: Skip past repeated blocks
   path: /learn/skip-link/
-  kind: pattern
+  kind: rule
   layer: 4
   prereqs:
   - pour
@@ -380,7 +386,7 @@ nodes:
 - id: lists
   title: Lists are lists
   path: /learn/lists/
-  kind: pattern
+  kind: rule
   layer: 4
   prereqs:
   - pour
@@ -394,7 +400,7 @@ nodes:
 - id: data-tables
   title: Data tables have headers
   path: /learn/data-tables/
-  kind: pattern
+  kind: rule
   layer: 4
   prereqs:
   - headings
@@ -409,7 +415,7 @@ nodes:
 - id: meaningful-sequence
   title: Meaningful sequence
   path: /learn/meaningful-sequence/
-  kind: pattern
+  kind: rule
   layer: 4
   prereqs:
   - headings
@@ -424,7 +430,7 @@ nodes:
 - id: link-purpose
   title: Link purpose in context
   path: /learn/link-purpose/
-  kind: pattern
+  kind: rule
   layer: 4
   prereqs:
   - headings
@@ -439,7 +445,7 @@ nodes:
 - id: multiple-ways
   title: More than one way to find a page
   path: /learn/multiple-ways/
-  kind: pattern
+  kind: rule
   layer: 4
   prereqs:
   - skip-link
@@ -459,6 +465,8 @@ nodes:
   prereqs:
   - skip-link
   children:
+  - consistent-nav-order
+  - consistent-identification
   - consistent-help
   spine:
   - equal-worth
@@ -470,7 +478,7 @@ nodes:
 - id: consistent-help
   title: Help stays in the same place
   path: /learn/consistent-help/
-  kind: pattern
+  kind: rule
   layer: 4
   prereqs:
   - consistent-navigation
@@ -489,7 +497,7 @@ nodes:
 - id: captions
   title: Captions for prerecorded video
   path: /learn/captions/
-  kind: pattern
+  kind: rule
   layer: 4
   prereqs:
   - pour
@@ -503,7 +511,7 @@ nodes:
 - id: audio-control
   title: Audio does not play unchecked
   path: /learn/audio-control/
-  kind: pattern
+  kind: rule
   layer: 4
   prereqs:
   - pour
@@ -517,7 +525,7 @@ nodes:
 - id: contrast-text
   title: Text contrast
   path: /learn/contrast-text/
-  kind: pattern
+  kind: rule
   layer: 4
   prereqs:
   - color-not-only-cue
@@ -533,7 +541,7 @@ nodes:
 - id: contrast-ui
   title: Non-text contrast
   path: /learn/contrast-ui/
-  kind: pattern
+  kind: rule
   layer: 4
   prereqs:
   - contrast-text
@@ -552,7 +560,7 @@ nodes:
 - id: resize-text
   title: Text can resize
   path: /learn/resize-text/
-  kind: pattern
+  kind: rule
   layer: 4
   prereqs:
   - pour
@@ -567,7 +575,7 @@ nodes:
 - id: reflow
   title: Reflow
   path: /learn/reflow/
-  kind: pattern
+  kind: rule
   layer: 4
   prereqs:
   - resize-text
@@ -583,7 +591,7 @@ nodes:
 - id: text-spacing
   title: Text spacing
   path: /learn/text-spacing/
-  kind: pattern
+  kind: rule
   layer: 4
   prereqs:
   - reflow
@@ -599,7 +607,7 @@ nodes:
 - id: images-of-text
   title: Prefer real text to an image of text
   path: /learn/images-of-text/
-  kind: pattern
+  kind: rule
   layer: 4
   prereqs:
   - decorative-vs-informative-image
@@ -614,7 +622,7 @@ nodes:
 - id: sensory-characteristics
   title: Not only shape, size, or sound
   path: /learn/sensory-characteristics/
-  kind: pattern
+  kind: rule
   layer: 4
   prereqs:
   - color-not-only-cue
@@ -634,6 +642,7 @@ nodes:
   prereqs:
   - visible-label
   children:
+  - error-identification
   - error-prevention
   - redundant-entry
   - accessible-authentication
@@ -648,7 +657,7 @@ nodes:
 - id: input-purpose
   title: Identify input purpose
   path: /learn/input-purpose/
-  kind: pattern
+  kind: rule
   layer: 4
   prereqs:
   - visible-label
@@ -664,7 +673,7 @@ nodes:
 - id: label-in-name
   title: Visible label is in the name
   path: /learn/label-in-name/
-  kind: pattern
+  kind: rule
   layer: 4
   prereqs:
   - visible-label
@@ -680,7 +689,7 @@ nodes:
 - id: error-prevention
   title: Review before an irreversible submit
   path: /learn/error-prevention/
-  kind: pattern
+  kind: rule
   layer: 4
   prereqs:
   - form-errors
@@ -697,7 +706,7 @@ nodes:
 - id: redundant-entry
   title: Do not ask for the same data twice
   path: /learn/redundant-entry/
-  kind: pattern
+  kind: rule
   layer: 4
   prereqs:
   - form-errors
@@ -714,7 +723,7 @@ nodes:
 - id: accessible-authentication
   title: Accessible authentication
   path: /learn/accessible-authentication/
-  kind: pattern
+  kind: rule
   layer: 4
   prereqs:
   - form-errors
@@ -731,7 +740,7 @@ nodes:
 - id: focus-order
   title: Focus order matches meaning
   path: /learn/focus-order/
-  kind: pattern
+  kind: rule
   layer: 4
   prereqs:
   - keyboard-access
@@ -746,7 +755,7 @@ nodes:
 - id: focus-not-obscured
   title: Focus is not hidden behind chrome
   path: /learn/focus-not-obscured/
-  kind: pattern
+  kind: rule
   layer: 4
   prereqs:
   - visible-focus
@@ -762,7 +771,7 @@ nodes:
 - id: character-key-shortcuts
   title: Single-key shortcuts can be turned off
   path: /learn/character-key-shortcuts/
-  kind: pattern
+  kind: rule
   layer: 4
   prereqs:
   - keyboard-access
@@ -777,7 +786,7 @@ nodes:
 - id: target-size
   title: Target size
   path: /learn/target-size/
-  kind: pattern
+  kind: rule
   layer: 4
   prereqs:
   - pour
@@ -791,7 +800,7 @@ nodes:
 - id: pointer-gestures
   title: No path-only gesture
   path: /learn/pointer-gestures/
-  kind: pattern
+  kind: rule
   layer: 4
   prereqs:
   - pour
@@ -808,7 +817,7 @@ nodes:
 - id: dragging
   title: Dragging has a simple alternative
   path: /learn/dragging/
-  kind: pattern
+  kind: rule
   layer: 4
   prereqs:
   - pointer-gestures
@@ -823,7 +832,7 @@ nodes:
 - id: pointer-cancellation
   title: Pointer cancellation
   path: /learn/pointer-cancellation/
-  kind: pattern
+  kind: rule
   layer: 4
   prereqs:
   - pointer-gestures
@@ -838,7 +847,7 @@ nodes:
 - id: motion-actuation
   title: Motion is not the only input
   path: /learn/motion-actuation/
-  kind: pattern
+  kind: rule
   layer: 4
   prereqs:
   - pointer-gestures
@@ -853,7 +862,7 @@ nodes:
 - id: pause-stop-hide
   title: Pause, stop, or hide movement
   path: /learn/pause-stop-hide/
-  kind: pattern
+  kind: rule
   layer: 4
   prereqs:
   - pour
@@ -867,7 +876,7 @@ nodes:
 - id: timing-adjustable
   title: Time limits can be extended
   path: /learn/timing-adjustable/
-  kind: pattern
+  kind: rule
   layer: 4
   prereqs:
   - pour
@@ -881,7 +890,7 @@ nodes:
 - id: three-flashes
   title: Nothing flashes more than three times
   path: /learn/three-flashes/
-  kind: pattern
+  kind: rule
   layer: 4
   prereqs:
   - pour
@@ -895,7 +904,7 @@ nodes:
 - id: status-messages
   title: Status messages are announced
   path: /learn/status-messages/
-  kind: pattern
+  kind: rule
   layer: 4
   prereqs:
   - pour
@@ -909,7 +918,7 @@ nodes:
 - id: name-role-value
   title: Name, role, and value
   path: /learn/name-role-value/
-  kind: pattern
+  kind: rule
   layer: 4
   prereqs:
   - native-control
@@ -928,7 +937,9 @@ nodes:
   layer: 4
   prereqs:
   - pour
-  children: []
+  children:
+  - no-change-on-focus
+  - no-change-on-input
   spine:
   - equal-worth
   - comparable-access
@@ -938,7 +949,7 @@ nodes:
 - id: orientation
   title: Do not lock orientation
   path: /learn/orientation/
-  kind: pattern
+  kind: rule
   layer: 4
   prereqs:
   - pour
@@ -952,7 +963,7 @@ nodes:
 - id: content-on-hover
   title: Content on hover or focus
   path: /learn/content-on-hover/
-  kind: pattern
+  kind: rule
   layer: 4
   prereqs:
   - pour
@@ -963,3 +974,210 @@ nodes:
   - pour
   - content-on-hover
   library: *id003
+- id: informative-image-alt
+  title: Informative image needs a text alternative
+  path: /learn/informative-image-alt/
+  kind: rule
+  layer: 5
+  prereqs:
+  - decorative-vs-informative-image
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - decorative-vs-informative-image
+  - informative-image-alt
+  library: *id001
+- id: decorative-image-silent
+  title: Decorative image is silent
+  path: /learn/decorative-image-silent/
+  kind: rule
+  layer: 5
+  prereqs:
+  - decorative-vs-informative-image
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - decorative-vs-informative-image
+  - decorative-image-silent
+  library: *id001
+- id: functional-image-names-action
+  title: Functional image names the action
+  path: /learn/functional-image-names-action/
+  kind: rule
+  layer: 5
+  prereqs:
+  - decorative-vs-informative-image
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - decorative-vs-informative-image
+  - functional-image-names-action
+  library: *id001
+- id: heading-elements
+  title: Headings are heading elements
+  path: /learn/heading-elements/
+  kind: rule
+  layer: 5
+  prereqs:
+  - headings
+  children:
+  - heading-order
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - headings
+  - heading-elements
+  library: *id001
+- id: heading-order
+  title: Do not skip heading levels
+  path: /learn/heading-order/
+  kind: rule
+  layer: 5
+  prereqs:
+  - heading-elements
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - headings
+  - heading-elements
+  - heading-order
+  library: *id001
+- id: keyboard-operable
+  title: Keyboard can operate it
+  path: /learn/keyboard-operable/
+  kind: rule
+  layer: 5
+  prereqs:
+  - keyboard-access
+  children:
+  - no-keyboard-trap
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - keyboard-access
+  - keyboard-operable
+  library: *id001
+- id: no-keyboard-trap
+  title: No keyboard trap
+  path: /learn/no-keyboard-trap/
+  kind: rule
+  layer: 5
+  prereqs:
+  - keyboard-operable
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - keyboard-access
+  - keyboard-operable
+  - no-keyboard-trap
+  library: *id001
+- id: error-identification
+  title: The error is identified in text
+  path: /learn/error-identification/
+  kind: rule
+  layer: 5
+  prereqs:
+  - form-errors
+  children:
+  - error-suggestion
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - accessible-name
+  - visible-label
+  - form-errors
+  - error-identification
+  library: *id001
+- id: error-suggestion
+  title: Suggest a fix when you know one
+  path: /learn/error-suggestion/
+  kind: rule
+  layer: 5
+  prereqs:
+  - error-identification
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - accessible-name
+  - visible-label
+  - form-errors
+  - error-identification
+  - error-suggestion
+  library: *id001
+- id: consistent-nav-order
+  title: Repeated navigation stays in order
+  path: /learn/consistent-nav-order/
+  kind: rule
+  layer: 5
+  prereqs:
+  - consistent-navigation
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - skip-link
+  - consistent-navigation
+  - consistent-nav-order
+  library: *id001
+- id: consistent-identification
+  title: The same action keeps the same name
+  path: /learn/consistent-identification/
+  kind: rule
+  layer: 5
+  prereqs:
+  - consistent-navigation
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - skip-link
+  - consistent-navigation
+  - consistent-identification
+  library: *id001
+- id: no-change-on-focus
+  title: Focus does not change context
+  path: /learn/no-change-on-focus/
+  kind: rule
+  layer: 5
+  prereqs:
+  - no-unexpected-change
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - no-unexpected-change
+  - no-change-on-focus
+  library: *id001
+- id: no-change-on-input
+  title: Changing a value does not navigate
+  path: /learn/no-change-on-input/
+  kind: rule
+  layer: 5
+  prereqs:
+  - no-unexpected-change
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - no-unexpected-change
+  - no-change-on-input
+  library: *id001

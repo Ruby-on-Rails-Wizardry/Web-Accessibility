@@ -1,30 +1,25 @@
 ---
 title: Keyboard can reach it
-description: Everything you can do with a pointer, you can do from the keyboard. No trap.
+description: Everything you can do with a pointer, you can do from the keyboard — and you can leave. Two rules live under this family.
 node: keyboard-access
 ---
 
-Some people do not use a mouse. Operable means Tab (and the usual keys) can reach every action, activate it, and **leave**.
+This is a **family**, not one cop. Some people do not use a mouse. Operable means Tab (and the usual keys) can reach every action, activate it, and **leave**.
 
-A custom widget that eats Tab and never gives it back is a trap (**2.1.2**). Visible focus is the next node: [Focus must be visible](/learn/visible-focus/).
+- [Keyboard can operate it](/learn/keyboard-operable/) — no mouse-only control (**2.1.1**).
+- [No keyboard trap](/learn/no-keyboard-trap/) — focus can move on (**2.1.2**).
 
-Hooks: **2.1.1 Keyboard**, **2.1.2 No Keyboard Trap**.
-
-## Contrast
-
-**Worse:** A date picker only opens on hover and cannot be closed with the keyboard.
-
-**Better:** The same picker opens from a button, arrows change the day, Escape or Tab moves on.
+Then: [Focus must be visible](/learn/visible-focus/), [Focus order matches meaning](/learn/focus-order/), [Single-key shortcuts can be turned off](/learn/character-key-shortcuts/).
 
 <div class="todo-box" markdown="1">
 
 ## Still to write (Learning for Mastery)
 
-Draft mastery: The learner can point at a mouse-only control and say what keyboard path is missing, or remove a trap.
+Draft mastery: The learner can point at a mouse-only control or a trap — those checks live on the child rules.
 
 - [ ] Confirm the one-line mastery criterion
 - [ ] Locator item
-- [ ] Constructed item (may need a small live fixture later)
+- [ ] Constructed items on the children
 - [ ] Isomorphic retest item
 
 </div>

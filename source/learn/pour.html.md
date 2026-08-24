@@ -15,11 +15,25 @@ WCAG groups its work under four principles. Use them as a **map** when you ask w
 
 A later node (a label, a heading, a focus ring) should name which letter it serves, then walk back to [comparable access](/learn/comparable-access/) and [equal worth](/learn/equal-worth/).
 
-## Contrast
+<div class="examples" markdown="1">
 
-**Worse:** “We passed POUR” as a claim. POUR is not a checkbox.
+<div class="example example--bad" markdown="1">
 
-**Better:** “This control has no name — Robust and Perceivable fail for a screen-reader user.”
+## Bad
+
+“We passed POUR” as a claim. POUR is not a checkbox.
+
+</div>
+
+<div class="example example--good" markdown="1">
+
+## Good
+
+“This control has no name — Robust and Perceivable fail for a screen-reader user.”
+
+</div>
+
+</div>
 
 ## Official texts
 

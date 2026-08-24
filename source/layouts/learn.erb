@@ -5,6 +5,12 @@
       <% if current_page.data.description %>
         <p class="lede"><%= current_page.data.description %></p>
       <% end %>
+      <% if current_page.data.rule %>
+        <p class="rule-callout">
+          <strong>The rule.</strong>
+          <%= current_page.data.rule %>
+        </p>
+      <% end %>
     </header>
     <%= partial "tree_nav" %>
     <nav class="toc" aria-label="On this page">
