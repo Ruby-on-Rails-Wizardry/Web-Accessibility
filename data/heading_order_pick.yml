@@ -1,0 +1,58 @@
+# Pool for /learn/heading-order/pick/. One bad and one good are drawn
+# per visit, then shuffled as Example A / B. Isolated live pages stay
+# the Permits pair.
+
+bad:
+  - |
+    <h1>Permits</h1>
+    <h4>Residential</h4>
+    <h4>Commercial</h4>
+  - |
+    <h1>Lunch menu</h1>
+    <h4>Starters</h4>
+    <h4>Mains</h4>
+  - |
+    <h1>Clinic</h1>
+    <h2>Appointments</h2>
+    <h4>New patients</h4>
+    <h4>Returning patients</h4>
+  - |
+    <h2>Hours</h2>
+    <h4>Weekdays</h4>
+    <h4>Weekends</h4>
+  - |
+    <h1>City park</h1>
+    <h3>Trails</h3>
+    <h3>Picnic areas</h3>
+  - |
+    <h1>Library</h1>
+    <h2>Borrowing</h2>
+    <h5>Renewals</h5>
+
+good:
+  - |
+    <h1>Permits</h1>
+    <h2>Residential</h2>
+    <h2>Commercial</h2>
+  - |
+    <h1>Lunch menu</h1>
+    <h2>Starters</h2>
+    <h2>Mains</h2>
+  - |
+    <h1>Clinic</h1>
+    <h2>Appointments</h2>
+    <h3>New patients</h3>
+    <h3>Returning patients</h3>
+  - |
+    <h2>Hours</h2>
+    <h3>Weekdays</h3>
+    <h3>Weekends</h3>
+  - |
+    <h1>City park</h1>
+    <h2>Trails</h2>
+    <h2>Picnic areas</h2>
+  - |
+    <h1>Library</h1>
+    <h2>Borrowing</h2>
+    <h3>Renewals</h3>
+    <h2>Hours</h2>

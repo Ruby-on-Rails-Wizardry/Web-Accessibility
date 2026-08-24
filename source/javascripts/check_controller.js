@@ -7,14 +7,48 @@ const CHECKERS = {
 }
 
 export default class extends Controller {
-  static targets = ["section", "choice", "results", "button", "source"]
+  static targets = ["section", "choice", "results", "button", "source", "pool", "cardTemplate"]
   static values = { catalog: Array }
 
   connect() {
     if (this.hasButtonTarget) this.buttonTarget.hidden = false
     if (this.hasSectionTarget) this.original = this.normalize(this.sectionTarget.innerHTML)
     if (this.hasSourceTarget && this.original) this.sourceTarget.value = this.original
+    this.drawPair()
     this.shuffleChoices()
+  }
+
+  drawPair() {
+    if (!this.hasPoolTarget || !this.hasCardTemplateTarget) return
+
+    let pool
+    try {
+      pool = JSON.parse(this.poolTarget.textContent)
+    } catch {
+      return
+    }
+
+    const bad = this.pickOne(pool.bad)
+    const good = this.pickOne(pool.good)
+    const grid = this.element.querySelector(".practice-choices__grid")
+    if (!bad || !good || !grid) return
+
+    grid.replaceChildren(this.buildCard(bad), this.buildCard(good))
+  }
+
+  buildCard(html) {
+    const card = this.cardTemplateTarget.content.querySelector(".practice-choice").cloneNode(true)
+    const code = card.querySelector(".practice-choice__source code")
+    const preview = card.querySelector(".practice-preview")
+    if (code) code.textContent = html
+    if (preview) preview.innerHTML = html
+    return card
+  }
+
+  pickOne(list) {
+    const items = Array.isArray(list) ? list.filter((item) => item && String(item).trim()) : []
+    if (!items.length) return null
+    return items[Math.floor(Math.random() * items.length)]
   }
 
   run(event) {

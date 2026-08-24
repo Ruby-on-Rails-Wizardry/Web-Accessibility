@@ -29,7 +29,7 @@ Apply when the page type has that job. A hub is not a specimen; a specimen is no
 
 ### Practice (`practice` layout)
 
-18. **Pick:** two unlabeled-as-good/bad live examples; each card shows the HTML and how it renders. Choosing a card scores it immediately (no Check button). Check still scores the chosen rendered section.
+18. **Pick:** two unlabeled-as-good/bad live examples drawn from a pool (`data/heading_order_pick.yml`); each card shows the HTML and how it renders. Choosing a card scores it immediately (no Check button). Check still scores the chosen rendered section.
 19. **Fix:** `<main>` is the specimen. The editor is always on the page, labeled **HTML** / **Rendered** like pick. **Apply** writes into `<main>` and scores that node. Do not copy the parser-repaired HTML back into the textarea. If tags do not match, fail **Valid HTML** and skip the other rules. No Close editor / Check in the banner. Do not tell the learner that the checker is scoped.
 20. Check results live outside `<main>`. Chrome uses no heading elements. Failures list rules with links. This prototype catalogs **heading-order** only. In-house checkers take a DOM node and do not walk outside it.
 21. Sidebar: Where you are (tree → rule → this page), both examples, both practice leaves, Testing tools. Do not orphan.

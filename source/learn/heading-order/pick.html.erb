@@ -9,12 +9,19 @@ check_rules:
   - heading-order
 practice_note: Each card shows the HTML and how it renders. Pick the one that nests headings in order.
 ---
-<%
-  examples = [
-    "<h1>Permits</h1>\n<h4>Residential</h4>\n<h4>Commercial</h4>",
-    "<h1>Permits</h1>\n<h2>Residential</h2>\n<h2>Commercial</h2>"
-  ]
-%>
+<% pool = heading_order_pick_pool %>
+<% examples = [pool["bad"].first, pool["good"].first].compact %>
+<script type="application/json" data-check-target="pool"><%= heading_order_pick_pool.to_json.html_safe %></script>
+<template data-check-target="cardTemplate">
+  <label class="practice-choice">
+    <input type="radio" name="practice-pick" data-check-target="choice" data-action="change->check#run">
+    <span class="practice-choice__name">Example</span>
+    <span class="practice-caption">HTML</span>
+    <pre class="practice-choice__source"><code></code></pre>
+    <span class="practice-caption">Rendered</span>
+    <div class="practice-preview" data-check-target="section"></div>
+  </label>
+</template>
 <fieldset class="practice-choices">
   <legend class="practice-choices__legend">Examples</legend>
   <div class="practice-choices__grid">
