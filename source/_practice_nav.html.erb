@@ -1,0 +1,41 @@
+<% parent = specimen_parent_node %>
+<% examples = tree_example_ids(parent) %>
+<% practices = tree_practice_ids(parent) %>
+<nav class="tree-nav" aria-label="Where you are">
+  <p class="tree-nav__heading">Where you are</p>
+  <ol class="docs-nav__crumbs">
+    <li><%= link_to "Knowledge tree", "/learn/", "data-turbo": "false" %></li>
+    <% if parent %>
+      <li style="padding-left: 0.65rem"><%= link_to parent.title, parent.path, "data-turbo": "false" %></li>
+    <% end %>
+    <li class="is-current" style="padding-left: <%= parent ? 1.3 : 0.65 %>rem"><%= current_page.data.title %></li>
+  </ol>
+  <% if examples.any? %>
+    <p class="tree-nav__heading">This pair</p>
+    <ul class="docs-nav__crumbs">
+      <% examples.each do |id| %>
+        <% node = tree_lookup(id) %>
+        <% next unless node %>
+        <li><%= link_to node.title, node.path, "data-turbo": "false" %></li>
+      <% end %>
+    </ul>
+  <% end %>
+  <% if practices.any? %>
+    <p class="tree-nav__heading">Practice</p>
+    <ul class="docs-nav__crumbs">
+      <% practices.each do |id| %>
+        <% node = tree_lookup(id) %>
+        <% next unless node %>
+        <% if node.id.to_s == current_page.data.node.to_s %>
+          <li class="is-current"><%= node.title %></li>
+        <% else %>
+          <li><%= link_to node.title, node.path, "data-turbo": "false" %></li>
+        <% end %>
+      <% end %>
+    </ul>
+  <% end %>
+  <p class="tree-nav__heading">Testing tools</p>
+  <ul class="docs-nav__crumbs">
+    <li><%= link_to "axe, WAVE, ANDI, screen readers", "/docs/evaluation/testing-tools/", "data-turbo": "false" %></li>
+  </ul>
+</nav>

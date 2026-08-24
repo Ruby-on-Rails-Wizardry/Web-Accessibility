@@ -67,7 +67,8 @@ description: Open any node. Walk down to a rule page for one requirement with ba
   <p>
     One rule each. Bad and good on the same page. Some rules have
     narrower children; the cop is still the rule. Isolated examples
-    (open alone) sit under the rule they illustrate.
+    (open alone) sit under the rule they illustrate. A few rules also
+    have practice pages with an in-house Check.
   </p>
   <ul>
     <% tree_nodes_of_kind("rule").each do |node| %>
@@ -78,9 +79,13 @@ description: Open any node. Walk down to a rule page for one requirement with ba
           <span> — after <%= prereqs.map { |id| tree_lookup(id)&.title || id }.join(", ") %></span>
         <% end %>
         <% example_ids = tree_example_ids(node) %>
-        <% if example_ids.any? %>
+        <% practice_ids = tree_practice_ids(node) %>
+        <% if example_ids.any? || practice_ids.any? %>
           <ul>
             <% example_ids.each do |id| %>
+              <li><%= link_to tree_lookup(id)&.title || id, tree_lookup(id)&.path || id, "data-turbo": "false" %></li>
+            <% end %>
+            <% practice_ids.each do |id| %>
               <li><%= link_to tree_lookup(id)&.title || id, tree_lookup(id)&.path || id, "data-turbo": "false" %></li>
             <% end %>
           </ul>

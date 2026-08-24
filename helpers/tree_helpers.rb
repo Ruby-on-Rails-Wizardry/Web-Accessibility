@@ -37,12 +37,22 @@ module TreeHelpers
     tree_nodes.select { |node| node.kind.to_s == kind.to_s }
   end
 
+  LEAF_KINDS = %w[example practice].freeze
+
+  def tree_leaf_kind?(node)
+    LEAF_KINDS.include?(node&.kind.to_s)
+  end
+
   def tree_example_ids(node)
     Array(node&.children).select { |id| tree_lookup(id)&.kind.to_s == "example" }
   end
 
+  def tree_practice_ids(node)
+    Array(node&.children).select { |id| tree_lookup(id)&.kind.to_s == "practice" }
+  end
+
   def tree_next_ids(node)
-    Array(node&.children).reject { |id| tree_lookup(id)&.kind.to_s == "example" }
+    Array(node&.children).reject { |id| tree_leaf_kind?(tree_lookup(id)) }
   end
 
   def tree_parent_node(node)
@@ -94,5 +104,39 @@ module TreeHelpers
 
     other = specimen_variant == "bad" ? "good" : "bad"
     tree_lookup("#{of}-#{other}")
+  end
+
+  def practice_variant
+    current_page.data.practice.to_s
+  end
+
+  def practice_controllers
+    list = []
+    list << "specimen" if practice_variant == "fix"
+    list << "check"
+    list.join(" ")
+  end
+
+  def practice_other_node
+    of = current_page.data.of.to_s
+    return if of.empty? || practice_variant.empty?
+
+    other = practice_variant == "pick" ? "fix" : "pick"
+    tree_lookup("#{of}-#{other}")
+  end
+
+  def check_catalog
+    ids = Array(current_page.data.check_rules)
+    ids = [current_page.data.of] if ids.empty?
+    ids.filter_map do |id|
+      node = tree_lookup(id)
+      next unless node
+
+      {
+        "id" => node.id.to_s,
+        "title" => node.title.to_s,
+        "path" => url_for(node.path)
+      }
+    end
   end
 end

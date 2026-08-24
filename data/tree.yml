@@ -1,9 +1,11 @@
 # Knowledge tree. Study pages live under source/learn/<id>.html.md.
 # Isolated examples live under source/learn/<rule>/{bad,good}.html.erb.
+# Practice items live under source/learn/<rule>/{pick,fix}.html.erb.
 # prereqs / children are node ids. spine is the first-principles trace.
-# kind: foundation | orientation | pattern | rule | example
+# kind: foundation | orientation | pattern | rule | example | practice
 # pattern = a family of rules. rule = one cop (bad and good on the same page).
 # example = live specimen of that rule, opened alone so tools see only that markup.
+# practice = locator (pick) or constructed (fix) item with an in-house Check.
 
 nodes:
 - id: equal-worth
@@ -1047,6 +1049,8 @@ nodes:
   children:
   - heading-order-bad
   - heading-order-good
+  - heading-order-pick
+  - heading-order-fix
   spine:
   - equal-worth
   - comparable-access
@@ -1088,6 +1092,40 @@ nodes:
   - heading-elements
   - heading-order
   - heading-order-good
+  library: []
+- id: heading-order-pick
+  title: Pick the example that follows the rule
+  path: /learn/heading-order/pick/
+  kind: practice
+  layer: 6
+  prereqs:
+  - heading-order
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - headings
+  - heading-elements
+  - heading-order
+  - heading-order-pick
+  library: []
+- id: heading-order-fix
+  title: Fix the skipped headings
+  path: /learn/heading-order/fix/
+  kind: practice
+  layer: 6
+  prereqs:
+  - heading-order
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - headings
+  - heading-elements
+  - heading-order
+  - heading-order-fix
   library: []
 - id: keyboard-operable
   title: Keyboard can operate it

@@ -1,0 +1,30 @@
+<div class="specimen-banner">
+  <p class="specimen-banner__note">
+    <span class="specimen-banner__kind"><%= practice_variant == "fix" ? "Fix" : "Pick" %></span>
+    <%= current_page.data.practice_note %>
+  </p>
+  <div class="specimen-banner__actions">
+    <% if practice_variant == "fix" %>
+      <button
+        type="button"
+        class="button button--small specimen-banner__edit"
+        data-specimen-target="toggle"
+        data-action="specimen#toggle"
+        aria-expanded="false"
+        hidden
+      >
+        Edit
+      </button>
+    <% end %>
+    <button
+      type="button"
+      class="button button--small specimen-banner__check"
+      data-check-target="button"
+      data-action="<%= practice_variant == "fix" ? "specimen#apply check#run" : "check#run" %>"
+      aria-controls="check-results"
+      hidden
+    >
+      Check
+    </button>
+  </div>
+</div>

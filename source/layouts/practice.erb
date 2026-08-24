@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="<%= page_description %>">
+    <meta name="turbo-visit-control" content="reload">
+    <title><%= page_title %></title>
+    <style>:root { --accent: <%= accent_color %>; }</style>
+    <%= stylesheet_link_tag "site", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "site", type: "module", "data-turbo-track": "reload" %>
+    <link rel="icon" href="<%= image_path('mark.jpg') %>" type="image/jpeg">
+  </head>
+  <body
+    class="practice practice--<%= practice_variant %>"
+    data-controller="<%= practice_controllers %>"
+    data-check-catalog-value="<%= CGI.escapeHTML(check_catalog.to_json) %>"
+    <% if practice_variant == "fix" %>data-specimen-open-value="true"<% end %>
+  >
+    <%= partial "skip_link" %>
+    <%= partial "header" %>
+    <div class="specimen-shell">
+      <div class="specimen-primary">
+        <%= partial "practice_banner" %>
+        <div
+          class="check-results"
+          id="check-results"
+          data-check-target="results"
+          tabindex="-1"
+          aria-live="polite"
+        ></div>
+        <% if practice_variant == "fix" %>
+          <main id="main" class="specimen-main" data-specimen-target="stage" data-check-target="section">
+            <%= yield %>
+          </main>
+        <% else %>
+          <main id="main" class="specimen-main">
+            <%= yield %>
+          </main>
+        <% end %>
+      </div>
+      <aside class="specimen-aside">
+        <%= partial "practice_nav" %>
+      </aside>
+    </div>
+  </body>
+</html>

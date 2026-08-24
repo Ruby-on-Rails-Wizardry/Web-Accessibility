@@ -31,7 +31,7 @@ Intentionally not snapshotted (live official tools): Quickref, full Understandin
 
 Middleman 4 site from the org template. Turbo + Stimulus. Knowledge tree, docs layouts, nav in `data/site.yml`. Save point: `8a7c057`.
 
-### Knowledge tree (75 nodes, all have a page)
+### Knowledge tree (77 nodes, all have a page)
 
 Study nodes live at `source/learn/<id>.html.md`. Isolated examples live at `source/learn/<rule>/{bad,good}.html.erb`.
 
@@ -44,12 +44,15 @@ Study nodes live at `source/learn/<id>.html.md`. Isolated examples live at `sour
 | 4 Families / rules | pattern + rule | 51 |
 | 5 Split rules | rule | 13 |
 | 6 Isolated examples | example | 2 (`heading-order` bad / good) |
+| 6 Practice | practice | 2 (`heading-order` pick / fix) |
 
 `kind: pattern` is a **family** (not one cop). Six families: decorative-vs-informative-image, headings, keyboard-access, form-errors, consistent-navigation, no-unexpected-change.
 
 `kind: rule` is one requirement with **The rule**, Bad, Good, Not a pass, and Official (profile tags). Not one page per W3C technique ID.
 
 `kind: example` is a **live specimen**: same site header as the rest of the site; no extra headings in `<main>`, so a heading list / WAVE / axe still sees only that markup. Edit on the page (Stimulus `specimen`) lets the learner change the HTML and apply it, then check again. First pair is `heading-order`. Other HTML-example rules can grow the same `{bad,good}` leaves later. Example nodes do not get a mastery checklist.
+
+`kind: practice` is a **locator or constructed item** with an in-house **Check** (Stimulus `check`). Prototype: `heading-order` pick (choose the example that follows the rule) and fix (restore nested heading levels). Check scores only the rules listed on that page; heading-order is the first checker. Failures name the rule and link to its page. Practice nodes do not get a mastery checklist — they *are* the items.
 
 **Split out of families (2026-08-24):** informative-image-alt, decorative-image-silent, functional-image-names-action, heading-elements, heading-order, keyboard-operable, no-keyboard-trap, error-identification, error-suggestion, consistent-nav-order, consistent-identification, no-change-on-focus, no-change-on-input.
 
@@ -92,7 +95,7 @@ Suggested order: walk the spine, not the file list — **equal-worth → compara
 | keyboard-access | Point at a mouse-only control or remove a trap. |
 | visible-focus | Restore a visible focus indicator; refuse `outline: none` without a replacement. |
 
-No locator/constructed **format** is coded yet (no YAML of items, no quiz UI). First items stay as Markdown in `notes/learn/`. A shared item shape can wait until two or three nodes have working examples.
+Locator/constructed format: heading-order has working pick and fix pages. Other nodes still draft in `notes/learn/` until they get the same practice leaves.
 
 ---
 

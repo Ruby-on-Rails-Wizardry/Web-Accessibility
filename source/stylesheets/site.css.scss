@@ -609,9 +609,17 @@ summary {
   color: #15803d;
 }
 
-.specimen-banner__edit {
+.specimen-banner__edit,
+.specimen-banner__check {
   flex: 0 0 auto;
   margin: 0;
+}
+
+.specimen-banner__actions {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: flex-start;
+  gap: 0.4rem;
 }
 
 .specimen-editor {
@@ -668,7 +676,133 @@ summary {
   color: var(--muted);
 }
 
-body.specimen main {
+.check-results {
+  margin: 0 0 0.85rem;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg-elev);
+  font-family: var(--font-ui);
+  font-size: 0.95rem;
+}
+
+.check-results:empty {
+  display: none;
+}
+
+.check-results:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.check-results--pass {
+  border-color: #15803d;
+  border-left: 3px solid #15803d;
+}
+
+.check-results--fail {
+  border-color: var(--accent);
+  border-left: 3px solid var(--accent);
+}
+
+.check-results__status {
+  margin: 0;
+}
+
+.check-results ul {
+  margin: 0.4rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.check-results li + li {
+  margin-top: 0.25rem;
+}
+
+.practice-choices {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.practice-choices__legend {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--muted);
+  padding: 0;
+  margin: 0 0 0.65rem;
+}
+
+.practice-choices__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.practice-choice {
+  display: block;
+  min-width: 0;
+  margin: 0;
+  padding: 0.7rem 0.9rem 0.95rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg-elev);
+  cursor: pointer;
+}
+
+.practice-choice:has(input:focus-visible) {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.practice-choice:has(input:checked) {
+  border-color: var(--ink);
+  box-shadow: inset 0 0 0 1px var(--ink);
+}
+
+.practice-choice.is-pass {
+  border-top: 3px solid #15803d;
+}
+
+.practice-choice.is-fail {
+  border-top: 3px solid var(--accent);
+}
+
+.practice-choice input {
+  margin: 0 0.45rem 0 0;
+  vertical-align: middle;
+}
+
+.practice-choice__name {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.practice-choice__preview {
+  margin-top: 0.55rem;
+}
+
+.practice-choice__preview h1,
+.practice-choice__preview h2,
+.practice-choice__preview h3,
+.practice-choice__preview h4,
+.practice-choice__preview h5,
+.practice-choice__preview h6 {
+  margin: 0 0 0.35rem;
+}
+
+.practice-choice__preview :last-child {
+  margin-bottom: 0;
+}
+
+body.specimen main,
+body.practice main {
   width: auto;
   max-width: none;
   margin: 0;
@@ -781,5 +915,9 @@ body.specimen main {
 
   .specimen-aside {
     position: static;
+  }
+
+  .practice-choices__grid {
+    grid-template-columns: 1fr;
   }
 }

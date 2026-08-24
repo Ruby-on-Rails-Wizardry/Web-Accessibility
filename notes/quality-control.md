@@ -27,6 +27,13 @@ Apply when the page type has that job. A hub is not a specimen; a specimen is no
 11. Sidebar: abbreviated **Where you are** (knowledge tree → rule → this example), the other example, **Testing tools**. No heading elements in that chrome (tools must still see only the specimen).
 12. Site header present. The strip above the red line is what this page is and how to check it, plus **Edit** in the top-right of that strip — not a dump of nav links. Banner is not a heading. “Close Edit before you scan” lives in the editor panel, not the closed banner.
 
+### Practice (`practice` layout)
+
+18. **Pick:** two unlabeled-as-good/bad live examples; learner chooses, then **Check** scores the chosen section.
+19. **Fix:** `<main>` is the specimen; editor may open on load; **Check** applies then scores `<main>`.
+20. Check results live outside `<main>`. Chrome uses no heading elements. Failures list rules with links. This prototype catalogs **heading-order** only.
+21. Sidebar: Where you are (tree → rule → this page), both examples, both practice leaves, Testing tools. Do not orphan.
+
 ### Library / docs (`docs` layout)
 
 13. Nested pages show **Where you are** (Library → … → this page). The `/docs/` index has no trail (it is the root).
@@ -42,7 +49,7 @@ Apply when the page type has that job. A hub is not a specimen; a specimen is no
 
 ## Page list
 
-Counts: home 1, 404 1, learn index 1, learn nodes 73, isolated examples 2, docs 43. Tree nodes 75 (73 study + 2 examples).
+Counts: home 1, 404 1, learn index 1, learn nodes 73, isolated examples 2, practice 2, docs 43. Tree nodes 77 (73 study + 2 examples + 2 practice).
 
 ### Site chrome
 
@@ -57,7 +64,7 @@ Counts: home 1, 404 1, learn index 1, learn nodes 73, isolated examples 2, docs 
 | --- | --- |
 | Knowledge tree | `/learn/` |
 
-Study nodes: `/learn/<id>/` from `source/learn/<id>.html.md` for every `data/tree.yml` id except the two examples.
+Study nodes: `/learn/<id>/` from `source/learn/<id>.html.md` for every `data/tree.yml` id except examples and practice leaves.
 
 Isolated examples:
 
@@ -65,6 +72,8 @@ Isolated examples:
 | --- | --- |
 | Bad example — skipped heading levels | `/learn/heading-order/bad/` |
 | Good example — nested heading levels | `/learn/heading-order/good/` |
+| Pick the example that follows the rule | `/learn/heading-order/pick/` |
+| Fix the skipped headings | `/learn/heading-order/fix/` |
 
 ### Library
 
@@ -81,7 +90,7 @@ Isolated examples:
 | Screen reader | `/docs/evaluation/testing-tools/screen-reader/` |
 | plus remaining `source/docs/**/*.html.md` (profiles, WCAG, 508, ADA, cognitive, definitions, agents, authoring-tools, which-name, SOURCES, LICENSE-NOTES, learning pointer) | |
 
-Full docs files: every `source/docs/**/*.html.md` (43 files). Full learn files: every `source/learn/*.html.md` (73) plus `index.html.erb` and `heading-order/{bad,good}.html.erb`.
+Full docs files: every `source/docs/**/*.html.md` (43 files). Full learn files: every `source/learn/*.html.md` (73) plus `index.html.erb` and `heading-order/{bad,good,pick,fix}.html.erb`.
 
 ---
 
@@ -95,6 +104,7 @@ Layout guarantees (do not re-check per file unless the layout changes):
 | Learn index | header | yes | yes | no node (map only) | n/a | n/a |
 | Learn node | tree-nav | yes | yes | yes | n/a | n/a |
 | Isolated example | banner + header | yes | yes | parent rule | yes | n/a |
+| Practice | banner + header | yes | yes | parent rule | n/a (18–21) | n/a |
 | Docs nested | Where you are | yes | yes | n/a | n/a | yes |
 | Docs `/docs/` | header | yes | yes | n/a | n/a | none (root) |
 

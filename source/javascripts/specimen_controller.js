@@ -2,10 +2,12 @@ import { Controller } from "./stimulus.js"
 
 export default class extends Controller {
   static targets = ["stage", "toggle"]
+  static values = { open: { type: Boolean, default: false } }
 
   connect() {
     this.original = this.normalize(this.stageTarget.innerHTML)
     if (this.hasToggleTarget) this.toggleTarget.hidden = false
+    if (this.openValue) this.open({ focus: false })
   }
 
   disconnect() {
@@ -17,7 +19,12 @@ export default class extends Controller {
     else this.open()
   }
 
-  open() {
+  open({ focus = true } = {}) {
+    if (this.panel) {
+      if (focus) this.source?.focus()
+      return
+    }
+
     const panel = this.buildPanel()
     const source = panel.querySelector("textarea")
     source.value = this.normalize(this.stageTarget.innerHTML)
@@ -27,7 +34,7 @@ export default class extends Controller {
     this.toggleTarget.setAttribute("aria-expanded", "true")
     this.toggleTarget.setAttribute("aria-controls", "specimen-editor")
     this.toggleTarget.textContent = "Close editor"
-    source.focus()
+    if (focus) source.focus()
   }
 
   close() {
@@ -94,7 +101,7 @@ export default class extends Controller {
     const apply = document.createElement("button")
     apply.type = "button"
     apply.className = "button button--small"
-    apply.textContent = "Apply and check again"
+    apply.textContent = "Apply"
     apply.addEventListener("click", () => this.apply())
 
     const reset = document.createElement("button")

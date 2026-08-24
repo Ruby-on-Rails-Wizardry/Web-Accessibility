@@ -45,6 +45,14 @@ Same visual size via CSS if you need it. The levels match the sections.
 
 </div>
 
+## Practice
+
+<p><a href="pick/" data-turbo="false">Pick the example that follows the rule</a> — two live examples, then <strong>Check</strong>.</p>
+
+<p><a href="fix/" data-turbo="false">Fix the skipped headings</a> — restore a nested outline, then <strong>Check</strong>.</p>
+
+**Check** on those pages scores this rule. Close **Edit** before you scan with WAVE, axe, or a heading list so the editor is not in the page.
+
 ## Not a pass
 
 Starting the main content at `h2` because the site name in the header is `h1` is a common pattern and is fine. The miss is a jump *inside* the content (`h2` then `h4` with no `h3` parent). Empty headings used as spacers also fail.
