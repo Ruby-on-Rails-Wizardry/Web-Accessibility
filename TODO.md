@@ -95,7 +95,7 @@ Suggested order: walk the spine, not the file list — **equal-worth → compara
 | keyboard-access | Point at a mouse-only control or remove a trap. |
 | visible-focus | Restore a visible focus indicator; refuse `outline: none` without a replacement. |
 
-Locator/constructed format: heading-order has working pick and fix pages. Other nodes still draft in `notes/learn/` until they get the same practice leaves.
+Locator/constructed format: `heading-order` and `heading-elements` have pick, fix, and isolated `{bad,good}` pages. Remaining rules: [notes/practice-rollout.md](notes/practice-rollout.md).
 
 ---
 

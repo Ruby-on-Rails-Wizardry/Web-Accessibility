@@ -22,6 +22,8 @@ One `h1` for the page topic is the usual pattern. Nested sections use `h2`, then
 
 Looks like a heading. It is not in the heading list.
 
+<p><a href="bad/" data-turbo="false">Open this example alone</a> and check the heading list with tools. That page is supposed to fail.</p>
+
 </div>
 
 <div class="example example--good" markdown="1">
@@ -35,9 +37,19 @@ Looks like a heading. It is not in the heading list.
 
 The section name is an `h2`. Tools and people can jump to it.
 
+<p><a href="good/" data-turbo="false">Open this example alone</a> and check the heading list with the same tools.</p>
+
 </div>
 
 </div>
+
+## Practice
+
+<p><a href="pick/" data-turbo="false">Pick the example that follows the rule</a> — two live examples; feedback is immediate.</p>
+
+<p><a href="fix/" data-turbo="false">Fix the missing heading element</a> — mark the section name with a heading, then <strong>Apply</strong>.</p>
+
+**Check** on the live examples scores this rule. **Apply** on the fix page writes the example and scores it.
 
 ## Not a pass
 

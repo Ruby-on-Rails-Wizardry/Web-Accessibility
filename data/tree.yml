@@ -1032,6 +1032,10 @@ nodes:
   - headings
   children:
   - heading-order
+  - heading-elements-bad
+  - heading-elements-good
+  - heading-elements-pick
+  - heading-elements-fix
   spine:
   - equal-worth
   - comparable-access
@@ -1039,6 +1043,70 @@ nodes:
   - headings
   - heading-elements
   library: *id001
+- id: heading-elements-bad
+  title: Bad example — styled paragraph as a heading
+  path: /learn/heading-elements/bad/
+  kind: example
+  layer: 6
+  prereqs:
+  - heading-elements
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - headings
+  - heading-elements
+  - heading-elements-bad
+  library: []
+- id: heading-elements-good
+  title: Good example — heading element
+  path: /learn/heading-elements/good/
+  kind: example
+  layer: 6
+  prereqs:
+  - heading-elements
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - headings
+  - heading-elements
+  - heading-elements-good
+  library: []
+- id: heading-elements-pick
+  title: Pick the example that follows the rule
+  path: /learn/heading-elements/pick/
+  kind: practice
+  layer: 6
+  prereqs:
+  - heading-elements
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - headings
+  - heading-elements
+  - heading-elements-pick
+  library: []
+- id: heading-elements-fix
+  title: Fix the missing heading element
+  path: /learn/heading-elements/fix/
+  kind: practice
+  layer: 6
+  prereqs:
+  - heading-elements
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - headings
+  - heading-elements
+  - heading-elements-fix
+  library: []
 - id: heading-order
   title: Do not skip heading levels
   path: /learn/heading-order/

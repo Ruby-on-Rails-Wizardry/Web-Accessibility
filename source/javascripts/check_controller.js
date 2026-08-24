@@ -1,9 +1,11 @@
 import { Controller } from "./stimulus.js"
 import { headingOrderCheck } from "./heading_order_check.js"
+import { headingElementsCheck } from "./heading_elements_check.js"
 import { htmlWellFormed } from "./html_wellformed.js"
 
 const CHECKERS = {
-  "heading-order": headingOrderCheck
+  "heading-order": headingOrderCheck,
+  "heading-elements": headingElementsCheck
 }
 
 export default class extends Controller {

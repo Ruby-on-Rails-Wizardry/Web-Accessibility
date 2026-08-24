@@ -1,0 +1,42 @@
+# Pool for /learn/heading-elements/pick/. Isolated live pages stay
+# the Shipping address pair.
+
+bad:
+  - |
+    <p><strong>Shipping address</strong></p>
+    <p>123 Main Street</p>
+  - |
+    <p><strong>Store hours</strong></p>
+    <p>Open daily 9 to 6</p>
+  - |
+    <p><strong>Ingredients</strong></p>
+    <p>Flour, water, salt</p>
+  - |
+    <p><b>Board members</b></p>
+    <p>Kim, Alex, Jordan</p>
+  - |
+    <div><strong>Chapter 2</strong></div>
+    <p>The river was high that spring.</p>
+  - |
+    <p><strong>Contact</strong></p>
+    <p>Write to the town clerk.</p>
+
+good:
+  - |
+    <h2>Shipping address</h2>
+    <p>123 Main Street</p>
+  - |
+    <h2>Store hours</h2>
+    <p>Open daily 9 to 6</p>
+  - |
+    <h2>Ingredients</h2>
+    <p>Flour, water, salt</p>
+  - |
+    <h2>Board members</h2>
+    <p>Kim, Alex, Jordan</p>
+  - |
+    <h2>Chapter 2</h2>
+    <p>The river was high that spring.</p>
+  - |
+    <h2>Contact</h2>
+    <p>Write to the town clerk.</p>
