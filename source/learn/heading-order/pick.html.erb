@@ -26,7 +26,7 @@ practice_note: Each card shows the HTML and how it renders. Pick the one that ne
         <span class="practice-caption">HTML</span>
         <pre class="practice-choice__source"><code><%= CGI.escapeHTML(html) %></code></pre>
         <span class="practice-caption">Rendered</span>
-        <div class="practice-choice__preview" data-check-target="section">
+        <div class="practice-preview" data-check-target="section">
           <%= html.html_safe %>
         </div>
       </label>

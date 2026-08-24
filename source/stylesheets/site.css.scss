@@ -823,7 +823,7 @@ summary {
   color: inherit;
 }
 
-.practice-choice__preview {
+.practice-preview {
   margin: 0;
   padding: 0.55rem 0.65rem;
   border: 1px solid var(--line);
@@ -831,17 +831,21 @@ summary {
   background: var(--bg);
 }
 
-.practice-choice__preview h1,
-.practice-choice__preview h2,
-.practice-choice__preview h3,
-.practice-choice__preview h4,
-.practice-choice__preview h5,
-.practice-choice__preview h6 {
+.practice-preview h1,
+.practice-preview h2,
+.practice-preview h3,
+.practice-preview h4,
+.practice-preview h5,
+.practice-preview h6 {
   margin: 0 0 0.35rem;
 }
 
-.practice-choice__preview :last-child {
+.practice-preview :last-child {
   margin-bottom: 0;
+}
+
+.practice-preview .specimen-main {
+  padding: 0;
 }
 
 body.specimen main,

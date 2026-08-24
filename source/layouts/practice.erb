@@ -52,9 +52,11 @@
         ></div>
         <% if practice_variant == "fix" %>
           <p class="practice-caption">Rendered</p>
-          <main id="main" class="specimen-main" data-check-target="section">
-            <%= page_body.html_safe %>
-          </main>
+          <div class="practice-preview">
+            <main id="main" class="specimen-main" data-check-target="section">
+              <%= page_body.html_safe %>
+            </main>
+          </div>
         <% else %>
           <main id="main" class="specimen-main">
             <%= page_body.html_safe %>
