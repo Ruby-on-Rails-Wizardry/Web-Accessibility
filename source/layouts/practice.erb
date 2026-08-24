@@ -24,40 +24,47 @@
       <div class="specimen-primary">
         <%= partial "practice_banner" %>
         <% if practice_variant == "fix" %>
-          <div class="specimen-editor">
-            <div class="specimen-editor__inner">
-              <label class="practice-caption" for="specimen-source">HTML</label>
-              <textarea
-                id="specimen-source"
-                data-check-target="source"
-                data-action="keydown->check#keydown"
-                rows="8"
-                spellcheck="false"
-                autocapitalize="off"
-                autocomplete="off"
-              ><%= CGI.escapeHTML(page_body.to_s.strip) %></textarea>
-              <p class="specimen-editor__actions">
-                <button type="button" class="button button--small" data-action="check#applyAndCheck">Apply</button>
-                <button type="button" class="button button--small button--ghost" data-action="check#reset">Reset</button>
-              </p>
+          <div class="practice-card">
+            <div class="specimen-editor">
+              <div class="specimen-editor__inner">
+                <label class="practice-caption" for="specimen-source">HTML</label>
+                <textarea
+                  id="specimen-source"
+                  data-check-target="source"
+                  data-action="keydown->check#keydown"
+                  rows="8"
+                  spellcheck="false"
+                  autocapitalize="off"
+                  autocomplete="off"
+                ><%= CGI.escapeHTML(page_body.to_s.strip) %></textarea>
+                <p class="specimen-editor__actions">
+                  <button type="button" class="button button--small" data-action="check#applyAndCheck">Apply</button>
+                  <button type="button" class="button button--small button--ghost" data-action="check#reset">Reset</button>
+                </p>
+              </div>
+            </div>
+            <div
+              class="check-results"
+              id="check-results"
+              data-check-target="results"
+              tabindex="-1"
+              aria-live="polite"
+            ></div>
+            <p class="practice-caption">Rendered</p>
+            <div class="practice-preview">
+              <main id="main" class="specimen-main" data-check-target="section">
+                <%= page_body.html_safe %>
+              </main>
             </div>
           </div>
-        <% end %>
-        <div
-          class="check-results"
-          id="check-results"
-          data-check-target="results"
-          tabindex="-1"
-          aria-live="polite"
-        ></div>
-        <% if practice_variant == "fix" %>
-          <p class="practice-caption">Rendered</p>
-          <div class="practice-preview">
-            <main id="main" class="specimen-main" data-check-target="section">
-              <%= page_body.html_safe %>
-            </main>
-          </div>
         <% else %>
+          <div
+            class="check-results"
+            id="check-results"
+            data-check-target="results"
+            tabindex="-1"
+            aria-live="polite"
+          ></div>
           <main id="main" class="specimen-main">
             <%= page_body.html_safe %>
           </main>

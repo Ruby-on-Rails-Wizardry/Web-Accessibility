@@ -746,15 +746,30 @@ summary {
   gap: 1rem;
 }
 
+.practice-card,
 .practice-choice {
-  display: block;
   min-width: 0;
   margin: 0;
   padding: 0.7rem 0.9rem 0.95rem;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--bg-elev);
+}
+
+.practice-choice {
+  display: block;
   cursor: pointer;
+}
+
+.practice-card .specimen-editor {
+  background: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.practice-card .check-results {
+  margin: 0.65rem 0 0;
 }
 
 .practice-choice:has(input:focus-visible) {
