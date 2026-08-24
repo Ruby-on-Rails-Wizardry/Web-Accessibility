@@ -24,7 +24,7 @@ Apply when the page type has that job. A hub is not a specimen; a specimen is no
 
 9. `<main>` is only the specimen. No extra headings in main.
 10. Editor is **not** in the DOM until Edit; filled from `<main>`; removed on close.
-11. Sidebar: abbreviated **Where you are** (knowledge tree → rule → this example), the other example, **Testing tools**. No heading elements in that chrome (tools must still see only the specimen).
+11. Sidebar: abbreviated **Where you are** (knowledge tree → rule → this example), the other example, a single **Testing tools** link (not a list of tools). No heading elements in that chrome (tools must still see only the specimen).
 12. Site header present. The strip above the red line is what this page is and how to check it, plus **Edit** in the top-right of that strip — not a dump of nav links. Banner is not a heading. “Close Edit before you scan” lives in the editor panel, not the closed banner.
 
 ### Practice (`practice` layout)
