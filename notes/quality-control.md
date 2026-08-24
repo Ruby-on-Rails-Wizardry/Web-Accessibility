@@ -25,12 +25,12 @@ Apply when the page type has that job. A hub is not a specimen; a specimen is no
 9. `<main>` is only the specimen. No extra headings in main.
 10. Editor is **not** in the DOM until Edit; filled from `<main>`; removed on close.
 11. Sidebar: abbreviated **Where you are** (knowledge tree → rule → this example), the other example, a single **Testing tools** link (not a list of tools). No heading elements in that chrome (tools must still see only the specimen).
-12. Site header present. The strip above the red line is what this page is and how to check it, plus **Edit** in the top-right of that strip — not a dump of nav links. Banner is not a heading. “Close Edit before you scan” lives in the editor panel, not the closed banner.
+12. Site header present. The strip above the red line is what this page is and how to check it, plus **Edit** and **Check** in the top-right of that strip — not a dump of nav links. Banner is not a heading. “Close Edit before you scan” lives in the editor panel, not the closed banner. **Check** scores `<main>` (apply first if the editor is open).
 
 ### Practice (`practice` layout)
 
 18. **Pick:** two unlabeled-as-good/bad live examples; each card shows the HTML and how it renders. Choosing a card scores it immediately (no Check button). Check still scores the chosen rendered section.
-19. **Fix:** `<main>` is the specimen. The editor is always on the page. **Apply** writes into `<main>` and scores that node only (not the rest of the page). No Close editor / Check in the banner.
+19. **Fix:** `<main>` is the specimen. The editor is always on the page, labeled **HTML** / **Rendered** like pick. **Apply** writes into `<main>` and scores that node. No Close editor / Check in the banner. Do not tell the learner that the checker is scoped.
 20. Check results live outside `<main>`. Chrome uses no heading elements. Failures list rules with links. This prototype catalogs **heading-order** only. In-house checkers take a DOM node and do not walk outside it.
 21. Sidebar: Where you are (tree → rule → this page), both examples, both practice leaves, Testing tools. Do not orphan.
 

@@ -644,6 +644,11 @@ summary {
   margin-bottom: 0.35rem;
 }
 
+.specimen-editor label.practice-caption {
+  font-size: 0.7rem;
+  margin-bottom: 0.3rem;
+}
+
 .specimen-editor textarea {
   display: block;
   width: 100%;
@@ -784,7 +789,7 @@ summary {
   color: var(--muted);
 }
 
-.practice-choice__caption {
+.practice-caption {
   display: block;
   margin: 0.65rem 0 0.3rem;
   font-family: var(--font-ui);
@@ -793,6 +798,10 @@ summary {
   text-transform: uppercase;
   font-weight: 600;
   color: var(--muted);
+}
+
+.specimen-editor__inner > .practice-caption:first-child {
+  margin-top: 0;
 }
 
 .practice-choice__source {

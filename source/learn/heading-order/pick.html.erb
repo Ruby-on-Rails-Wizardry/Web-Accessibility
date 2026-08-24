@@ -23,9 +23,9 @@ practice_note: Each card shows the HTML and how it renders. Pick the one that ne
       <label class="practice-choice">
         <input type="radio" name="practice-pick" data-check-target="choice" data-action="change->check#run" aria-label="Example <%= letter %>">
         <span class="practice-choice__name">Example <%= letter %></span>
-        <span class="practice-choice__caption">HTML</span>
+        <span class="practice-caption">HTML</span>
         <pre class="practice-choice__source"><code><%= CGI.escapeHTML(html) %></code></pre>
-        <span class="practice-choice__caption">Rendered</span>
+        <span class="practice-caption">Rendered</span>
         <div class="practice-choice__preview" data-check-target="section">
           <%= html.html_safe %>
         </div>

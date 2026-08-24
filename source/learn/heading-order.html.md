@@ -51,7 +51,7 @@ Same visual size via CSS if you need it. The levels match the sections.
 
 <p><a href="fix/" data-turbo="false">Fix the skipped headings</a> — restore a nested outline, then <strong>Apply</strong>.</p>
 
-The in-house check on those pages scores this rule, and only the example under test. For WAVE, axe, or a heading list, use the live bad or good page and close <strong>Edit</strong> so the editor is not in the page.
+**Check** on the live examples scores this rule. **Apply** on the fix page writes the example and scores it.
 
 ## Not a pass
 

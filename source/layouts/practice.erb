@@ -26,7 +26,7 @@
         <% if practice_variant == "fix" %>
           <div class="specimen-editor">
             <div class="specimen-editor__inner">
-              <label for="specimen-source">Example HTML</label>
+              <label class="practice-caption" for="specimen-source">HTML</label>
               <textarea
                 id="specimen-source"
                 data-check-target="source"
@@ -40,7 +40,6 @@
                 <button type="button" class="button button--small" data-action="check#applyAndCheck">Apply</button>
                 <button type="button" class="button button--small button--ghost" data-action="check#reset">Reset</button>
               </p>
-              <p class="specimen-editor__hint">The in-house check looks only at the example below.</p>
             </div>
           </div>
         <% end %>
@@ -52,6 +51,7 @@
           aria-live="polite"
         ></div>
         <% if practice_variant == "fix" %>
+          <p class="practice-caption">Rendered</p>
           <main id="main" class="specimen-main" data-check-target="section">
             <%= page_body.html_safe %>
           </main>

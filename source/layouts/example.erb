@@ -12,13 +12,24 @@
     <%= javascript_include_tag "site", type: "module", "data-turbo-track": "reload" %>
     <link rel="icon" href="<%= image_path('mark.jpg') %>" type="image/jpeg">
   </head>
-  <body class="specimen specimen--<%= specimen_variant %>" data-controller="specimen">
+  <body
+    class="specimen specimen--<%= specimen_variant %>"
+    data-controller="specimen check"
+    data-check-catalog-value="<%= CGI.escapeHTML(check_catalog.to_json) %>"
+  >
     <%= partial "skip_link" %>
     <%= partial "header" %>
     <div class="specimen-shell">
       <div class="specimen-primary">
         <%= partial "specimen_banner" %>
-        <main id="main" class="specimen-main" data-specimen-target="stage">
+        <div
+          class="check-results"
+          id="check-results"
+          data-check-target="results"
+          tabindex="-1"
+          aria-live="polite"
+        ></div>
+        <main id="main" class="specimen-main" data-specimen-target="stage" data-check-target="section">
           <%= yield %>
         </main>
       </div>
