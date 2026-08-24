@@ -1,5 +1,6 @@
 import { Controller } from "./stimulus.js"
 import { headingOrderCheck } from "./heading_order_check.js"
+import { htmlWellFormed } from "./html_wellformed.js"
 
 const CHECKERS = {
   "heading-order": headingOrderCheck
@@ -47,7 +48,6 @@ export default class extends Controller {
     if (!this.hasSourceTarget || !this.hasSectionTarget) return null
     this.sectionTarget.innerHTML = this.sourceTarget.value
     this.sectionTarget.querySelectorAll("script").forEach((node) => node.remove())
-    this.sourceTarget.value = this.normalize(this.sectionTarget.innerHTML)
     return this.sectionTarget
   }
 
@@ -71,6 +71,19 @@ export default class extends Controller {
   evaluate(root) {
     const catalog = Array.isArray(this.catalogValue) ? this.catalogValue : []
     const failures = []
+
+    if (this.hasSourceTarget) {
+      const details = htmlWellFormed(this.sourceTarget.value)
+      if (details.length) {
+        failures.push({
+          id: "valid-html",
+          title: "Valid HTML",
+          path: null,
+          details
+        })
+        return { ok: false, failures, catalog }
+      }
+    }
 
     catalog.forEach((rule) => {
       const checker = CHECKERS[rule.id]
@@ -100,14 +113,19 @@ export default class extends Controller {
       this.resultsTarget.append(status)
       this.markChoice(root, true)
     } else {
-      status.textContent = "This section does not follow:"
+      const invalid = result.failures.some((failure) => failure.id === "valid-html")
+      status.textContent = invalid ? "This HTML is not valid:" : "This section does not follow:"
       const list = document.createElement("ul")
       result.failures.forEach((failure) => {
         const item = document.createElement("li")
-        item.append(this.ruleLink(failure))
-        if (failure.details?.length) {
-          item.append(" — ")
+        if (failure.id === "valid-html" && failure.details?.length) {
           item.append(failure.details.join(" "))
+        } else {
+          item.append(this.ruleName(failure))
+          if (failure.details?.length) {
+            item.append(" — ")
+            item.append(failure.details.join(" "))
+          }
         }
         list.append(item)
       })
@@ -128,6 +146,11 @@ export default class extends Controller {
       wrap.append(this.ruleLink(rule))
     })
     return wrap
+  }
+
+  ruleName(rule) {
+    if (!rule.path) return document.createTextNode(rule.title)
+    return this.ruleLink(rule)
   }
 
   ruleLink(rule) {

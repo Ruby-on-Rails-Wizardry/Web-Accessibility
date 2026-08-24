@@ -49,7 +49,6 @@ export default class extends Controller {
     if (!this.source) return
     this.stageTarget.innerHTML = this.source.value
     this.stageTarget.querySelectorAll("script").forEach((node) => node.remove())
-    this.source.value = this.normalize(this.stageTarget.innerHTML)
   }
 
   reset() {
@@ -89,6 +88,7 @@ export default class extends Controller {
 
     const source = document.createElement("textarea")
     source.id = "specimen-source"
+    source.setAttribute("data-check-target", "source")
     source.rows = 8
     source.spellcheck = false
     source.setAttribute("autocapitalize", "off")
