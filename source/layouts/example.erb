@@ -15,9 +15,14 @@
   <body class="specimen specimen--<%= specimen_variant %>" data-controller="specimen">
     <%= partial "skip_link" %>
     <%= partial "header" %>
-    <%= partial "specimen_banner" %>
-    <main id="main" class="specimen-main" data-specimen-target="stage">
-      <%= yield %>
-    </main>
+    <div class="specimen-shell">
+      <%= partial "specimen_banner" %>
+      <main id="main" class="specimen-main" data-specimen-target="stage">
+        <%= yield %>
+      </main>
+      <aside class="specimen-aside">
+        <%= partial "specimen_nav" %>
+      </aside>
+    </div>
   </body>
 </html>

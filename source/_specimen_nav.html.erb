@@ -1,0 +1,21 @@
+<% parent = specimen_parent_node %>
+<% other = specimen_other_node %>
+<nav class="tree-nav" aria-label="Where you are">
+  <p class="tree-nav__heading">Where you are</p>
+  <ol class="docs-nav__crumbs">
+    <li><%= link_to "Knowledge tree", "/learn/", "data-turbo": "false" %></li>
+    <% if parent %>
+      <li style="padding-left: 0.65rem"><%= link_to parent.title, parent.path, "data-turbo": "false" %></li>
+    <% end %>
+    <li class="is-current" style="padding-left: <%= parent ? 1.3 : 0.65 %>rem"><%= current_page.data.title %></li>
+  </ol>
+  <% if other %>
+    <p class="tree-nav__heading">This pair</p>
+    <ul>
+      <li>
+        <%= link_to (specimen_variant == "bad" ? "Good example" : "Bad example"), other.path, "data-turbo": "false" %>
+      </li>
+    </ul>
+  <% end %>
+  <p class="tree-nav__index"><%= link_to "Testing tools", "/docs/evaluation/testing-tools/", "data-turbo": "false" %></p>
+</nav>

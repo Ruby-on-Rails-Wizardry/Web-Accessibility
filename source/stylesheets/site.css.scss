@@ -549,13 +549,37 @@ summary {
   margin-bottom: 0;
 }
 
+.specimen-shell {
+  flex: 1;
+  width: calc(100% - 2rem);
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 1.25rem 0 3rem;
+  display: grid;
+  grid-template-columns: minmax(0, var(--prose)) minmax(12rem, 18rem);
+  gap: 1.5rem 2.5rem;
+  align-items: start;
+}
+
+.specimen-banner,
+.specimen-editor,
+.specimen-main {
+  grid-column: 1;
+}
+
+.specimen-aside {
+  grid-column: 2;
+  grid-row: 1 / -1;
+  position: sticky;
+  top: calc(var(--header-height) + 0.75rem);
+}
+
 .specimen-banner {
   margin: 0;
-  padding: 0.85rem 1rem 0.95rem;
+  padding: 0 0 0.85rem;
   font-family: var(--font-ui);
   font-size: 0.95rem;
   line-height: 1.45;
-  background: var(--header-bg);
   border-bottom: 3px solid var(--accent);
 }
 
@@ -564,12 +588,11 @@ summary {
 }
 
 .specimen-banner p {
-  max-width: var(--prose);
-  margin: 0 auto;
+  margin: 0;
 }
 
 .specimen-banner p + p {
-  margin-top: 0.35rem;
+  margin-top: 0.5rem;
 }
 
 .specimen-banner__kind {
@@ -586,13 +609,8 @@ summary {
   color: #15803d;
 }
 
-.specimen-banner__links {
-  font-size: 0.9rem;
-}
-
 .specimen-banner__edit {
-  margin: 0 0 0 0.65rem;
-  vertical-align: middle;
+  margin: 0;
 }
 
 .specimen-editor {
@@ -642,8 +660,24 @@ summary {
   margin: 0.65rem 0 0;
 }
 
-.specimen-main {
-  max-width: var(--prose);
+body.specimen main {
+  width: auto;
+  max-width: none;
+  margin: 0;
+  padding: 0.35rem 0 0;
+}
+
+.tree-nav__heading {
+  margin: 0.7rem 0 0.25rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.tree-nav__heading:first-child {
+  margin-top: 0;
 }
 
 .tree-map h2 {
@@ -726,5 +760,21 @@ summary {
     position: static;
     max-height: none;
     overflow: visible;
+  }
+
+  .specimen-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .specimen-banner,
+  .specimen-editor,
+  .specimen-main,
+  .specimen-aside {
+    grid-column: 1;
+  }
+
+  .specimen-aside {
+    grid-row: auto;
+    position: static;
   }
 }

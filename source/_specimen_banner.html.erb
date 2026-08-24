@@ -1,30 +1,10 @@
-<% parent = specimen_parent_node %>
-<% other = specimen_other_node %>
 <div class="specimen-banner">
   <p>
     <span class="specimen-banner__kind"><%= specimen_variant == "good" ? "Good example" : "Bad example" %></span>
-    Live specimen of
-    <% if parent %>
-      <%= link_to parent.title, parent.path, "data-turbo": "false" %>.
-    <% else %>
-      the rule.
-    <% end %>
-    <%= current_page.data.specimen_note || (specimen_variant == "bad" ? "This page is supposed to fail a check of the rule." : "Check this page with the same tools.") %>
+    <%= current_page.data.specimen_note || (specimen_variant == "bad" ? "This page is supposed to fail a heading-list check." : "Check this page with a heading list, WAVE, or axe.") %>
+    Close <strong>Edit</strong> before you scan so the editor is not in the page.
   </p>
-  <p class="specimen-banner__links">
-    <% if parent %>
-      <%= link_to "The rule", parent.path, "data-turbo": "false" %>
-    <% end %>
-    <% if parent && other %>
-      ·
-    <% end %>
-    <% if other %>
-      <%= link_to (specimen_variant == "bad" ? "Good example" : "Bad example"), other.path, "data-turbo": "false" %>
-    <% end %>
-    ·
-    <%= link_to "Testing tools", "/docs/evaluation/testing-tools/", "data-turbo": "false" %>
-    ·
-    <%= link_to "Knowledge tree", "/learn/", "data-turbo": "false" %>
+  <p>
     <button
       type="button"
       class="button button--small specimen-banner__edit"
