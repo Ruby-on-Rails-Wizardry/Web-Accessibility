@@ -46,16 +46,3 @@ A correct `alt` on a PNG headline still fails this rule — that is [informative
 **1.4.5 Images of Text** (AA). In `section-508-web` (WCAG 2.0 AA), `ada-title-ii` (2.1 AA), and `wcag-22-aa` (2.2 AA).
 
 Failure-adjacent [F3](https://www.w3.org/WAI/WCAG22/Techniques/failures/F3) (information only in a CSS background image); Sufficient [C22](https://www.w3.org/WAI/WCAG22/Techniques/css/C22), [G140](https://www.w3.org/WAI/WCAG22/Techniques/general/G140). Understanding: [Images of Text](https://www.w3.org/WAI/WCAG22/Understanding/images-of-text).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can replace an image-of-text headline with real text, or justify a logo exception.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

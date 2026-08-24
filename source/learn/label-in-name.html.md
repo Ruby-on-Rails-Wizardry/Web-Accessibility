@@ -46,16 +46,3 @@ Extra words in the name are allowed if the visible string is still there (“Sea
 **2.5.3 Label in Name** (A). In `ada-title-ii` (2.1 AA) and `wcag-22-aa` (2.2 AA). Not in `section-508-web` (WCAG 2.0 AA). 2.1-only.
 
 Failure [F96](https://www.w3.org/WAI/WCAG22/Techniques/failures/F96); Sufficient [G208](https://www.w3.org/WAI/WCAG22/Techniques/general/G208), [G211](https://www.w3.org/WAI/WCAG22/Techniques/general/G211). Understanding: [Label in Name](https://www.w3.org/WAI/WCAG22/Understanding/label-in-name).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can find a control whose visible text is missing from the name and fix it.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

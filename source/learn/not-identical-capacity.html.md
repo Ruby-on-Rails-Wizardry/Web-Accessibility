@@ -41,16 +41,3 @@ Fitness can be essential to firefighting. *Watching* a film on a site (captions,
 
 - [EEOC: reasonable accommodation and undue hardship](https://www.eeoc.gov/laws/guidance/enforcement-guidance-reasonable-accommodation-and-undue-hardship-under-ada) — essential functions; otherwise qualified
 - [Revised 508 Standards E202.6](https://www.access-board.gov/ict/) — undue burden or fundamental alteration; still provide alternative means of access to the information when you can
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: Given a scenario, the learner can say whether this is an offered service or an essential-ability job, and can refuse “not practical” as a first move on a form.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item (scenario)
-- [ ] Constructed item (stepped: what is the task, is the ability the task, what other means exist)
-- [ ] Isomorphic retest item
-
-</div>

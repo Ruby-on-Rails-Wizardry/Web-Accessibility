@@ -52,16 +52,3 @@ DOM order is the order. Tab follows the form.
 **2.4.3 Focus Order** (A). In `section-508-web` (WCAG 2.0 AA), `ada-title-ii` (2.1 AA), and `wcag-22-aa` (2.2 AA).
 
 Failure [F44](https://www.w3.org/WAI/WCAG22/Techniques/failures/F44), [F85](https://www.w3.org/WAI/WCAG22/Techniques/failures/F85); Sufficient [G59](https://www.w3.org/WAI/WCAG22/Techniques/general/G59), [H4](https://www.w3.org/WAI/WCAG22/Techniques/html/H4). Understanding: [Focus Order](https://www.w3.org/WAI/WCAG22/Understanding/focus-order).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can remove positive tabindex values so Tab follows the visual form.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

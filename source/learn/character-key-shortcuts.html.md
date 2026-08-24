@@ -42,16 +42,3 @@ Documenting the shortcut in a help page is not a way to turn it off. `accesskey`
 **2.1.4 Character Key Shortcuts** (A). In `ada-title-ii` (2.1 AA) and `wcag-22-aa` (2.2 AA). Not in `section-508-web` (WCAG 2.0 AA). 2.1-only.
 
 Understanding: [Character Key Shortcuts](https://www.w3.org/WAI/WCAG22/Understanding/character-key-shortcuts). Sufficient [G217](https://www.w3.org/WAI/WCAG22/Techniques/general/G217).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can name why a document-wide `D` shortcut fails 2.1.4 and pick a compliant fix.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

@@ -52,16 +52,3 @@ Focus can rest on the control. Context changes when they submit.
 **3.2.1 On Focus** (A). In `section-508-web`, `ada-title-ii`, and `wcag-22-aa`.
 
 Failure [F55](https://www.w3.org/WAI/WCAG22/Techniques/failures/F55); Sufficient [G107](https://www.w3.org/WAI/WCAG22/Techniques/general/G107). Understanding: [On Focus](https://www.w3.org/WAI/WCAG22/Understanding/on-focus).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can remove a focus-triggered navigation and leave an explicit activation instead.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

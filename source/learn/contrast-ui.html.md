@@ -50,16 +50,3 @@ Passing text contrast on the label does not save a washed-out field border. A 1p
 **1.4.11 Non-text Contrast** (AA). In `ada-title-ii` (2.1 AA) and `wcag-22-aa` (2.2 AA). Not in `section-508-web` (WCAG 2.0 AA). 2.1-only.
 
 Understanding: [Non-text Contrast](https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast). Sufficient examples include [G195](https://www.w3.org/WAI/WCAG22/Techniques/general/G195) (related focus) and [G207](https://www.w3.org/WAI/WCAG22/Techniques/general/G207).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can point at a washed-out control border or icon and restore a 3:1 edge.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

@@ -53,16 +53,3 @@ A different name is required when the function is actually different (“Email t
 **3.2.4 Consistent Identification** (AA). In `section-508-web` (web, not 508 non-web), `ada-title-ii`, and `wcag-22-aa`.
 
 Sufficient [G197](https://www.w3.org/WAI/WCAG22/Techniques/general/G197). Understanding: [Consistent Identification](https://www.w3.org/WAI/WCAG22/Understanding/consistent-identification).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can point at a renamed control that does the same job and restore one name.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

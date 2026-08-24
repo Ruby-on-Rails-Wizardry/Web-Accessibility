@@ -42,16 +42,3 @@ Blocking `paste` on the password field fails this rule even if the field looks o
 **3.3.8 Accessible Authentication (Minimum)** (AA). In `wcag-22-aa` (2.2 AA) only. Not in `section-508-web` (WCAG 2.0 AA) or `ada-title-ii` (2.1 AA). 2.2-only.
 
 Understanding: [Accessible Authentication (Minimum)](https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-minimum). Sufficient [G218](https://www.w3.org/WAI/WCAG22/Techniques/general/G218).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can reject a transcription puzzle and name a 3.3.8-compliant alternative.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

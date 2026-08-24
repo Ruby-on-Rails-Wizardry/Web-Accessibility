@@ -42,16 +42,3 @@ Nothing strobes. A still (or motion below the flash thresholds) can stay.
 **2.3.1 Three Flashes or Below Threshold** (A). In `section-508-web`, `ada-title-ii`, and `wcag-22-aa`.
 
 Sufficient [G19](https://www.w3.org/WAI/WCAG22/Techniques/general/G19), [G176](https://www.w3.org/WAI/WCAG22/Techniques/general/G176). Understanding: [Three Flashes or Below Threshold](https://www.w3.org/WAI/WCAG22/Understanding/three-flashes-or-below-threshold).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can reject a flashing asset and replace it with a still.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

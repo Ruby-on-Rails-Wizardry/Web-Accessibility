@@ -10,16 +10,3 @@ This is a **family**, not one cop. [Predictable](/learn/pour/): a change of **co
 - [Changing a value does not navigate](/learn/no-change-on-input/) — **3.2.2**.
 
 A new panel that appears is often fine. An automatic submit-and-navigate on the first radio is not.
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can replace an on-focus or on-input navigation with an explicit request — those checks live on the child rules.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed items on the children
-- [ ] Isomorphic retest item
-
-</div>

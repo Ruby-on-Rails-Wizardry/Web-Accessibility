@@ -42,16 +42,3 @@ The control’s name and a text status stand alone. Location can still help.
 **1.3.3 Sensory Characteristics** (A). In `section-508-web` (WCAG 2.0 AA), `ada-title-ii` (2.1 AA), and `wcag-22-aa` (2.2 AA).
 
 Failure [F14](https://www.w3.org/WAI/WCAG22/Techniques/failures/F14); Sufficient [G96](https://www.w3.org/WAI/WCAG22/Techniques/general/G96). Understanding: [Sensory Characteristics](https://www.w3.org/WAI/WCAG22/Understanding/sensory-characteristics).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can rewrite an instruction that only uses location or sound so it still works without those cues.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

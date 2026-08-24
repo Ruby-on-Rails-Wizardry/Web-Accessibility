@@ -46,16 +46,3 @@ The name states the destination. Context is not required to know where it goes.
 **2.4.4 Link Purpose (In Context)** (A). In `section-508-web` (WCAG 2.0 AA), `ada-title-ii` (2.1 AA), and `wcag-22-aa` (2.2 AA).
 
 Failure [F89](https://www.w3.org/WAI/WCAG22/Techniques/failures/F89); Sufficient [H30](https://www.w3.org/WAI/WCAG22/Techniques/html/H30), [G91](https://www.w3.org/WAI/WCAG22/Techniques/general/G91). Understanding: [Link Purpose (In Context)](https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can rewrite a “click here” so the link name states the destination.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

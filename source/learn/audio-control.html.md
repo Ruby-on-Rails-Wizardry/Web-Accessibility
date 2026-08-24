@@ -46,16 +46,3 @@ A volume control that cannot mute, or that only ducks the page while leaving the
 **1.4.2 Audio Control** (A). In `section-508-web` (WCAG 2.0 AA), `ada-title-ii` (2.1 AA), and `wcag-22-aa` (2.2 AA).
 
 Failure [F23](https://www.w3.org/WAI/WCAG22/Techniques/failures/F23), [F93](https://www.w3.org/WAI/WCAG22/Techniques/failures/F93); Sufficient [G60](https://www.w3.org/WAI/WCAG22/Techniques/general/G60). Understanding: [Audio Control](https://www.w3.org/WAI/WCAG22/Understanding/audio-control).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can remove autoplay or add an immediate pause for looping background audio.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

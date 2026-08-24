@@ -14,16 +14,3 @@ This is a **family**, not one cop. After a [visible label](/learn/visible-label/
 Color or an icon alone also fails [color is not the only cue](/learn/color-not-only-cue/). Move focus or use a [status message](/learn/status-messages/) so AT hears it.
 
 Then: [Review before an irreversible submit](/learn/error-prevention/), [Do not ask for the same data twice](/learn/redundant-entry/), [Accessible authentication](/learn/accessible-authentication/).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can replace a color-only validation state with a text error, then add a suggestion — those checks live on the child rules.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed items on the children
-- [ ] Isomorphic retest item
-
-</div>

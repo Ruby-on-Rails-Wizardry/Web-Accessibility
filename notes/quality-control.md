@@ -10,7 +10,7 @@ Apply when the page type has that job. A hub is not a specimen; a specimen is no
 
 1. **Do not orphan.** From any page the learner can reach Home, the knowledge tree, and the library without the back button. Header counts. Leaves also need a parent/section trail, not only global nav.
 2. **Easy navigation.** Site title is **Web Accessibility** → Home. Org is the icon on the right (`aria-label` / `title` “Ruby on Rails Wizardry”). Sidebar: where you are (docs) or tree trace (learn), then On this page when that layout is used.
-3. **Learner voice.** No host names, “on this machine,” “not installed here,” or author TODO. Those go in `notes/`.
+3. **Learner voice.** No host names, “on this machine,” “not installed here,” or author TODO. Those go in `notes/`. “Still to write (Learning for Mastery)” is unpublished (`notes/learn/`), not on the live page.
 4. **Say accessibility**, not `a11y`, and no ally/enemy framing.
 5. **Skip to content** present (site layout and example layout).
 

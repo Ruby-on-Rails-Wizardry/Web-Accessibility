@@ -2,9 +2,7 @@
 
 Last inventoried 2026-08-24. Knowledge-tree graph: `data/tree.yml`. Pages: `source/learn/<id>.html.md`. Official library: `source/docs/`. Internal (not published): `notes/`.
 
-There is **no other TODO file**. Per-node checklists live in a `todo-box` at the bottom of each learn page. This file is the whole-project view.
-
-The `/learn/` index already states the current gap: teaching pages (including one-rule leaves with bad/good examples) exist; **evaluation items are still to write**.
+Per-node mastery checklists live in unpublished [notes/learn/](notes/learn/). This file is the whole-project view. Do not put “Still to write” on published pages.
 
 ---
 
@@ -51,17 +49,17 @@ Study nodes live at `source/learn/<id>.html.md`. Isolated examples live at `sour
 
 `kind: rule` is one requirement with **The rule**, Bad, Good, Not a pass, and Official (profile tags). Not one page per W3C technique ID.
 
-`kind: example` is a **live specimen**: same site header as the rest of the site; no extra headings in `<main>`, so a heading list / WAVE / axe still sees only that markup. Edit on the page (Stimulus `specimen`) lets the learner change the HTML and apply it, then check again. First pair is `heading-order`. Other HTML-example rules can grow the same `{bad,good}` leaves later. Example nodes do not get a mastery `todo-box`.
+`kind: example` is a **live specimen**: same site header as the rest of the site; no extra headings in `<main>`, so a heading list / WAVE / axe still sees only that markup. Edit on the page (Stimulus `specimen`) lets the learner change the HTML and apply it, then check again. First pair is `heading-order`. Other HTML-example rules can grow the same `{bad,good}` leaves later. Example nodes do not get a mastery checklist.
 
 **Split out of families (2026-08-24):** informative-image-alt, decorative-image-silent, functional-image-names-action, heading-elements, heading-order, keyboard-operable, no-keyboard-trap, error-identification, error-suggestion, consistent-nav-order, consistent-identification, no-change-on-focus, no-change-on-input.
 
-Each node has a teaching page **and** an unfinished mastery box.
+Each study node has a teaching page. Mastery items still to write: [notes/learn/](notes/learn/).
 
 ---
 
 ## Next — finish Learning for Mastery on every node
 
-Rule leaves now exist. Same four checks on every page; draft one-liners are already in the `todo-box`.
+Rule leaves now exist. Same four checks on every study node; draft one-liners are in [notes/learn/](notes/learn/).
 
 For each node:
 
@@ -69,7 +67,7 @@ For each node:
 2. Locator item (spot the miss in a short scenario or snippet).
 3. Constructed item (fix or classify; stepped fields where the page already says so).
 4. Isomorphic retest item.
-5. Remove the `todo-box` when those four exist.
+5. Tick the checks in `notes/learn/<id>.md` when those four exist.
 
 Suggested order: walk the spine, not the file list — **equal-worth → comparable-access → pour → accessible-name → visible-label** (and the other layer-4 leaves in parallel once POUR is solid).
 
@@ -94,7 +92,7 @@ Suggested order: walk the spine, not the file list — **equal-worth → compara
 | keyboard-access | Point at a mouse-only control or remove a trap. |
 | visible-focus | Restore a visible focus indicator; refuse `outline: none` without a replacement. |
 
-No locator/constructed **format** is coded yet (no YAML of items, no quiz UI). First items can stay as Markdown on the node. A shared item shape can wait until two or three nodes have working examples.
+No locator/constructed **format** is coded yet (no YAML of items, no quiz UI). First items stay as Markdown in `notes/learn/`. A shared item shape can wait until two or three nodes have working examples.
 
 ---
 

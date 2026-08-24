@@ -47,16 +47,3 @@ A `placeholder` plus a visually-hidden label still fails this node if nothing vi
 **1.3.1 Info and Relationships** (A); **3.3.2 Labels or Instructions** (A). In `section-508-web`, `ada-title-ii`, and `wcag-22-aa`.
 
 Understanding: [Labels or Instructions](https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can replace a placeholder-only field with a persistent visible label and explain what disappears.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

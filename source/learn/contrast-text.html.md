@@ -49,16 +49,3 @@ A logo or “incidental” exception does not cover paragraph copy. Placeholder-
 **1.4.3 Contrast (Minimum)** (AA). In `section-508-web` (WCAG 2.0 AA), `ada-title-ii` (2.1 AA), and `wcag-22-aa` (2.2 AA).
 
 Failure [F24](https://www.w3.org/WAI/WCAG22/Techniques/failures/F24), [F83](https://www.w3.org/WAI/WCAG22/Techniques/failures/F83); Sufficient [G18](https://www.w3.org/WAI/WCAG22/Techniques/general/G18), [G145](https://www.w3.org/WAI/WCAG22/Techniques/general/G145). Understanding: [Contrast (Minimum)](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: Given two hex colors, the learner can say pass/fail for 1.4.3 and fix the pair.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

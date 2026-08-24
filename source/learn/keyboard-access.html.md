@@ -10,16 +10,3 @@ This is a **family**, not one cop. Some people do not use a mouse. Operable mean
 - [No keyboard trap](/learn/no-keyboard-trap/) — focus can move on (**2.1.2**).
 
 Then: [Focus must be visible](/learn/visible-focus/), [Focus order matches meaning](/learn/focus-order/), [Single-key shortcuts can be turned off](/learn/character-key-shortcuts/).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can point at a mouse-only control or a trap — those checks live on the child rules.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed items on the children
-- [ ] Isomorphic retest item
-
-</div>

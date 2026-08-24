@@ -42,16 +42,3 @@ A “Contact” link in the header on one page and the same words inside a foote
 **3.2.6 Consistent Help** (A). WCAG 2.2 only: in `wcag-22-aa` (2.2 AA). Not in `section-508-web` (WCAG 2.0 AA) or `ada-title-ii` (2.1 AA).
 
 Understanding: [Consistent Help](https://www.w3.org/WAI/WCAG22/Understanding/consistent-help).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: Given a three-step flow, the learner can say whether help is consistently placed, and which profile requires this criterion.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

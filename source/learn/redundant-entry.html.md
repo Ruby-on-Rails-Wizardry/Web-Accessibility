@@ -42,16 +42,3 @@ A new session or a different process can ask again. Forcing a retype “for secu
 **3.3.7 Redundant Entry** (A). In `wcag-22-aa` (2.2 AA) only. Not in `section-508-web` (WCAG 2.0 AA) or `ada-title-ii` (2.1 AA). 2.2-only.
 
 Understanding: [Redundant Entry](https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry). Sufficient [G221](https://www.w3.org/WAI/WCAG22/Techniques/general/G221).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can point at a repeated field in one process and say how to auto-populate or offer it.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

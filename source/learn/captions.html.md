@@ -51,16 +51,3 @@ Auto-captions that invent words fail. A transcript on another page is not synchr
 **1.2.2 Captions (Prerecorded)** (A). In `section-508-web` (WCAG 2.0 AA), `ada-title-ii` (2.1 AA), and `wcag-22-aa` (2.2 AA).
 
 Sufficient [G87](https://www.w3.org/WAI/WCAG22/Techniques/general/G87), [G93](https://www.w3.org/WAI/WCAG22/Techniques/general/G93); Failure [F8](https://www.w3.org/WAI/WCAG22/Techniques/failures/F8). Understanding: [Captions (Prerecorded)](https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: Given a prerecorded talking-head video, the learner can say whether captions are required and what a pass looks like.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

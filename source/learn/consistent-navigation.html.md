@@ -12,16 +12,3 @@ This is a **family**, not one cop. People memorize where “Search” and “Hel
 Then: [Help stays in the same place](/learn/consistent-help/) (WCAG 2.2).
 
 Section 508 **excepts non-web documents** from both 3.2.3 and 3.2.4 (E205.4). Web content is in.
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can point at a reordered header or a renamed control and restore consistency — those checks live on the child rules.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed items on the children
-- [ ] Isomorphic retest item
-
-</div>

@@ -42,16 +42,3 @@ A button that still requires a confirming shake fails this rule. Motion on by de
 **2.5.4 Motion Actuation** (A). WCAG 2.1 only — in `ada-title-ii` and `wcag-22-aa`, not `section-508-web`.
 
 Sufficient [G213](https://www.w3.org/WAI/WCAG22/Techniques/general/G213). Understanding: [Motion Actuation](https://www.w3.org/WAI/WCAG22/Understanding/motion-actuation).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can add a non-motion control for a shake or tilt action.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

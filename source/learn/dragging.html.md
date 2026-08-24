@@ -42,16 +42,3 @@ Arrow keys without a click/tap path still fail this rule — keyboard is [2.1.1]
 **2.5.7 Dragging Movements** (AA). WCAG 2.2 only — in `wcag-22-aa`, not `section-508-web` or `ada-title-ii`.
 
 Sufficient [G219](https://www.w3.org/WAI/WCAG22/Techniques/general/G219). Understanding: [Dragging Movements](https://www.w3.org/WAI/WCAG22/Understanding/dragging-movements).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can add a non-drag control for a reorder or move action.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

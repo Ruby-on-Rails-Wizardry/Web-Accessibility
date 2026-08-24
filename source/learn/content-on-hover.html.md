@@ -42,16 +42,3 @@ A timeout of a few seconds is not persistent. Dismissing only by moving the poin
 **1.4.13 Content on Hover or Focus** (AA). WCAG 2.1 only — in `ada-title-ii` and `wcag-22-aa`, not `section-508-web`.
 
 Failure [F95](https://www.w3.org/WAI/WCAG22/Techniques/failures/F95); Sufficient [SCR39](https://www.w3.org/WAI/WCAG22/Techniques/client-side-script/SCR39). Understanding: [Content on Hover or Focus](https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can list the three 1.4.13 conditions and point at a tooltip that fails one of them.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

@@ -42,16 +42,3 @@ A newsletter signup is usually out of scope; a wire transfer, a tax filing, or d
 **3.3.4 Error Prevention (Legal, Financial, Data)** (AA). In `section-508-web` (WCAG 2.0 AA), `ada-title-ii` (2.1 AA), and `wcag-22-aa` (2.2 AA).
 
 Sufficient [G98](https://www.w3.org/WAI/WCAG22/Techniques/general/G98), [G99](https://www.w3.org/WAI/WCAG22/Techniques/general/G99), [G155](https://www.w3.org/WAI/WCAG22/Techniques/general/G155). Understanding: [Error Prevention (Legal, Financial, Data)](https://www.w3.org/WAI/WCAG22/Understanding/error-prevention-legal-financial-data).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can say whether a flow is in 3.3.4’s scope and add a review or confirm step.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

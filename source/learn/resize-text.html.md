@@ -46,16 +46,3 @@ Browser page zoom that still clips a box fails this rule. Images of text do not 
 **1.4.4 Resize Text** (AA). In `section-508-web` (WCAG 2.0 AA), `ada-title-ii` (2.1 AA), and `wcag-22-aa` (2.2 AA).
 
 Failure [F69](https://www.w3.org/WAI/WCAG22/Techniques/failures/F69), [F80](https://www.w3.org/WAI/WCAG22/Techniques/failures/F80); Sufficient [G142](https://www.w3.org/WAI/WCAG22/Techniques/general/G142), [G179](https://www.w3.org/WAI/WCAG22/Techniques/general/G179). Understanding: [Resize Text](https://www.w3.org/WAI/WCAG22/Understanding/resize-text).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can point at a clipped box at 200% zoom and free the height.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

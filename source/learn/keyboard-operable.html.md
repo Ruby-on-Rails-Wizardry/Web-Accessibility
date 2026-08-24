@@ -49,16 +49,3 @@ A native date field (or a button that opens the calendar, arrows that move the d
 **2.1.1 Keyboard** (A). In `section-508-web`, `ada-title-ii`, and `wcag-22-aa`.
 
 Failure [F54](https://www.w3.org/WAI/WCAG22/Techniques/failures/F54); Sufficient [G202](https://www.w3.org/WAI/WCAG22/Techniques/general/G202). Understanding: [Keyboard](https://www.w3.org/WAI/WCAG22/Understanding/keyboard).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can point at a mouse-only control and name the keyboard path that is missing.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item (may need a small live fixture later)
-- [ ] Isomorphic retest item
-
-</div>

@@ -47,16 +47,3 @@ The `alt` carries the fact the chart shows. Nearby text does not already say it.
 **1.1.1 Non-text Content** (A). In `section-508-web`, `ada-title-ii`, and `wcag-22-aa`.
 
 Failure [F65](https://www.w3.org/WAI/WCAG22/Techniques/failures/F65) (no `alt`); Sufficient [H37](https://www.w3.org/WAI/WCAG22/Techniques/html/H37). Understanding: [Non-text Content](https://www.w3.org/WAI/WCAG22/Understanding/non-text-content).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: Given an informative image in context, the learner writes an equivalent `alt` (or says the current one is missing).
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item (write the alt)
-- [ ] Isomorphic retest item
-
-</div>

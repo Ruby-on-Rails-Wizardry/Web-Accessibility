@@ -53,16 +53,3 @@ A “skip to main” link that is first on every page is consistent. A breadcrum
 **3.2.3 Consistent Navigation** (AA). In `section-508-web` (web, not 508 non-web), `ada-title-ii`, and `wcag-22-aa`.
 
 Sufficient [G61](https://www.w3.org/WAI/WCAG22/Techniques/general/G61). Understanding: [Consistent Navigation](https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can point at a reordered header and restore the same relative order.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

@@ -15,16 +15,3 @@ People say “508,” “ADA,” and “WCAG” as if they were one bar. They ar
 The full orientation, with official URLs, is in the library: [Which name to use](/docs/which-name/).
 
 Next on this tree: pick a [profile](/learn/profiles/) so an agent or a study path loads only that bar.
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: Given a one-line context (federal vendor, city site, “just make it accessible”), the learner can name the usual bar and refuse to treat the three names as synonyms.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item (scenario)
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

@@ -48,17 +48,3 @@ A `<label>` in the DOM with no `for` and no wrapping still fails. `aria-label` w
 **1.3.1 Info and Relationships** (A); **3.3.2 Labels or Instructions** (A); **4.1.2**. In `section-508-web`, `ada-title-ii`, and `wcag-22-aa`.
 
 Understanding: [Info and Relationships](https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships), [Labels or Instructions](https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: Given a three-field form, the learner associates a visible label with each control and can say why an unassociated `<label>` fails.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item (mentor steps: visible text, current name, edit the markup)
-- [ ] Isomorphic retest item (different fields)
-- [ ] Outcome checks (accessible name equals visible label) — not string-identical markup
-
-</div>

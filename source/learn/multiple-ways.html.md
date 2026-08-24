@@ -42,16 +42,3 @@ A search box that never returns the department pages is not a second way. A site
 **2.4.5 Multiple Ways** (AA). In `section-508-web` (WCAG 2.0 AA; web only — non-web documents excepted under E205.4), `ada-title-ii` (2.1 AA), and `wcag-22-aa` (2.2 AA).
 
 Sufficient [G125](https://www.w3.org/WAI/WCAG22/Techniques/general/G125), [G161](https://www.w3.org/WAI/WCAG22/Techniques/general/G161), [G185](https://www.w3.org/WAI/WCAG22/Techniques/general/G185). Understanding: [Multiple Ways](https://www.w3.org/WAI/WCAG22/Understanding/multiple-ways).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: Given a small site, the learner can name a second way to reach a content page, or say why a checkout step is excepted.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

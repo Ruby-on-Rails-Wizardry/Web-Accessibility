@@ -16,7 +16,7 @@ export default class extends Controller {
 
     this.listTarget.replaceChildren()
     root.querySelectorAll(this.levelsValue).forEach((heading) => {
-      if (heading.closest(".toc, .tree-nav, .example, .todo-box")) return
+      if (heading.closest(".toc, .tree-nav, .example")) return
       if (!heading.id) {
         heading.id = heading.textContent.trim().toLowerCase().replace(/[^\w]+/g, "-").replace(/^-|-$/g, "")
       }

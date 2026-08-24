@@ -48,16 +48,3 @@ The source order is the meaning. Layout can still style it.
 **1.3.2 Meaningful Sequence** (A). In `section-508-web` (WCAG 2.0 AA), `ada-title-ii` (2.1 AA), and `wcag-22-aa` (2.2 AA).
 
 Failure [F1](https://www.w3.org/WAI/WCAG22/Techniques/failures/F1), [F49](https://www.w3.org/WAI/WCAG22/Techniques/failures/F49); Sufficient [G57](https://www.w3.org/WAI/WCAG22/Techniques/general/G57). Understanding: [Meaningful Sequence](https://www.w3.org/WAI/WCAG22/Understanding/meaningful-sequence).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can point at a CSS-reordered block and restore a DOM order that matches the meaning.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

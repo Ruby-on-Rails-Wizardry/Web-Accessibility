@@ -48,16 +48,3 @@ The token is on the list. A browser or password manager can fill it.
 **1.3.5 Identify Input Purpose** (AA). In `ada-title-ii` (2.1 AA) and `wcag-22-aa` (2.2 AA). Not in `section-508-web` (WCAG 2.0 AA). 2.1-only.
 
 Sufficient [H98](https://www.w3.org/WAI/WCAG22/Techniques/html/H98). Understanding: [Identify Input Purpose](https://www.w3.org/WAI/WCAG22/Understanding/identify-input-purpose).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can add the correct `autocomplete` token to a personal name/email/address field.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

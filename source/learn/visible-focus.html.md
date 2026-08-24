@@ -49,17 +49,3 @@ A clear ring (or an equivalent) when the keyboard is in use.
 **2.4.7 Focus Visible** (AA). In `section-508-web`, `ada-title-ii`, and `wcag-22-aa`.
 
 Understanding: [Focus Visible](https://www.w3.org/WAI/WCAG22/Understanding/focus-visible).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can restore a visible focus indicator and refuse `outline: none` without a replacement.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item (edit CSS or markup)
-- [ ] Isomorphic retest item
-- [ ] Later: 2.4.13 as its own node
-
-</div>

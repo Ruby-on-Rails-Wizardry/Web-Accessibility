@@ -47,16 +47,3 @@ The column stacks. Reading uses one scroll axis.
 **1.4.10 Reflow** (AA). In `ada-title-ii` (2.1 AA) and `wcag-22-aa` (2.2 AA). Not in `section-508-web` (WCAG 2.0 AA). 2.1-only.
 
 Understanding: [Reflow](https://www.w3.org/WAI/WCAG22/Understanding/reflow). Sufficient CSS: [C32](https://www.w3.org/WAI/WCAG22/Techniques/css/C32), [C31](https://www.w3.org/WAI/WCAG22/Techniques/css/C31).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can name a page that requires two-axis scrolling to read a line, and say whether a map is excepted.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

@@ -46,16 +46,3 @@ The name is marked French. The rest stays English.
 **3.1.2 Language of Parts** (AA). In `section-508-web` (WCAG 2.0 AA), `ada-title-ii` (2.1 AA), and `wcag-22-aa` (2.2 AA).
 
 Sufficient [H58](https://www.w3.org/WAI/WCAG22/Techniques/html/H58). Understanding: [Language of Parts](https://www.w3.org/WAI/WCAG22/Understanding/language-of-parts).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: Given a page in one language with a quoted phrase in another, the learner wraps the phrase and sets `lang`.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

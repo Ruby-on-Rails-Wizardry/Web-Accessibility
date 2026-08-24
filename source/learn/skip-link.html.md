@@ -51,16 +51,3 @@ The first control jumps to `main`. The header is still there for people who want
 **2.4.1 Bypass Blocks** (A). In `section-508-web` (WCAG 2.0 AA; web only — non-web documents excepted under E205.4), `ada-title-ii` (2.1 AA), and `wcag-22-aa` (2.2 AA).
 
 Sufficient [G1](https://www.w3.org/WAI/WCAG22/Techniques/general/G1). Understanding: [Bypass Blocks](https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can add a working skip link to a page with a long header, or point at a missing one.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

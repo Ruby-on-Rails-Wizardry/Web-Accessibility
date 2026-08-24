@@ -42,16 +42,3 @@ A keyboard shortcut without a single-pointer control still fails this rule — *
 **2.5.1 Pointer Gestures** (A). WCAG 2.1 only — in `ada-title-ii` and `wcag-22-aa`, not `section-508-web`.
 
 Sufficient [G215](https://www.w3.org/WAI/WCAG22/Techniques/general/G215), [G216](https://www.w3.org/WAI/WCAG22/Techniques/general/G216). Understanding: [Pointer Gestures](https://www.w3.org/WAI/WCAG22/Understanding/pointer-gestures).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can add a single-pointer control for a pinch- or swipe-only action.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

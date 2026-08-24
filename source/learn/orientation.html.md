@@ -49,16 +49,3 @@ A rotate-device overlay that hides the app in one orientation is still a lock. `
 **1.3.4 Orientation** (AA). WCAG 2.1 only — in `ada-title-ii` and `wcag-22-aa`, not `section-508-web`.
 
 Sufficient [G214](https://www.w3.org/WAI/WCAG22/Techniques/general/G214). Understanding: [Orientation](https://www.w3.org/WAI/WCAG22/Understanding/orientation).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can remove an orientation lock, or justify an essential exception.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

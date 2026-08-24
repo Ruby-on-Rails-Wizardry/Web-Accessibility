@@ -52,16 +52,3 @@ An icon that is itself only a red circle, with no text alternative, is still col
 **1.4.1 Use of Color** (A). In `section-508-web`, `ada-title-ii`, and `wcag-22-aa`.
 
 Understanding: [Use of Color](https://www.w3.org/WAI/WCAG22/Understanding/use-of-color).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can add a non-color cue to a color-only distinction and refuse to treat that as “color work is impossible.”
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item (edit a snippet or a message)
-- [ ] Isomorphic retest item
-
-</div>

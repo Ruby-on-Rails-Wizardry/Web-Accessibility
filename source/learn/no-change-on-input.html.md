@@ -56,16 +56,3 @@ Updating a live region or revealing more fields on the same page is usually not 
 **3.2.2 On Input** (A). In `section-508-web`, `ada-title-ii`, and `wcag-22-aa`.
 
 Failure [F36](https://www.w3.org/WAI/WCAG22/Techniques/failures/F36), [F37](https://www.w3.org/WAI/WCAG22/Techniques/failures/F37); Sufficient [G80](https://www.w3.org/WAI/WCAG22/Techniques/general/G80), [G13](https://www.w3.org/WAI/WCAG22/Techniques/general/G13). Understanding: [On Input](https://www.w3.org/WAI/WCAG22/Understanding/on-input).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can replace an onchange navigation with an explicit submit (or an equivalent requested action).
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

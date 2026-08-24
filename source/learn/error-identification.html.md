@@ -51,16 +51,3 @@ A banner at the top that says “There were errors” without naming the fields 
 **3.3.1 Error Identification** (A). In `section-508-web`, `ada-title-ii`, and `wcag-22-aa`.
 
 Failure [F81](https://www.w3.org/WAI/WCAG22/Techniques/failures/F81) (color-only error); Sufficient [G83](https://www.w3.org/WAI/WCAG22/Techniques/general/G83), [G84](https://www.w3.org/WAI/WCAG22/Techniques/general/G84). Understanding: [Error Identification](https://www.w3.org/WAI/WCAG22/Understanding/error-identification).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can replace a color-only validation state with a text error tied to the field.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

@@ -56,16 +56,3 @@ The name matches the destination or the action. A visible word on the button is 
 **1.1.1 Non-text Content** (A); **4.1.2** for the control’s name. In `section-508-web`, `ada-title-ii`, and `wcag-22-aa`.
 
 Sufficient [H37](https://www.w3.org/WAI/WCAG22/Techniques/html/H37), [H30](https://www.w3.org/WAI/WCAG22/Techniques/html/H30) (text alternative for a linked image). Understanding: [Non-text Content](https://www.w3.org/WAI/WCAG22/Understanding/non-text-content).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: Given a linked logo or icon button, the learner writes an `alt` that names the destination or action.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

@@ -46,16 +46,3 @@ A unique `<h1>` with a generic `title` still fails: the tab and the history entr
 **2.4.2 Page Titled** (A). In `section-508-web` (WCAG 2.0 AA), `ada-title-ii` (2.1 AA), and `wcag-22-aa` (2.2 AA).
 
 Failure [F25](https://www.w3.org/WAI/WCAG22/Techniques/failures/F25); Sufficient [H25](https://www.w3.org/WAI/WCAG22/Techniques/html/H25), [G88](https://www.w3.org/WAI/WCAG22/Techniques/general/G88). Understanding: [Page Titled](https://www.w3.org/WAI/WCAG22/Understanding/page-titled).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: Given two views that share a site name, the learner writes a title that distinguishes them.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

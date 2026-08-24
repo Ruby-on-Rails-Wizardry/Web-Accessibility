@@ -15,16 +15,3 @@ Use one name in the first message to an agent, or as the covering set for a demo
 Cards, official cites, and catalog columns: [Requirement profiles](/docs/profiles/requirement-profiles/). How to work a thin slice: [Reducing cognitive load](/docs/agents/reducing-cognitive-load/).
 
 This node is orientation. It still traces to [equal worth](/learn/equal-worth/): the profile is *which techniques we require*, not *whether the person matters*.
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: Given a project context, the learner can pick a profile name and say which catalog column to filter.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

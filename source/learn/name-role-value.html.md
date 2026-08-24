@@ -46,16 +46,3 @@ Role, name, and selected state are exposed (or use a native control and skip the
 **4.1.2 Name, Role, Value** (A). In `section-508-web`, `ada-title-ii`, and `wcag-22-aa`.
 
 Failure [F15](https://www.w3.org/WAI/WCAG22/Techniques/failures/F15), [F79](https://www.w3.org/WAI/WCAG22/Techniques/failures/F79); Sufficient [ARIA4](https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA4), [ARIA5](https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA5), [G108](https://www.w3.org/WAI/WCAG22/Techniques/general/G108). Understanding: [Name, Role, Value](https://www.w3.org/WAI/WCAG22/Understanding/name-role-value).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can replace a clickable div with a native control, or add role, name, and state to a custom widget.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

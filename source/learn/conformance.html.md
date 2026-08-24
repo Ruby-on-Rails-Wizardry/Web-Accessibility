@@ -29,16 +29,3 @@ The modal, the page it sits on, and the process that uses it are all in scope.
 </div>
 
 </div>
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: Given a passing component on a failing flow, the learner can refuse a page-level or process-level conformance claim.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

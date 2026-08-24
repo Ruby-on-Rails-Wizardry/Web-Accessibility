@@ -42,16 +42,3 @@ Pause only on hover still fails keyboard and touch. A control hidden in a settin
 **2.2.2 Pause, Stop, Hide** (A). In `section-508-web`, `ada-title-ii`, and `wcag-22-aa`.
 
 Failure [F16](https://www.w3.org/WAI/WCAG22/Techniques/failures/F16); Sufficient [G4](https://www.w3.org/WAI/WCAG22/Techniques/general/G4), [G11](https://www.w3.org/WAI/WCAG22/Techniques/general/G11). Understanding: [Pause, Stop, Hide](https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can add a pause control to a looping carousel or news ticker.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

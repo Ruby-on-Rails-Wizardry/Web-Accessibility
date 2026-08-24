@@ -32,16 +32,3 @@ Functionality is available from the keyboard. The site does not assume one body 
 
 - [WAI: Introduction to Web Accessibility](https://www.w3.org/WAI/fundamentals/accessibility-intro/)
 - WAI also cites the [CRPD](https://www.ohchr.org/en/instruments-mechanisms/instruments/convention-rights-persons-disabilities) when it treats access to ICT as a basic human right.
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can restate universality in their own words and point at one unnecessary assumption (mouse-only, vision-only) in a short scenario.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item (scenario)
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

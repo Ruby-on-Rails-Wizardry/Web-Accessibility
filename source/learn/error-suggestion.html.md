@@ -46,16 +46,3 @@ A suggestion that appears only in a `title` tooltip, or only after a hover, is n
 **3.3.3 Error Suggestion** (AA). In `section-508-web`, `ada-title-ii`, and `wcag-22-aa`.
 
 Sufficient [G177](https://www.w3.org/WAI/WCAG22/Techniques/general/G177). Understanding: [Error Suggestion](https://www.w3.org/WAI/WCAG22/Understanding/error-suggestion).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: Given a known-format miss (date, phone, email), the learner writes a text suggestion — or says why a login error stays vague.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

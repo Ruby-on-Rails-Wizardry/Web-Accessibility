@@ -50,16 +50,3 @@ Omitting the `alt` attribute is not the same as `alt=""`. A missing attribute is
 **1.1.1 Non-text Content** (A). In `section-508-web`, `ada-title-ii`, and `wcag-22-aa`.
 
 Sufficient [H67](https://www.w3.org/WAI/WCAG22/Techniques/html/H67) (empty `alt` when the image is not announced). Understanding: [Non-text Content](https://www.w3.org/WAI/WCAG22/Understanding/non-text-content).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: Given an ornamental image, the learner sets `alt=""` and says why a missing attribute fails.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

@@ -42,16 +42,3 @@ A warning that lasts five seconds and requires a multi-step dialog (or a CAPTCHA
 **2.2.1 Timing Adjustable** (A). In `section-508-web`, `ada-title-ii`, and `wcag-22-aa`.
 
 Failure [F40](https://www.w3.org/WAI/WCAG22/Techniques/failures/F40), [F41](https://www.w3.org/WAI/WCAG22/Techniques/failures/F41); Sufficient [G133](https://www.w3.org/WAI/WCAG22/Techniques/general/G133), [G198](https://www.w3.org/WAI/WCAG22/Techniques/general/G198). Understanding: [Timing Adjustable](https://www.w3.org/WAI/WCAG22/Understanding/timing-adjustable).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can add an extend-time path to a session timeout, or say when a live auction is excepted.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

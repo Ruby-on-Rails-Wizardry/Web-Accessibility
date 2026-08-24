@@ -54,16 +54,3 @@ Do not put a live keyboard trap on this site as a demo.
 **2.1.2 No Keyboard Trap** (A). In `section-508-web`, `ada-title-ii`, and `wcag-22-aa`.
 
 Failure [F10](https://www.w3.org/WAI/WCAG22/Techniques/failures/F10); Sufficient [G21](https://www.w3.org/WAI/WCAG22/Techniques/general/G21). Understanding: [No Keyboard Trap](https://www.w3.org/WAI/WCAG22/Understanding/no-keyboard-trap).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can point at a trap and name the key or control that should move focus on.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

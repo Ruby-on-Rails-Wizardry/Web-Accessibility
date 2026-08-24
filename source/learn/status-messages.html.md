@@ -46,16 +46,3 @@ Moving focus to the toast “so the reader will hear it” is not this pattern �
 **4.1.3 Status Messages** (AA). WCAG 2.1 only — in `ada-title-ii` and `wcag-22-aa`, not `section-508-web`.
 
 Sufficient [ARIA19](https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA19), [ARIA22](https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA22). Understanding: [Status Messages](https://www.w3.org/WAI/WCAG22/Understanding/status-messages).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can add an appropriate live region to a save confirmation that does not move focus.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

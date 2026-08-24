@@ -48,16 +48,3 @@ The page is Spanish. Speech and hyphenation can follow.
 **3.1.1 Language of Page** (A). In `section-508-web` (WCAG 2.0 AA), `ada-title-ii` (2.1 AA), and `wcag-22-aa` (2.2 AA).
 
 Sufficient [H57](https://www.w3.org/WAI/WCAG22/Techniques/html/H57). Understanding: [Language of Page](https://www.w3.org/WAI/WCAG22/Understanding/language-of-page).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can add a correct `lang` on the root and say why a missing one fails.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

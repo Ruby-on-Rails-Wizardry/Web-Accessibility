@@ -44,16 +44,3 @@ American restatements of the same creed (not accessibility statutes): Lincoln at
 ## Voice on this tree
 
 Say **accessibility**, or the specific name (WCAG, Section 508, ADA, this pattern). Do not frame the work as choosing a side. A miss names something to study, not a kind of person.
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: Given a situation where someone cannot complete a published task, the learner can say that the person is owed respect and name the shut-out as the problem — not “we will get to it later.”
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item (scenario)
-- [ ] Constructed item (stepped fields: who is excluded, what they cannot do, what respect requires)
-- [ ] Isomorphic retest item
-
-</div>

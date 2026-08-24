@@ -46,16 +46,3 @@ The action runs on `click` / `mouseup`. Sliding off the button before release ca
 **2.5.2 Pointer Cancellation** (A). WCAG 2.1 only — in `ada-title-ii` and `wcag-22-aa`, not `section-508-web`.
 
 Sufficient [G210](https://www.w3.org/WAI/WCAG22/Techniques/general/G210), [G212](https://www.w3.org/WAI/WCAG22/Techniques/general/G212). Understanding: [Pointer Cancellation](https://www.w3.org/WAI/WCAG22/Understanding/pointer-cancellation).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can move an action from mousedown to click and say why.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

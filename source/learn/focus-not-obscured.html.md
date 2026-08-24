@@ -47,16 +47,3 @@ A visible focus ring that is fully covered still fails this node; [Focus Visible
 **2.4.11 Focus Not Obscured (Minimum)** (AA). In `wcag-22-aa` (2.2 AA) only. Not in `section-508-web` (WCAG 2.0 AA) or `ada-title-ii` (2.1 AA). 2.2-only.
 
 Understanding: [Focus Not Obscured (Minimum)](https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum). Sufficient [C43](https://www.w3.org/WAI/WCAG22/Techniques/css/C43).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can point at a sticky bar that covers focused links and free them.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

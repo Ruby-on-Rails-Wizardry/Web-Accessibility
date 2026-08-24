@@ -14,16 +14,3 @@ This is a **family**, not one cop. [Perceivable](/learn/pour/): the information 
 Meaningful wording of `alt` (how *good* the alternative is) is a later, harder item. This family is the classification and the matching `alt` pattern.
 
 Every child is part of **1.1.1 Non-text Content**. This page is smaller than all of 1.1.1.
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: Given an image in context, the learner can classify decorative vs informative vs functional and open the matching rule.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item (classify)
-- [ ] Constructed item lives on the child rules
-- [ ] Isomorphic retest item
-
-</div>

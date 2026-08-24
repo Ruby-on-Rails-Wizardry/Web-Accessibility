@@ -48,17 +48,3 @@ This node is the idea. It is not the whole of **4.1.2**.
 **4.1.2 Name, Role, Value** (A); **2.5.3 Label in Name** (AA, 2.1). In `section-508-web` (4.1.2), `ada-title-ii`, and `wcag-22-aa`.
 
 Understanding: [Name, Role, Value](https://www.w3.org/WAI/WCAG22/Understanding/name-role-value).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: Given markup, the learner can say what the accessible name is (or that there is none).
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item (step: what is the name now)
-- [ ] Isomorphic retest item
-- [ ] Another independent snippet for retest
-
-</div>

@@ -50,16 +50,3 @@ CSS `::before` bullets on `div`s still fail. `role="list"` on a wrapper whose ch
 **1.3.1 Info and Relationships** (A). In `section-508-web` (WCAG 2.0 AA), `ada-title-ii` (2.1 AA), and `wcag-22-aa` (2.2 AA).
 
 Failure [F2](https://www.w3.org/WAI/WCAG22/Techniques/failures/F2); Sufficient [H48](https://www.w3.org/WAI/WCAG22/Techniques/html/H48). Understanding: [Info and Relationships](https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can turn a stack of styled divs into a list and say what a screen reader gains.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

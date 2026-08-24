@@ -48,16 +48,3 @@ A button does a thing. A link goes somewhere. Both already work from the keyboar
 **4.1.2 Name, Role, Value** (A); **2.1.1 Keyboard**. In `section-508-web`, `ada-title-ii`, and `wcag-22-aa`.
 
 Authoring tools should default to native patterns — [ATAG](/docs/authoring-tools/atag/).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can replace a clickable `div` with `button` or `a href` and say which one fits.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

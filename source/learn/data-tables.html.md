@@ -58,16 +58,3 @@ The first row of `td` that only *looks* like headers is not a header. Bold or la
 **1.3.1 Info and Relationships** (A). In `section-508-web` (WCAG 2.0 AA), `ada-title-ii` (2.1 AA), and `wcag-22-aa` (2.2 AA).
 
 Failure [F91](https://www.w3.org/WAI/WCAG22/Techniques/failures/F91) (headers not programmatically determined), [F46](https://www.w3.org/WAI/WCAG22/Techniques/failures/F46) (layout tables that do not make sense linearized); Sufficient [H51](https://www.w3.org/WAI/WCAG22/Techniques/html/H51), [H63](https://www.w3.org/WAI/WCAG22/Techniques/html/H63). Understanding: [Info and Relationships](https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: Given a grid of figures, the learner marks column and row headers (or refuses a layout table).
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

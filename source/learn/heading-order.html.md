@@ -54,16 +54,3 @@ Starting the main content at `h2` because the site name in the header is `h1` is
 Part of **1.3.1 Info and Relationships** (A). In `section-508-web`, `ada-title-ii`, and `wcag-22-aa`.
 
 Sufficient [G141](https://www.w3.org/WAI/WCAG22/Techniques/general/G141) (organizing a page using headings). Understanding: [Info and Relationships](https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: Given a heading list that skips a level, the learner restores a nested outline without changing the meaning.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

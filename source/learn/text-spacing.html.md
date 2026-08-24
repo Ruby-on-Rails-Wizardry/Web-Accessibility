@@ -46,16 +46,3 @@ You do not have to *set* those spacing values yourself; you have to *allow* them
 **1.4.12 Text Spacing** (AA). In `ada-title-ii` (2.1 AA) and `wcag-22-aa` (2.2 AA). Not in `section-508-web` (WCAG 2.0 AA). 2.1-only.
 
 Understanding: [Text Spacing](https://www.w3.org/WAI/WCAG22/Understanding/text-spacing). Sufficient [C36](https://www.w3.org/WAI/WCAG22/Techniques/css/C36).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can find a fixed-height box that will clip under 1.4.12 spacing and free it.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>

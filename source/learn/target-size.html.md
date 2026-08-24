@@ -46,16 +46,3 @@ A 24px *drawing* on a 16px hit target still fails. Empty-looking space that belo
 **2.5.8 Target Size (Minimum)** (AA). WCAG 2.2 only — in `wcag-22-aa`, not `section-508-web` or `ada-title-ii`.
 
 Sufficient [C42](https://www.w3.org/WAI/WCAG22/Techniques/css/C42). Understanding: [Target Size (Minimum)](https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum).
-
-<div class="todo-box" markdown="1">
-
-## Still to write (Learning for Mastery)
-
-Draft mastery: The learner can enlarge or space a cluster of icon buttons to meet 2.5.8.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
-
-</div>
