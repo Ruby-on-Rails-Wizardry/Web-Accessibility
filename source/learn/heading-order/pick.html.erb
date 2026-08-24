@@ -1,6 +1,6 @@
 ---
 title: Pick the example that follows the rule
-description: Two live examples. Pick the one that nests heading levels, then Check.
+description: Two live examples. Pick the one that nests heading levels.
 node: heading-order-pick
 layout: practice
 practice: pick
@@ -21,7 +21,7 @@ practice_note: Each card shows the HTML and how it renders. Pick the one that ne
     <% examples.each_with_index do |html, index| %>
       <% letter = ("A".ord + index).chr %>
       <label class="practice-choice">
-        <input type="radio" name="practice-pick" data-check-target="choice" aria-label="Example <%= letter %>">
+        <input type="radio" name="practice-pick" data-check-target="choice" data-action="change->check#run" aria-label="Example <%= letter %>">
         <span class="practice-choice__name">Example <%= letter %></span>
         <span class="practice-choice__caption">HTML</span>
         <pre class="practice-choice__source"><code><%= CGI.escapeHTML(html) %></code></pre>

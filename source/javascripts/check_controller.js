@@ -15,29 +15,23 @@ export default class extends Controller {
   }
 
   run(event) {
-    event?.preventDefault()
-    const root = this.sectionToCheck()
+    const chosen = event?.target && this.choiceTargets.includes(event.target) ? event.target : null
+    const root = chosen ? this.sectionForChoice(chosen) : this.sectionToCheck()
     if (!root) return
-    this.paint(this.evaluate(root), root)
+    this.paint(this.evaluate(root), root, { moveFocus: !chosen })
+  }
+
+  sectionForChoice(input) {
+    return input.closest(".practice-choice")?.querySelector("[data-check-target='section']") || null
   }
 
   sectionToCheck() {
-    if (!this.hasChoiceTarget) {
-      return this.hasSectionTarget ? this.sectionTarget : null
+    if (this.hasChoiceTarget) {
+      const selected = this.choiceTargets.find((input) => input.checked)
+      return selected ? this.sectionForChoice(selected) : null
     }
 
-    const selected = this.choiceTargets.find((input) => input.checked)
-    if (!selected) {
-      this.paint({
-        ok: false,
-        failures: [],
-        catalog: this.catalogValue,
-        message: "Pick an example first."
-      }, null)
-      return null
-    }
-
-    return selected.closest(".practice-choice")?.querySelector("[data-check-target='section']") || null
+    return this.hasSectionTarget ? this.sectionTarget : null
   }
 
   evaluate(root) {
@@ -54,7 +48,7 @@ export default class extends Controller {
     return { ok: failures.length === 0, failures, catalog }
   }
 
-  paint(result, root) {
+  paint(result, root, { moveFocus = true } = {}) {
     if (!this.hasResultsTarget) return
 
     this.clearChoiceMarks()
@@ -64,13 +58,6 @@ export default class extends Controller {
 
     const status = document.createElement("p")
     status.className = "check-results__status"
-
-    if (result.message) {
-      status.textContent = result.message
-      this.resultsTarget.append(status)
-      this.resultsTarget.focus()
-      return
-    }
 
     if (result.ok) {
       status.append("Correct. This section follows ")
@@ -94,7 +81,7 @@ export default class extends Controller {
       this.markChoice(root, false)
     }
 
-    this.resultsTarget.focus()
+    if (moveFocus) this.resultsTarget.focus()
   }
 
   ruleListPhrase(catalog) {

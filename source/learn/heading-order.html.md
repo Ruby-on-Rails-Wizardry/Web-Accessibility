@@ -47,7 +47,7 @@ Same visual size via CSS if you need it. The levels match the sections.
 
 ## Practice
 
-<p><a href="pick/" data-turbo="false">Pick the example that follows the rule</a> — two live examples, then <strong>Check</strong>.</p>
+<p><a href="pick/" data-turbo="false">Pick the example that follows the rule</a> — two live examples; feedback is immediate.</p>
 
 <p><a href="fix/" data-turbo="false">Fix the skipped headings</a> — restore a nested outline, then <strong>Check</strong>.</p>
 
