@@ -1,19 +1,16 @@
 <div class="specimen-banner">
-  <p>
+  <button
+    type="button"
+    class="button button--small specimen-banner__edit"
+    data-specimen-target="toggle"
+    data-action="specimen#toggle"
+    aria-expanded="false"
+    hidden
+  >
+    Edit
+  </button>
+  <p class="specimen-banner__note">
     <span class="specimen-banner__kind"><%= specimen_variant == "good" ? "Good example" : "Bad example" %></span>
     <%= current_page.data.specimen_note || (specimen_variant == "bad" ? "This page is supposed to fail a heading-list check." : "Check this page with a heading list, WAVE, or axe.") %>
-    Close <strong>Edit</strong> before you scan so the editor is not in the page.
-  </p>
-  <p>
-    <button
-      type="button"
-      class="button button--small specimen-banner__edit"
-      data-specimen-target="toggle"
-      data-action="specimen#toggle"
-      aria-expanded="false"
-      hidden
-    >
-      Edit
-    </button>
   </p>
 </div>

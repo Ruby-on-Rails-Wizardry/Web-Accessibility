@@ -11,11 +11,14 @@
   </ol>
   <% if other %>
     <p class="tree-nav__heading">This pair</p>
-    <ul>
+    <ul class="docs-nav__crumbs">
       <li>
         <%= link_to (specimen_variant == "bad" ? "Good example" : "Bad example"), other.path, "data-turbo": "false" %>
       </li>
     </ul>
   <% end %>
-  <p class="tree-nav__index"><%= link_to "Testing tools", "/docs/evaluation/testing-tools/", "data-turbo": "false" %></p>
+  <p class="tree-nav__heading">Testing tools</p>
+  <ul class="docs-nav__crumbs">
+    <li><%= link_to "axe, WAVE, ANDI, screen readers", "/docs/evaluation/testing-tools/", "data-turbo": "false" %></li>
+  </ul>
 </nav>

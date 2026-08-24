@@ -16,10 +16,12 @@
     <%= partial "skip_link" %>
     <%= partial "header" %>
     <div class="specimen-shell">
-      <%= partial "specimen_banner" %>
-      <main id="main" class="specimen-main" data-specimen-target="stage">
-        <%= yield %>
-      </main>
+      <div class="specimen-primary">
+        <%= partial "specimen_banner" %>
+        <main id="main" class="specimen-main" data-specimen-target="stage">
+          <%= yield %>
+        </main>
+      </div>
       <aside class="specimen-aside">
         <%= partial "specimen_nav" %>
       </aside>

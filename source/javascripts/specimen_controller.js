@@ -103,8 +103,12 @@ export default class extends Controller {
     reset.textContent = "Reset"
     reset.addEventListener("click", () => this.reset())
 
+    const hint = document.createElement("p")
+    hint.className = "specimen-editor__hint"
+    hint.textContent = "Close Edit before you scan so the editor is not in the page."
+
     actions.append(apply, reset)
-    inner.append(label, source, actions)
+    inner.append(label, source, actions, hint)
     panel.append(inner)
     return panel
   }
