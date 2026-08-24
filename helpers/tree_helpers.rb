@@ -110,13 +110,6 @@ module TreeHelpers
     current_page.data.practice.to_s
   end
 
-  def practice_controllers
-    list = []
-    list << "specimen" if practice_variant == "fix"
-    list << "check"
-    list.join(" ")
-  end
-
   def practice_other_node
     of = current_page.data.of.to_s
     return if of.empty? || practice_variant.empty?

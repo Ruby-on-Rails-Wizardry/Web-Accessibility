@@ -49,9 +49,9 @@ Same visual size via CSS if you need it. The levels match the sections.
 
 <p><a href="pick/" data-turbo="false">Pick the example that follows the rule</a> — two live examples; feedback is immediate.</p>
 
-<p><a href="fix/" data-turbo="false">Fix the skipped headings</a> — restore a nested outline, then <strong>Check</strong>.</p>
+<p><a href="fix/" data-turbo="false">Fix the skipped headings</a> — restore a nested outline, then <strong>Apply</strong>.</p>
 
-**Check** on those pages scores this rule. Close **Edit** before you scan with WAVE, axe, or a heading list so the editor is not in the page.
+The in-house check on those pages scores this rule, and only the example under test. For WAVE, axe, or a heading list, use the live bad or good page and close <strong>Edit</strong> so the editor is not in the page.
 
 ## Not a pass
 

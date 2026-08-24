@@ -14,15 +14,36 @@
   </head>
   <body
     class="practice practice--<%= practice_variant %>"
-    data-controller="<%= practice_controllers %>"
+    data-controller="check"
     data-check-catalog-value="<%= CGI.escapeHTML(check_catalog.to_json) %>"
-    <% if practice_variant == "fix" %>data-specimen-open-value="true"<% end %>
   >
     <%= partial "skip_link" %>
     <%= partial "header" %>
+    <% page_body = yield %>
     <div class="specimen-shell">
       <div class="specimen-primary">
         <%= partial "practice_banner" %>
+        <% if practice_variant == "fix" %>
+          <div class="specimen-editor">
+            <div class="specimen-editor__inner">
+              <label for="specimen-source">Example HTML</label>
+              <textarea
+                id="specimen-source"
+                data-check-target="source"
+                data-action="keydown->check#keydown"
+                rows="8"
+                spellcheck="false"
+                autocapitalize="off"
+                autocomplete="off"
+              ><%= CGI.escapeHTML(page_body.to_s.strip) %></textarea>
+              <p class="specimen-editor__actions">
+                <button type="button" class="button button--small" data-action="check#applyAndCheck">Apply</button>
+                <button type="button" class="button button--small button--ghost" data-action="check#reset">Reset</button>
+              </p>
+              <p class="specimen-editor__hint">The in-house check looks only at the example below.</p>
+            </div>
+          </div>
+        <% end %>
         <div
           class="check-results"
           id="check-results"
@@ -31,12 +52,12 @@
           aria-live="polite"
         ></div>
         <% if practice_variant == "fix" %>
-          <main id="main" class="specimen-main" data-specimen-target="stage" data-check-target="section">
-            <%= yield %>
+          <main id="main" class="specimen-main" data-check-target="section">
+            <%= page_body.html_safe %>
           </main>
         <% else %>
           <main id="main" class="specimen-main">
-            <%= yield %>
+            <%= page_body.html_safe %>
           </main>
         <% end %>
       </div>

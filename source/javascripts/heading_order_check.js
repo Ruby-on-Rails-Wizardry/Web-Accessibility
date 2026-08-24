@@ -1,11 +1,23 @@
-// Heading-order cop: do not skip a level inside the section.
+// Heading-order cop: do not skip a level inside the given node.
+// The rest of the page is ignored. The node itself is included if it is a heading.
 // Starting at h2 is allowed. Going back up (h3 then h2) is allowed.
 // Empty headings are a different miss and are not scored here.
 
-export function headingOrderCheck(root) {
+const HEADING_SELECTOR = "h1, h2, h3, h4, h5, h6"
+
+export function headingsIn(root) {
   if (!root) return []
 
-  const headings = [...root.querySelectorAll("h1, h2, h3, h4, h5, h6")]
+  const list = []
+  if (root.nodeType === 1 && root.matches(HEADING_SELECTOR)) list.push(root)
+  if (typeof root.querySelectorAll === "function") {
+    list.push(...root.querySelectorAll(HEADING_SELECTOR))
+  }
+  return list
+}
+
+export function headingOrderCheck(root) {
+  const headings = headingsIn(root)
   const details = []
   if (headings.length === 0) return details
 

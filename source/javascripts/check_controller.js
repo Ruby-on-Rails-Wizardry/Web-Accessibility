@@ -6,11 +6,13 @@ const CHECKERS = {
 }
 
 export default class extends Controller {
-  static targets = ["section", "choice", "results", "button"]
+  static targets = ["section", "choice", "results", "button", "source"]
   static values = { catalog: Array }
 
   connect() {
     if (this.hasButtonTarget) this.buttonTarget.hidden = false
+    if (this.hasSectionTarget) this.original = this.normalize(this.sectionTarget.innerHTML)
+    if (this.hasSourceTarget && this.original) this.sourceTarget.value = this.original
     this.shuffleChoices()
   }
 
@@ -19,6 +21,38 @@ export default class extends Controller {
     const root = chosen ? this.sectionForChoice(chosen) : this.sectionToCheck()
     if (!root) return
     this.paint(this.evaluate(root), root, { moveFocus: !chosen })
+  }
+
+  applyAndCheck() {
+    const root = this.applySource()
+    if (!root) return
+    this.paint(this.evaluate(root), root)
+  }
+
+  reset() {
+    if (!this.hasSectionTarget || this.original == null) return
+    this.sectionTarget.innerHTML = this.original
+    if (this.hasSourceTarget) this.sourceTarget.value = this.original
+    this.paint(this.evaluate(this.sectionTarget), this.sectionTarget)
+  }
+
+  keydown(event) {
+    if ((event.metaKey || event.ctrlKey) && event.key === "Enter") {
+      event.preventDefault()
+      this.applyAndCheck()
+    }
+  }
+
+  applySource() {
+    if (!this.hasSourceTarget || !this.hasSectionTarget) return null
+    this.sectionTarget.innerHTML = this.sourceTarget.value
+    this.sectionTarget.querySelectorAll("script").forEach((node) => node.remove())
+    this.sourceTarget.value = this.normalize(this.sectionTarget.innerHTML)
+    return this.sectionTarget
+  }
+
+  normalize(html) {
+    return html.replace(/^\s+|\s+$/g, "").replace(/\n[ \t]+\n/g, "\n\n").replace(/\n[ \t]+/g, "\n")
   }
 
   sectionForChoice(input) {

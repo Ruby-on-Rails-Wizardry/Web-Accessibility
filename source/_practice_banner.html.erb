@@ -3,28 +3,4 @@
     <span class="specimen-banner__kind"><%= practice_variant == "fix" ? "Fix" : "Pick" %></span>
     <%= current_page.data.practice_note %>
   </p>
-  <% if practice_variant == "fix" %>
-    <div class="specimen-banner__actions">
-      <button
-        type="button"
-        class="button button--small specimen-banner__edit"
-        data-specimen-target="toggle"
-        data-action="specimen#toggle"
-        aria-expanded="false"
-        hidden
-      >
-        Edit
-      </button>
-      <button
-        type="button"
-        class="button button--small specimen-banner__check"
-        data-check-target="button"
-        data-action="specimen#apply check#run"
-        aria-controls="check-results"
-        hidden
-      >
-        Check
-      </button>
-    </div>
-  <% end %>
 </div>
