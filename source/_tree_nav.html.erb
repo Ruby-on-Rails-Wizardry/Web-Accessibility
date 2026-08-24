@@ -42,7 +42,10 @@
   <% example_ids = tree_example_ids(node) %>
   <% if example_ids.any? %>
     <h2>Check with tools</h2>
-    <p>Open the live example alone so a heading list sees only that markup.</p>
+    <p>
+      Open the live example alone so a heading list sees only that markup.
+      How to run a checker: <%= link_to "Testing tools", "/docs/evaluation/testing-tools/" %>.
+    </p>
     <ul>
       <% example_ids.each do |id| %>
         <li><%= link_to tree_lookup(id)&.title || id, tree_lookup(id)&.path || id, "data-turbo": "false" %></li>

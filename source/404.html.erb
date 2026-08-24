@@ -5,6 +5,10 @@ title: Not found
 <section class="hero">
   <p class="eyebrow">404</p>
   <h1>That page is not here</h1>
-  <p class="lede">It may have moved. Try the docs index.</p>
-  <p><%= link_to "Back to the docs", "/docs/", class: "button" %></p>
+  <p class="lede">It may have moved. Try Home, the knowledge tree, or the library.</p>
+  <p>
+    <%= link_to "Home", "/", class: "button" %>
+    <%= link_to "Knowledge tree", "/learn/", class: "button button--ghost" %>
+    <%= link_to "Library", "/docs/", class: "button button--ghost" %>
+  </p>
 </section>
