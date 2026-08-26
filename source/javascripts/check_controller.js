@@ -10,6 +10,11 @@ import { informativeImageAltCheck } from "./informative_image_alt_check.js"
 import { decorativeImageSilentCheck } from "./decorative_image_silent_check.js"
 import { functionalImageNamesActionCheck } from "./functional_image_names_action_check.js"
 import { linkPurposeCheck } from "./link_purpose_check.js"
+import { labelInNameCheck } from "./label_in_name_check.js"
+import { inputPurposeCheck } from "./input_purpose_check.js"
+import { languageOfPartsCheck } from "./language_of_parts_check.js"
+import { errorIdentificationCheck } from "./error_identification_check.js"
+import { errorSuggestionCheck } from "./error_suggestion_check.js"
 import { htmlWellFormed } from "./html_wellformed.js"
 
 const CHECKERS = {
@@ -23,7 +28,12 @@ const CHECKERS = {
   "informative-image-alt": informativeImageAltCheck,
   "decorative-image-silent": decorativeImageSilentCheck,
   "functional-image-names-action": functionalImageNamesActionCheck,
-  "link-purpose": linkPurposeCheck
+  "link-purpose": linkPurposeCheck,
+  "label-in-name": labelInNameCheck,
+  "input-purpose": inputPurposeCheck,
+  "language-of-parts": languageOfPartsCheck,
+  "error-identification": errorIdentificationCheck,
+  "error-suggestion": errorSuggestionCheck
 }
 
 const PICK_DRAW = 6

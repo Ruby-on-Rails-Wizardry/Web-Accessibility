@@ -3,6 +3,12 @@ title: Visible label is in the name
 description: If the button says “Search”, the accessible name must contain “Search” — not only “Submit query”.
 node: label-in-name
 rule: Put the visible label text inside the accessible name.
+
+sc:
+  - "2.5.3"
+profiles:
+  - ada-title-ii
+  - wcag-22-aa
 ---
 
 Speech-input users say the word they see. If the visible label is not in the [accessible name](/learn/accessible-name/), the command misses.
@@ -21,6 +27,8 @@ After [visible label](/learn/visible-label/): the name **contains** that visible
 
 The person sees “Search”. The name is “Submit”. Saying “Search” does nothing.
 
+<p><a href="bad/" data-turbo="false">Open this example alone</a> and check it with tools. That page is supposed to fail.</p>
+
 </div>
 
 <div class="example example--good" markdown="1">
@@ -33,9 +41,19 @@ The person sees “Search”. The name is “Submit”. Saying “Search” does
 
 Visible text is the name. The spoken command matches.
 
+<p><a href="good/" data-turbo="false">Open this example alone</a> and check it with the same tools.</p>
+
 </div>
 
 </div>
+
+## Practice
+
+<p><a href="pick/" data-turbo="false">Pick the examples that follow the rule</a> — mark every card whose accessible name contains the visible label. A correct pick collapses; a miss shows which rule failed.</p>
+
+<p><a href="fix/" data-turbo="false">Fix the mismatched name</a> — then <strong>Apply</strong>.</p>
+
+**Check** on the live examples scores this rule. **Apply** on the fix page writes the example and scores it.
 
 ## Not a pass
 

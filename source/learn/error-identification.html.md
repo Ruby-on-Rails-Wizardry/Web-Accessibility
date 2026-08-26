@@ -3,6 +3,13 @@ title: The error is identified in text
 description: The field that failed and what went wrong must be in text, not only a red outline.
 node: error-identification
 rule: When a field is in error, identify that field and describe the error in text.
+
+sc:
+  - "3.3.1"
+profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
 ---
 
 A red border is not an error message. People who do not see that red, and people who hear the page, need the **item** and the **problem** in text.
@@ -22,6 +29,8 @@ Color or an icon alone fails [color is not the only cue](/learn/color-not-only-c
 
 A CSS class turns the box red. Nothing says which field failed or why.
 
+<p><a href="bad/" data-turbo="false">Open this example alone</a> and check it with tools. That page is supposed to fail.</p>
+
 </div>
 
 <div class="example example--good" markdown="1">
@@ -38,9 +47,19 @@ A CSS class turns the box red. Nothing says which field failed or why.
 
 The field is marked invalid. The text names the problem.
 
+<p><a href="good/" data-turbo="false">Open this example alone</a> and check it with the same tools.</p>
+
 </div>
 
 </div>
+
+## Practice
+
+<p><a href="pick/" data-turbo="false">Pick the examples that follow the rule</a> — mark every card that identifies the error in text. A correct pick collapses; a miss shows which rule failed.</p>
+
+<p><a href="fix/" data-turbo="false">Fix the missing error text</a> — then <strong>Apply</strong>.</p>
+
+**Check** on the live examples scores this rule. **Apply** on the fix page writes the example and scores it.
 
 ## Not a pass
 

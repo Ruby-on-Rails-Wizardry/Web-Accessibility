@@ -1,0 +1,27 @@
+bad:
+  - |
+    <p>Invalid date.</p>
+  - |
+    <p>Invalid.</p>
+  - |
+    <p>Error.</p>
+  - |
+    <p>Required.</p>
+  - |
+    <p>Not valid.</p>
+  - |
+    <p>Invalid email.</p>
+
+good:
+  - |
+    <p>Use a date like 2026-04-26 (year-month-day).</p>
+  - |
+    <p>Include an @ sign, like name@example.gov.</p>
+  - |
+    <p>Use five digits, like 90210.</p>
+  - |
+    <p>Use a time like 14:30 (hours:minutes).</p>
+  - |
+    <p>Try a phone like 555-0100.</p>
+  - |
+    <p>Use https://, like https://example.gov.</p>

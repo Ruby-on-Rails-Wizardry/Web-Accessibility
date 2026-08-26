@@ -1,0 +1,27 @@
+bad:
+  - |
+    <p lang="en">The museum is called Musée d'Orsay.</p>
+  - |
+    <p lang="en">We serve tacos al pastor on Fridays.</p>
+  - |
+    <p lang="en">The motto is E pluribus unum.</p>
+  - |
+    <p lang="en">She read Der Spiegel on the train.</p>
+  - |
+    <p lang="en">The cafe is named Café de Flore.</p>
+  - |
+    <p lang="en">He quoted Hasta la vista.</p>
+
+good:
+  - |
+    <p lang="en">The museum is called <span lang="fr">Musée d'Orsay</span>.</p>
+  - |
+    <p lang="en">We serve <span lang="es">tacos al pastor</span> on Fridays.</p>
+  - |
+    <p lang="en">The motto is <span lang="la">E pluribus unum</span>.</p>
+  - |
+    <p lang="en">She read <span lang="de">Der Spiegel</span> on the train.</p>
+  - |
+    <p lang="en">The cafe is named <span lang="fr">Café de Flore</span>.</p>
+  - |
+    <p lang="en">He quoted <span lang="es">Hasta la vista</span>.</p>

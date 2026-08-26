@@ -1,10 +1,6 @@
 # Language of parts
 
-Published: `source/learn/language-of-parts.html.md` → `/learn/language-of-parts/`
-
-Draft mastery: Given a page in one language with a quoted phrase in another, the learner wraps the phrase and sets `lang`.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
+- [x] Confirm the one-line mastery criterion
+- [x] Locator item — `/learn/language-of-parts/pick/`
+- [x] Constructed item — `/learn/language-of-parts/fix/`
+- [x] Isomorphic retest item

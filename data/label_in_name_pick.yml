@@ -1,0 +1,27 @@
+bad:
+  - |
+    <button aria-label="Submit">Search</button>
+  - |
+    <button aria-label="Go">Next</button>
+  - |
+    <a href="/save" aria-label="OK">Save</a>
+  - |
+    <button aria-label="Send form">Subscribe</button>
+  - |
+    <a href="/print" aria-label="Action">Print</a>
+  - |
+    <button aria-label="Continue">Download</button>
+
+good:
+  - |
+    <button type="button">Search</button>
+  - |
+    <button type="button">Next</button>
+  - |
+    <a href="/save">Save</a>
+  - |
+    <button type="button" aria-label="Subscribe to the newsletter">Subscribe</button>
+  - |
+    <a href="/print">Print</a>
+  - |
+    <button type="button">Download</button>

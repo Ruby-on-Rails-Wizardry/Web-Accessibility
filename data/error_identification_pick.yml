@@ -1,0 +1,45 @@
+bad:
+  - |
+    <label for="mail-e">Email</label>
+    <input id="mail-e" type="email" class="invalid">
+  - |
+    <label for="date-e">Date</label>
+    <input id="date-e" type="text" aria-invalid="true">
+  - |
+    <label for="zip-e">ZIP</label>
+    <input id="zip-e" type="text" class="invalid">
+  - |
+    <label for="tel-e">Phone</label>
+    <input id="tel-e" type="tel" class="invalid">
+  - |
+    <label for="name-e">Name</label>
+    <input id="name-e" type="text" aria-invalid="true">
+  - |
+    <label for="url-e">Website</label>
+    <input id="url-e" type="url" class="invalid">
+
+good:
+  - |
+    <label for="mail-ok">Email</label>
+    <input id="mail-ok" type="email" aria-invalid="true" aria-describedby="mail-err">
+    <p id="mail-err">Email is missing an @ sign.</p>
+  - |
+    <label for="date-ok">Date</label>
+    <input id="date-ok" type="text" aria-invalid="true" aria-describedby="date-err">
+    <p id="date-err">Date is not a valid calendar day.</p>
+  - |
+    <label for="zip-ok">ZIP</label>
+    <input id="zip-ok" type="text" aria-invalid="true" aria-describedby="zip-err">
+    <p id="zip-err">ZIP code must be five digits.</p>
+  - |
+    <label for="tel-ok">Phone</label>
+    <input id="tel-ok" type="tel" aria-invalid="true" aria-describedby="tel-err">
+    <p id="tel-err">Phone number is missing digits.</p>
+  - |
+    <label for="name-ok">Name</label>
+    <input id="name-ok" type="text" aria-invalid="true" aria-describedby="name-err">
+    <p id="name-err">Name is required.</p>
+  - |
+    <label for="url-ok">Website</label>
+    <input id="url-ok" type="url" aria-invalid="true" aria-describedby="url-err">
+    <p id="url-err">Website must start with https://.</p>

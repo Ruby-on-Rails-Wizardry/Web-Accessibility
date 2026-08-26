@@ -1,0 +1,39 @@
+bad:
+  - |
+    <label for="mail-b">Email</label>
+    <input id="mail-b" type="email">
+  - |
+    <label for="name-b">Name</label>
+    <input id="name-b" type="text" name="name">
+  - |
+    <label for="tel-b">Phone</label>
+    <input id="tel-b" type="tel">
+  - |
+    <label for="addr-b">Address</label>
+    <input id="addr-b" type="text" name="street-address" autocomplete="off">
+  - |
+    <label for="given-b">First name</label>
+    <input id="given-b" type="text" name="given-name">
+  - |
+    <label for="fam-b">Last name</label>
+    <input id="fam-b" type="text" name="family-name">
+
+good:
+  - |
+    <label for="mail-g">Email</label>
+    <input id="mail-g" type="email" autocomplete="email">
+  - |
+    <label for="name-g">Name</label>
+    <input id="name-g" type="text" autocomplete="name">
+  - |
+    <label for="tel-g">Phone</label>
+    <input id="tel-g" type="tel" autocomplete="tel">
+  - |
+    <label for="addr-g">Address</label>
+    <input id="addr-g" type="text" autocomplete="street-address">
+  - |
+    <label for="given-g">First name</label>
+    <input id="given-g" type="text" autocomplete="given-name">
+  - |
+    <label for="fam-g">Last name</label>
+    <input id="fam-g" type="text" autocomplete="family-name">

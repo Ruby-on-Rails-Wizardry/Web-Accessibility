@@ -3,6 +3,13 @@ title: Suggest a fix when you know one
 description: If you can tell the person how to correct the error, say so — unless that would jeopardize security.
 node: error-suggestion
 rule: When you know how to correct an input error, provide a suggestion in text.
+
+sc:
+  - "3.3.3"
+profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
 ---
 
 After [the error is identified](/learn/error-identification/): **3.3.3** asks for a usable correction when you already know one. “Invalid” is not a suggestion. “Use name@example.gov” is.
@@ -21,6 +28,8 @@ Do not suggest a value that would leak whether an account exists, or that would 
 
 The field is identified, but the person is not told the format you will accept.
 
+<p><a href="bad/" data-turbo="false">Open this example alone</a> and check it with tools. That page is supposed to fail.</p>
+
 </div>
 
 <div class="example example--good" markdown="1">
@@ -33,9 +42,19 @@ The field is identified, but the person is not told the format you will accept.
 
 The suggestion is the format (or an example, or the nearest valid value) in text.
 
+<p><a href="good/" data-turbo="false">Open this example alone</a> and check it with the same tools.</p>
+
 </div>
 
 </div>
+
+## Practice
+
+<p><a href="pick/" data-turbo="false">Pick the examples that follow the rule</a> — mark every card that suggests how to fix the error. A correct pick collapses; a miss shows which rule failed.</p>
+
+<p><a href="fix/" data-turbo="false">Fix the missing suggestion</a> — then <strong>Apply</strong>.</p>
+
+**Check** on the live examples scores this rule. **Apply** on the fix page writes the example and scores it.
 
 ## Not a pass
 

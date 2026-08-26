@@ -595,7 +595,11 @@ nodes:
   layer: 4
   prereqs:
   - language-of-page
-  children: []
+  children:
+  - language-of-parts-bad
+  - language-of-parts-good
+  - language-of-parts-pick
+  - language-of-parts-fix
   spine:
   - equal-worth
   - comparable-access
@@ -603,6 +607,74 @@ nodes:
   - language-of-page
   - language-of-parts
   library: *id001
+- id: language-of-parts-bad
+  title: Bad example — foreign phrase unmarked
+  path: /learn/language-of-parts/bad/
+  kind: example
+  layer: 6
+  prereqs:
+  - language-of-parts
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - language-of-page
+  - language-of-parts
+  - language-of-parts-bad
+  library: []
+
+- id: language-of-parts-good
+  title: Good example — phrase marked with lang
+  path: /learn/language-of-parts/good/
+  kind: example
+  layer: 6
+  prereqs:
+  - language-of-parts
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - language-of-page
+  - language-of-parts
+  - language-of-parts-good
+  library: []
+
+- id: language-of-parts-pick
+  title: Pick the examples that follow the rule
+  path: /learn/language-of-parts/pick/
+  kind: practice
+  layer: 6
+  prereqs:
+  - language-of-parts
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - language-of-page
+  - language-of-parts
+  - language-of-parts-pick
+  library: []
+
+- id: language-of-parts-fix
+  title: Fix the unmarked phrase
+  path: /learn/language-of-parts/fix/
+  kind: practice
+  layer: 6
+  prereqs:
+  - language-of-parts
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - language-of-page
+  - language-of-parts
+  - language-of-parts-fix
+  library: []
+
 - id: skip-link
   title: Skip past repeated blocks
   path: /learn/skip-link/
@@ -1097,7 +1169,11 @@ nodes:
   layer: 4
   prereqs:
   - visible-label
-  children: []
+  children:
+  - input-purpose-bad
+  - input-purpose-good
+  - input-purpose-pick
+  - input-purpose-fix
   spine:
   - equal-worth
   - comparable-access
@@ -1106,6 +1182,78 @@ nodes:
   - visible-label
   - input-purpose
   library: *id003
+- id: input-purpose-bad
+  title: Bad example — personal field without autocomplete
+  path: /learn/input-purpose/bad/
+  kind: example
+  layer: 6
+  prereqs:
+  - input-purpose
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - accessible-name
+  - visible-label
+  - input-purpose
+  - input-purpose-bad
+  library: []
+
+- id: input-purpose-good
+  title: Good example — autocomplete token on a personal field
+  path: /learn/input-purpose/good/
+  kind: example
+  layer: 6
+  prereqs:
+  - input-purpose
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - accessible-name
+  - visible-label
+  - input-purpose
+  - input-purpose-good
+  library: []
+
+- id: input-purpose-pick
+  title: Pick the examples that follow the rule
+  path: /learn/input-purpose/pick/
+  kind: practice
+  layer: 6
+  prereqs:
+  - input-purpose
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - accessible-name
+  - visible-label
+  - input-purpose
+  - input-purpose-pick
+  library: []
+
+- id: input-purpose-fix
+  title: Fix the missing autocomplete token
+  path: /learn/input-purpose/fix/
+  kind: practice
+  layer: 6
+  prereqs:
+  - input-purpose
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - accessible-name
+  - visible-label
+  - input-purpose
+  - input-purpose-fix
+  library: []
+
 - id: label-in-name
   title: Visible label is in the name
   path: /learn/label-in-name/
@@ -1113,7 +1261,11 @@ nodes:
   layer: 4
   prereqs:
   - visible-label
-  children: []
+  children:
+  - label-in-name-bad
+  - label-in-name-good
+  - label-in-name-pick
+  - label-in-name-fix
   spine:
   - equal-worth
   - comparable-access
@@ -1122,6 +1274,78 @@ nodes:
   - visible-label
   - label-in-name
   library: *id003
+- id: label-in-name-bad
+  title: Bad example — visible text missing from the name
+  path: /learn/label-in-name/bad/
+  kind: example
+  layer: 6
+  prereqs:
+  - label-in-name
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - accessible-name
+  - visible-label
+  - label-in-name
+  - label-in-name-bad
+  library: []
+
+- id: label-in-name-good
+  title: Good example — visible text is the name
+  path: /learn/label-in-name/good/
+  kind: example
+  layer: 6
+  prereqs:
+  - label-in-name
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - accessible-name
+  - visible-label
+  - label-in-name
+  - label-in-name-good
+  library: []
+
+- id: label-in-name-pick
+  title: Pick the examples that follow the rule
+  path: /learn/label-in-name/pick/
+  kind: practice
+  layer: 6
+  prereqs:
+  - label-in-name
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - accessible-name
+  - visible-label
+  - label-in-name
+  - label-in-name-pick
+  library: []
+
+- id: label-in-name-fix
+  title: Fix the mismatched name
+  path: /learn/label-in-name/fix/
+  kind: practice
+  layer: 6
+  prereqs:
+  - label-in-name
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - accessible-name
+  - visible-label
+  - label-in-name
+  - label-in-name-fix
+  library: []
+
 - id: error-prevention
   title: Review before an irreversible submit
   path: /learn/error-prevention/
@@ -1872,6 +2096,10 @@ nodes:
   - form-errors
   children:
   - error-suggestion
+  - error-identification-bad
+  - error-identification-good
+  - error-identification-pick
+  - error-identification-fix
   spine:
   - equal-worth
   - comparable-access
@@ -1881,11 +2109,11 @@ nodes:
   - form-errors
   - error-identification
   library: *id001
-- id: error-suggestion
-  title: Suggest a fix when you know one
-  path: /learn/error-suggestion/
-  kind: rule
-  layer: 5
+- id: error-identification-bad
+  title: Bad example — error only as a red field
+  path: /learn/error-identification/bad/
+  kind: example
+  layer: 6
   prereqs:
   - error-identification
   children: []
@@ -1897,8 +2125,168 @@ nodes:
   - visible-label
   - form-errors
   - error-identification
+  - error-identification-bad
+  library: []
+
+- id: error-identification-good
+  title: Good example — error identified in text
+  path: /learn/error-identification/good/
+  kind: example
+  layer: 6
+  prereqs:
+  - error-identification
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - accessible-name
+  - visible-label
+  - form-errors
+  - error-identification
+  - error-identification-good
+  library: []
+
+- id: error-identification-pick
+  title: Pick the examples that follow the rule
+  path: /learn/error-identification/pick/
+  kind: practice
+  layer: 6
+  prereqs:
+  - error-identification
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - accessible-name
+  - visible-label
+  - form-errors
+  - error-identification
+  - error-identification-pick
+  library: []
+
+- id: error-identification-fix
+  title: Fix the missing error text
+  path: /learn/error-identification/fix/
+  kind: practice
+  layer: 6
+  prereqs:
+  - error-identification
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - accessible-name
+  - visible-label
+  - form-errors
+  - error-identification
+  - error-identification-fix
+  library: []
+
+- id: error-suggestion
+  title: Suggest a fix when you know one
+  path: /learn/error-suggestion/
+  kind: rule
+  layer: 5
+  prereqs:
+  - error-identification
+  children:
+  - error-suggestion-bad
+  - error-suggestion-good
+  - error-suggestion-pick
+  - error-suggestion-fix
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - accessible-name
+  - visible-label
+  - form-errors
+  - error-identification
   - error-suggestion
   library: *id001
+- id: error-suggestion-bad
+  title: Bad example — error without a suggestion
+  path: /learn/error-suggestion/bad/
+  kind: example
+  layer: 6
+  prereqs:
+  - error-suggestion
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - accessible-name
+  - visible-label
+  - form-errors
+  - error-identification
+  - error-suggestion
+  - error-suggestion-bad
+  library: []
+
+- id: error-suggestion-good
+  title: Good example — error with a suggestion
+  path: /learn/error-suggestion/good/
+  kind: example
+  layer: 6
+  prereqs:
+  - error-suggestion
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - accessible-name
+  - visible-label
+  - form-errors
+  - error-identification
+  - error-suggestion
+  - error-suggestion-good
+  library: []
+
+- id: error-suggestion-pick
+  title: Pick the examples that follow the rule
+  path: /learn/error-suggestion/pick/
+  kind: practice
+  layer: 6
+  prereqs:
+  - error-suggestion
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - accessible-name
+  - visible-label
+  - form-errors
+  - error-identification
+  - error-suggestion
+  - error-suggestion-pick
+  library: []
+
+- id: error-suggestion-fix
+  title: Fix the missing suggestion
+  path: /learn/error-suggestion/fix/
+  kind: practice
+  layer: 6
+  prereqs:
+  - error-suggestion
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - accessible-name
+  - visible-label
+  - form-errors
+  - error-identification
+  - error-suggestion
+  - error-suggestion-fix
+  library: []
+
 - id: consistent-nav-order
   title: Repeated navigation stays in order
   path: /learn/consistent-nav-order/

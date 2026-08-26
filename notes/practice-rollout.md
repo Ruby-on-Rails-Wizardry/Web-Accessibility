@@ -209,13 +209,13 @@ Do not copy a rule’s specimen walkthrough onto tool pages; link the rule.
 | done | decorative-image-silent | Decorative image is silent | same grain |
 | done | functional-image-names-action | Functional image names the action | same grain |
 | done | link-purpose | Link purpose in context | same grain |
+| done | label-in-name | Visible label is in the name | 2.1-only |
+| done | input-purpose | Identify input purpose | 2.1-only |
+| done | language-of-parts | Language of parts | same grain |
+| done | error-identification | The error is identified in text | same grain |
+| done | error-suggestion | Suggest a fix when you know one | same grain |
 | | accessible-name | Accessible name | |
 | | name-role-value | Name, role, and value | overlap with native-control; keep this cop smaller |
-| | label-in-name | Visible label is in the name | 2.1-only (`ada-title-ii`, `wcag-22-aa`) |
-| | input-purpose | Identify input purpose | 2.1-only |
-| | language-of-parts | Language of parts | |
-| | error-identification | The error is identified in text | |
-| | error-suggestion | Suggest a fix when you know one | |
 | | keyboard-operable | Keyboard can operate it | |
 | | no-keyboard-trap | No keyboard trap | interactive; checker must not trap the tester |
 | | focus-order | Focus order matches meaning | |

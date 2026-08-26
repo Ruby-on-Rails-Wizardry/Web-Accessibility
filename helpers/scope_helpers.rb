@@ -8,10 +8,20 @@ module ScopeHelpers
       "level" => "A",
       "understanding" => "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content"
     },
+    "1.3.5" => {
+      "name" => "Identify Input Purpose",
+      "level" => "AA",
+      "understanding" => "https://www.w3.org/WAI/WCAG22/Understanding/identify-input-purpose"
+    },
     "1.3.1" => {
       "name" => "Info and Relationships",
       "level" => "A",
       "understanding" => "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships"
+    },
+    "2.5.3" => {
+      "name" => "Label in Name",
+      "level" => "A",
+      "understanding" => "https://www.w3.org/WAI/WCAG22/Understanding/label-in-name"
     },
     "2.4.4" => {
       "name" => "Link Purpose (In Context)",
@@ -23,10 +33,25 @@ module ScopeHelpers
       "level" => "A",
       "understanding" => "https://www.w3.org/WAI/WCAG22/Understanding/keyboard"
     },
+    "3.1.2" => {
+      "name" => "Language of Parts",
+      "level" => "AA",
+      "understanding" => "https://www.w3.org/WAI/WCAG22/Understanding/language-of-parts"
+    },
+    "3.3.1" => {
+      "name" => "Error Identification",
+      "level" => "A",
+      "understanding" => "https://www.w3.org/WAI/WCAG22/Understanding/error-identification"
+    },
     "3.3.2" => {
       "name" => "Labels or Instructions",
       "level" => "A",
       "understanding" => "https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions"
+    },
+    "3.3.3" => {
+      "name" => "Error Suggestion",
+      "level" => "AA",
+      "understanding" => "https://www.w3.org/WAI/WCAG22/Understanding/error-suggestion"
     },
     "4.1.2" => {
       "name" => "Name, Role, Value",

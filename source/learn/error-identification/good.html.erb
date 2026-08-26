@@ -1,0 +1,12 @@
+---
+title: Good example — error identified in text
+description: Live specimen. Open this page alone and check it with tools.
+node: error-identification-good
+layout: example
+specimen: good
+of: error-identification
+specimen_note: Check this page with the accessibility tree, WAVE, or axe.
+---
+<label for="email">Email</label>
+<input id="email" type="email" aria-invalid="true" aria-describedby="email-err">
+<p id="email-err">Email is missing an @ sign.</p>
