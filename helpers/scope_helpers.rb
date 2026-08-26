@@ -23,10 +23,20 @@ module ScopeHelpers
       "level" => "AA",
       "understanding" => "https://www.w3.org/WAI/WCAG22/Understanding/images-of-text"
     },
+    "1.3.2" => {
+      "name" => "Meaningful Sequence",
+      "level" => "A",
+      "understanding" => "https://www.w3.org/WAI/WCAG22/Understanding/meaningful-sequence"
+    },
     "1.4.1" => {
       "name" => "Use of Color",
       "level" => "A",
       "understanding" => "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color"
+    },
+    "2.5.2" => {
+      "name" => "Pointer Cancellation",
+      "level" => "A",
+      "understanding" => "https://www.w3.org/WAI/WCAG22/Understanding/pointer-cancellation"
     },
     "2.4.1" => {
       "name" => "Bypass Blocks",

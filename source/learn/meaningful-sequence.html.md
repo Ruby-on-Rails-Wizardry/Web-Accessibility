@@ -3,6 +3,13 @@ title: Meaningful sequence
 description: The order in the DOM is the order people hear and Tab through. CSS position is not a reading order.
 node: meaningful-sequence
 rule: Keep the DOM in the same order as the intended reading order.
+
+sc:
+  - "1.3.2"
+profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
 ---
 
 If the visual order is “heading, then paragraph, then button,” the source order must be that sequence. Absolute positioning that puts the “first” heading after the paragraph in the file fails people who linearize the page — screen-reader users, and anyone who gets CSS late or not at all.
@@ -22,6 +29,8 @@ If the visual order is “heading, then paragraph, then button,” the source or
 
 CSS pulls the heading visually first. The DOM is the reverse.
 
+<p><a href="bad/" data-turbo="false">Open this example alone</a> and check it with tools. That page is supposed to fail.</p>
+
 </div>
 
 <div class="example example--good" markdown="1">
@@ -35,9 +44,19 @@ CSS pulls the heading visually first. The DOM is the reverse.
 
 The source order is the meaning. Layout can still style it.
 
+<p><a href="good/" data-turbo="false">Open this example alone</a> and check it with the same tools.</p>
+
 </div>
 
 </div>
+
+## Practice
+
+<p><a href="pick/" data-turbo="false">Pick the examples that follow the rule</a> — mark every card whose DOM order is the reading order. A correct pick collapses; a miss shows which rule failed.</p>
+
+<p><a href="fix/" data-turbo="false">Fix the reordered sequence</a> — then <strong>Apply</strong>.</p>
+
+**Check** on the live examples scores this rule. **Apply** on the fix page writes the example and scores it.
 
 ## Not a pass
 

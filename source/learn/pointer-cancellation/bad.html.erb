@@ -1,0 +1,10 @@
+---
+title: Bad example — action runs on touchstart
+description: Live specimen. Open this page alone. It is supposed to fail.
+node: pointer-cancellation-bad
+layout: example
+specimen: bad
+of: pointer-cancellation
+specimen_note: This page is supposed to fail a pointer-cancellation check.
+---
+<button type="button" ontouchstart="endCall()">End call</button>

@@ -27,6 +27,8 @@ import { noChangeOnInputCheck } from "./no_change_on_input_check.js"
 import { audioControlCheck } from "./audio_control_check.js"
 import { statusMessagesCheck } from "./status_messages_check.js"
 import { consistentIdentificationCheck } from "./consistent_identification_check.js"
+import { meaningfulSequenceCheck } from "./meaningful_sequence_check.js"
+import { pointerCancellationCheck } from "./pointer_cancellation_check.js"
 import { htmlWellFormed } from "./html_wellformed.js"
 
 const CHECKERS = {
@@ -57,7 +59,9 @@ const CHECKERS = {
   "no-change-on-input": noChangeOnInputCheck,
   "audio-control": audioControlCheck,
   "status-messages": statusMessagesCheck,
-  "consistent-identification": consistentIdentificationCheck
+  "consistent-identification": consistentIdentificationCheck,
+  "meaningful-sequence": meaningfulSequenceCheck,
+  "pointer-cancellation": pointerCancellationCheck
 }
 
 const PICK_DRAW = 6

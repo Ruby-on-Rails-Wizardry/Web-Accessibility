@@ -1,0 +1,47 @@
+bad:
+  - |
+    <p class="body">Apply by Friday.</p>
+    <h2 class="pull-up">Permits</h2>
+  - |
+    <p>Office hours</p>
+    <h2 class="visually-first">Hours</h2>
+  - |
+    <div style="display:flex;flex-direction:column">
+      <p style="order:2">Step two</p>
+      <h2 style="order:1">Step one</h2>
+    </div>
+  - |
+    <ul style="flex-direction:row-reverse">
+      <li>First</li>
+      <li>Second</li>
+    </ul>
+  - |
+    <p>Contact the clerk</p>
+    <h3 class="pull-left">Clerk</h3>
+  - |
+    <div class="css-order">
+      <p>Details</p>
+      <h2>Summary</h2>
+    </div>
+
+good:
+  - |
+    <h2>Permits</h2>
+    <p>Apply by Friday.</p>
+  - |
+    <h2>Hours</h2>
+    <p>Office hours</p>
+  - |
+    <h2>Step one</h2>
+    <p>Step two</p>
+  - |
+    <ul>
+      <li>First</li>
+      <li>Second</li>
+    </ul>
+  - |
+    <h3>Clerk</h3>
+    <p>Contact the clerk</p>
+  - |
+    <h2>Summary</h2>
+    <p>Details</p>

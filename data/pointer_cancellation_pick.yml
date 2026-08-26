@@ -1,0 +1,27 @@
+bad:
+  - |
+    <button type="button" ontouchstart="endCall()">End call</button>
+  - |
+    <button type="button" onmousedown="send()">Send</button>
+  - |
+    <a href="/delete" ontouchstart="remove()">Delete</a>
+  - |
+    <button type="button" onmousedown="submitForm()">Submit</button>
+  - |
+    <button type="button" ontouchstart="hangUp()">Hang up</button>
+  - |
+    <button type="button" onmousedown="saveNow()">Save</button>
+
+good:
+  - |
+    <button type="button" onclick="endCall()">End call</button>
+  - |
+    <button type="button" onclick="send()">Send</button>
+  - |
+    <a href="/delete">Delete</a>
+  - |
+    <button type="submit">Submit</button>
+  - |
+    <button type="button" onclick="hangUp()">Hang up</button>
+  - |
+    <button type="button">Save</button>

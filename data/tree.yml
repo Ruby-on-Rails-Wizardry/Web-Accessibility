@@ -1063,7 +1063,11 @@ nodes:
   layer: 4
   prereqs:
   - headings
-  children: []
+  children:
+  - meaningful-sequence-bad
+  - meaningful-sequence-good
+  - meaningful-sequence-pick
+  - meaningful-sequence-fix
   spine:
   - equal-worth
   - comparable-access
@@ -1071,6 +1075,74 @@ nodes:
   - headings
   - meaningful-sequence
   library: *id001
+- id: meaningful-sequence-bad
+  title: Bad example — CSS pulls the heading first
+  path: /learn/meaningful-sequence/bad/
+  kind: example
+  layer: 6
+  prereqs:
+  - meaningful-sequence
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - headings
+  - meaningful-sequence
+  - meaningful-sequence-bad
+  library: []
+
+- id: meaningful-sequence-good
+  title: Good example — source order is the meaning
+  path: /learn/meaningful-sequence/good/
+  kind: example
+  layer: 6
+  prereqs:
+  - meaningful-sequence
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - headings
+  - meaningful-sequence
+  - meaningful-sequence-good
+  library: []
+
+- id: meaningful-sequence-pick
+  title: Pick the examples that follow the rule
+  path: /learn/meaningful-sequence/pick/
+  kind: practice
+  layer: 6
+  prereqs:
+  - meaningful-sequence
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - headings
+  - meaningful-sequence
+  - meaningful-sequence-pick
+  library: []
+
+- id: meaningful-sequence-fix
+  title: Fix the reordered sequence
+  path: /learn/meaningful-sequence/fix/
+  kind: practice
+  layer: 6
+  prereqs:
+  - meaningful-sequence
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - headings
+  - meaningful-sequence
+  - meaningful-sequence-fix
+  library: []
+
 - id: link-purpose
   title: Link purpose in context
   path: /learn/link-purpose/
@@ -1912,7 +1984,11 @@ nodes:
   layer: 4
   prereqs:
   - pointer-gestures
-  children: []
+  children:
+  - pointer-cancellation-bad
+  - pointer-cancellation-good
+  - pointer-cancellation-pick
+  - pointer-cancellation-fix
   spine:
   - equal-worth
   - comparable-access
@@ -1920,6 +1996,74 @@ nodes:
   - pointer-gestures
   - pointer-cancellation
   library: *id003
+- id: pointer-cancellation-bad
+  title: Bad example — action runs on touchstart
+  path: /learn/pointer-cancellation/bad/
+  kind: example
+  layer: 6
+  prereqs:
+  - pointer-cancellation
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - pointer-gestures
+  - pointer-cancellation
+  - pointer-cancellation-bad
+  library: []
+
+- id: pointer-cancellation-good
+  title: Good example — action runs on click
+  path: /learn/pointer-cancellation/good/
+  kind: example
+  layer: 6
+  prereqs:
+  - pointer-cancellation
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - pointer-gestures
+  - pointer-cancellation
+  - pointer-cancellation-good
+  library: []
+
+- id: pointer-cancellation-pick
+  title: Pick the examples that follow the rule
+  path: /learn/pointer-cancellation/pick/
+  kind: practice
+  layer: 6
+  prereqs:
+  - pointer-cancellation
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - pointer-gestures
+  - pointer-cancellation
+  - pointer-cancellation-pick
+  library: []
+
+- id: pointer-cancellation-fix
+  title: Fix the down-event action
+  path: /learn/pointer-cancellation/fix/
+  kind: practice
+  layer: 6
+  prereqs:
+  - pointer-cancellation
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - pointer-gestures
+  - pointer-cancellation
+  - pointer-cancellation-fix
+  library: []
+
 - id: motion-actuation
   title: Motion is not the only input
   path: /learn/motion-actuation/

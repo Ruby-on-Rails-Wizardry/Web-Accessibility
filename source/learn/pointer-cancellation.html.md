@@ -3,6 +3,12 @@ title: Pointer cancellation
 description: Down-event must not complete the action. Let the person abort by sliding off, or undo.
 node: pointer-cancellation
 rule: Do not complete an action on the down-event. Finish on up, with a way to abort or undo.
+
+sc:
+  - "2.5.2"
+profiles:
+  - ada-title-ii
+  - wcag-22-aa
 ---
 
 Accidental touches happen. If `mousedown` / `touchstart` already submitted or deleted, there is no recovery — especially for tremor, motor difference, or a mis-aimed tap.
@@ -21,6 +27,8 @@ At least one of: the **down-event** does not run the action; completion is on **
 
 `touchstart` hangs up immediately. There is no chance to slide off.
 
+<p><a href="bad/" data-turbo="false">Open this example alone</a> and check it with tools. That page is supposed to fail.</p>
+
 </div>
 
 <div class="example example--good" markdown="1">
@@ -33,9 +41,19 @@ At least one of: the **down-event** does not run the action; completion is on **
 
 The action runs on `click` / `mouseup`. Sliding off the button before release cancels.
 
+<p><a href="good/" data-turbo="false">Open this example alone</a> and check it with the same tools.</p>
+
 </div>
 
 </div>
+
+## Practice
+
+<p><a href="pick/" data-turbo="false">Pick the examples that follow the rule</a> — mark every card that completes on the up-event, not the down-event. A correct pick collapses; a miss shows which rule failed.</p>
+
+<p><a href="fix/" data-turbo="false">Fix the down-event action</a> — then <strong>Apply</strong>.</p>
+
+**Check** on the live examples scores this rule. **Apply** on the fix page writes the example and scores it.
 
 ## Not a pass
 

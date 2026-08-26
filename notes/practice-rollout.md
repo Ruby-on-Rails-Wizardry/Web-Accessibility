@@ -221,9 +221,9 @@ Do not copy a rule’s specimen walkthrough onto tool pages; link the rule.
 | done | focus-order | Focus order matches meaning | positive tabindex |
 | done | color-not-only-cue | Color is not the only cue | same grain |
 | done | images-of-text | Prefer real text to an image of text | same grain |
-| | meaningful-sequence | Meaningful sequence | CSS order vs DOM |
+| done | meaningful-sequence | Meaningful sequence | CSS order / pull-up class vs DOM |
 | done | skip-link | Skip past repeated blocks | skip target is a unique id in the specimen, not page `main` |
-| | pointer-cancellation | Pointer cancellation | 2.1-only |
+| done | pointer-cancellation | Pointer cancellation | 2.1-only |
 | done | status-messages | Status messages are announced | 2.1-only |
 | done | no-change-on-focus | Focus does not change context | inert handlers so testers do not leave |
 | done | no-change-on-input | Changing a value does not navigate | inert handlers so testers do not leave |
