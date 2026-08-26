@@ -9,6 +9,8 @@ Not published. One file per study node. The four checks are the same everywhere:
 
 Suggested order: equal-worth → comparable-access → pour → accessible-name → visible-label, then other layer-4 leaves.
 
+Rule-leaf locator/constructed items (isolated examples, pick, fix, profile tags): [../practice-rollout.md](../practice-rollout.md). Heading-order and heading-elements have the thin prototype; isomorphic retest is still open.
+
 | id | Title | Draft mastery |
 | --- | --- | --- |
 | [accessible-authentication](accessible-authentication.md) | Accessible authentication | The learner can reject a transcription puzzle and name a 3.3.8-compliant alternative. |

@@ -3,6 +3,12 @@ title: Do not skip heading levels
 description: After an h2, the next nested heading is an h3. Do not jump to h4 for looks.
 node: heading-order
 rule: Nest headings in order. Do not skip a level to get a smaller font.
+sc:
+  - "1.3.1"
+profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
 ---
 
 After [heading elements](/learn/heading-elements/) exist: the outline is a tree. `h1` then `h4` because `h4` is the size you wanted hides a level. Screen-reader users who walk the list hear a gap and cannot tell what the section belongs to.
@@ -47,7 +53,7 @@ Same visual size via CSS if you need it. The levels match the sections.
 
 ## Practice
 
-<p><a href="pick/" data-turbo="false">Pick the example that follows the rule</a> — two live examples; feedback is immediate.</p>
+<p><a href="pick/" data-turbo="false">Pick the examples that follow the rule</a> — mark every card that nests headings. A correct pick collapses; a miss shows which rule failed.</p>
 
 <p><a href="fix/" data-turbo="false">Fix the skipped headings</a> — restore a nested outline, then <strong>Apply</strong>.</p>
 

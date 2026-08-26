@@ -1,8 +1,11 @@
 <div class="specimen-banner">
-  <p class="specimen-banner__note">
-    <span class="specimen-banner__kind"><%= specimen_variant == "good" ? "Good example" : "Bad example" %></span>
-    <%= current_page.data.specimen_note || (specimen_variant == "bad" ? "This page is supposed to fail a heading-list check." : "Check this page with a heading list, WAVE, or axe.") %>
-  </p>
+  <div class="specimen-banner__text">
+    <p class="specimen-banner__note">
+      <span class="specimen-banner__kind"><%= specimen_variant == "good" ? "Good example" : "Bad example" %></span>
+      <%= current_page.data.specimen_note || (specimen_variant == "bad" ? "This page is supposed to fail a heading-list check." : "Check this page with a heading list, WAVE, or axe.") %>
+    </p>
+    <%= partial "rule_scope" %>
+  </div>
   <div class="specimen-banner__actions">
     <button
       type="button"

@@ -1,10 +1,7 @@
-# Pool for /learn/heading-elements/pick/. Isolated live pages stay
-# the Shipping address pair.
+# Evaluative pool for /learn/heading-elements/pick/ and /fix/.
+# Isolated live pages stay the Shipping address pair (not in this file).
 
 bad:
-  - |
-    <p><strong>Shipping address</strong></p>
-    <p>123 Main Street</p>
   - |
     <p><strong>Store hours</strong></p>
     <p>Open daily 9 to 6</p>
@@ -20,11 +17,11 @@ bad:
   - |
     <p><strong>Contact</strong></p>
     <p>Write to the town clerk.</p>
+  - |
+    <div><b>FAQ</b></div>
+    <p>How do I apply?</p>
 
 good:
-  - |
-    <h2>Shipping address</h2>
-    <p>123 Main Street</p>
   - |
     <h2>Store hours</h2>
     <p>Open daily 9 to 6</p>
@@ -40,3 +37,6 @@ good:
   - |
     <h2>Contact</h2>
     <p>Write to the town clerk.</p>
+  - |
+    <h3>FAQ</h3>
+    <p>How do I apply?</p>

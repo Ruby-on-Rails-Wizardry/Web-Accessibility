@@ -1,33 +1,32 @@
-# Evaluative pool for /learn/heading-order/pick/ and /fix/.
-# Isolated live pages stay the Permits pair (not in this file).
-# Pick draws six mixed cards; mark every card that follows the rule.
-# Fix draws one bad item.
+# Combined pool for /learn/headings/pick/ and /fix/.
+# Good = heading elements and nested levels (both child cops).
+# Bad = fails heading-elements, heading-order, or both.
 
 bad:
+  # elements only
+  - |
+    <p><strong>Store hours</strong></p>
+    <p>Open daily 9 to 6</p>
+  - |
+    <div><strong>Chapter 2</strong></div>
+    <p>The river was high that spring.</p>
+  # order only
   - |
     <h1>Lunch menu</h1>
     <h4>Starters</h4>
     <h4>Mains</h4>
   - |
-    <h1>Clinic</h1>
-    <h2>Appointments</h2>
-    <h4>New patients</h4>
-    <h4>Returning patients</h4>
-  - |
-    <h2>Hours</h2>
-    <h4>Weekdays</h4>
-    <h4>Weekends</h4>
-  - |
     <h1>City park</h1>
     <h3>Trails</h3>
     <h3>Picnic areas</h3>
+  # both
   - |
-    <h1>Library</h1>
-    <h2>Borrowing</h2>
-    <h5>Renewals</h5>
+    <h1>Clinic</h1>
+    <p><strong>Appointments</strong></p>
+    <h4>New patients</h4>
   - |
     <h1>Board agenda</h1>
-    <h2>Reports</h2>
+    <p><strong>Reports</strong></p>
     <h4>Treasurer</h4>
 
 good:
@@ -54,7 +53,5 @@ good:
     <h3>Renewals</h3>
     <h2>Hours</h2>
   - |
-    <h1>Board agenda</h1>
-    <h2>Reports</h2>
-    <h3>Treasurer</h3>
-    <h2>Votes</h2>
+    <h2>Chapter 2</h2>
+    <p>The river was high that spring.</p>

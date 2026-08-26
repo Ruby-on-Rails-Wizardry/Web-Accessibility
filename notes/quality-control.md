@@ -25,13 +25,14 @@ Apply when the page type has that job. A hub is not a specimen; a specimen is no
 9. `<main>` is only the specimen. No extra headings in main.
 10. Editor is **not** in the DOM until Edit; filled from `<main>`; removed on close.
 11. Sidebar: abbreviated **Where you are** (knowledge tree → rule → this example), the other example, a single **Testing tools** link (not a list of tools). No heading elements in that chrome (tools must still see only the specimen).
+11a. Success-criterion and profile chips live on the banner (outside `<main>`). They inherit from the parent rule unless the page sets `sc` / `profiles`. A good specimen is **Meant to meet**; a bad specimen is **Meant to fail**. Do not put those tags inside `<main>`.
 12. Site header present. The strip above the red line is what this page is and how to check it, plus **Edit** and **Check** in the top-right of that strip — not a dump of nav links. Banner is not a heading. “Close Edit before you scan” lives in the editor panel, not the closed banner. **Check** scores `<main>` (apply first if the editor is open).
 
 ### Practice (`practice` layout)
 
-18. **Pick:** two unlabeled-as-good/bad live examples drawn from a pool (`data/heading_order_pick.yml`); each card shows the HTML and how it renders. Choosing a card scores it immediately (no Check button). Check still scores the chosen rendered section.
-19. **Fix:** `<main>` is the specimen. The editor is always on the page, labeled **HTML** / **Rendered** like pick. **Apply** writes into `<main>` and scores that node. Do not copy the parser-repaired HTML back into the textarea. If tags do not match, fail **Valid HTML** and skip the other rules. No Close editor / Check in the banner. Do not tell the learner that the checker is scoped.
-20. Check results live outside `<main>`. Chrome uses no heading elements. Failures list rules with links. This prototype catalogs **heading-order** only. In-house checkers take a DOM node and do not walk outside it.
+18. **Pick:** quick diagnostic with a short feedback loop. Four to six unlabeled cards from a pool (`data/<rule>_pick.yml`); each card shows the HTML and how it renders. Mark **every card that follows the rule**. Selecting a card that follows the rule marks it correct and collapses it. Selecting a miss shows that card’s rule report (links to the cop, no modal). Unchecking clears that card. When every card is classified, the results strip (outside `<main>`) says they got them all. Profile chips stay on the banner, not on the cards. Family pick (later) names the child rule on a miss.
+19. **Fix:** `<main>` is the specimen, drawn from the failing pool (not the teaching pair). The editor is always on the page, labeled **HTML** / **Rendered** like pick. **Apply** writes into `<main>` and scores that node. **Another example** draws a different miss. Do not copy the parser-repaired HTML back into the textarea. If tags do not match, fail **Valid HTML** and skip the other rules. No Close editor / Check in the banner. Do not tell the learner that the checker is scoped.
+20. Check results live outside `<main>`. Chrome uses no heading elements. Failures list rules with links — that list is the restudy hint on a combined family fix. Prototype catalogs **heading-order** (and **heading-elements**) one at a time; combined heading family is slice 3. In-house checkers take a DOM node and do not walk outside it.
 21. Sidebar: Where you are (tree → rule → this page), both examples, both practice leaves, Testing tools. Do not orphan.
 
 ### Library / docs (`docs` layout)
@@ -49,7 +50,7 @@ Apply when the page type has that job. A hub is not a specimen; a specimen is no
 
 ## Page list
 
-Counts: home 1, 404 1, learn index 1, learn nodes 73, isolated examples 2, practice 2, docs 43. Tree nodes 77 (73 study + 2 examples + 2 practice).
+Counts: home 1, 404 1, learn index 1, learn nodes 73, isolated examples 4, practice 6, docs 43. Tree nodes 83 (73 study + 4 examples + 6 practice). Heading-order and heading-elements each have bad/good/pick/fix. Headings family has combined pick/fix.
 
 ### Site chrome
 
@@ -72,8 +73,12 @@ Isolated examples:
 | --- | --- |
 | Bad example — skipped heading levels | `/learn/heading-order/bad/` |
 | Good example — nested heading levels | `/learn/heading-order/good/` |
-| Pick the example that follows the rule | `/learn/heading-order/pick/` |
+| Pick the examples that follow the rule | `/learn/heading-order/pick/` |
 | Fix the skipped headings | `/learn/heading-order/fix/` |
+| Bad example — styled paragraph as a heading | `/learn/heading-elements/bad/` |
+| Good example — heading element | `/learn/heading-elements/good/` |
+| Pick the examples that follow the rule | `/learn/heading-elements/pick/` |
+| Fix the missing heading element | `/learn/heading-elements/fix/` |
 
 ### Library
 
@@ -90,7 +95,7 @@ Isolated examples:
 | Screen reader | `/docs/evaluation/testing-tools/screen-reader/` |
 | plus remaining `source/docs/**/*.html.md` (profiles, WCAG, 508, ADA, cognitive, definitions, agents, authoring-tools, which-name, SOURCES, LICENSE-NOTES, learning pointer) | |
 
-Full docs files: every `source/docs/**/*.html.md` (43 files). Full learn files: every `source/learn/*.html.md` (73) plus `index.html.erb` and `heading-order/{bad,good,pick,fix}.html.erb`.
+Full docs files: every `source/docs/**/*.html.md` (43 files). Full learn files: every `source/learn/*.html.md` (73) plus `index.html.erb` and `{heading-order,heading-elements}/{bad,good,pick,fix}.html.erb`.
 
 ---
 
@@ -112,7 +117,7 @@ Spot-checks and content:
 
 | Check | Result |
 | --- | --- |
-| Tree ids vs `source/learn/<id>.html.md` | 73/73 study nodes have a page. Examples are `heading-order/{bad,good}.html.erb`. |
+| Tree ids vs `source/learn/<id>.html.md` | 73/73 study nodes have a page. Isolated examples: `heading-order/{bad,good}` and `heading-elements/{bad,good}`. |
 | Lab voice in `source/` | Cleared from testing-tools pages. Remaining “Project-authored” on profiles/agents/LICENSE-NOTES is source-status, not host lab. |
 | `a11y` in `source/` | None. |
 | Tool pages copy Permits/`h4` walkthrough | Removed; they link [heading-order](/learn/heading-order/). |

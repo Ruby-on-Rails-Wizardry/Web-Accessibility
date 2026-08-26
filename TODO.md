@@ -1,8 +1,8 @@
 # Project TODO
 
-Last inventoried 2026-08-24. Knowledge-tree graph: `data/tree.yml`. Pages: `source/learn/<id>.html.md`. Official library: `source/docs/`. Internal (not published): `notes/`.
+Last inventoried 2026-08-26. Knowledge-tree graph: `data/tree.yml`. Pages: `source/learn/<id>.html.md`. Official library: `source/docs/`. Internal (not published): `notes/`.
 
-Per-node mastery checklists live in unpublished [notes/learn/](notes/learn/). This file is the whole-project view. Do not put “Still to write” on published pages.
+Per-node mastery checklists live in unpublished [notes/learn/](notes/learn/). Isolated-example and practice rollout: [notes/practice-rollout.md](notes/practice-rollout.md). This file is the whole-project view. Do not put “Still to write” on published pages.
 
 ---
 
@@ -31,7 +31,7 @@ Intentionally not snapshotted (live official tools): Quickref, full Understandin
 
 Middleman 4 site from the org template. Turbo + Stimulus. Knowledge tree, docs layouts, nav in `data/site.yml`. Save point: `8a7c057`.
 
-### Knowledge tree (77 nodes, all have a page)
+### Knowledge tree (81 nodes, all have a page)
 
 Study nodes live at `source/learn/<id>.html.md`. Isolated examples live at `source/learn/<rule>/{bad,good}.html.erb`.
 
@@ -43,16 +43,16 @@ Study nodes live at `source/learn/<id>.html.md`. Isolated examples live at `sour
 | 3 Which bar | orientation | 3 |
 | 4 Families / rules | pattern + rule | 51 |
 | 5 Split rules | rule | 13 |
-| 6 Isolated examples | example | 2 (`heading-order` bad / good) |
-| 6 Practice | practice | 2 (`heading-order` pick / fix) |
+| 6 Isolated examples | example | 4 (`heading-order` and `heading-elements` bad / good) |
+| 6 Practice | practice | 4 (`heading-order` and `heading-elements` pick / fix) |
 
 `kind: pattern` is a **family** (not one cop). Six families: decorative-vs-informative-image, headings, keyboard-access, form-errors, consistent-navigation, no-unexpected-change.
 
 `kind: rule` is one requirement with **The rule**, Bad, Good, Not a pass, and Official (profile tags). Not one page per W3C technique ID.
 
-`kind: example` is a **live specimen**: same site header as the rest of the site; no extra headings in `<main>`, so a heading list / WAVE / axe still sees only that markup. Edit on the page (Stimulus `specimen`) lets the learner change the HTML and apply it, then check again. First pair is `heading-order`. Other HTML-example rules can grow the same `{bad,good}` leaves later. Example nodes do not get a mastery checklist.
+`kind: example` is a **live specimen**: same site header as the rest of the site; no extra headings in `<main>`, so a heading list / WAVE / axe still sees only that markup. Edit on the page (Stimulus `specimen`) lets the learner change the HTML and apply it, then check again. Teaching pairs exist for `heading-order` and `heading-elements`. Other HTML-example rules can grow the same `{bad,good}` leaves later. Example nodes do not get a mastery checklist.
 
-`kind: practice` is a **locator or constructed item** with an in-house **Check** (Stimulus `check`). Prototype: `heading-order` pick (choose the example that follows the rule) and fix (restore nested heading levels). Check scores only the rules listed on that page; heading-order is the first checker. Failures name the rule and link to its page. Practice nodes do not get a mastery checklist — they *are* the items.
+`kind: practice` is a **locator or constructed item** with an in-house **Check** (Stimulus `check`). Prototype: `heading-order` and `heading-elements` pick (choose the example that follows the rule) and fix (restore the markup). Check scores only the rules listed on that page. Failures name the rule and link to its page. Practice nodes do not get a mastery checklist — they *are* the items. Pick still shows two cards; that is the next grain change.
 
 **Split out of families (2026-08-24):** informative-image-alt, decorative-image-silent, functional-image-names-action, heading-elements, heading-order, keyboard-operable, no-keyboard-trap, error-identification, error-suggestion, consistent-nav-order, consistent-identification, no-change-on-focus, no-change-on-input.
 
@@ -60,9 +60,49 @@ Each study node has a teaching page. Mastery items still to write: [notes/learn/
 
 ---
 
+## Next — deepen the example/practice grain, then roll it out
+
+Left off 2026-08-24 at `ecc19c0`: the heading family has the full leaf set (rule page with Bad/Good, isolated live specimens, pick, fix, in-house Check). That is the sample. It is still thin as a *test*.
+
+What exists today:
+
+| Piece | heading-order | heading-elements | Other rules |
+| --- | --- | --- | --- |
+| Rule page Bad / Good snippet | yes (Permits) | yes (Shipping) | almost every rule page has a pair; most are snippets only |
+| Isolated live `{bad,good}` | yes | yes | none |
+| Pick | 6 mixed cards; mark every card that follows the rule | same | none |
+| Fix | draws from the bad pool; **Another example** | same | none |
+| Checker | `heading_order_check.js` | `heading_elements_check.js` | none |
+| Profile / SC tags on examples | chips on rule + banners | same | none |
+| Isomorphic retest | pick redraw + fix **Another example** | same | — |
+
+Three changes to prove on **heading-order** (then copy to heading-elements) before rolling the grain to other rules:
+
+1. **Separate illustrative from evaluative.** The labeled Bad/Good on the rule page and the isolated live pages are teaching specimens. Pick and fix draw from a larger unlabeled pool and must not be only the same Permits / Shipping pair.
+2. **Pick and fix need more than two items.** Pick is a **quick diagnostic**: mark every card that follows the rule (4–6 mixed cards). Fix is the thorough constructed item, drawn from a pool.
+3. **Tag good/bad with the rule set they meet.** Machine-readable success-criterion ids and profile names (`section-508-web`, `ada-title-ii`, `wcag-22-aa`) on the rule and on each example. Show chips on the rule Official block and on specimen banners (outside `<main>`). A good heading-order specimen meets 1.3.1 in all three profiles; a good target-size specimen meets 2.5.8 in `wcag-22-aa` only.
+4. **Combined examples for a group.** After child rules have checkers, a family-level pick/fix can miss more than one cop on the same specimen. Leftover failures name the child rules to restudy. First group: heading-elements + heading-order, hung on `headings`.
+
+Work one slice at a time. Detail and the remaining-rule list: [notes/practice-rollout.md](notes/practice-rollout.md).
+
+| Slice | What |
+| --- | --- |
+| 0 | Data shape: SC + profiles on a rule; chips outside `<main>` — **done** |
+| 1 | Prove it on heading-order: multi-select pick (every card that follows the rule), fix pool, keep Permits as the teaching specimen — **done** |
+| 2 | Copy that grain onto heading-elements — **done** |
+| 3 | Combined heading-family pick/fix (`heading-elements` + `heading-order`); failures name the child rule to restudy — **done** |
+| 4 | Roll HTML-snippet rules, one cop at a time (next up: lists, data-tables, native-control, visible-label, …) |
+| 5 | CSS / visual rules (contrast, focus, target size) |
+| 6 | Scenario / prose rules (login puzzles, multi-page nav, motion) — may stay text items, not live `<main>` specimens |
+| 7 | Foundations and orientation keep teaching Bad/Good; locator/constructed stay in [notes/learn/](notes/learn/), not this leaf set |
+
+Pattern families do not get isolated Bad/Good pages. Combined pick/fix on the hub is the family-level item; per-rule leaves stay on the children.
+
+---
+
 ## Next — finish Learning for Mastery on every node
 
-Rule leaves now exist. Same four checks on every study node; draft one-liners are in [notes/learn/](notes/learn/).
+Rule leaves now exist. Same four checks on every study node; draft one-liners are in [notes/learn/](notes/learn/). For **rule** nodes, locator/constructed/retest *are* pick/fix (slices above). This list is the spine and the remaining study nodes that are not that grain.
 
 For each node:
 
@@ -95,7 +135,13 @@ Suggested order: walk the spine, not the file list — **equal-worth → compara
 | keyboard-access | Point at a mouse-only control or remove a trap. |
 | visible-focus | Restore a visible focus indicator; refuse `outline: none` without a replacement. |
 
-Locator/constructed format: `heading-order` and `heading-elements` have pick, fix, and isolated `{bad,good}` pages. Remaining rules: [notes/practice-rollout.md](notes/practice-rollout.md).
+Locator/constructed format for rules: [notes/practice-rollout.md](notes/practice-rollout.md).
+
+---
+
+## Later — Screen reader sees
+
+Pick and fix already show HTML and Rendered. A third pane that approximates what a screen reader would announce (heading list, names) is deferred. Not a real screen reader. Notes: [notes/practice-rollout.md](notes/practice-rollout.md).
 
 ---
 
@@ -111,7 +157,7 @@ Media sisters not given their own node (mentioned under captions): **1.2.1** aud
 
 Still not tree nodes: AAA criteria, 508 hardware / functional performance, COGA-only patterns. Technique **IDs** are indexed at [source/docs/wcag/techniques-index.html.md](source/docs/wcag/techniques-index.html.md) (`data/techniques.yml`); we do not make a learn page per ID.
 
-Isolated `{bad,good}` leaves for other rules that already have HTML snippets (heading-elements, visible-label, native-control, …) — same `example` layout as heading-order.
+Isolated `{bad,good}` leaves for other rules that already have HTML snippets — same `example` layout as heading-order. Tracked in the slice list above, not here.
 
 - **Publish** — GitHub Pages from Actions on this repo: [https://ruby-on-rails-wizardry.github.io/Web-Accessibility/](https://ruby-on-rails-wizardry.github.io/Web-Accessibility/). Workflow: `.github/workflows/pages.yml`.
 - **Do not commit `build/`** — it is gitignored; a local build may still sit on disk.

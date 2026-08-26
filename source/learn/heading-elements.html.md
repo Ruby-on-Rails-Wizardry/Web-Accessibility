@@ -3,6 +3,12 @@ title: Headings are heading elements
 description: Large type is not a heading. The outline is h1–h6 in the markup.
 node: heading-elements
 rule: Mark each section name with a heading element, not a styled paragraph or a bold span.
+sc:
+  - "1.3.1"
+profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
 ---
 
 Sighted people scan large type. Screen-reader users jump a **heading list**. Styled `<p><strong>` or a `div` with a big font is not on that list.
@@ -45,7 +51,7 @@ The section name is an `h2`. Tools and people can jump to it.
 
 ## Practice
 
-<p><a href="pick/" data-turbo="false">Pick the example that follows the rule</a> — two live examples; feedback is immediate.</p>
+<p><a href="pick/" data-turbo="false">Pick the examples that follow the rule</a> — mark every card that uses a heading element. A correct pick collapses; a miss shows which rule failed.</p>
 
 <p><a href="fix/" data-turbo="false">Fix the missing heading element</a> — mark the section name with a heading, then <strong>Apply</strong>.</p>
 

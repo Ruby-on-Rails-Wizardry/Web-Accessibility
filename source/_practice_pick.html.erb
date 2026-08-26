@@ -1,31 +1,39 @@
 <% pool = practice_pick_pool %>
-<% examples = [pool["bad"].first, pool["good"].first].compact %>
-<script type="application/json" data-check-target="pool"><%= practice_pick_pool.to_json.html_safe %></script>
+<% examples = pool["bad"].first(3) + pool["good"].first(3) %>
 <template data-check-target="cardTemplate">
-  <label class="practice-choice">
-    <input type="radio" name="practice-pick" data-check-target="choice" data-action="change->check#run">
-    <span class="practice-choice__name">Example</span>
+  <div class="practice-choice">
+    <label class="practice-choice__select">
+      <input type="checkbox" data-check-target="choice" data-action="change->check#choiceChange">
+      <span class="practice-choice__name">Example</span>
+      <span class="practice-choice__status"></span>
+    </label>
     <span class="practice-caption">HTML</span>
     <pre class="practice-choice__source"><code></code></pre>
     <span class="practice-caption">Rendered</span>
     <div class="practice-preview" data-check-target="section"></div>
-  </label>
+    <div class="practice-choice__report" hidden></div>
+  </div>
 </template>
 <fieldset class="practice-choices">
   <legend class="practice-choices__legend">Examples</legend>
+  <div class="practice-choices__done"></div>
   <div class="practice-choices__grid">
     <% examples.each_with_index do |html, index| %>
       <% letter = ("A".ord + index).chr %>
-      <label class="practice-choice">
-        <input type="radio" name="practice-pick" data-check-target="choice" data-action="change->check#run" aria-label="Example <%= letter %>">
-        <span class="practice-choice__name">Example <%= letter %></span>
+      <div class="practice-choice">
+        <label class="practice-choice__select">
+          <input type="checkbox" data-check-target="choice" data-action="change->check#choiceChange" aria-label="Example <%= letter %>">
+          <span class="practice-choice__name">Example <%= letter %></span>
+          <span class="practice-choice__status"></span>
+        </label>
         <span class="practice-caption">HTML</span>
         <pre class="practice-choice__source"><code><%= CGI.escapeHTML(html) %></code></pre>
         <span class="practice-caption">Rendered</span>
         <div class="practice-preview" data-check-target="section">
           <%= html.html_safe %>
         </div>
-      </label>
+        <div class="practice-choice__report" hidden></div>
+      </div>
     <% end %>
   </div>
 </fieldset>

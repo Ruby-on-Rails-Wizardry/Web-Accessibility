@@ -1,6 +1,12 @@
 <div class="specimen-banner">
-  <p class="specimen-banner__note">
-    <span class="specimen-banner__kind"><%= practice_variant == "fix" ? "Fix" : "Pick" %></span>
-    <%= current_page.data.practice_note %>
-  </p>
+  <div class="specimen-banner__text">
+    <p class="specimen-banner__note">
+      <span class="specimen-banner__kind"><%= practice_variant == "fix" ? "Fix" : "Pick" %></span>
+      <%= current_page.data.practice_note %>
+    </p>
+    <%= partial "rule_scope" %>
+  </div>
 </div>
+<% if %w[pick fix].include?(practice_variant) %>
+  <script type="application/json" data-check-target="pool"><%= practice_pick_pool.to_json.html_safe %></script>
+<% end %>

@@ -266,11 +266,43 @@ nodes:
   - data-tables
   - meaningful-sequence
   - link-purpose
+  - headings-pick
+  - headings-fix
   spine:
   - equal-worth
   - comparable-access
   - pour
   - headings
+  library: []
+- id: headings-pick
+  title: Pick the examples that follow both heading rules
+  path: /learn/headings/pick/
+  kind: practice
+  layer: 6
+  prereqs:
+  - headings
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - headings
+  - headings-pick
+  library: []
+- id: headings-fix
+  title: Fix the heading outline
+  path: /learn/headings/fix/
+  kind: practice
+  layer: 6
+  prereqs:
+  - headings
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - headings
+  - headings-fix
   library: []
 - id: native-control
   title: Native control before a custom widget
@@ -1076,7 +1108,7 @@ nodes:
   - heading-elements-good
   library: []
 - id: heading-elements-pick
-  title: Pick the example that follows the rule
+  title: Pick the examples that follow the rule
   path: /learn/heading-elements/pick/
   kind: practice
   layer: 6
@@ -1162,7 +1194,7 @@ nodes:
   - heading-order-good
   library: []
 - id: heading-order-pick
-  title: Pick the example that follows the rule
+  title: Pick the examples that follow the rule
   path: /learn/heading-order/pick/
   kind: practice
   layer: 6

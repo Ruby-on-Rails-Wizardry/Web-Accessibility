@@ -1,0 +1,27 @@
+<% scope = rule_scope %>
+<% if scope %>
+  <div class="rule-scope">
+    <p class="rule-scope__lead"><%= scope_lead(scope) %></p>
+    <ul class="rule-scope__list" aria-label="Success criteria and profiles">
+      <% scope[:sc].each do |criterion| %>
+        <% label = [criterion["id"], criterion["name"]].reject(&:empty?).join(" ") %>
+        <li>
+          <a
+            class="rule-scope__chip"
+            href="<%= criterion_href(criterion["id"]) %>"
+            title="<%= label %>"
+          ><%= criterion["id"] %></a>
+        </li>
+      <% end %>
+      <% scope[:profiles].each do |profile| %>
+        <li>
+          <a
+            class="rule-scope__chip rule-scope__chip--profile"
+            href="<%= profile_href(profile) %>"
+            title="<%= profile %>"
+          ><%= profile %></a>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
