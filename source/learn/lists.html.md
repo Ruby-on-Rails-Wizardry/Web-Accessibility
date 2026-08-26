@@ -3,6 +3,12 @@ title: Lists are lists
 description: A sequence of related items is a list in the markup, not a stack of divs that only look like bullets.
 node: lists
 rule: Mark related items as a list in the markup, not as styled divs that only look like bullets.
+sc:
+  - "1.3.1"
+profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
 ---
 
 [Perceivable](/learn/pour/): the relationship “these items belong together, in this order or as a set” has to be in the structure, not only in CSS. Screen-reader users hear the list and the count. Styled `div`s give them a flat stack.
@@ -22,6 +28,8 @@ Use `ul`, `ol`, or `dl`. [Headings](/learn/headings/) name sections. Lists name 
 
 Looks like a list. Nothing exposes a list or an item count.
 
+<p><a href="bad/" data-turbo="false">Open this example alone</a> and check it with tools. That page is supposed to fail.</p>
+
 </div>
 
 <div class="example example--good" markdown="1">
@@ -37,9 +45,19 @@ Looks like a list. Nothing exposes a list or an item count.
 
 It is a list. Tools can announce two items and move by item.
 
+<p><a href="good/" data-turbo="false">Open this example alone</a> and check it with the same tools.</p>
+
 </div>
 
 </div>
+
+## Practice
+
+<p><a href="pick/" data-turbo="false">Pick the examples that follow the rule</a> — mark every card that marks related items as a list. A correct pick collapses; a miss shows which rule failed.</p>
+
+<p><a href="fix/" data-turbo="false">Fix the missing list</a> — mark the items as a list, then <strong>Apply</strong>.</p>
+
+**Check** on the live examples scores this rule. **Apply** on the fix page writes the example and scores it.
 
 ## Not a pass
 

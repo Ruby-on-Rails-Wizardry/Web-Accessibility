@@ -426,13 +426,77 @@ nodes:
   layer: 4
   prereqs:
   - pour
-  children: []
+  children:
+  - lists-bad
+  - lists-good
+  - lists-pick
+  - lists-fix
   spine:
   - equal-worth
   - comparable-access
   - pour
   - lists
   library: *id001
+- id: lists-bad
+  title: Bad example — styled divs as a list
+  path: /learn/lists/bad/
+  kind: example
+  layer: 6
+  prereqs:
+  - lists
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - lists
+  - lists-bad
+  library: []
+- id: lists-good
+  title: Good example — a list in the markup
+  path: /learn/lists/good/
+  kind: example
+  layer: 6
+  prereqs:
+  - lists
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - lists
+  - lists-good
+  library: []
+- id: lists-pick
+  title: Pick the examples that follow the rule
+  path: /learn/lists/pick/
+  kind: practice
+  layer: 6
+  prereqs:
+  - lists
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - lists
+  - lists-pick
+  library: []
+- id: lists-fix
+  title: Fix the missing list
+  path: /learn/lists/fix/
+  kind: practice
+  layer: 6
+  prereqs:
+  - lists
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - lists
+  - lists-fix
+  library: []
 - id: data-tables
   title: Data tables have headers
   path: /learn/data-tables/

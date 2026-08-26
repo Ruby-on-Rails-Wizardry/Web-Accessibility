@@ -199,8 +199,8 @@ Do not copy a rule’s specimen walkthrough onto tool pages; link the rule.
 | Status | id | Title | Notes |
 | --- | --- | --- | --- |
 | done (thin) | heading-order | Do not skip heading levels | Slice 1 deepens this |
-| done (thin) | heading-elements | Headings are heading elements | Slice 2 deepens this |
-| | lists | Lists are lists | next HTML cop |
+| done | heading-elements | Headings are heading elements | Slice 2 |
+| done | lists | Lists are lists | same grain as heading-order |
 | | data-tables | Data tables have headers | |
 | | native-control | Native control before a custom widget | |
 | | visible-label | Visible label is the programmatic name | |

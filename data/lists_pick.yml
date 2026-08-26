@@ -1,0 +1,60 @@
+# Evaluative pool for /learn/lists/pick/ and /fix/.
+# Isolated live pages stay the Milk / Eggs pair (not in this file).
+
+bad:
+  - |
+    <div>Monday 9 to 5</div>
+    <div>Saturday 10 to 2</div>
+  - |
+    <p>Flour</p>
+    <p>Water</p>
+    <p>Salt</p>
+  - |
+    <div class="item">North trail</div>
+    <div class="item">Lake loop</div>
+  - |
+    <div>Call the clerk</div>
+    <div>Email the mayor</div>
+  - |
+    <p>Kim</p>
+    <p>Alex</p>
+    <p>Jordan</p>
+  - |
+    <div>Preheat the oven</div>
+    <div>Mix the dough</div>
+    <div>Bake 20 minutes</div>
+
+good:
+  - |
+    <ul>
+      <li>Monday 9 to 5</li>
+      <li>Saturday 10 to 2</li>
+    </ul>
+  - |
+    <ul>
+      <li>Flour</li>
+      <li>Water</li>
+      <li>Salt</li>
+    </ul>
+  - |
+    <ul>
+      <li>North trail</li>
+      <li>Lake loop</li>
+    </ul>
+  - |
+    <ul>
+      <li>Call the clerk</li>
+      <li>Email the mayor</li>
+    </ul>
+  - |
+    <ul>
+      <li>Kim</li>
+      <li>Alex</li>
+      <li>Jordan</li>
+    </ul>
+  - |
+    <ol>
+      <li>Preheat the oven</li>
+      <li>Mix the dough</li>
+      <li>Bake 20 minutes</li>
+    </ol>
