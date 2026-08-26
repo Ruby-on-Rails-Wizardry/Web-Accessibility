@@ -201,7 +201,7 @@ Do not copy a rule’s specimen walkthrough onto tool pages; link the rule.
 | done (thin) | heading-order | Do not skip heading levels | Slice 1 deepens this |
 | done | heading-elements | Headings are heading elements | Slice 2 |
 | done | lists | Lists are lists | same grain as heading-order |
-| | data-tables | Data tables have headers | |
+| done | data-tables | Data tables have headers | same grain as heading-order |
 | | native-control | Native control before a custom widget | |
 | | visible-label | Visible label is the programmatic name | |
 | | placeholder-not-label | Placeholder is not a label | |

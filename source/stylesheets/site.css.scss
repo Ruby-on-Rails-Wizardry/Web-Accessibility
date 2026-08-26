@@ -980,6 +980,31 @@ summary {
   padding: 0;
 }
 
+.practice-preview table,
+.specimen-main table {
+  width: 100%;
+  max-width: 24rem;
+  border-collapse: collapse;
+  font-family: var(--font-ui);
+  font-size: 0.9rem;
+}
+
+.practice-preview th,
+.practice-preview td,
+.specimen-main th,
+.specimen-main td {
+  text-align: left;
+  padding: 0.25rem 0.45rem;
+  border: 1px solid var(--line);
+}
+
+.practice-preview caption,
+.specimen-main caption {
+  text-align: left;
+  font-weight: 600;
+  padding: 0 0 0.35rem;
+}
+
 body.specimen main,
 body.practice main {
   width: auto;

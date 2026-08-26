@@ -3,6 +3,12 @@ title: Data tables have headers
 description: A grid of data is a table with th, not a layout of nested divs, and not a table with no headers.
 node: data-tables
 rule: Mark column and row headers on a data table so each cell can be tied to those headers.
+sc:
+  - "1.3.1"
+profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
 ---
 
 When the meaning is “this cell belongs to this column and this row,” that relationship has to be programmatically available. A grid of `div`s, or a `<table>` of only `td`, shuts out people who cannot see the visual alignment.
@@ -23,6 +29,8 @@ Use `<table>`, `<th scope="col">` / `scope="row">`, and a `<caption>` when the t
 ```
 
 Numbers sit in cells. Nothing names the column or the row.
+
+<p><a href="bad/" data-turbo="false">Open this example alone</a> and check it with tools. That page is supposed to fail.</p>
 
 </div>
 
@@ -45,9 +53,19 @@ Numbers sit in cells. Nothing names the column or the row.
 
 Each figure has a column header and a row header. The caption names the grid.
 
+<p><a href="good/" data-turbo="false">Open this example alone</a> and check it with the same tools.</p>
+
 </div>
 
 </div>
+
+## Practice
+
+<p><a href="pick/" data-turbo="false">Pick the examples that follow the rule</a> — mark every card that uses header cells on a data table. A correct pick collapses; a miss shows which rule failed.</p>
+
+<p><a href="fix/" data-turbo="false">Fix the missing table headers</a> — mark column and row headers, then <strong>Apply</strong>.</p>
+
+**Check** on the live examples scores this rule. **Apply** on the fix page writes the example and scores it.
 
 ## Not a pass
 

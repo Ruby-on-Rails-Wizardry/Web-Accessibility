@@ -504,7 +504,11 @@ nodes:
   layer: 4
   prereqs:
   - headings
-  children: []
+  children:
+  - data-tables-bad
+  - data-tables-good
+  - data-tables-pick
+  - data-tables-fix
   spine:
   - equal-worth
   - comparable-access
@@ -512,6 +516,70 @@ nodes:
   - headings
   - data-tables
   library: *id001
+- id: data-tables-bad
+  title: Bad example — table with no headers
+  path: /learn/data-tables/bad/
+  kind: example
+  layer: 6
+  prereqs:
+  - data-tables
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - headings
+  - data-tables
+  - data-tables-bad
+  library: []
+- id: data-tables-good
+  title: Good example — table with headers
+  path: /learn/data-tables/good/
+  kind: example
+  layer: 6
+  prereqs:
+  - data-tables
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - headings
+  - data-tables
+  - data-tables-good
+  library: []
+- id: data-tables-pick
+  title: Pick the examples that follow the rule
+  path: /learn/data-tables/pick/
+  kind: practice
+  layer: 6
+  prereqs:
+  - data-tables
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - headings
+  - data-tables
+  - data-tables-pick
+  library: []
+- id: data-tables-fix
+  title: Fix the missing table headers
+  path: /learn/data-tables/fix/
+  kind: practice
+  layer: 6
+  prereqs:
+  - data-tables
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - headings
+  - data-tables
+  - data-tables-fix
+  library: []
 - id: meaningful-sequence
   title: Meaningful sequence
   path: /learn/meaningful-sequence/

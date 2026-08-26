@@ -1,0 +1,101 @@
+# Evaluative pool for /learn/data-tables/pick/ and /fix/.
+# Isolated live pages stay the Tickets sold pair (not in this file).
+
+bad:
+  - |
+    <table>
+      <tr><td>Mon</td><td>72</td></tr>
+      <tr><td>Tue</td><td>68</td></tr>
+    </table>
+  - |
+    <table>
+      <tr><td>Alice</td><td>12</td></tr>
+      <tr><td>Bob</td><td>9</td></tr>
+    </table>
+  - |
+    <table>
+      <tr><td><strong>Trail</strong></td><td><strong>Miles</strong></td></tr>
+      <tr><td>North</td><td>3</td></tr>
+      <tr><td>Lake</td><td>2</td></tr>
+    </table>
+  - |
+    <div class="row"><div>Open</div><div>9 to 5</div></div>
+    <div class="row"><div>Closed</div><div>Sunday</div></div>
+  - |
+    <table>
+      <tr><td>Kim</td><td>Chair</td></tr>
+      <tr><td>Alex</td><td>Clerk</td></tr>
+    </table>
+  - |
+    <table>
+      <tr><td>Spring</td><td>40</td></tr>
+      <tr><td>Fall</td><td>55</td></tr>
+    </table>
+
+good:
+  - |
+    <table>
+      <caption>High temperature</caption>
+      <thead>
+        <tr><th scope="col">Day</th><th scope="col">°F</th></tr>
+      </thead>
+      <tbody>
+        <tr><th scope="row">Mon</th><td>72</td></tr>
+        <tr><th scope="row">Tue</th><td>68</td></tr>
+      </tbody>
+    </table>
+  - |
+    <table>
+      <caption>Points</caption>
+      <thead>
+        <tr><th scope="col">Player</th><th scope="col">Score</th></tr>
+      </thead>
+      <tbody>
+        <tr><th scope="row">Alice</th><td>12</td></tr>
+        <tr><th scope="row">Bob</th><td>9</td></tr>
+      </tbody>
+    </table>
+  - |
+    <table>
+      <caption>Trail length</caption>
+      <thead>
+        <tr><th scope="col">Trail</th><th scope="col">Miles</th></tr>
+      </thead>
+      <tbody>
+        <tr><th scope="row">North</th><td>3</td></tr>
+        <tr><th scope="row">Lake</th><td>2</td></tr>
+      </tbody>
+    </table>
+  - |
+    <table>
+      <caption>Hours</caption>
+      <thead>
+        <tr><th scope="col">Status</th><th scope="col">When</th></tr>
+      </thead>
+      <tbody>
+        <tr><th scope="row">Open</th><td>9 to 5</td></tr>
+        <tr><th scope="row">Closed</th><td>Sunday</td></tr>
+      </tbody>
+    </table>
+  - |
+    <table>
+      <caption>Board</caption>
+      <thead>
+        <tr><th scope="col">Name</th><th scope="col">Role</th></tr>
+      </thead>
+      <tbody>
+        <tr><th scope="row">Kim</th><td>Chair</td></tr>
+        <tr><th scope="row">Alex</th><td>Clerk</td></tr>
+      </tbody>
+    </table>
+  - |
+    <table>
+      <caption>Visitors</caption>
+      <thead>
+        <tr><th scope="col">Season</th><th scope="col">Count</th></tr>
+      </thead>
+      <tbody>
+        <tr><th scope="row">Spring</th><td>40</td></tr>
+        <tr><th scope="row">Fall</th><td>55</td></tr>
+      </tbody>
+    </table>
