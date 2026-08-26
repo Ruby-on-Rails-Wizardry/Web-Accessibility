@@ -279,6 +279,25 @@ nodes:
   layer: 4
   prereqs:
   - visible-label
+  children:
+  - placeholder-not-label-bad
+  - placeholder-not-label-good
+  - placeholder-not-label-pick
+  - placeholder-not-label-fix
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - visible-label
+  - placeholder-not-label
+  library: []
+- id: placeholder-not-label-bad
+  title: Bad example — placeholder as the only label
+  path: /learn/placeholder-not-label/bad/
+  kind: example
+  layer: 6
+  prereqs:
+  - placeholder-not-label
   children: []
   spine:
   - equal-worth
@@ -286,6 +305,55 @@ nodes:
   - pour
   - visible-label
   - placeholder-not-label
+  - placeholder-not-label-bad
+  library: []
+- id: placeholder-not-label-good
+  title: Good example — persistent visible label
+  path: /learn/placeholder-not-label/good/
+  kind: example
+  layer: 6
+  prereqs:
+  - placeholder-not-label
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - visible-label
+  - placeholder-not-label
+  - placeholder-not-label-good
+  library: []
+- id: placeholder-not-label-pick
+  title: Pick the examples that follow the rule
+  path: /learn/placeholder-not-label/pick/
+  kind: practice
+  layer: 6
+  prereqs:
+  - placeholder-not-label
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - visible-label
+  - placeholder-not-label
+  - placeholder-not-label-pick
+  library: []
+- id: placeholder-not-label-fix
+  title: Fix the placeholder-only field
+  path: /learn/placeholder-not-label/fix/
+  kind: practice
+  layer: 6
+  prereqs:
+  - placeholder-not-label
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - visible-label
+  - placeholder-not-label
+  - placeholder-not-label-fix
   library: []
 - id: decorative-vs-informative-image
   title: Decorative vs informative image

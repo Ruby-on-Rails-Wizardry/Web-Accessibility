@@ -11,7 +11,7 @@ export function visibleLabelCheck(root) {
   const controls = unlabeledControls(root)
   if (!controls.length) return []
 
-  const sample = hint(controls[0])
+  const sample = fieldHint(controls[0])
   return [`“${sample}” has no associated visible label.`]
 }
 
@@ -27,7 +27,7 @@ function unlabeledControls(root) {
   })
 }
 
-function hasAssociatedVisibleLabel(control, root) {
+export function hasAssociatedVisibleLabel(control, root) {
   const wrap = control.closest("label")
   if (wrap && labelText(wrap, control)) return true
 
@@ -45,7 +45,7 @@ function labelText(label, control) {
   return clone.textContent.replace(/\s+/g, " ").trim()
 }
 
-function hint(control) {
+export function fieldHint(control) {
   const type = (control.getAttribute("type") || control.tagName.toLowerCase()).replace(/\s+/g, " ")
   const name = (control.getAttribute("name") || control.getAttribute("id") || type).trim()
   return name || "this field"

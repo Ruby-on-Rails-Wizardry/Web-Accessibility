@@ -204,7 +204,7 @@ Do not copy a rule’s specimen walkthrough onto tool pages; link the rule.
 | done | data-tables | Data tables have headers | same grain as heading-order |
 | done | native-control | Native control before a custom widget | same grain as heading-order |
 | done | visible-label | Visible label is the programmatic name | same grain as heading-order |
-| | placeholder-not-label | Placeholder is not a label | |
+| done | placeholder-not-label | Placeholder is not a label | same grain as heading-order |
 | | informative-image-alt | Informative image needs a text alternative | |
 | | decorative-image-silent | Decorative image is silent | |
 | | functional-image-names-action | Functional image names the action | |

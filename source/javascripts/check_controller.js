@@ -5,6 +5,7 @@ import { listsCheck } from "./lists_check.js"
 import { dataTablesCheck } from "./data_tables_check.js"
 import { nativeControlCheck } from "./native_control_check.js"
 import { visibleLabelCheck } from "./visible_label_check.js"
+import { placeholderNotLabelCheck } from "./placeholder_not_label_check.js"
 import { htmlWellFormed } from "./html_wellformed.js"
 
 const CHECKERS = {
@@ -13,7 +14,8 @@ const CHECKERS = {
   lists: listsCheck,
   "data-tables": dataTablesCheck,
   "native-control": nativeControlCheck,
-  "visible-label": visibleLabelCheck
+  "visible-label": visibleLabelCheck,
+  "placeholder-not-label": placeholderNotLabelCheck
 }
 
 const PICK_DRAW = 6

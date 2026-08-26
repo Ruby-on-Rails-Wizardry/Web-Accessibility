@@ -1,0 +1,35 @@
+# Evaluative pool for /learn/placeholder-not-label/pick/ and /fix/.
+# Isolated live pages stay the Email placeholder pair (not in this file).
+
+bad:
+  - |
+    <input type="text" placeholder="Name">
+  - |
+    <input type="search" placeholder="Search">
+  - |
+    <input type="tel" placeholder="Phone">
+  - |
+    <textarea placeholder="Notes"></textarea>
+  - |
+    <input type="text" placeholder="City" aria-label="City">
+  - |
+    <input type="url" placeholder="Website">
+
+good:
+  - |
+    <label for="name-ph">Name</label>
+    <input id="name-ph" type="text" autocomplete="name">
+  - |
+    <label>Search <input type="search"></label>
+  - |
+    <label for="phone-ph">Phone</label>
+    <input id="phone-ph" type="tel" autocomplete="tel" placeholder="555-0100">
+  - |
+    <label for="notes-ph">Notes</label>
+    <textarea id="notes-ph"></textarea>
+  - |
+    <label for="city-ph">City</label>
+    <input id="city-ph" type="text" autocomplete="address-level2">
+  - |
+    <label for="site-ph">Website</label>
+    <input id="site-ph" type="url" autocomplete="url">
