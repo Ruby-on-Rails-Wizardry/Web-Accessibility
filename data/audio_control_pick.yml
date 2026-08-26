@@ -1,0 +1,28 @@
+bad:
+  - |
+    <audio src="bed.mp3" autoplay></audio>
+  - |
+    <audio src="welcome.mp3" autoplay loop></audio>
+  - |
+    <video src="banner.mp4" autoplay></video>
+  - |
+    <audio src="hold.mp3" autoplay></audio>
+  - |
+    <video src="intro.mp4" autoplay loop></video>
+  - |
+    <audio src="bed-track.mp3" autoplay></audio>
+
+good:
+  - |
+    <audio src="bed.mp3" controls></audio>
+  - |
+    <audio src="welcome.mp3" controls></audio>
+  - |
+    <video src="banner.mp4" controls></video>
+  - |
+    <audio src="hold.mp3" controls></audio>
+  - |
+    <audio src="intro.mp3" autoplay controls></audio>
+  - |
+    <audio src="bed-track.mp3"></audio>
+    <button type="button">Pause</button>

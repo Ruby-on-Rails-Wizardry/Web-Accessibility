@@ -1,0 +1,14 @@
+---
+title: Fix the tabindex order
+description: Live specimen. Fix it, then Apply.
+node: focus-order-fix
+layout: practice
+practice: fix
+of: focus-order
+check_rules:
+  - focus-order
+practice_note: Remove positive tabindex values so Tab follows the form. Then Apply. Another example draws a different miss.
+---
+<input tabindex="3" id="name">
+<input tabindex="1" id="email">
+<button tabindex="2">Send</button>

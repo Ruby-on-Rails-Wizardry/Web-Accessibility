@@ -1227,13 +1227,81 @@ nodes:
   layer: 4
   prereqs:
   - pour
-  children: []
+  children:
+  - audio-control-bad
+  - audio-control-good
+  - audio-control-pick
+  - audio-control-fix
   spine:
   - equal-worth
   - comparable-access
   - pour
   - audio-control
   library: *id001
+- id: audio-control-bad
+  title: Bad example — autoplay with no pause
+  path: /learn/audio-control/bad/
+  kind: example
+  layer: 6
+  prereqs:
+  - audio-control
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - audio-control
+  - audio-control-bad
+  library: []
+
+- id: audio-control-good
+  title: Good example — the person starts the audio
+  path: /learn/audio-control/good/
+  kind: example
+  layer: 6
+  prereqs:
+  - audio-control
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - audio-control
+  - audio-control-good
+  library: []
+
+- id: audio-control-pick
+  title: Pick the examples that follow the rule
+  path: /learn/audio-control/pick/
+  kind: practice
+  layer: 6
+  prereqs:
+  - audio-control
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - audio-control
+  - audio-control-pick
+  library: []
+
+- id: audio-control-fix
+  title: Fix the autoplaying audio
+  path: /learn/audio-control/fix/
+  kind: practice
+  layer: 6
+  prereqs:
+  - audio-control
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - audio-control
+  - audio-control-fix
+  library: []
+
 - id: contrast-text
   title: Text contrast
   path: /learn/contrast-text/
@@ -1680,7 +1748,11 @@ nodes:
   layer: 4
   prereqs:
   - keyboard-access
-  children: []
+  children:
+  - focus-order-bad
+  - focus-order-good
+  - focus-order-pick
+  - focus-order-fix
   spine:
   - equal-worth
   - comparable-access
@@ -1688,6 +1760,74 @@ nodes:
   - keyboard-access
   - focus-order
   library: *id001
+- id: focus-order-bad
+  title: Bad example — positive tabindex
+  path: /learn/focus-order/bad/
+  kind: example
+  layer: 6
+  prereqs:
+  - focus-order
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - keyboard-access
+  - focus-order
+  - focus-order-bad
+  library: []
+
+- id: focus-order-good
+  title: Good example — Tab follows the form
+  path: /learn/focus-order/good/
+  kind: example
+  layer: 6
+  prereqs:
+  - focus-order
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - keyboard-access
+  - focus-order
+  - focus-order-good
+  library: []
+
+- id: focus-order-pick
+  title: Pick the examples that follow the rule
+  path: /learn/focus-order/pick/
+  kind: practice
+  layer: 6
+  prereqs:
+  - focus-order
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - keyboard-access
+  - focus-order
+  - focus-order-pick
+  library: []
+
+- id: focus-order-fix
+  title: Fix the tabindex order
+  path: /learn/focus-order/fix/
+  kind: practice
+  layer: 6
+  prereqs:
+  - focus-order
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - keyboard-access
+  - focus-order
+  - focus-order-fix
+  library: []
+
 - id: focus-not-obscured
   title: Focus is not hidden behind chrome
   path: /learn/focus-not-obscured/
@@ -1844,13 +1984,81 @@ nodes:
   layer: 4
   prereqs:
   - pour
-  children: []
+  children:
+  - status-messages-bad
+  - status-messages-good
+  - status-messages-pick
+  - status-messages-fix
   spine:
   - equal-worth
   - comparable-access
   - pour
   - status-messages
   library: *id003
+- id: status-messages-bad
+  title: Bad example — silent status
+  path: /learn/status-messages/bad/
+  kind: example
+  layer: 6
+  prereqs:
+  - status-messages
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - status-messages
+  - status-messages-bad
+  library: []
+
+- id: status-messages-good
+  title: Good example — status is a live region
+  path: /learn/status-messages/good/
+  kind: example
+  layer: 6
+  prereqs:
+  - status-messages
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - status-messages
+  - status-messages-good
+  library: []
+
+- id: status-messages-pick
+  title: Pick the examples that follow the rule
+  path: /learn/status-messages/pick/
+  kind: practice
+  layer: 6
+  prereqs:
+  - status-messages
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - status-messages
+  - status-messages-pick
+  library: []
+
+- id: status-messages-fix
+  title: Fix the silent status message
+  path: /learn/status-messages/fix/
+  kind: practice
+  layer: 6
+  prereqs:
+  - status-messages
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - status-messages
+  - status-messages-fix
+  library: []
+
 - id: name-role-value
   title: Name, role, and value
   path: /learn/name-role-value/
@@ -2730,7 +2938,11 @@ nodes:
   layer: 5
   prereqs:
   - consistent-navigation
-  children: []
+  children:
+  - consistent-identification-bad
+  - consistent-identification-good
+  - consistent-identification-pick
+  - consistent-identification-fix
   spine:
   - equal-worth
   - comparable-access
@@ -2739,6 +2951,78 @@ nodes:
   - consistent-navigation
   - consistent-identification
   library: *id001
+- id: consistent-identification-bad
+  title: Bad example — two names for one action
+  path: /learn/consistent-identification/bad/
+  kind: example
+  layer: 6
+  prereqs:
+  - consistent-identification
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - skip-link
+  - consistent-navigation
+  - consistent-identification
+  - consistent-identification-bad
+  library: []
+
+- id: consistent-identification-good
+  title: Good example — the same name on every view
+  path: /learn/consistent-identification/good/
+  kind: example
+  layer: 6
+  prereqs:
+  - consistent-identification
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - skip-link
+  - consistent-navigation
+  - consistent-identification
+  - consistent-identification-good
+  library: []
+
+- id: consistent-identification-pick
+  title: Pick the examples that follow the rule
+  path: /learn/consistent-identification/pick/
+  kind: practice
+  layer: 6
+  prereqs:
+  - consistent-identification
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - skip-link
+  - consistent-navigation
+  - consistent-identification
+  - consistent-identification-pick
+  library: []
+
+- id: consistent-identification-fix
+  title: Fix the inconsistent names
+  path: /learn/consistent-identification/fix/
+  kind: practice
+  layer: 6
+  prereqs:
+  - consistent-identification
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - skip-link
+  - consistent-navigation
+  - consistent-identification
+  - consistent-identification-fix
+  library: []
+
 - id: no-change-on-focus
   title: Focus does not change context
   path: /learn/no-change-on-focus/
@@ -2746,7 +3030,11 @@ nodes:
   layer: 5
   prereqs:
   - no-unexpected-change
-  children: []
+  children:
+  - no-change-on-focus-bad
+  - no-change-on-focus-good
+  - no-change-on-focus-pick
+  - no-change-on-focus-fix
   spine:
   - equal-worth
   - comparable-access
@@ -2754,6 +3042,74 @@ nodes:
   - no-unexpected-change
   - no-change-on-focus
   library: *id001
+- id: no-change-on-focus-bad
+  title: Bad example — focus navigates
+  path: /learn/no-change-on-focus/bad/
+  kind: example
+  layer: 6
+  prereqs:
+  - no-change-on-focus
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - no-unexpected-change
+  - no-change-on-focus
+  - no-change-on-focus-bad
+  library: []
+
+- id: no-change-on-focus-good
+  title: Good example — focus stays put
+  path: /learn/no-change-on-focus/good/
+  kind: example
+  layer: 6
+  prereqs:
+  - no-change-on-focus
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - no-unexpected-change
+  - no-change-on-focus
+  - no-change-on-focus-good
+  library: []
+
+- id: no-change-on-focus-pick
+  title: Pick the examples that follow the rule
+  path: /learn/no-change-on-focus/pick/
+  kind: practice
+  layer: 6
+  prereqs:
+  - no-change-on-focus
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - no-unexpected-change
+  - no-change-on-focus
+  - no-change-on-focus-pick
+  library: []
+
+- id: no-change-on-focus-fix
+  title: Fix the focus navigation
+  path: /learn/no-change-on-focus/fix/
+  kind: practice
+  layer: 6
+  prereqs:
+  - no-change-on-focus
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - no-unexpected-change
+  - no-change-on-focus
+  - no-change-on-focus-fix
+  library: []
+
 - id: no-change-on-input
   title: Changing a value does not navigate
   path: /learn/no-change-on-input/
@@ -2761,7 +3117,11 @@ nodes:
   layer: 5
   prereqs:
   - no-unexpected-change
-  children: []
+  children:
+  - no-change-on-input-bad
+  - no-change-on-input-good
+  - no-change-on-input-pick
+  - no-change-on-input-fix
   spine:
   - equal-worth
   - comparable-access
@@ -2769,3 +3129,71 @@ nodes:
   - no-unexpected-change
   - no-change-on-input
   library: *id001
+- id: no-change-on-input-bad
+  title: Bad example — changing the value navigates
+  path: /learn/no-change-on-input/bad/
+  kind: example
+  layer: 6
+  prereqs:
+  - no-change-on-input
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - no-unexpected-change
+  - no-change-on-input
+  - no-change-on-input-bad
+  library: []
+
+- id: no-change-on-input-good
+  title: Good example — a submit button asks for the change
+  path: /learn/no-change-on-input/good/
+  kind: example
+  layer: 6
+  prereqs:
+  - no-change-on-input
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - no-unexpected-change
+  - no-change-on-input
+  - no-change-on-input-good
+  library: []
+
+- id: no-change-on-input-pick
+  title: Pick the examples that follow the rule
+  path: /learn/no-change-on-input/pick/
+  kind: practice
+  layer: 6
+  prereqs:
+  - no-change-on-input
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - no-unexpected-change
+  - no-change-on-input
+  - no-change-on-input-pick
+  library: []
+
+- id: no-change-on-input-fix
+  title: Fix the input navigation
+  path: /learn/no-change-on-input/fix/
+  kind: practice
+  layer: 6
+  prereqs:
+  - no-change-on-input
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - no-unexpected-change
+  - no-change-on-input
+  - no-change-on-input-fix
+  library: []
+

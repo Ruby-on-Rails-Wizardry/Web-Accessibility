@@ -3,6 +3,8 @@
 // Uses XML parse so a mismatch is an error instead of a silent fix.
 
 const VOID = "area|base|br|col|embed|hr|img|input|link|meta|param|source|track|wbr"
+const BOOLEAN =
+  "allowfullscreen|async|autofocus|autoplay|checked|controls|default|defer|disabled|formnovalidate|hidden|inert|ismap|itemscope|loop|multiple|muted|nomodule|novalidate|open|playsinline|readonly|required|reversed|selected"
 
 export function htmlWellFormed(html) {
   const wrapped = `<root>${xmlFriendly(html)}</root>`
@@ -13,10 +15,11 @@ export function htmlWellFormed(html) {
 }
 
 function xmlFriendly(html) {
-  return String(html).replace(new RegExp(`<(${VOID})(\\s[^>]*)?/?>`, "gi"), (match, tag, attrs) => {
+  const voidClosed = String(html).replace(new RegExp(`<(${VOID})(\\s[^>]*)?/?>`, "gi"), (match, tag, attrs) => {
     if (/\/>$/.test(match.trimEnd())) return match
     return `<${tag}${attrs || ""}/>`
   })
+  return voidClosed.replace(new RegExp(`\\s(${BOOLEAN})(?=[\\s>/])`, "gi"), (_, name) => ` ${name}="${name}"`)
 }
 
 function parserErrorText(doc) {

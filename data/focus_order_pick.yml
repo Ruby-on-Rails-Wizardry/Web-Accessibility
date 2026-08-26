@@ -1,0 +1,48 @@
+bad:
+  - |
+    <input tabindex="3" id="name-fb">
+    <input tabindex="1" id="email-fb">
+    <button tabindex="2">Send</button>
+  - |
+    <a href="/a" tabindex="4">Hours</a>
+    <a href="/b" tabindex="2">Permits</a>
+    <a href="/c" tabindex="3">Help</a>
+  - |
+    <input tabindex="5" id="q-fb">
+    <button tabindex="1">Search</button>
+  - |
+    <button tabindex="9">Save</button>
+    <button tabindex="8">Cancel</button>
+  - |
+    <select tabindex="2" id="city-fb"><option>Springfield</option></select>
+    <input tabindex="1" id="zip-fb">
+  - |
+    <a href="/print" tabindex="6">Print</a>
+    <a href="/share" tabindex="4">Share</a>
+
+good:
+  - |
+    <label for="name-fg">Name</label>
+    <input id="name-fg">
+    <label for="email-fg">Email</label>
+    <input id="email-fg">
+    <button type="button">Send</button>
+  - |
+    <a href="/a">Hours</a>
+    <a href="/b">Permits</a>
+    <a href="/c">Help</a>
+  - |
+    <label for="q-fg">Search</label>
+    <input id="q-fg" type="search">
+    <button type="button">Search</button>
+  - |
+    <button type="button">Save</button>
+    <button type="button">Cancel</button>
+  - |
+    <label for="city-fg">City</label>
+    <select id="city-fg"><option>Springfield</option></select>
+    <label for="zip-fg">ZIP</label>
+    <input id="zip-fg">
+  - |
+    <a href="/print">Print</a>
+    <a href="/share">Share</a>

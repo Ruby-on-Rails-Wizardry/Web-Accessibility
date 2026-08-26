@@ -218,17 +218,17 @@ Do not copy a rule’s specimen walkthrough onto tool pages; link the rule.
 | done | name-role-value | Name, role, and value | overlap with native-control; keep this cop smaller |
 | done | keyboard-operable | Keyboard can operate it | hover-only / non-focusable click; does not simulate Enter/Space |
 | | no-keyboard-trap | No keyboard trap | interactive; checker must not trap the tester |
-| | focus-order | Focus order matches meaning | |
+| done | focus-order | Focus order matches meaning | positive tabindex |
 | done | color-not-only-cue | Color is not the only cue | same grain |
 | done | images-of-text | Prefer real text to an image of text | same grain |
 | | meaningful-sequence | Meaningful sequence | CSS order vs DOM |
 | done | skip-link | Skip past repeated blocks | skip target is a unique id in the specimen, not page `main` |
 | | pointer-cancellation | Pointer cancellation | 2.1-only |
-| | status-messages | Status messages are announced | 2.1-only |
-| | no-change-on-focus | Focus does not change context | |
-| | no-change-on-input | Changing a value does not navigate | |
-| | consistent-identification | The same action keeps the same name | may need two named controls, not two pages |
-| | audio-control | Audio does not play unchecked | no autoplay in the teaching specimen |
+| done | status-messages | Status messages are announced | 2.1-only |
+| done | no-change-on-focus | Focus does not change context | inert handlers so testers do not leave |
+| done | no-change-on-input | Changing a value does not navigate | inert handlers so testers do not leave |
+| done | consistent-identification | The same action keeps the same name | two named controls on one specimen |
+| done | audio-control | Audio does not play unchecked | autoplay on a missing src |
 
 Awkward live specimens (still HTML, but the cop is not a fragment in `<main>`):
 

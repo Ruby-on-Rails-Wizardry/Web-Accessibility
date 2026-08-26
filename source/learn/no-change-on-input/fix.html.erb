@@ -1,0 +1,15 @@
+---
+title: Fix the input navigation
+description: Live specimen. Fix it, then Apply.
+node: no-change-on-input-fix
+layout: practice
+practice: fix
+of: no-change-on-input
+check_rules:
+  - no-change-on-input
+practice_note: Stop the change from navigating; add a submit if needed. Then Apply. Another example draws a different miss.
+---
+<select onchange="void('location = ' + this.value)">
+  <option value="/en">English</option>
+  <option value="/es">Español</option>
+</select>

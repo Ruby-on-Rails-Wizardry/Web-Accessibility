@@ -1,0 +1,56 @@
+bad:
+  - |
+    <select onchange="void('location = ' + this.value)">
+      <option value="/en">English</option>
+      <option value="/es">Español</option>
+    </select>
+  - |
+    <input type="radio" name="locale-ib" value="en" onchange="void('location = /en')"> English
+  - |
+    <select oninput="void('document.location = /region/' + this.value)">
+      <option>North</option>
+    </select>
+  - |
+    <input id="jump-ib" onchange="void('href = /go')">
+  - |
+    <select onchange="void('window.open(' + this.value + ')')">
+      <option value="/help">Help</option>
+    </select>
+  - |
+    <input type="checkbox" onchange="void('location = /ok')"> I agree
+
+good:
+  - |
+    <form action="/locale" method="get">
+      <label for="locale-ig">Language</label>
+      <select id="locale-ig" name="locale">
+        <option value="en">English</option>
+        <option value="es">Español</option>
+      </select>
+      <button type="submit">Change language</button>
+    </form>
+  - |
+    <fieldset>
+      <legend>Language</legend>
+      <label><input type="radio" name="locale-ig2" value="en"> English</label>
+      <button type="submit">Apply</button>
+    </fieldset>
+  - |
+    <label for="region-ig">Region</label>
+    <select id="region-ig">
+      <option>North</option>
+    </select>
+    <button type="submit">Update</button>
+  - |
+    <label for="jump-ig">Go to</label>
+    <input id="jump-ig">
+    <button type="submit">Go</button>
+  - |
+    <label for="help-ig">Topic</label>
+    <select id="help-ig">
+      <option value="/help">Help</option>
+    </select>
+    <button type="submit">Open</button>
+  - |
+    <label><input type="checkbox" id="agree-ig"> I agree</label>
+    <button type="submit">Continue</button>

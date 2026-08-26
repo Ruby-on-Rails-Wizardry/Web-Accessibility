@@ -21,6 +21,12 @@ import { imagesOfTextCheck } from "./images_of_text_check.js"
 import { skipLinkCheck } from "./skip_link_check.js"
 import { colorNotOnlyCueCheck } from "./color_not_only_cue_check.js"
 import { keyboardOperableCheck } from "./keyboard_operable_check.js"
+import { focusOrderCheck } from "./focus_order_check.js"
+import { noChangeOnFocusCheck } from "./no_change_on_focus_check.js"
+import { noChangeOnInputCheck } from "./no_change_on_input_check.js"
+import { audioControlCheck } from "./audio_control_check.js"
+import { statusMessagesCheck } from "./status_messages_check.js"
+import { consistentIdentificationCheck } from "./consistent_identification_check.js"
 import { htmlWellFormed } from "./html_wellformed.js"
 
 const CHECKERS = {
@@ -45,7 +51,13 @@ const CHECKERS = {
   "images-of-text": imagesOfTextCheck,
   "skip-link": skipLinkCheck,
   "color-not-only-cue": colorNotOnlyCueCheck,
-  "keyboard-operable": keyboardOperableCheck
+  "keyboard-operable": keyboardOperableCheck,
+  "focus-order": focusOrderCheck,
+  "no-change-on-focus": noChangeOnFocusCheck,
+  "no-change-on-input": noChangeOnInputCheck,
+  "audio-control": audioControlCheck,
+  "status-messages": statusMessagesCheck,
+  "consistent-identification": consistentIdentificationCheck
 }
 
 const PICK_DRAW = 6

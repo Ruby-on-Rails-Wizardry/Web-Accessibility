@@ -3,6 +3,12 @@ title: Status messages are announced
 description: “3 items in cart” that appears without moving focus must still reach a screen reader.
 node: status-messages
 rule: Make status messages programmatically available without moving focus.
+
+sc:
+  - "4.1.3"
+profiles:
+  - ada-title-ii
+  - wcag-22-aa
 ---
 
 A confirmation, error, or progress line that sighted users see in place is silent to a screen reader unless the page exposes it. “Saved.” that appears at the top of the form never gets spoken if nothing is a live region and focus did not move.
@@ -21,6 +27,8 @@ Usual HTML: `role="status"` / `aria-live="polite"` for confirmations; `role="ale
 
 A silent div appears. Assistive technology is not told.
 
+<p><a href="bad/" data-turbo="false">Open this example alone</a> and check it with tools. That page is supposed to fail.</p>
+
 </div>
 
 <div class="example example--good" markdown="1">
@@ -33,9 +41,19 @@ A silent div appears. Assistive technology is not told.
 
 The same message is a status region. It is announced without stealing focus.
 
+<p><a href="good/" data-turbo="false">Open this example alone</a> and check it with the same tools.</p>
+
 </div>
 
 </div>
+
+## Practice
+
+<p><a href="pick/" data-turbo="false">Pick the examples that follow the rule</a> — mark every card whose status message is a live region. A correct pick collapses; a miss shows which rule failed.</p>
+
+<p><a href="fix/" data-turbo="false">Fix the silent status message</a> — then <strong>Apply</strong>.</p>
+
+**Check** on the live examples scores this rule. **Apply** on the fix page writes the example and scores it.
 
 ## Not a pass
 

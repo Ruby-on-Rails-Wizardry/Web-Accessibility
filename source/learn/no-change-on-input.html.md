@@ -3,6 +3,13 @@ title: Changing a value does not navigate
 description: Changing a setting must not rebuild the page or send the person away unless you warned them first.
 node: no-change-on-input
 rule: Changing a control’s value does not cause a change of context unless the person was warned before using it.
+
+sc:
+  - "3.2.2"
+profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
 ---
 
 Selecting a radio, ticking a checkbox, or picking from a list is not a request to leave the page. Automatic submit-and-navigate on the first change fails people who explore with the keyboard or who pick the wrong option while looking.
@@ -24,6 +31,8 @@ A submit button (or an equivalent, announced warning before the control) is the 
 
 Changing the select immediately navigates.
 
+<p><a href="bad/" data-turbo="false">Open this example alone</a> and check it with tools. That page is supposed to fail. The live handler is inert so changing the select does not leave the lesson.</p>
+
 </div>
 
 <div class="example example--good" markdown="1">
@@ -43,9 +52,19 @@ Changing the select immediately navigates.
 
 The person asks for the change. Context changes on that request.
 
+<p><a href="good/" data-turbo="false">Open this example alone</a> and check it with the same tools.</p>
+
 </div>
 
 </div>
+
+## Practice
+
+<p><a href="pick/" data-turbo="false">Pick the examples that follow the rule</a> — mark every card where changing a value does not navigate. A correct pick collapses; a miss shows which rule failed.</p>
+
+<p><a href="fix/" data-turbo="false">Fix the input navigation</a> — then <strong>Apply</strong>.</p>
+
+**Check** on the live examples scores this rule. **Apply** on the fix page writes the example and scores it.
 
 ## Not a pass
 

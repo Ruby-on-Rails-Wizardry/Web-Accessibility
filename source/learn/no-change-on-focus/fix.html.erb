@@ -1,0 +1,14 @@
+---
+title: Fix the focus navigation
+description: Live specimen. Fix it, then Apply.
+node: no-change-on-focus-fix
+layout: practice
+practice: fix
+of: no-change-on-focus
+check_rules:
+  - no-change-on-focus
+practice_note: Stop focus from navigating. Then Apply. Another example draws a different miss.
+---
+<select onfocus="void('location = /locale/' + this.value)">
+  <option value="en">English</option>
+</select>

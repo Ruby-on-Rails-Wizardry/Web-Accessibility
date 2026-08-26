@@ -1,0 +1,13 @@
+---
+title: Bad example — changing the value navigates
+description: Live specimen. Open this page alone. It is supposed to fail.
+node: no-change-on-input-bad
+layout: example
+specimen: bad
+of: no-change-on-input
+specimen_note: This page is supposed to fail a no-change-on-input check. The handler is inert so changing the select does not leave.
+---
+<select onchange="void('location = ' + this.value)">
+  <option value="/en">English</option>
+  <option value="/es">Español</option>
+</select>

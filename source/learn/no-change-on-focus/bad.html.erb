@@ -1,0 +1,12 @@
+---
+title: Bad example — focus navigates
+description: Live specimen. Open this page alone. It is supposed to fail.
+node: no-change-on-focus-bad
+layout: example
+specimen: bad
+of: no-change-on-focus
+specimen_note: This page is supposed to fail a no-change-on-focus check. The handler is inert so tabbing does not leave.
+---
+<select onfocus="void('location = /locale/' + this.value)">
+  <option value="en">English</option>
+</select>

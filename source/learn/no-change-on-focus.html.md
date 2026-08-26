@@ -3,6 +3,13 @@ title: Focus does not change context
 description: Putting focus on a control must not open a new window, move focus, or rebuild the page.
 node: no-change-on-focus
 rule: Focusing a control does not cause a change of context.
+
+sc:
+  - "3.2.1"
+profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
 ---
 
 [Predictable](/learn/pour/): Tab landing on a field must not yank the person to a new page, spawn a window, or move focus somewhere else. A change of **context** is a new window, a new view, a new focus, or a complete rebuild of content.
@@ -23,6 +30,8 @@ A new panel that appears *without* moving focus is often fine. Navigating when t
 
 Tabbing to the select navigates. The person never chose to leave.
 
+<p><a href="bad/" data-turbo="false">Open this example alone</a> and check it with tools. That page is supposed to fail. The live handler is inert so tabbing does not leave the lesson.</p>
+
 </div>
 
 <div class="example example--good" markdown="1">
@@ -39,9 +48,19 @@ Tabbing to the select navigates. The person never chose to leave.
 
 Focus can rest on the control. Context changes when they submit.
 
+<p><a href="good/" data-turbo="false">Open this example alone</a> and check it with the same tools.</p>
+
 </div>
 
 </div>
+
+## Practice
+
+<p><a href="pick/" data-turbo="false">Pick the examples that follow the rule</a> — mark every card where focus does not change context. A correct pick collapses; a miss shows which rule failed.</p>
+
+<p><a href="fix/" data-turbo="false">Fix the focus navigation</a> — then <strong>Apply</strong>.</p>
+
+**Check** on the live examples scores this rule. **Apply** on the fix page writes the example and scores it.
 
 ## Not a pass
 

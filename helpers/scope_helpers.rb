@@ -33,6 +33,36 @@ module ScopeHelpers
       "level" => "A",
       "understanding" => "https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks"
     },
+    "2.4.3" => {
+      "name" => "Focus Order",
+      "level" => "A",
+      "understanding" => "https://www.w3.org/WAI/WCAG22/Understanding/focus-order"
+    },
+    "1.4.2" => {
+      "name" => "Audio Control",
+      "level" => "A",
+      "understanding" => "https://www.w3.org/WAI/WCAG22/Understanding/audio-control"
+    },
+    "3.2.1" => {
+      "name" => "On Focus",
+      "level" => "A",
+      "understanding" => "https://www.w3.org/WAI/WCAG22/Understanding/on-focus"
+    },
+    "3.2.2" => {
+      "name" => "On Input",
+      "level" => "A",
+      "understanding" => "https://www.w3.org/WAI/WCAG22/Understanding/on-input"
+    },
+    "3.2.4" => {
+      "name" => "Consistent Identification",
+      "level" => "AA",
+      "understanding" => "https://www.w3.org/WAI/WCAG22/Understanding/consistent-identification"
+    },
+    "4.1.3" => {
+      "name" => "Status Messages",
+      "level" => "AA",
+      "understanding" => "https://www.w3.org/WAI/WCAG22/Understanding/status-messages"
+    },
     "2.5.3" => {
       "name" => "Label in Name",
       "level" => "A",

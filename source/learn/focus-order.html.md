@@ -3,6 +3,13 @@ title: Focus order matches meaning
 description: Tab should visit controls in the order that makes sense — usually the visual order — not the order leftover from a CSS grid accident.
 node: focus-order
 rule: Put keyboard focus in an order that matches the meaning of the page.
+
+sc:
+  - "2.4.3"
+profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
 ---
 
 After [keyboard can reach it](/learn/keyboard-access/): the **sequence** has to match the meaning of the page. Tab that jumps Email → Submit → Name shuts out keyboard users who follow the visual form.
@@ -23,6 +30,8 @@ Positive `tabindex` values (`tabindex="5"`) and DOM order that disagrees with th
 
 Visual order is Name, Email, Submit. Tab jumps Email → Send → Name.
 
+<p><a href="bad/" data-turbo="false">Open this example alone</a> and check it with tools. That page is supposed to fail.</p>
+
 </div>
 
 <div class="example example--good" markdown="1">
@@ -39,9 +48,19 @@ Visual order is Name, Email, Submit. Tab jumps Email → Send → Name.
 
 DOM order is the order. Tab follows the form.
 
+<p><a href="good/" data-turbo="false">Open this example alone</a> and check it with the same tools.</p>
+
 </div>
 
 </div>
+
+## Practice
+
+<p><a href="pick/" data-turbo="false">Pick the examples that follow the rule</a> — mark every card whose Tab order follows the DOM. A correct pick collapses; a miss shows which rule failed.</p>
+
+<p><a href="fix/" data-turbo="false">Fix the tabindex order</a> — then <strong>Apply</strong>.</p>
+
+**Check** on the live examples scores this rule. **Apply** on the fix page writes the example and scores it.
 
 ## Not a pass
 

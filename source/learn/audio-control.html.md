@@ -3,6 +3,13 @@ title: Audio does not play unchecked
 description: Sound that starts on its own for more than three seconds must be stoppable, or it drowns out a screen reader.
 node: audio-control
 rule: Do not autoplay audio for more than three seconds unless the person can pause, stop, or turn it down independently.
+
+sc:
+  - "1.4.2"
+profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
 ---
 
 A screen-reader user hears speech. Background audio that starts automatically competes with that speech and shuts that person out of the page.
@@ -21,6 +28,8 @@ If audio plays automatically for **more than three seconds**, there must be a wa
 
 The bed track starts on load. There is no pause. It talks over the screen reader.
 
+<p><a href="bad/" data-turbo="false">Open this example alone</a> and check it with tools. That page is supposed to fail. The file is not present, so nothing plays.</p>
+
 </div>
 
 <div class="example example--good" markdown="1">
@@ -33,9 +42,19 @@ The bed track starts on load. There is no pause. It talks over the screen reader
 
 The person starts it, or it stops within three seconds, or a visible pause is immediate.
 
+<p><a href="good/" data-turbo="false">Open this example alone</a> and check it with the same tools.</p>
+
 </div>
 
 </div>
+
+## Practice
+
+<p><a href="pick/" data-turbo="false">Pick the examples that follow the rule</a> — mark every card whose audio does not start unchecked, or has an immediate pause. A correct pick collapses; a miss shows which rule failed.</p>
+
+<p><a href="fix/" data-turbo="false">Fix the autoplaying audio</a> — then <strong>Apply</strong>.</p>
+
+**Check** on the live examples scores this rule. **Apply** on the fix page writes the example and scores it.
 
 ## Not a pass
 

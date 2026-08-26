@@ -1,0 +1,27 @@
+bad:
+  - |
+    <div class="flash">Saved.</div>
+  - |
+    <p class="notice">3 items in cart</p>
+  - |
+    <div>Loading…</div>
+  - |
+    <span class="toast">Thank you</span>
+  - |
+    <div class="banner">Update complete</div>
+  - |
+    <p>Success.</p>
+
+good:
+  - |
+    <div class="flash" role="status">Saved.</div>
+  - |
+    <p class="notice" role="status">3 items in cart</p>
+  - |
+    <div aria-live="polite">Loading…</div>
+  - |
+    <div role="status">Thank you</div>
+  - |
+    <div class="banner" role="status">Update complete</div>
+  - |
+    <p role="alert">Error: the form could not be saved.</p>

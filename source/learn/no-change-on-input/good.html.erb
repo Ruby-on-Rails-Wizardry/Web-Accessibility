@@ -1,0 +1,17 @@
+---
+title: Good example — a submit button asks for the change
+description: Live specimen. Open this page alone and check it with tools.
+node: no-change-on-input-good
+layout: example
+specimen: good
+of: no-change-on-input
+specimen_note: Check this page with a keyboard. Changing the select does not navigate.
+---
+<form action="/locale" method="get">
+  <label for="locale">Language</label>
+  <select id="locale" name="locale">
+    <option value="en">English</option>
+    <option value="es">Español</option>
+  </select>
+  <button type="submit">Change language</button>
+</form>

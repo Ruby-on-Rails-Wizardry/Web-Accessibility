@@ -1,0 +1,41 @@
+bad:
+  - |
+    <select onfocus="void('location = /locale/' + this.value)">
+      <option value="en">English</option>
+    </select>
+  - |
+    <input id="jump-fb" onfocus="void('location = /search')">
+  - |
+    <a href="/help" onfocus="void('window.open(/help-popup)')">Help</a>
+  - |
+    <select onfocus="void('document.location = /es')">
+      <option value="es">Español</option>
+    </select>
+  - |
+    <button type="button" onfocus="void('location = /next')">Continue</button>
+  - |
+    <textarea onfocus="void('href = /notes')"></textarea>
+
+good:
+  - |
+    <label for="locale-fg">Language</label>
+    <select id="locale-fg" name="locale">
+      <option value="en">English</option>
+    </select>
+    <button type="submit">Change language</button>
+  - |
+    <label for="q-nfg">Search</label>
+    <input id="q-nfg" type="search">
+  - |
+    <a href="/help">Help</a>
+  - |
+    <label for="locale2-fg">Language</label>
+    <select id="locale2-fg">
+      <option value="es">Español</option>
+    </select>
+    <button type="submit">Apply</button>
+  - |
+    <button type="button">Continue</button>
+  - |
+    <label for="notes-fg">Notes</label>
+    <textarea id="notes-fg"></textarea>
