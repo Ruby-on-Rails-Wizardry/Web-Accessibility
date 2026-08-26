@@ -3,6 +3,13 @@ title: Skip past repeated blocks
 description: A keyboard user must not tab through the same header on every page before reaching the main content.
 node: skip-link
 rule: Provide a way to skip repeated chrome and land in the unique content.
+
+sc:
+  - "2.4.1"
+profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
 ---
 
 [Operable](/learn/pour/): there has to be a way to **bypass** blocks that repeat (nav, chrome) and land in the unique content. Without it, keyboard users tab through the same header on every page.
@@ -24,6 +31,8 @@ Non-web documents are **excepted** from 2.4.1 under Section 508 E205.4. Web cont
 
 The first Tab lands in a long header. There is no bypass.
 
+<p><a href="bad/" data-turbo="false">Open this example alone</a> and check it with tools. That page is supposed to fail.</p>
+
 </div>
 
 <div class="example example--good" markdown="1">
@@ -38,9 +47,19 @@ The first Tab lands in a long header. There is no bypass.
 
 The first control jumps to `main`. The header is still there for people who want it.
 
+<p><a href="good/" data-turbo="false">Open this example alone</a> and check it with the same tools. The live example uses a unique target id inside the specimen, not the page <code>main</code>.</p>
+
 </div>
 
 </div>
+
+## Practice
+
+<p><a href="pick/" data-turbo="false">Pick the examples that follow the rule</a> — mark every card whose first control skips to unique content. A correct pick collapses; a miss shows which rule failed.</p>
+
+<p><a href="fix/" data-turbo="false">Fix the missing skip link</a> — then <strong>Apply</strong>.</p>
+
+**Check** on the live examples scores this rule. **Apply** on the fix page writes the example and scores it.
 
 ## Not a pass
 

@@ -3,6 +3,13 @@ title: Keyboard can operate it
 description: If a pointer can do it, Tab and the usual keys can do it. No mouse-only control.
 node: keyboard-operable
 rule: Every action available by pointer is also available from the keyboard.
+
+sc:
+  - "2.1.1"
+profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
 ---
 
 Some people do not use a mouse. A date picker that opens only on hover, a `div` that reacts only to `click`, a drag that has no keyboard equivalent — those shut out keyboard (and many switch and speech) users.
@@ -23,6 +30,8 @@ Native [controls](/learn/native-control/) already take Enter, Space, and Tab. Cu
 
 Hover opens it. There is no focusable control and no keyboard path.
 
+<p><a href="bad/" data-turbo="false">Open this example alone</a> and check it with tools. That page is supposed to fail.</p>
+
 </div>
 
 <div class="example example--good" markdown="1">
@@ -36,9 +45,19 @@ Hover opens it. There is no focusable control and no keyboard path.
 
 A native date field (or a button that opens the calendar, arrows that move the day, Enter that chooses).
 
+<p><a href="good/" data-turbo="false">Open this example alone</a> and check it with the same tools.</p>
+
 </div>
 
 </div>
+
+## Practice
+
+<p><a href="pick/" data-turbo="false">Pick the examples that follow the rule</a> — mark every card that is operable from the keyboard. A correct pick collapses; a miss shows which rule failed.</p>
+
+<p><a href="fix/" data-turbo="false">Fix the mouse-only control</a> — then <strong>Apply</strong>.</p>
+
+**Check** on the live examples scores this rule. **Apply** on the fix page writes the example and scores it.
 
 ## Not a pass
 

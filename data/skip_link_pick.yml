@@ -1,0 +1,57 @@
+bad:
+  - |
+    <nav>
+      <a href="/home">Home</a>
+      <a href="/permits">Permits</a>
+      <a href="/help">Help</a>
+    </nav>
+    <div>Article</div>
+  - |
+    <a href="/home">City portal</a>
+    <a href="#story-b">Skip to story</a>
+    <div id="story-b">Story</div>
+  - |
+    <a href="#missing-b">Skip to content</a>
+    <nav><a href="/a">Hours</a></nav>
+    <div>Hours list</div>
+  - |
+    <button type="button">Menu</button>
+    <a href="#body-b">Skip to body</a>
+    <div id="body-b">Body</div>
+  - |
+    <a href="#article-hidden" hidden>Skip to article</a>
+    <nav><a href="/home">Home</a></nav>
+    <div id="article-hidden">Article</div>
+  - |
+    <a href="/search">Search</a>
+    <nav><a href="/help">Help</a></nav>
+    <div id="unique-b">Unique content</div>
+
+good:
+  - |
+    <a href="#article-g">Skip to article</a>
+    <nav>
+      <a href="/home">Home</a>
+      <a href="/permits">Permits</a>
+    </nav>
+    <div id="article-g">Article</div>
+  - |
+    <a href="#story-g" aria-label="Skip to story">Skip</a>
+    <nav><a href="/news">News</a></nav>
+    <div id="story-g">Story</div>
+  - |
+    <a href="#hours-g">Skip past navigation</a>
+    <nav><a href="/a">A</a><a href="/b">B</a></nav>
+    <div id="hours-g">Office hours</div>
+  - |
+    <a href="#content-g">Skip to content</a>
+    <header><a href="/home">Home</a></header>
+    <div id="content-g">Content</div>
+  - |
+    <a href="#unique-g">Skip to unique content</a>
+    <nav><a href="/help">Help</a></nav>
+    <div id="unique-g">Unique content</div>
+  - |
+    <a href="#notice-g">Skip to notice</a>
+    <nav><a href="/alerts">Alerts</a></nav>
+    <p id="notice-g">The office is closed Friday.</p>

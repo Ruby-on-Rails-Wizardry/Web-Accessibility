@@ -1,0 +1,29 @@
+bad:
+  - |
+    <div class="datepicker" onmouseover="openCal()">Choose a date</div>
+  - |
+    <div class="menu" onmouseenter="openMenu()">Services</div>
+  - |
+    <span onclick="save()">Save</span>
+  - |
+    <div onmousemove="showTip()">Fee schedule</div>
+  - |
+    <div class="cal" onmouseover="openCal()">Pick a day</div>
+  - |
+    <p onclick="go()">Open the map</p>
+
+good:
+  - |
+    <label for="date-k">Date</label>
+    <input id="date-k" type="date">
+  - |
+    <button type="button">Services</button>
+  - |
+    <button type="button">Save</button>
+  - |
+    <a href="/fees">Fee schedule</a>
+  - |
+    <label for="day-k">Day</label>
+    <input id="day-k" type="date">
+  - |
+    <a href="/map">Open the map</a>

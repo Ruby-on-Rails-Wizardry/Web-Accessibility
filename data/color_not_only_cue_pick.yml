@@ -1,0 +1,43 @@
+bad:
+  - |
+    <label for="mail-c">Email</label>
+    <input id="mail-c" type="email" class="invalid">
+  - |
+    <label for="date-c">Date</label>
+    <input id="date-c" type="text" class="error">
+  - |
+    <label for="zip-c">ZIP</label>
+    <input id="zip-c" type="text" class="required">
+  - |
+    <input id="tel-c" type="tel" aria-invalid="true">
+  - |
+    <label for="name-c">Name</label>
+    <input id="name-c" type="text" class="invalid">
+  - |
+    <label for="url-c">Website</label>
+    <input id="url-c" type="url" class="error">
+
+good:
+  - |
+    <label for="mail-okc">Email (required)</label>
+    <input id="mail-okc" type="email" aria-invalid="true" aria-describedby="mail-okc-err">
+    <p id="mail-okc-err">Enter an email like name@example.gov.</p>
+  - |
+    <label for="date-okc">Date *</label>
+    <input id="date-okc" type="text" class="invalid" aria-describedby="date-okc-err">
+    <p id="date-okc-err">Date is invalid.</p>
+  - |
+    <label for="zip-okc">ZIP (required)</label>
+    <input id="zip-okc" type="text" class="required">
+  - |
+    <label for="tel-okc">Phone</label>
+    <input id="tel-okc" type="tel" aria-invalid="true" aria-describedby="tel-okc-err">
+    <p id="tel-okc-err">Phone number is missing digits.</p>
+  - |
+    <label for="name-okc">Name (required)</label>
+    <input id="name-okc" type="text" class="invalid" aria-describedby="name-okc-err">
+    <p id="name-okc-err">Name is required.</p>
+  - |
+    <label for="url-okc">Website</label>
+    <input id="url-okc" type="url" class="error" aria-describedby="url-okc-err">
+    <p id="url-okc-err">Website must start with https://.</p>

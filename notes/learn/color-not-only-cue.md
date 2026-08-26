@@ -4,7 +4,7 @@ Published: `source/learn/color-not-only-cue.html.md` → `/learn/color-not-only-
 
 Draft mastery: The learner can add a non-color cue to a color-only distinction and refuse to treat that as “color work is impossible.”
 
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item (edit a snippet or a message)
-- [ ] Isomorphic retest item
+- [x] Confirm the one-line mastery criterion
+- [x] Locator item — `/learn/color-not-only-cue/pick/`
+- [x] Constructed item — `/learn/color-not-only-cue/fix/`
+- [x] Isomorphic retest item

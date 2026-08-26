@@ -452,12 +452,80 @@ nodes:
   children:
   - contrast-text
   - sensory-characteristics
+  - color-not-only-cue-bad
+  - color-not-only-cue-good
+  - color-not-only-cue-pick
+  - color-not-only-cue-fix
   spine:
   - equal-worth
   - comparable-access
   - pour
   - color-not-only-cue
   library: []
+- id: color-not-only-cue-bad
+  title: Bad example — error only as a red border
+  path: /learn/color-not-only-cue/bad/
+  kind: example
+  layer: 6
+  prereqs:
+  - color-not-only-cue
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - color-not-only-cue
+  - color-not-only-cue-bad
+  library: []
+
+- id: color-not-only-cue-good
+  title: Good example — required and error are in text
+  path: /learn/color-not-only-cue/good/
+  kind: example
+  layer: 6
+  prereqs:
+  - color-not-only-cue
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - color-not-only-cue
+  - color-not-only-cue-good
+  library: []
+
+- id: color-not-only-cue-pick
+  title: Pick the examples that follow the rule
+  path: /learn/color-not-only-cue/pick/
+  kind: practice
+  layer: 6
+  prereqs:
+  - color-not-only-cue
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - color-not-only-cue
+  - color-not-only-cue-pick
+  library: []
+
+- id: color-not-only-cue-fix
+  title: Fix the color-only cue
+  path: /learn/color-not-only-cue/fix/
+  kind: practice
+  layer: 6
+  prereqs:
+  - color-not-only-cue
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - color-not-only-cue
+  - color-not-only-cue-fix
+  library: []
+
 - id: headings
   title: Headings name the structure
   path: /learn/headings/
@@ -753,12 +821,80 @@ nodes:
   children:
   - multiple-ways
   - consistent-navigation
+  - skip-link-bad
+  - skip-link-good
+  - skip-link-pick
+  - skip-link-fix
   spine:
   - equal-worth
   - comparable-access
   - pour
   - skip-link
   library: *id001
+- id: skip-link-bad
+  title: Bad example — no skip past the header
+  path: /learn/skip-link/bad/
+  kind: example
+  layer: 6
+  prereqs:
+  - skip-link
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - skip-link
+  - skip-link-bad
+  library: []
+
+- id: skip-link-good
+  title: Good example — skip link lands in the unique content
+  path: /learn/skip-link/good/
+  kind: example
+  layer: 6
+  prereqs:
+  - skip-link
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - skip-link
+  - skip-link-good
+  library: []
+
+- id: skip-link-pick
+  title: Pick the examples that follow the rule
+  path: /learn/skip-link/pick/
+  kind: practice
+  layer: 6
+  prereqs:
+  - skip-link
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - skip-link
+  - skip-link-pick
+  library: []
+
+- id: skip-link-fix
+  title: Fix the missing skip link
+  path: /learn/skip-link/fix/
+  kind: practice
+  layer: 6
+  prereqs:
+  - skip-link
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - skip-link
+  - skip-link-fix
+  library: []
+
 - id: lists
   title: Lists are lists
   path: /learn/lists/
@@ -2276,6 +2412,10 @@ nodes:
   - keyboard-access
   children:
   - no-keyboard-trap
+  - keyboard-operable-bad
+  - keyboard-operable-good
+  - keyboard-operable-pick
+  - keyboard-operable-fix
   spine:
   - equal-worth
   - comparable-access
@@ -2283,6 +2423,74 @@ nodes:
   - keyboard-access
   - keyboard-operable
   library: *id001
+- id: keyboard-operable-bad
+  title: Bad example — hover-only control
+  path: /learn/keyboard-operable/bad/
+  kind: example
+  layer: 6
+  prereqs:
+  - keyboard-operable
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - keyboard-access
+  - keyboard-operable
+  - keyboard-operable-bad
+  library: []
+
+- id: keyboard-operable-good
+  title: Good example — native date field
+  path: /learn/keyboard-operable/good/
+  kind: example
+  layer: 6
+  prereqs:
+  - keyboard-operable
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - keyboard-access
+  - keyboard-operable
+  - keyboard-operable-good
+  library: []
+
+- id: keyboard-operable-pick
+  title: Pick the examples that follow the rule
+  path: /learn/keyboard-operable/pick/
+  kind: practice
+  layer: 6
+  prereqs:
+  - keyboard-operable
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - keyboard-access
+  - keyboard-operable
+  - keyboard-operable-pick
+  library: []
+
+- id: keyboard-operable-fix
+  title: Fix the mouse-only control
+  path: /learn/keyboard-operable/fix/
+  kind: practice
+  layer: 6
+  prereqs:
+  - keyboard-operable
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - keyboard-access
+  - keyboard-operable
+  - keyboard-operable-fix
+  library: []
+
 - id: no-keyboard-trap
   title: No keyboard trap
   path: /learn/no-keyboard-trap/

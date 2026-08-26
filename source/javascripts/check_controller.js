@@ -18,6 +18,9 @@ import { errorSuggestionCheck } from "./error_suggestion_check.js"
 import { accessibleNameCheck } from "./accessible_name_check.js"
 import { nameRoleValueCheck } from "./name_role_value_check.js"
 import { imagesOfTextCheck } from "./images_of_text_check.js"
+import { skipLinkCheck } from "./skip_link_check.js"
+import { colorNotOnlyCueCheck } from "./color_not_only_cue_check.js"
+import { keyboardOperableCheck } from "./keyboard_operable_check.js"
 import { htmlWellFormed } from "./html_wellformed.js"
 
 const CHECKERS = {
@@ -39,7 +42,10 @@ const CHECKERS = {
   "error-suggestion": errorSuggestionCheck,
   "accessible-name": accessibleNameCheck,
   "name-role-value": nameRoleValueCheck,
-  "images-of-text": imagesOfTextCheck
+  "images-of-text": imagesOfTextCheck,
+  "skip-link": skipLinkCheck,
+  "color-not-only-cue": colorNotOnlyCueCheck,
+  "keyboard-operable": keyboardOperableCheck
 }
 
 const PICK_DRAW = 6

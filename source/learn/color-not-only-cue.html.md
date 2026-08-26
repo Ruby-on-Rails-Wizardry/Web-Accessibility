@@ -3,6 +3,13 @@ title: Color is not the only cue
 description: Do not use color as the only way to tell things apart.
 node: color-not-only-cue
 rule: If color carries meaning, also provide a non-color cue (text, a mark, a pattern).
+
+sc:
+  - "1.4.1"
+profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
 ---
 
 A form that marks errors only by turning the box red shuts out people who do not see that red, and anyone using a display that flattens it.
@@ -24,6 +31,8 @@ Enough **contrast** is a child of this node: [Text contrast](/learn/contrast-tex
 
 Required and error are color only. No text, no mark.
 
+<p><a href="bad/" data-turbo="false">Open this example alone</a> and check it with tools. That page is supposed to fail.</p>
+
 </div>
 
 <div class="example example--good" markdown="1">
@@ -39,9 +48,19 @@ Required and error are color only. No text, no mark.
 
 “Required” and the error are in text. Color may still be used.
 
+<p><a href="good/" data-turbo="false">Open this example alone</a> and check it with the same tools.</p>
+
 </div>
 
 </div>
+
+## Practice
+
+<p><a href="pick/" data-turbo="false">Pick the examples that follow the rule</a> — mark every card that has a non-color cue for required or error. A correct pick collapses; a miss shows which rule failed.</p>
+
+<p><a href="fix/" data-turbo="false">Fix the color-only cue</a> — then <strong>Apply</strong>.</p>
+
+**Check** on the live examples scores this rule. **Apply** on the fix page writes the example and scores it.
 
 ## Not a pass
 

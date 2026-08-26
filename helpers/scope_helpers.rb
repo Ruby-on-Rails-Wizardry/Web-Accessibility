@@ -23,6 +23,16 @@ module ScopeHelpers
       "level" => "AA",
       "understanding" => "https://www.w3.org/WAI/WCAG22/Understanding/images-of-text"
     },
+    "1.4.1" => {
+      "name" => "Use of Color",
+      "level" => "A",
+      "understanding" => "https://www.w3.org/WAI/WCAG22/Understanding/use-of-color"
+    },
+    "2.4.1" => {
+      "name" => "Bypass Blocks",
+      "level" => "A",
+      "understanding" => "https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks"
+    },
     "2.5.3" => {
       "name" => "Label in Name",
       "level" => "A",
