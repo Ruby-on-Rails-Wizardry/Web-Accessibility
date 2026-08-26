@@ -314,6 +314,10 @@ nodes:
   children:
   - visible-label
   - name-role-value
+  - native-control-bad
+  - native-control-good
+  - native-control-pick
+  - native-control-fix
   spine:
   - equal-worth
   - comparable-access
@@ -322,6 +326,66 @@ nodes:
   library:
   - title: ATAG 2.0
     path: /docs/authoring-tools/atag/
+- id: native-control-bad
+  title: Bad example — clickable div and span
+  path: /learn/native-control/bad/
+  kind: example
+  layer: 6
+  prereqs:
+  - native-control
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - native-control
+  - native-control-bad
+  library: []
+- id: native-control-good
+  title: Good example — button and link
+  path: /learn/native-control/good/
+  kind: example
+  layer: 6
+  prereqs:
+  - native-control
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - native-control
+  - native-control-good
+  library: []
+- id: native-control-pick
+  title: Pick the examples that follow the rule
+  path: /learn/native-control/pick/
+  kind: practice
+  layer: 6
+  prereqs:
+  - native-control
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - native-control
+  - native-control-pick
+  library: []
+- id: native-control-fix
+  title: Fix the clickable div
+  path: /learn/native-control/fix/
+  kind: practice
+  layer: 6
+  prereqs:
+  - native-control
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - native-control
+  - native-control-fix
+  library: []
 - id: keyboard-access
   title: Keyboard can reach it
   path: /learn/keyboard-access/

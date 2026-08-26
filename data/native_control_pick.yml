@@ -1,0 +1,30 @@
+# Evaluative pool for /learn/native-control/pick/ and /fix/.
+# Isolated live pages stay the Save / Permits pair (not in this file).
+
+bad:
+  - |
+    <div onclick="return false">Submit</div>
+  - |
+    <span onclick="return false">Open hours</span>
+  - |
+    <a>Continue</a>
+  - |
+    <div role="button">Print</div>
+  - |
+    <span role="button">Next</span>
+  - |
+    <div class="btn" onclick="return false">Download</div>
+
+good:
+  - |
+    <button type="button">Submit</button>
+  - |
+    <a href="/hours">Open hours</a>
+  - |
+    <a href="/next">Continue</a>
+  - |
+    <button type="button">Print</button>
+  - |
+    <button type="button">Next</button>
+  - |
+    <a href="/file.pdf">Download</a>

@@ -3,13 +3,15 @@ import { headingOrderCheck } from "./heading_order_check.js"
 import { headingElementsCheck } from "./heading_elements_check.js"
 import { listsCheck } from "./lists_check.js"
 import { dataTablesCheck } from "./data_tables_check.js"
+import { nativeControlCheck } from "./native_control_check.js"
 import { htmlWellFormed } from "./html_wellformed.js"
 
 const CHECKERS = {
   "heading-order": headingOrderCheck,
   "heading-elements": headingElementsCheck,
   lists: listsCheck,
-  "data-tables": dataTablesCheck
+  "data-tables": dataTablesCheck,
+  "native-control": nativeControlCheck
 }
 
 const PICK_DRAW = 6

@@ -3,6 +3,13 @@ title: Native control before a custom widget
 description: A real button, link, or input already has a name, a role, and keyboard behavior. A div with a click handler does not.
 node: native-control
 rule: Use the native element that matches the job before you build a custom widget.
+sc:
+  - "4.1.2"
+  - "2.1.1"
+profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
 ---
 
 `<button>`, `<a href>`, `<input>`, `<select>` come with [POUR](/learn/pour/) pieces you would otherwise rebuild: role, focus, Enter/Space, an [accessible name](/learn/accessible-name/) from the content.
@@ -22,6 +29,8 @@ A custom widget is a later, harder branch ([Name, role, and value](/learn/name-r
 
 Clickable `div` / `span`. No role, no keyboard, no name unless you rebuild all three.
 
+<p><a href="bad/" data-turbo="false">Open this example alone</a> and check it with tools. That page is supposed to fail.</p>
+
 </div>
 
 <div class="example example--good" markdown="1">
@@ -35,9 +44,19 @@ Clickable `div` / `span`. No role, no keyboard, no name unless you rebuild all t
 
 A button does a thing. A link goes somewhere. Both already work from the keyboard.
 
+<p><a href="good/" data-turbo="false">Open this example alone</a> and check it with the same tools.</p>
+
 </div>
 
 </div>
+
+## Practice
+
+<p><a href="pick/" data-turbo="false">Pick the examples that follow the rule</a> — mark every card that uses a native button or link. A correct pick collapses; a miss shows which rule failed.</p>
+
+<p><a href="fix/" data-turbo="false">Fix the clickable div</a> — use a native control, then <strong>Apply</strong>.</p>
+
+**Check** on the live examples scores this rule. **Apply** on the fix page writes the example and scores it.
 
 ## Not a pass
 

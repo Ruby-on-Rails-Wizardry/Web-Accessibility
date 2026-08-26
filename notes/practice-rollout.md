@@ -202,7 +202,7 @@ Do not copy a rule’s specimen walkthrough onto tool pages; link the rule.
 | done | heading-elements | Headings are heading elements | Slice 2 |
 | done | lists | Lists are lists | same grain as heading-order |
 | done | data-tables | Data tables have headers | same grain as heading-order |
-| | native-control | Native control before a custom widget | |
+| done | native-control | Native control before a custom widget | same grain as heading-order |
 | | visible-label | Visible label is the programmatic name | |
 | | placeholder-not-label | Placeholder is not a label | |
 | | informative-image-alt | Informative image needs a text alternative | |

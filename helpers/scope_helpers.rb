@@ -7,6 +7,16 @@ module ScopeHelpers
       "name" => "Info and Relationships",
       "level" => "A",
       "understanding" => "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships"
+    },
+    "2.1.1" => {
+      "name" => "Keyboard",
+      "level" => "A",
+      "understanding" => "https://www.w3.org/WAI/WCAG22/Understanding/keyboard"
+    },
+    "4.1.2" => {
+      "name" => "Name, Role, Value",
+      "level" => "A",
+      "understanding" => "https://www.w3.org/WAI/WCAG22/Understanding/name-role-value"
     }
   }.freeze
 
