@@ -4,6 +4,7 @@ import { headingElementsCheck } from "./heading_elements_check.js"
 import { listsCheck } from "./lists_check.js"
 import { dataTablesCheck } from "./data_tables_check.js"
 import { nativeControlCheck } from "./native_control_check.js"
+import { visibleLabelCheck } from "./visible_label_check.js"
 import { htmlWellFormed } from "./html_wellformed.js"
 
 const CHECKERS = {
@@ -11,7 +12,8 @@ const CHECKERS = {
   "heading-elements": headingElementsCheck,
   lists: listsCheck,
   "data-tables": dataTablesCheck,
-  "native-control": nativeControlCheck
+  "native-control": nativeControlCheck,
+  "visible-label": visibleLabelCheck
 }
 
 const PICK_DRAW = 6

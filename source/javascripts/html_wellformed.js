@@ -2,12 +2,21 @@
 // The HTML parser will otherwise repair the markup and hide the miss.
 // Uses XML parse so a mismatch is an error instead of a silent fix.
 
+const VOID = "area|base|br|col|embed|hr|img|input|link|meta|param|source|track|wbr"
+
 export function htmlWellFormed(html) {
-  const wrapped = `<root>${html}</root>`
+  const wrapped = `<root>${xmlFriendly(html)}</root>`
   const doc = new DOMParser().parseFromString(wrapped, "application/xml")
   const message = parserErrorText(doc)
   if (!message) return []
   return [detailFromParser(message)]
+}
+
+function xmlFriendly(html) {
+  return String(html).replace(new RegExp(`<(${VOID})(\\s[^>]*)?/?>`, "gi"), (match, tag, attrs) => {
+    if (/\/>$/.test(match.trimEnd())) return match
+    return `<${tag}${attrs || ""}/>`
+  })
 }
 
 function parserErrorText(doc) {

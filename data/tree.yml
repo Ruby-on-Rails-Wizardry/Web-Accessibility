@@ -197,12 +197,80 @@ nodes:
   - form-errors
   - input-purpose
   - label-in-name
+  - visible-label-bad
+  - visible-label-good
+  - visible-label-pick
+  - visible-label-fix
   spine:
   - equal-worth
   - comparable-access
   - pour
   - accessible-name
   - visible-label
+  library: []
+- id: visible-label-bad
+  title: Bad example — label not associated
+  path: /learn/visible-label/bad/
+  kind: example
+  layer: 6
+  prereqs:
+  - visible-label
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - accessible-name
+  - visible-label
+  - visible-label-bad
+  library: []
+- id: visible-label-good
+  title: Good example — associated visible label
+  path: /learn/visible-label/good/
+  kind: example
+  layer: 6
+  prereqs:
+  - visible-label
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - accessible-name
+  - visible-label
+  - visible-label-good
+  library: []
+- id: visible-label-pick
+  title: Pick the examples that follow the rule
+  path: /learn/visible-label/pick/
+  kind: practice
+  layer: 6
+  prereqs:
+  - visible-label
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - accessible-name
+  - visible-label
+  - visible-label-pick
+  library: []
+- id: visible-label-fix
+  title: Fix the unassociated label
+  path: /learn/visible-label/fix/
+  kind: practice
+  layer: 6
+  prereqs:
+  - visible-label
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - accessible-name
+  - visible-label
+  - visible-label-fix
   library: []
 - id: placeholder-not-label
   title: Placeholder is not a label

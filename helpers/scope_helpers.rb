@@ -13,6 +13,11 @@ module ScopeHelpers
       "level" => "A",
       "understanding" => "https://www.w3.org/WAI/WCAG22/Understanding/keyboard"
     },
+    "3.3.2" => {
+      "name" => "Labels or Instructions",
+      "level" => "A",
+      "understanding" => "https://www.w3.org/WAI/WCAG22/Understanding/labels-or-instructions"
+    },
     "4.1.2" => {
       "name" => "Name, Role, Value",
       "level" => "A",

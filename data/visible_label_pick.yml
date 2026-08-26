@@ -1,0 +1,40 @@
+# Evaluative pool for /learn/visible-label/pick/ and /fix/.
+# Isolated live pages stay the Email pair (not in this file).
+# Good items use unique ids so six cards on one page do not clash.
+
+bad:
+  - |
+    <label>Name</label>
+    <input type="text">
+  - |
+    <input type="tel" name="phone">
+  - |
+    <label>City</label>
+    <input id="city-loose" type="text">
+  - |
+    <input type="text" aria-label="Search">
+  - |
+    <label>Notes</label>
+    <textarea></textarea>
+  - |
+    <span>Age</span>
+    <input type="number">
+
+good:
+  - |
+    <label for="name-ok">Name</label>
+    <input id="name-ok" type="text" autocomplete="name">
+  - |
+    <label for="phone-ok">Phone</label>
+    <input id="phone-ok" type="tel" autocomplete="tel">
+  - |
+    <label for="city-ok">City</label>
+    <input id="city-ok" type="text" autocomplete="address-level2">
+  - |
+    <label>Search <input type="search"></label>
+  - |
+    <label for="notes-ok">Notes</label>
+    <textarea id="notes-ok"></textarea>
+  - |
+    <label for="age-ok">Age</label>
+    <input id="age-ok" type="number">
