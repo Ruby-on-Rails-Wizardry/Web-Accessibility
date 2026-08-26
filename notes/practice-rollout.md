@@ -214,13 +214,13 @@ Do not copy a rule’s specimen walkthrough onto tool pages; link the rule.
 | done | language-of-parts | Language of parts | same grain |
 | done | error-identification | The error is identified in text | same grain |
 | done | error-suggestion | Suggest a fix when you know one | same grain |
-| | accessible-name | Accessible name | |
-| | name-role-value | Name, role, and value | overlap with native-control; keep this cop smaller |
+| done | accessible-name | Accessible name | same grain |
+| done | name-role-value | Name, role, and value | overlap with native-control; keep this cop smaller |
 | | keyboard-operable | Keyboard can operate it | |
 | | no-keyboard-trap | No keyboard trap | interactive; checker must not trap the tester |
 | | focus-order | Focus order matches meaning | |
 | | color-not-only-cue | Color is not the only cue | |
-| | images-of-text | Prefer real text to an image of text | |
+| done | images-of-text | Prefer real text to an image of text | same grain |
 | | meaningful-sequence | Meaningful sequence | CSS order vs DOM |
 | | skip-link | Skip past repeated blocks | skip target is in `<main>` or the specimen *is* the page |
 | | pointer-cancellation | Pointer cancellation | 2.1-only |

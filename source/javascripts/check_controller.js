@@ -15,6 +15,9 @@ import { inputPurposeCheck } from "./input_purpose_check.js"
 import { languageOfPartsCheck } from "./language_of_parts_check.js"
 import { errorIdentificationCheck } from "./error_identification_check.js"
 import { errorSuggestionCheck } from "./error_suggestion_check.js"
+import { accessibleNameCheck } from "./accessible_name_check.js"
+import { nameRoleValueCheck } from "./name_role_value_check.js"
+import { imagesOfTextCheck } from "./images_of_text_check.js"
 import { htmlWellFormed } from "./html_wellformed.js"
 
 const CHECKERS = {
@@ -33,7 +36,10 @@ const CHECKERS = {
   "input-purpose": inputPurposeCheck,
   "language-of-parts": languageOfPartsCheck,
   "error-identification": errorIdentificationCheck,
-  "error-suggestion": errorSuggestionCheck
+  "error-suggestion": errorSuggestionCheck,
+  "accessible-name": accessibleNameCheck,
+  "name-role-value": nameRoleValueCheck,
+  "images-of-text": imagesOfTextCheck
 }
 
 const PICK_DRAW = 6

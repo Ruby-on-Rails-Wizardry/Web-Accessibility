@@ -1,0 +1,28 @@
+bad:
+  - |
+    <div onclick="save()">Save</div>
+  - |
+    <button type="button"></button>
+  - |
+    <a href="/help"></a>
+  - |
+    <button type="button"><img src="search.png"></button>
+  - |
+    <input id="q-b">
+  - |
+    <div tabindex="0">Menu</div>
+
+good:
+  - |
+    <button type="button">Save</button>
+  - |
+    <a href="/help">Help</a>
+  - |
+    <button type="button" aria-label="Close">×</button>
+  - |
+    <button type="button"><img src="print.png" alt="Print"></button>
+  - |
+    <label for="q-g">Search</label>
+    <input id="q-g" type="search">
+  - |
+    <input type="submit" value="Send">

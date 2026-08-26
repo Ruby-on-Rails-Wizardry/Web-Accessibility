@@ -18,6 +18,11 @@ module ScopeHelpers
       "level" => "A",
       "understanding" => "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships"
     },
+    "1.4.5" => {
+      "name" => "Images of Text",
+      "level" => "AA",
+      "understanding" => "https://www.w3.org/WAI/WCAG22/Understanding/images-of-text"
+    },
     "2.5.3" => {
       "name" => "Label in Name",
       "level" => "A",

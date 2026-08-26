@@ -1,0 +1,27 @@
+bad:
+  - |
+    <img src="headline-office-hours.png" alt="Office hours, 9 to 5">
+  - |
+    <img src="text-banner-welcome.png" alt="Welcome to the city portal">
+  - |
+    <img src="promo-text-register.png" alt="Register now">
+  - |
+    <img src="hours-sign-open.png" alt="Open Monday to Friday">
+  - |
+    <img src="sale-title-spring.png" alt="Spring sale, 40 percent off">
+  - |
+    <img src="slogan-word-art.png" alt="Service first">
+
+good:
+  - |
+    <h2>Office hours, 9 to 5</h2>
+  - |
+    <p>Welcome to the city portal</p>
+  - |
+    <a href="/register">Register now</a>
+  - |
+    <p>Open Monday to Friday</p>
+  - |
+    <h1>Spring sale, 40 percent off</h1>
+  - |
+    <img src="city-logo.png" alt="City of Springfield">

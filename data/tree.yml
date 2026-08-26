@@ -176,6 +176,10 @@ nodes:
   - pour
   children:
   - visible-label
+  - accessible-name-bad
+  - accessible-name-good
+  - accessible-name-pick
+  - accessible-name-fix
   spine:
   - equal-worth
   - comparable-access
@@ -184,6 +188,70 @@ nodes:
   library:
   - title: Success criteria catalog
     path: /docs/wcag/success-criteria/
+- id: accessible-name-bad
+  title: Bad example — nameless control
+  path: /learn/accessible-name/bad/
+  kind: example
+  layer: 6
+  prereqs:
+  - accessible-name
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - accessible-name
+  - accessible-name-bad
+  library: []
+
+- id: accessible-name-good
+  title: Good example — native control with a name
+  path: /learn/accessible-name/good/
+  kind: example
+  layer: 6
+  prereqs:
+  - accessible-name
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - accessible-name
+  - accessible-name-good
+  library: []
+
+- id: accessible-name-pick
+  title: Pick the examples that follow the rule
+  path: /learn/accessible-name/pick/
+  kind: practice
+  layer: 6
+  prereqs:
+  - accessible-name
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - accessible-name
+  - accessible-name-pick
+  library: []
+
+- id: accessible-name-fix
+  title: Fix the nameless control
+  path: /learn/accessible-name/fix/
+  kind: practice
+  layer: 6
+  prereqs:
+  - accessible-name
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - accessible-name
+  - accessible-name-fix
+  library: []
+
 - id: visible-label
   title: Visible label is the programmatic name
   path: /learn/visible-label/
@@ -1119,7 +1187,11 @@ nodes:
   layer: 4
   prereqs:
   - decorative-vs-informative-image
-  children: []
+  children:
+  - images-of-text-bad
+  - images-of-text-good
+  - images-of-text-pick
+  - images-of-text-fix
   spine:
   - equal-worth
   - comparable-access
@@ -1127,6 +1199,74 @@ nodes:
   - decorative-vs-informative-image
   - images-of-text
   library: *id001
+- id: images-of-text-bad
+  title: Bad example — headline is an image of text
+  path: /learn/images-of-text/bad/
+  kind: example
+  layer: 6
+  prereqs:
+  - images-of-text
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - decorative-vs-informative-image
+  - images-of-text
+  - images-of-text-bad
+  library: []
+
+- id: images-of-text-good
+  title: Good example — headline is real text
+  path: /learn/images-of-text/good/
+  kind: example
+  layer: 6
+  prereqs:
+  - images-of-text
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - decorative-vs-informative-image
+  - images-of-text
+  - images-of-text-good
+  library: []
+
+- id: images-of-text-pick
+  title: Pick the examples that follow the rule
+  path: /learn/images-of-text/pick/
+  kind: practice
+  layer: 6
+  prereqs:
+  - images-of-text
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - decorative-vs-informative-image
+  - images-of-text
+  - images-of-text-pick
+  library: []
+
+- id: images-of-text-fix
+  title: Fix the image of text
+  path: /learn/images-of-text/fix/
+  kind: practice
+  layer: 6
+  prereqs:
+  - images-of-text
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - decorative-vs-informative-image
+  - images-of-text
+  - images-of-text-fix
+  library: []
+
 - id: sensory-characteristics
   title: Not only shape, size, or sound
   path: /learn/sensory-characteristics/
@@ -1582,7 +1722,11 @@ nodes:
   layer: 4
   prereqs:
   - native-control
-  children: []
+  children:
+  - name-role-value-bad
+  - name-role-value-good
+  - name-role-value-pick
+  - name-role-value-fix
   spine:
   - equal-worth
   - comparable-access
@@ -1590,6 +1734,74 @@ nodes:
   - native-control
   - name-role-value
   library: *id001
+- id: name-role-value-bad
+  title: Bad example — custom tab with no role
+  path: /learn/name-role-value/bad/
+  kind: example
+  layer: 6
+  prereqs:
+  - name-role-value
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - native-control
+  - name-role-value
+  - name-role-value-bad
+  library: []
+
+- id: name-role-value-good
+  title: Good example — tab exposes role and state
+  path: /learn/name-role-value/good/
+  kind: example
+  layer: 6
+  prereqs:
+  - name-role-value
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - native-control
+  - name-role-value
+  - name-role-value-good
+  library: []
+
+- id: name-role-value-pick
+  title: Pick the examples that follow the rule
+  path: /learn/name-role-value/pick/
+  kind: practice
+  layer: 6
+  prereqs:
+  - name-role-value
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - native-control
+  - name-role-value
+  - name-role-value-pick
+  library: []
+
+- id: name-role-value-fix
+  title: Fix the nameless widget
+  path: /learn/name-role-value/fix/
+  kind: practice
+  layer: 6
+  prereqs:
+  - name-role-value
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - native-control
+  - name-role-value
+  - name-role-value-fix
+  library: []
+
 - id: no-unexpected-change
   title: No unexpected change of context
   path: /learn/no-unexpected-change/

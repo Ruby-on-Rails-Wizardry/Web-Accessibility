@@ -1,0 +1,28 @@
+bad:
+  - |
+    <div class="tab selected" onclick="showPanel(1)">Hours</div>
+  - |
+    <span class="tab" onclick="showPanel(2)">Profile</span>
+  - |
+    <div role="checkbox" onclick="toggle()">Agree</div>
+  - |
+    <div class="switch on" onclick="toggle()">Notifications</div>
+  - |
+    <span role="tab">Settings</span>
+  - |
+    <div aria-selected="true">Billing</div>
+
+good:
+  - |
+    <button type="button" role="tab" aria-selected="true" aria-controls="hours-panel">Hours</button>
+  - |
+    <button type="button" role="tab" aria-selected="false" aria-controls="profile-panel">Profile</button>
+  - |
+    <input id="agree-g" type="checkbox">
+    <label for="agree-g">Agree</label>
+  - |
+    <button type="button" role="switch" aria-checked="true">Notifications</button>
+  - |
+    <button type="button" role="tab" aria-selected="false" aria-controls="settings-panel">Settings</button>
+  - |
+    <button type="button" role="radio" aria-checked="false">Standard mail</button>
