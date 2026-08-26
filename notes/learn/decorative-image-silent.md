@@ -1,10 +1,8 @@
 # Decorative image is silent
 
-Published: `source/learn/decorative-image-silent.html.md` → `/learn/decorative-image-silent/`
+Published: `source/learn/decorative-image-silent.html.md`
 
-Draft mastery: Given an ornamental image, the learner sets `alt=""` and says why a missing attribute fails.
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item
-- [ ] Isomorphic retest item
+- [x] Confirm the one-line mastery criterion
+- [x] Locator item — `/learn/decorative-image-silent/pick/`
+- [x] Constructed item — `/learn/decorative-image-silent/fix/`
+- [x] Isomorphic retest item

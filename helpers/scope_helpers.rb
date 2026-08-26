@@ -3,10 +3,20 @@
 # examples and practice inherit from `of:` unless they set their own.
 module ScopeHelpers
   SC_CATALOG = {
+    "1.1.1" => {
+      "name" => "Non-text Content",
+      "level" => "A",
+      "understanding" => "https://www.w3.org/WAI/WCAG22/Understanding/non-text-content"
+    },
     "1.3.1" => {
       "name" => "Info and Relationships",
       "level" => "A",
       "understanding" => "https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships"
+    },
+    "2.4.4" => {
+      "name" => "Link Purpose (In Context)",
+      "level" => "A",
+      "understanding" => "https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context"
     },
     "2.1.1" => {
       "name" => "Keyboard",

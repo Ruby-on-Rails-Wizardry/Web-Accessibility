@@ -6,6 +6,10 @@ import { dataTablesCheck } from "./data_tables_check.js"
 import { nativeControlCheck } from "./native_control_check.js"
 import { visibleLabelCheck } from "./visible_label_check.js"
 import { placeholderNotLabelCheck } from "./placeholder_not_label_check.js"
+import { informativeImageAltCheck } from "./informative_image_alt_check.js"
+import { decorativeImageSilentCheck } from "./decorative_image_silent_check.js"
+import { functionalImageNamesActionCheck } from "./functional_image_names_action_check.js"
+import { linkPurposeCheck } from "./link_purpose_check.js"
 import { htmlWellFormed } from "./html_wellformed.js"
 
 const CHECKERS = {
@@ -15,7 +19,11 @@ const CHECKERS = {
   "data-tables": dataTablesCheck,
   "native-control": nativeControlCheck,
   "visible-label": visibleLabelCheck,
-  "placeholder-not-label": placeholderNotLabelCheck
+  "placeholder-not-label": placeholderNotLabelCheck,
+  "informative-image-alt": informativeImageAltCheck,
+  "decorative-image-silent": decorativeImageSilentCheck,
+  "functional-image-names-action": functionalImageNamesActionCheck,
+  "link-purpose": linkPurposeCheck
 }
 
 const PICK_DRAW = 6

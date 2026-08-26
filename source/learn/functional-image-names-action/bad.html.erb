@@ -1,0 +1,15 @@
+---
+title: Bad example — image control named logo or icon
+description: Live specimen. Linked and button images are named “logo” and “icon”. Open this page alone. It is supposed to fail.
+node: functional-image-names-action-bad
+layout: example
+specimen: bad
+of: functional-image-names-action
+specimen_note: This page is supposed to fail a functional-image name check.
+---
+<a href="/">
+  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="logo">
+</a>
+<button type="submit">
+  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="icon">
+</button>

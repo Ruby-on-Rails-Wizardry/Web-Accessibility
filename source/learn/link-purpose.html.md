@@ -3,6 +3,12 @@ title: Link purpose in context
 description: The link text (plus its immediate context) must say where it goes. “Click here” does not.
 node: link-purpose
 rule: Write link text that names the destination or action, by itself or with its immediate context.
+sc:
+  - "2.4.4"
+profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
 ---
 
 [Operable](/learn/pour/): a list of links, or a screen-reader “links” rotor, has to make sense. “Click here” and “Read more” with no unique name shut out anyone who is not staring at the surrounding paragraph.
@@ -21,6 +27,8 @@ The [accessible name](/learn/accessible-name/) of the link should describe the d
 
 The name is “Click here”. A links list cannot tell this from any other “here”.
 
+<p><a href="bad/" data-turbo="false">Open this example alone</a> and check it with tools. That page is supposed to fail.</p>
+
 </div>
 
 <div class="example example--good" markdown="1">
@@ -33,9 +41,19 @@ The name is “Click here”. A links list cannot tell this from any other “he
 
 The name states the destination. Context is not required to know where it goes.
 
+<p><a href="good/" data-turbo="false">Open this example alone</a> and check it with the same tools.</p>
+
 </div>
 
 </div>
+
+## Practice
+
+<p><a href="pick/" data-turbo="false">Pick the examples that follow the rule</a> — mark every card whose link text names the destination. A correct pick collapses; a miss shows which rule failed.</p>
+
+<p><a href="fix/" data-turbo="false">Fix the vague link</a> — name the destination, then <strong>Apply</strong>.</p>
+
+**Check** on the live examples scores this rule. **Apply** on the fix page writes the example and scores it.
 
 ## Not a pass
 

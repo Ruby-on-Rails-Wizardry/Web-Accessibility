@@ -1005,6 +1005,17 @@ summary {
   padding: 0 0 0.35rem;
 }
 
+.practice-preview img,
+.specimen-main img {
+  display: inline-block;
+  min-width: 4rem;
+  min-height: 2.5rem;
+  max-width: 8rem;
+  height: auto;
+  vertical-align: middle;
+  background: var(--line);
+}
+
 body.specimen main,
 body.practice main {
   width: auto;

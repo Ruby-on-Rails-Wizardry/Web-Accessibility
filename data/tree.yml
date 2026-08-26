@@ -802,7 +802,11 @@ nodes:
   layer: 4
   prereqs:
   - headings
-  children: []
+  children:
+  - link-purpose-bad
+  - link-purpose-good
+  - link-purpose-pick
+  - link-purpose-fix
   spine:
   - equal-worth
   - comparable-access
@@ -810,6 +814,70 @@ nodes:
   - headings
   - link-purpose
   library: *id001
+- id: link-purpose-bad
+  title: Bad example — click here
+  path: /learn/link-purpose/bad/
+  kind: example
+  layer: 6
+  prereqs:
+  - link-purpose
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - headings
+  - link-purpose
+  - link-purpose-bad
+  library: []
+- id: link-purpose-good
+  title: Good example — link names the destination
+  path: /learn/link-purpose/good/
+  kind: example
+  layer: 6
+  prereqs:
+  - link-purpose
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - headings
+  - link-purpose
+  - link-purpose-good
+  library: []
+- id: link-purpose-pick
+  title: Pick the examples that follow the rule
+  path: /learn/link-purpose/pick/
+  kind: practice
+  layer: 6
+  prereqs:
+  - link-purpose
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - headings
+  - link-purpose
+  - link-purpose-pick
+  library: []
+- id: link-purpose-fix
+  title: Fix the vague link
+  path: /learn/link-purpose/fix/
+  kind: practice
+  layer: 6
+  prereqs:
+  - link-purpose
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - headings
+  - link-purpose
+  - link-purpose-fix
+  library: []
 - id: multiple-ways
   title: More than one way to find a page
   path: /learn/multiple-ways/
@@ -1349,7 +1417,11 @@ nodes:
   layer: 5
   prereqs:
   - decorative-vs-informative-image
-  children: []
+  children:
+  - informative-image-alt-bad
+  - informative-image-alt-good
+  - informative-image-alt-pick
+  - informative-image-alt-fix
   spine:
   - equal-worth
   - comparable-access
@@ -1357,6 +1429,70 @@ nodes:
   - decorative-vs-informative-image
   - informative-image-alt
   library: *id001
+- id: informative-image-alt-bad
+  title: Bad example — image with no text alternative
+  path: /learn/informative-image-alt/bad/
+  kind: example
+  layer: 6
+  prereqs:
+  - informative-image-alt
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - decorative-vs-informative-image
+  - informative-image-alt
+  - informative-image-alt-bad
+  library: []
+- id: informative-image-alt-good
+  title: Good example — image with a text alternative
+  path: /learn/informative-image-alt/good/
+  kind: example
+  layer: 6
+  prereqs:
+  - informative-image-alt
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - decorative-vs-informative-image
+  - informative-image-alt
+  - informative-image-alt-good
+  library: []
+- id: informative-image-alt-pick
+  title: Pick the examples that follow the rule
+  path: /learn/informative-image-alt/pick/
+  kind: practice
+  layer: 6
+  prereqs:
+  - informative-image-alt
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - decorative-vs-informative-image
+  - informative-image-alt
+  - informative-image-alt-pick
+  library: []
+- id: informative-image-alt-fix
+  title: Fix the missing text alternative
+  path: /learn/informative-image-alt/fix/
+  kind: practice
+  layer: 6
+  prereqs:
+  - informative-image-alt
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - decorative-vs-informative-image
+  - informative-image-alt
+  - informative-image-alt-fix
+  library: []
 - id: decorative-image-silent
   title: Decorative image is silent
   path: /learn/decorative-image-silent/
@@ -1364,7 +1500,11 @@ nodes:
   layer: 5
   prereqs:
   - decorative-vs-informative-image
-  children: []
+  children:
+  - decorative-image-silent-bad
+  - decorative-image-silent-good
+  - decorative-image-silent-pick
+  - decorative-image-silent-fix
   spine:
   - equal-worth
   - comparable-access
@@ -1372,6 +1512,70 @@ nodes:
   - decorative-vs-informative-image
   - decorative-image-silent
   library: *id001
+- id: decorative-image-silent-bad
+  title: Bad example — decorative image announced
+  path: /learn/decorative-image-silent/bad/
+  kind: example
+  layer: 6
+  prereqs:
+  - decorative-image-silent
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - decorative-vs-informative-image
+  - decorative-image-silent
+  - decorative-image-silent-bad
+  library: []
+- id: decorative-image-silent-good
+  title: Good example — decorative image silent
+  path: /learn/decorative-image-silent/good/
+  kind: example
+  layer: 6
+  prereqs:
+  - decorative-image-silent
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - decorative-vs-informative-image
+  - decorative-image-silent
+  - decorative-image-silent-good
+  library: []
+- id: decorative-image-silent-pick
+  title: Pick the examples that follow the rule
+  path: /learn/decorative-image-silent/pick/
+  kind: practice
+  layer: 6
+  prereqs:
+  - decorative-image-silent
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - decorative-vs-informative-image
+  - decorative-image-silent
+  - decorative-image-silent-pick
+  library: []
+- id: decorative-image-silent-fix
+  title: Fix the announced ornament
+  path: /learn/decorative-image-silent/fix/
+  kind: practice
+  layer: 6
+  prereqs:
+  - decorative-image-silent
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - decorative-vs-informative-image
+  - decorative-image-silent
+  - decorative-image-silent-fix
+  library: []
 - id: functional-image-names-action
   title: Functional image names the action
   path: /learn/functional-image-names-action/
@@ -1379,7 +1583,11 @@ nodes:
   layer: 5
   prereqs:
   - decorative-vs-informative-image
-  children: []
+  children:
+  - functional-image-names-action-bad
+  - functional-image-names-action-good
+  - functional-image-names-action-pick
+  - functional-image-names-action-fix
   spine:
   - equal-worth
   - comparable-access
@@ -1387,6 +1595,70 @@ nodes:
   - decorative-vs-informative-image
   - functional-image-names-action
   library: *id001
+- id: functional-image-names-action-bad
+  title: Bad example — image control named logo or icon
+  path: /learn/functional-image-names-action/bad/
+  kind: example
+  layer: 6
+  prereqs:
+  - functional-image-names-action
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - decorative-vs-informative-image
+  - functional-image-names-action
+  - functional-image-names-action-bad
+  library: []
+- id: functional-image-names-action-good
+  title: Good example — image control names the action
+  path: /learn/functional-image-names-action/good/
+  kind: example
+  layer: 6
+  prereqs:
+  - functional-image-names-action
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - decorative-vs-informative-image
+  - functional-image-names-action
+  - functional-image-names-action-good
+  library: []
+- id: functional-image-names-action-pick
+  title: Pick the examples that follow the rule
+  path: /learn/functional-image-names-action/pick/
+  kind: practice
+  layer: 6
+  prereqs:
+  - functional-image-names-action
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - decorative-vs-informative-image
+  - functional-image-names-action
+  - functional-image-names-action-pick
+  library: []
+- id: functional-image-names-action-fix
+  title: Fix the unnamed image control
+  path: /learn/functional-image-names-action/fix/
+  kind: practice
+  layer: 6
+  prereqs:
+  - functional-image-names-action
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - decorative-vs-informative-image
+  - functional-image-names-action
+  - functional-image-names-action-fix
+  library: []
 - id: heading-elements
   title: Headings are heading elements
   path: /learn/heading-elements/

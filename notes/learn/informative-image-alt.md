@@ -1,10 +1,8 @@
 # Informative image needs a text alternative
 
-Published: `source/learn/informative-image-alt.html.md` → `/learn/informative-image-alt/`
+Published: `source/learn/informative-image-alt.html.md`
 
-Draft mastery: Given an informative image in context, the learner writes an equivalent `alt` (or says the current one is missing).
-
-- [ ] Confirm the one-line mastery criterion
-- [ ] Locator item
-- [ ] Constructed item (write the alt)
-- [ ] Isomorphic retest item
+- [x] Confirm the one-line mastery criterion
+- [x] Locator item — `/learn/informative-image-alt/pick/`
+- [x] Constructed item — `/learn/informative-image-alt/fix/`
+- [x] Isomorphic retest item

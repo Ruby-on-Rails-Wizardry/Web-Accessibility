@@ -1,0 +1,47 @@
+# Evaluative pool. Isolated pages stay the Permits swirl pair.
+
+bad:
+  - |
+    <h2>Hours</h2>
+    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="decorative swirl">
+    <p>Open daily 9 to 6.</p>
+  - |
+    <h2>Library</h2>
+    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+    <p>Borrow and renew.</p>
+  - |
+    <p>Trail map</p>
+    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="pretty trees">
+  - |
+    <h2>Clinic</h2>
+    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="stock photo of a clinic">
+    <p>Make an appointment.</p>
+  - |
+    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="spacer">
+  - |
+    <h2>Board</h2>
+    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="ornament">
+    <p>Next meeting Tuesday.</p>
+
+good:
+  - |
+    <h2>Hours</h2>
+    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="">
+    <p>Open daily 9 to 6.</p>
+  - |
+    <h2>Library</h2>
+    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="">
+    <p>Borrow and renew.</p>
+  - |
+    <p>Trail map</p>
+    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="">
+  - |
+    <h2>Clinic</h2>
+    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="">
+    <p>Make an appointment.</p>
+  - |
+    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="">
+  - |
+    <h2>Board</h2>
+    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="">
+    <p>Next meeting Tuesday.</p>

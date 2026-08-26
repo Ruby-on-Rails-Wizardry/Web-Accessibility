@@ -1,0 +1,29 @@
+# Evaluative pool. Isolated pages stay the Click here / Parking permit rules pair.
+
+bad:
+  - |
+    <p>Hours are posted. <a href="/hours">Click here</a>.</p>
+  - |
+    <p>See the trail map. <a href="/trails">Read more</a>.</p>
+  - |
+    <p><a href="/clinic">here</a></p>
+  - |
+    <p>Board packets. <a href="/board">Learn more</a>.</p>
+  - |
+    <p><a href="/library">Click</a> to search the catalog.</p>
+  - |
+    <p>Renewals: <a href="/renew">this link</a>.</p>
+
+good:
+  - |
+    <p><a href="/hours">Library hours</a></p>
+  - |
+    <p><a href="/trails">Trail map</a></p>
+  - |
+    <p><a href="/clinic">Clinic appointments</a></p>
+  - |
+    <p><a href="/board">Board packets</a></p>
+  - |
+    <p><a href="/library">Search the catalog</a></p>
+  - |
+    <p><a href="/renew">Renew a loan</a></p>

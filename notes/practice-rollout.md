@@ -205,10 +205,10 @@ Do not copy a rule’s specimen walkthrough onto tool pages; link the rule.
 | done | native-control | Native control before a custom widget | same grain as heading-order |
 | done | visible-label | Visible label is the programmatic name | same grain as heading-order |
 | done | placeholder-not-label | Placeholder is not a label | same grain as heading-order |
-| | informative-image-alt | Informative image needs a text alternative | |
-| | decorative-image-silent | Decorative image is silent | |
-| | functional-image-names-action | Functional image names the action | |
-| | link-purpose | Link purpose in context | |
+| done | informative-image-alt | Informative image needs a text alternative | same grain |
+| done | decorative-image-silent | Decorative image is silent | same grain |
+| done | functional-image-names-action | Functional image names the action | same grain |
+| done | link-purpose | Link purpose in context | same grain |
 | | accessible-name | Accessible name | |
 | | name-role-value | Name, role, and value | overlap with native-control; keep this cop smaller |
 | | label-in-name | Visible label is in the name | 2.1-only (`ada-title-ii`, `wcag-22-aa`) |
