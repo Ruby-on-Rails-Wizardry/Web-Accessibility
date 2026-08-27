@@ -1,0 +1,322 @@
+# Rule catalog for the in-house checkers (JS, Ruby, Python).
+# Source of truth for sc / profiles is still the rule page frontmatter.
+# Quote SC ids. Do not treat these cops as the official specifications.
+
+---
+rules:
+- id: heading-order
+  title: Do not skip heading levels
+  rule: Nest headings in order. Do not skip a level to get a smaller font.
+  path: "/learn/heading-order/"
+  sc:
+  - "1.3.1"
+  profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
+- id: heading-elements
+  title: Headings are heading elements
+  rule: Mark each section name with a heading element, not a styled paragraph or a
+    bold span.
+  path: "/learn/heading-elements/"
+  sc:
+  - "1.3.1"
+  profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
+- id: lists
+  title: Lists are lists
+  rule: Mark related items as a list in the markup, not as styled divs that only look
+    like bullets.
+  path: "/learn/lists/"
+  sc:
+  - "1.3.1"
+  profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
+- id: data-tables
+  title: Data tables have headers
+  rule: Mark column and row headers on a data table so each cell can be tied to those
+    headers.
+  path: "/learn/data-tables/"
+  sc:
+  - "1.3.1"
+  profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
+- id: native-control
+  title: Native control before a custom widget
+  rule: Use the native element that matches the job before you build a custom widget.
+  path: "/learn/native-control/"
+  sc:
+  - "4.1.2"
+  - "2.1.1"
+  profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
+- id: visible-label
+  title: Visible label is the programmatic name
+  rule: Associate a visible label with each control so the accessible name is that
+    same string.
+  path: "/learn/visible-label/"
+  sc:
+  - "1.3.1"
+  - "3.3.2"
+  - "4.1.2"
+  profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
+- id: placeholder-not-label
+  title: Placeholder is not a label
+  rule: Do not use placeholder as the only label for a field.
+  path: "/learn/placeholder-not-label/"
+  sc:
+  - "1.3.1"
+  - "3.3.2"
+  profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
+- id: informative-image-alt
+  title: Informative image needs a text alternative
+  rule: Give every informative image a short text alternative that says the same thing
+    the picture says.
+  path: "/learn/informative-image-alt/"
+  sc:
+  - "1.1.1"
+  profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
+- id: decorative-image-silent
+  title: Decorative image is silent
+  rule: Give a decorative image empty alt text so assistive technology skips it.
+  path: "/learn/decorative-image-silent/"
+  sc:
+  - "1.1.1"
+  profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
+- id: functional-image-names-action
+  title: Functional image names the action
+  rule: If an image is the only name of a link or button, its alt text names the destination
+    or the action.
+  path: "/learn/functional-image-names-action/"
+  sc:
+  - "1.1.1"
+  - "4.1.2"
+  profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
+- id: link-purpose
+  title: Link purpose in context
+  rule: Write link text that names the destination or action, by itself or with its
+    immediate context.
+  path: "/learn/link-purpose/"
+  sc:
+  - "2.4.4"
+  profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
+- id: label-in-name
+  title: Visible label is in the name
+  rule: Put the visible label text inside the accessible name.
+  path: "/learn/label-in-name/"
+  sc:
+  - "2.5.3"
+  profiles:
+  - ada-title-ii
+  - wcag-22-aa
+- id: input-purpose
+  title: Identify input purpose
+  rule: Mark personal fields with an autocomplete token so a browser or password manager
+    can fill them.
+  path: "/learn/input-purpose/"
+  sc:
+  - "1.3.5"
+  profiles:
+  - ada-title-ii
+  - wcag-22-aa
+- id: language-of-parts
+  title: Language of parts
+  rule: Mark a phrase that is not in the page language with lang on the element that
+    contains it.
+  path: "/learn/language-of-parts/"
+  sc:
+  - "3.1.2"
+  profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
+- id: error-identification
+  title: The error is identified in text
+  rule: When a field is in error, identify that field and describe the error in text.
+  path: "/learn/error-identification/"
+  sc:
+  - "3.3.1"
+  profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
+- id: error-suggestion
+  title: Suggest a fix when you know one
+  rule: When you know how to correct an input error, provide a suggestion in text.
+  path: "/learn/error-suggestion/"
+  sc:
+  - "3.3.3"
+  profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
+- id: accessible-name
+  title: Accessible name
+  rule: Every control has a programmatic name. If there is none, the tool cannot tell
+    the person what they landed on.
+  path: "/learn/accessible-name/"
+  sc:
+  - "4.1.2"
+  profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
+- id: name-role-value
+  title: Name, role, and value
+  rule: Expose name, role, and value for every custom widget, or use a native control.
+  path: "/learn/name-role-value/"
+  sc:
+  - "4.1.2"
+  profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
+- id: images-of-text
+  title: Prefer real text to an image of text
+  rule: Use real text for words that are the content, not an image of those words,
+    unless that presentation is essential.
+  path: "/learn/images-of-text/"
+  sc:
+  - "1.4.5"
+  profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
+- id: skip-link
+  title: Skip past repeated blocks
+  rule: Provide a way to skip repeated chrome and land in the unique content.
+  path: "/learn/skip-link/"
+  sc:
+  - "2.4.1"
+  profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
+- id: color-not-only-cue
+  title: Color is not the only cue
+  rule: If color carries meaning, also provide a non-color cue (text, a mark, a pattern).
+  path: "/learn/color-not-only-cue/"
+  sc:
+  - "1.4.1"
+  profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
+- id: keyboard-operable
+  title: Keyboard can operate it
+  rule: Every action available by pointer is also available from the keyboard.
+  path: "/learn/keyboard-operable/"
+  sc:
+  - "2.1.1"
+  profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
+- id: focus-order
+  title: Focus order matches meaning
+  rule: Put keyboard focus in an order that matches the meaning of the page.
+  path: "/learn/focus-order/"
+  sc:
+  - "2.4.3"
+  profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
+- id: no-change-on-focus
+  title: Focus does not change context
+  rule: Focusing a control does not cause a change of context.
+  path: "/learn/no-change-on-focus/"
+  sc:
+  - "3.2.1"
+  profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
+- id: no-change-on-input
+  title: Changing a value does not navigate
+  rule: Changing a control’s value does not cause a change of context unless the person
+    was warned before using it.
+  path: "/learn/no-change-on-input/"
+  sc:
+  - "3.2.2"
+  profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
+- id: audio-control
+  title: Audio does not play unchecked
+  rule: Do not autoplay audio for more than three seconds unless the person can pause,
+    stop, or turn it down independently.
+  path: "/learn/audio-control/"
+  sc:
+  - "1.4.2"
+  profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
+- id: status-messages
+  title: Status messages are announced
+  rule: Make status messages programmatically available without moving focus.
+  path: "/learn/status-messages/"
+  sc:
+  - "4.1.3"
+  profiles:
+  - ada-title-ii
+  - wcag-22-aa
+- id: consistent-identification
+  title: The same action keeps the same name
+  rule: Identify the same function with the same accessible name (and the same visible
+    label) wherever it appears.
+  path: "/learn/consistent-identification/"
+  sc:
+  - "3.2.4"
+  profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
+- id: meaningful-sequence
+  title: Meaningful sequence
+  rule: Keep the DOM in the same order as the intended reading order.
+  path: "/learn/meaningful-sequence/"
+  sc:
+  - "1.3.2"
+  profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
+- id: pointer-cancellation
+  title: Pointer cancellation
+  rule: Do not complete an action on the down-event. Finish on up, with a way to abort
+    or undo.
+  path: "/learn/pointer-cancellation/"
+  sc:
+  - "2.5.2"
+  profiles:
+  - ada-title-ii
+  - wcag-22-aa

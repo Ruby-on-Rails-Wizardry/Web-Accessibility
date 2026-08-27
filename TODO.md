@@ -60,6 +60,26 @@ Each study node has a teaching page. Mastery items still to write: [notes/learn/
 
 ---
 
+## Next — tests and mirrored checkers (JS, Ruby, Python)
+
+The in-house cops live in `source/javascripts/*_check.js` and run on practice pages. There was no automated test suite. Mirror them as libraries so the same grain can score HTML in tests.
+
+Contract: [checks/README.md](checks/README.md). Catalog: [checks/catalog.yml](checks/catalog.yml). Pickup notes: [notes/section508-checks.md](notes/section508-checks.md).
+
+| Track | What |
+| --- | --- |
+| Tests for work so far | **done** — pick-pool fixtures (`data/*_pick.yml`). JS 375, Ruby 381, Python 380. Combined `headings_pick.yml` runs both heading cops. |
+| JavaScript library | **done** for fragment cops. Browser: `source/javascripts/section508.js`. Node: `checks/javascript` (jsdom). Works with node:test, Vitest, Jest, Mocha, Playwright (HTML string or in-page). |
+| Ruby library | **done** for fragment cops. `checks/ruby` — HTML strings, Nokogiri, Capybara `page`, Rails `response.body`. RSpec `meet_section508`, Minitest `assert_section508`. |
+| Python library | **done** for fragment cops. `checks/python` — HTML strings, BeautifulSoup, Playwright `page.content()`, Selenium `page_source`, Requests `text`. `section508.assert_ok`. |
+| Keep separate | One checker file per rule per language. Catalog is `checks/catalog.yml`. No JS-from-Ruby bridge. Site Stimulus controller stays UI-only. |
+
+Run: `bundle exec rake test` (JS + Ruby + Python). CI: `.github/workflows/test.yml`. Not a replacement for axe / WAVE / keyboard / screen reader.
+
+Later: publish as real packages (npm / gem / PyPI) only if another repo needs them. CSS/visual cops (slice 5) need computed style, so Playwright in-page checks, not HTML strings alone.
+
+---
+
 ## Next — finish the practice grain, then CSS and scenario
 
 Left off **2026-08-26 night** at `0aedfd6` (pushed). Pickup: [notes/pickup.md](notes/pickup.md). Detail: [notes/practice-rollout.md](notes/practice-rollout.md).

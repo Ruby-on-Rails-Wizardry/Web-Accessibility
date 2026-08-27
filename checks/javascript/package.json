@@ -1,0 +1,16 @@
+{
+  "name": "section508",
+  "private": true,
+  "type": "module",
+  "description": "In-house Section 508 / WCAG fragment checkers for the browser and JS tests.",
+  "exports": {
+    ".": "./index.js"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "devDependencies": {
+    "jsdom": "^26.1.0",
+    "yaml": "^2.8.0"
+  }
+}

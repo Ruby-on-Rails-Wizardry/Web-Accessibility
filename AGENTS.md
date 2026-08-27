@@ -33,6 +33,7 @@ Live: [https://ruby-on-rails-wizardry.github.io/Web-Accessibility/](https://ruby
 | Sources / licenses | `source/docs/SOURCES.html.md` |
 | Knowledge tree | `data/tree.yml` + `source/learn/` |
 | Whole-project TODO | `TODO.md` |
+| In-house checkers | `checks/` — JS / Ruby / Python libraries; catalog `checks/catalog.yml`; contract `checks/README.md` |
 | Internal notes (not published) | `notes/` — mirror the published path; lab/host facts; per-node mastery still-to-write in `notes/learn/` |
 
 When implementing accessibility work **in another project**, name a profile (`section-508-web`, `ada-title-ii`, `wcag-22-aa`) and a surface, then filter the catalog. Do not paste the whole library into one prompt.

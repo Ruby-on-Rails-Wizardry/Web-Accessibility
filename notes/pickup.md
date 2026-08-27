@@ -1,3 +1,23 @@
+# Pickup — 2026-08-27
+
+Resume here. Do not re-inventory the grain. Contract: [practice-rollout.md](practice-rollout.md). Whole-project: [../TODO.md](../TODO.md).
+
+## Today — checker libraries (shipped)
+
+Mirror the 30 fragment cops as test libraries. Contract: [../checks/README.md](../checks/README.md). Detail: [section508-checks.md](section508-checks.md).
+
+- Tests: pick-pool fixtures (`data/*_pick.yml`) against each cop. `bundle exec rake test` (JS + Ruby + Python). CI: `.github/workflows/test.yml`.
+- JS: `source/javascripts/section508.js` (browser) + `checks/javascript` (jsdom / node:test).
+- Ruby: `checks/ruby` for HTML strings, Nokogiri, RSpec, Rails `response`.
+- Python: `checks/python` for HTML strings, pytest, Playwright, Selenium.
+- Fixed `language-of-parts`: a lang switch only counts when an ancestor also has `lang`.
+
+Did not publish the local `saving work in progres` commit (Playwright dumps + `heading-elements-fix-mobile.png`). Those stay gitignored.
+
+Practice-grain pickup below is unchanged. Default next: **B then C**.
+
+---
+
 # Pickup — 2026-08-26 night
 
 Resume here. Do not re-inventory the grain. Contract: [practice-rollout.md](practice-rollout.md). Whole-project: [../TODO.md](../TODO.md).

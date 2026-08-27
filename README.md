@@ -31,7 +31,10 @@ Open http://localhost:4567.
 
 ```bash
 bundle exec middleman build    # ./build (gitignored)
+bundle exec rake test          # JS / Ruby / Python checkers
 ```
+
+In-house fragment cops (practice pages, plus JS / Ruby / Python test libraries): [checks/README.md](checks/README.md).
 
 ## Publish
 

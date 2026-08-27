@@ -7,6 +7,16 @@ build/
 *.swp
 *~
 
+.playwright-mcp/
+heading-elements-fix-mobile.png
+checks/javascript/node_modules/
+checks/python/.venv/
+checks/python/.pytest_cache/
+checks/python/**/__pycache__/
+checks/python/**/*.egg-info/
+checks/ruby/vendor/bundle/
+checks/ruby/.bundle/
+
 # Copyrighted originals fetched for personal reference
 source/docs/learning/originals/*.pdf
 source/docs/learning/originals/*.txt

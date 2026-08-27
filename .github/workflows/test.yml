@@ -1,0 +1,45 @@
+# In-house fragment checkers (JS, Ruby, Python).
+name: Checkers
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: npm
+          cache-dependency-path: checks/javascript/package-lock.json
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "4.0"
+          bundler-cache: true
+          working-directory: checks/ruby
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: JavaScript checkers
+        run: |
+          cd checks/javascript
+          npm ci
+          npm test
+
+      - name: Ruby checkers
+        working-directory: checks/ruby
+        run: bundle exec rspec
+
+      - name: Python checkers
+        working-directory: checks/python
+        run: |
+          python -m pip install -e ".[test]"
+          python -m pytest
