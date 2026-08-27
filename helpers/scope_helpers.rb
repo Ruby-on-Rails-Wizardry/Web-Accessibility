@@ -88,6 +88,21 @@ module ScopeHelpers
       "level" => "A",
       "understanding" => "https://www.w3.org/WAI/WCAG22/Understanding/keyboard"
     },
+    "2.1.2" => {
+      "name" => "No Keyboard Trap",
+      "level" => "A",
+      "understanding" => "https://www.w3.org/WAI/WCAG22/Understanding/no-keyboard-trap"
+    },
+    "2.4.2" => {
+      "name" => "Page Titled",
+      "level" => "A",
+      "understanding" => "https://www.w3.org/WAI/WCAG22/Understanding/page-titled"
+    },
+    "3.1.1" => {
+      "name" => "Language of Page",
+      "level" => "A",
+      "understanding" => "https://www.w3.org/WAI/WCAG22/Understanding/language-of-page"
+    },
     "3.1.2" => {
       "name" => "Language of Parts",
       "level" => "AA",

@@ -7,25 +7,33 @@
     <%= partial "rule_scope" %>
   </div>
   <div class="specimen-banner__actions">
-    <button
-      type="button"
-      class="button button--small specimen-banner__edit"
-      data-specimen-target="toggle"
-      data-action="specimen#toggle"
-      aria-expanded="false"
-      hidden
-    >
-      Edit
-    </button>
-    <button
-      type="button"
-      class="button button--small specimen-banner__check"
-      data-check-target="button"
-      data-action="specimen#apply check#run"
-      aria-controls="check-results"
-      hidden
-    >
-      Check
-    </button>
+    <% if specimen_has_window? %>
+      <%= link_to "Open example in a new window", "window/",
+            class: "button button--small",
+            target: "_blank",
+            rel: "noopener noreferrer",
+            "data-turbo": "false" %>
+    <% else %>
+      <button
+        type="button"
+        class="button button--small specimen-banner__edit"
+        data-specimen-target="toggle"
+        data-action="specimen#toggle"
+        aria-expanded="false"
+        hidden
+      >
+        Edit
+      </button>
+      <button
+        type="button"
+        class="button button--small specimen-banner__check"
+        data-check-target="button"
+        data-action="specimen#apply check#run"
+        aria-controls="check-results"
+        hidden
+      >
+        Check
+      </button>
+    <% end %>
   </div>
 </div>

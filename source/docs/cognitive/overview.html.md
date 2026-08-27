@@ -5,7 +5,7 @@ description: What WCAG covers and what it does not for cognitive accessibility.
 
 > **Local copy for agent and developer use.** This is not the official specification.
 >
-> **Sources:**
+> Sources:
 > - [Cognitive Accessibility at W3C](https://www.w3.org/WAI/cognitive/) — W3C WAI
 > - [About Supplemental Guidance](https://www.w3.org/WAI/WCAG2/supplemental/about/)
 >

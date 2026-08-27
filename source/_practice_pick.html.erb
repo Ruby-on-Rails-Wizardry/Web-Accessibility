@@ -1,17 +1,35 @@
 <% pool = practice_pick_pool %>
 <% examples = pool["bad"].first(3) + pool["good"].first(3) %>
+<% pick_tabs = [["html", "HTML"], ["error", "Error"], ["rendered", "Rendered"], ["reader", "Screen Reader"]] %>
 <template data-check-target="cardTemplate">
-  <div class="practice-choice">
+  <div class="practice-choice" data-controller="reader tabs" data-action="practice:report->tabs#showError" data-tabs-current-value="html">
     <label class="practice-choice__select">
       <input type="checkbox" data-check-target="choice" data-action="change->check#choiceChange">
       <span class="practice-choice__name">Example</span>
       <span class="practice-choice__status"></span>
     </label>
-    <span class="practice-caption">HTML</span>
-    <pre class="practice-choice__source"><code></code></pre>
-    <span class="practice-caption">Rendered</span>
-    <div class="practice-preview" data-check-target="section"></div>
-    <div class="practice-choice__report" hidden></div>
+    <%= partial "practice_tabs", locals: { tab_items: pick_tabs } %>
+    <div class="practice-choice__panes">
+      <div class="practice-choice__html">
+        <div class="practice-panel" data-tabs-target="panel" data-panel="error">
+          <div class="practice-choice__report" hidden></div>
+        </div>
+        <div class="practice-panel is-active" data-tabs-target="panel" data-panel="html">
+          <span class="practice-caption">HTML</span>
+          <pre class="practice-choice__source"><code></code></pre>
+        </div>
+      </div>
+      <div class="practice-choice__view">
+        <div class="practice-panel" data-tabs-target="panel" data-panel="rendered">
+          <span class="practice-caption">Rendered</span>
+          <div class="practice-preview" data-check-target="section" data-reader-target="root"></div>
+        </div>
+        <div class="practice-panel" data-tabs-target="panel" data-panel="reader">
+          <span class="practice-caption">Screen Reader</span>
+          <pre class="practice-reader" data-reader-target="output" title="Approximate. Not a real screen reader."></pre>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 <fieldset class="practice-choices">
@@ -20,19 +38,36 @@
   <div class="practice-choices__grid">
     <% examples.each_with_index do |html, index| %>
       <% letter = ("A".ord + index).chr %>
-      <div class="practice-choice">
+      <div class="practice-choice" data-controller="reader tabs" data-action="practice:report->tabs#showError" data-tabs-current-value="html">
         <label class="practice-choice__select">
           <input type="checkbox" data-check-target="choice" data-action="change->check#choiceChange" aria-label="Example <%= letter %>">
           <span class="practice-choice__name">Example <%= letter %></span>
           <span class="practice-choice__status"></span>
         </label>
-        <span class="practice-caption">HTML</span>
-        <pre class="practice-choice__source"><code><%= CGI.escapeHTML(html) %></code></pre>
-        <span class="practice-caption">Rendered</span>
-        <div class="practice-preview" data-check-target="section">
-          <%= html.html_safe %>
+        <%= partial "practice_tabs", locals: { tab_items: pick_tabs } %>
+        <div class="practice-choice__panes">
+          <div class="practice-choice__html">
+            <div class="practice-panel" data-tabs-target="panel" data-panel="error">
+              <div class="practice-choice__report" hidden></div>
+            </div>
+            <div class="practice-panel is-active" data-tabs-target="panel" data-panel="html">
+              <span class="practice-caption">HTML</span>
+              <pre class="practice-choice__source"><code><%= CGI.escapeHTML(html) %></code></pre>
+            </div>
+          </div>
+          <div class="practice-choice__view">
+            <div class="practice-panel" data-tabs-target="panel" data-panel="rendered">
+              <span class="practice-caption">Rendered</span>
+              <div class="practice-preview" data-check-target="section" data-reader-target="root">
+                <%= html.html_safe %>
+              </div>
+            </div>
+            <div class="practice-panel" data-tabs-target="panel" data-panel="reader">
+              <span class="practice-caption">Screen Reader</span>
+              <pre class="practice-reader" data-reader-target="output" title="Approximate. Not a real screen reader."></pre>
+            </div>
+          </div>
         </div>
-        <div class="practice-choice__report" hidden></div>
       </div>
     <% end %>
   </div>

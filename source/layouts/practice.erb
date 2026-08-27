@@ -24,38 +24,54 @@
       <div class="specimen-primary">
         <%= partial "practice_banner" %>
         <% if practice_variant == "fix" %>
-          <div class="practice-card">
-            <div class="specimen-editor">
-              <div class="specimen-editor__inner">
-                <label class="practice-caption" for="specimen-source">HTML</label>
-                <textarea
-                  id="specimen-source"
-                  data-check-target="source"
-                  data-action="keydown->check#keydown"
-                  rows="8"
-                  spellcheck="false"
-                  autocapitalize="off"
-                  autocomplete="off"
-                ><%= CGI.escapeHTML(page_body.to_s.strip) %></textarea>
-                <p class="specimen-editor__actions">
-                  <button type="button" class="button button--small" data-action="check#applyAndCheck">Apply</button>
-                  <button type="button" class="button button--small button--ghost" data-action="check#reset">Reset</button>
-                  <button type="button" class="button button--small button--ghost" data-action="check#another" data-check-target="another" hidden>Another example</button>
-                </p>
+          <div class="practice-card" data-controller="reader tabs" data-action="practice:report->tabs#showError" data-tabs-current-value="html">
+            <%= partial "practice_tabs", locals: { tab_items: [["html", "HTML"], ["error", "Error"], ["rendered", "Rendered"], ["reader", "Screen Reader"]] } %>
+            <div class="practice-card__source">
+              <div class="practice-panel" data-tabs-target="panel" data-panel="error">
+                <div
+                  class="check-results"
+                  id="check-results"
+                  data-check-target="results"
+                  tabindex="-1"
+                  aria-live="polite"
+                ></div>
+              </div>
+              <div class="practice-panel is-active" data-tabs-target="panel" data-panel="html">
+                <p class="practice-caption">HTML</p>
+                <div class="specimen-editor">
+                  <div class="specimen-editor__inner">
+                    <textarea
+                      id="specimen-source"
+                      data-check-target="source"
+                      data-action="keydown->check#keydown"
+                      rows="8"
+                      spellcheck="false"
+                      autocapitalize="off"
+                      autocomplete="off"
+                      aria-label="HTML"
+                    ><%= CGI.escapeHTML(page_body.to_s.strip) %></textarea>
+                    <p class="specimen-editor__actions">
+                      <button type="button" class="button button--small" data-action="check#applyAndCheck">Apply</button>
+                      <button type="button" class="button button--small button--ghost" data-action="check#reset">Reset</button>
+                      <button type="button" class="button button--small button--ghost" data-action="check#another" data-check-target="another" hidden>Another example</button>
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div
-              class="check-results"
-              id="check-results"
-              data-check-target="results"
-              tabindex="-1"
-              aria-live="polite"
-            ></div>
-            <p class="practice-caption">Rendered</p>
-            <div class="practice-preview">
-              <main id="main" class="specimen-main" data-check-target="section">
-                <%= page_body.html_safe %>
-              </main>
+            <div class="practice-card__view">
+              <div class="practice-panel" data-tabs-target="panel" data-panel="rendered">
+                <p class="practice-caption">Rendered</p>
+                <div class="practice-preview">
+                  <main id="main" class="specimen-main" data-check-target="section" data-reader-target="root">
+                    <%= page_body.html_safe %>
+                  </main>
+                </div>
+              </div>
+              <div class="practice-panel" data-tabs-target="panel" data-panel="reader">
+                <p class="practice-caption">Screen Reader</p>
+                <pre class="practice-reader" data-reader-target="output" title="Approximate. Not a real screen reader."></pre>
+              </div>
             </div>
           </div>
         <% else %>

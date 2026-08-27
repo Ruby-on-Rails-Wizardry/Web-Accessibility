@@ -1,7 +1,7 @@
 import { Controller } from "./stimulus.js"
 
 export default class extends Controller {
-  static targets = ["stage", "toggle"]
+  static targets = ["stage", "toggle", "listing"]
   static values = { open: { type: Boolean, default: false } }
 
   connect() {
@@ -28,7 +28,9 @@ export default class extends Controller {
     const panel = this.buildPanel()
     const source = panel.querySelector("textarea")
     source.value = this.normalize(this.stageTarget.innerHTML)
-    this.stageTarget.before(panel)
+    this.hostForEditor().before(panel)
+    this.hideListing()
+    this.showHtmlTab()
     this.panel = panel
     this.source = source
     this.toggleTarget.setAttribute("aria-expanded", "true")
@@ -39,6 +41,7 @@ export default class extends Controller {
 
   close() {
     this.removePanel()
+    this.showListing()
     this.toggleTarget.setAttribute("aria-expanded", "false")
     this.toggleTarget.removeAttribute("aria-controls")
     this.toggleTarget.textContent = "Edit"
@@ -49,11 +52,13 @@ export default class extends Controller {
     if (!this.source) return
     this.stageTarget.innerHTML = this.source.value
     this.stageTarget.querySelectorAll("script").forEach((node) => node.remove())
+    this.syncListing()
   }
 
   reset() {
     this.stageTarget.innerHTML = this.original
     if (this.source) this.source.value = this.original
+    this.syncListing()
   }
 
   keydown(event) {
@@ -82,13 +87,10 @@ export default class extends Controller {
     const inner = document.createElement("div")
     inner.className = "specimen-editor__inner"
 
-    const label = document.createElement("label")
-    label.htmlFor = "specimen-source"
-    label.textContent = "Example HTML"
-
     const source = document.createElement("textarea")
     source.id = "specimen-source"
     source.setAttribute("data-check-target", "source")
+    source.setAttribute("aria-label", "HTML")
     source.rows = 8
     source.spellcheck = false
     source.setAttribute("autocapitalize", "off")
@@ -115,9 +117,34 @@ export default class extends Controller {
     hint.textContent = "Close Edit before you scan so the editor is not in the page."
 
     actions.append(apply, reset)
-    inner.append(label, source, actions, hint)
+    inner.append(source, actions, hint)
     panel.append(inner)
     return panel
+  }
+
+  showHtmlTab() {
+    const tab = this.element.querySelector('[data-tabs-id-param="html"]')
+    if (tab) tab.click()
+  }
+
+  hostForEditor() {
+    return this.hasListingTarget ? this.listingTarget.closest("pre") || this.listingTarget : this.stageTarget
+  }
+
+  hideListing() {
+    const block = this.hostForEditor()
+    if (this.hasListingTarget) block.hidden = true
+  }
+
+  showListing() {
+    const block = this.hostForEditor()
+    if (this.hasListingTarget) block.hidden = false
+    this.syncListing()
+  }
+
+  syncListing() {
+    if (!this.hasListingTarget) return
+    this.listingTarget.textContent = this.normalize(this.stageTarget.innerHTML)
   }
 
   normalize(html) {

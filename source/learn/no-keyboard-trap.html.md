@@ -3,6 +3,12 @@ title: No keyboard trap
 description: Focus can move to a component and it can move on. Tab is not a one-way door.
 node: no-keyboard-trap
 rule: If the keyboard can move focus into a component, it can also move focus out using the keyboard.
+sc:
+  - "2.1.2"
+profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
 ---
 
 After [the control can be operated](/learn/keyboard-operable/): a custom widget that eats Tab (or traps the arrow keys) and never gives focus back fails **2.1.2**. The person cannot reach the rest of the page.
@@ -23,6 +29,8 @@ A modal may hold focus *while it is open* if Escape (or a clearly documented key
 
 Keyboard focus enters and cannot leave.
 
+<p><a href="bad/" data-turbo="false">Open this example</a>, then <strong>Open example in a new window</strong>. Tab can trap that window. Close the tab to leave. Do not run a live trap on this site.</p>
+
 </div>
 
 <div class="example example--good" markdown="1">
@@ -39,6 +47,8 @@ Keyboard focus enters and cannot leave.
 
 A documented way out (Escape and a visible close). Focus returns to the control that opened it.
 
+<p><a href="good/" data-turbo="false">Open this example</a>, then <strong>Open example in a new window</strong>. Tab can leave.</p>
+
 </div>
 
 </div>
@@ -47,7 +57,7 @@ A documented way out (Escape and a visible close). Focus returns to the control 
 
 A note in help text (“press Ctrl+Alt+F4 to exit”) is not enough unless that method is also standard and discoverable. A trap that you can leave with the mouse still fails this rule.
 
-Do not put a live keyboard trap on this site as a demo.
+Do not put a live keyboard trap on this site as a demo. The live miss lives in a new window; close that tab to get out.
 
 ## Official
 

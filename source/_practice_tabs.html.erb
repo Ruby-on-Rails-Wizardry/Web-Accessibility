@@ -1,0 +1,16 @@
+<% tab_short = { "reader" => "Reader", "rendered" => "Render" } %>
+<div class="practice-tabs" role="tablist" aria-label="<%= defined?(tab_label) && tab_label ? tab_label : 'Example views' %>">
+  <% tab_items.each_with_index do |(id, name), index| %>
+    <% short = tab_short[id.to_s] %>
+    <button
+      type="button"
+      role="tab"
+      data-tabs-target="tab"
+      data-action="click->tabs#select keydown->tabs#keydown"
+      data-tabs-id-param="<%= id %>"
+      aria-selected="<%= index.zero? ? 'true' : 'false' %>"
+      tabindex="<%= index.zero? ? 0 : -1 %>"
+      <% if short %>aria-label="<%= name %>"<% end %>
+    ><% if short %><span class="practice-tabs__full" aria-hidden="true"><%= name %></span><span class="practice-tabs__short" aria-hidden="true"><%= short %></span><% else %><%= name %><% end %></button>
+  <% end %>
+</div>

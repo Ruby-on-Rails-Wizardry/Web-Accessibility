@@ -1,0 +1,46 @@
+# Combined pool for /learn/keyboard-access/pick/ and /fix/.
+# Good = a native control, and Tab is not trapped.
+# Bad = fails keyboard-operable, no-keyboard-trap, or both.
+# data-trap marks a trap for Check. There is no live Tab handler here.
+
+bad:
+  # operable only
+  - |
+    <div class="datepicker" onmouseover="openCal()">Choose a date</div>
+  - |
+    <span onclick="save()">Save</span>
+  # trap only
+  - |
+    <div data-trap="true">
+      <label for="ka-b3">Date</label>
+      <input id="ka-b3" type="text" value="2026-04-01">
+      <button type="button">Save</button>
+    </div>
+  - |
+    <div data-trap="true">
+      <label for="ka-b4">Name</label>
+      <input id="ka-b4" type="text">
+      <button type="button">Continue</button>
+    </div>
+  # both
+  - |
+    <div class="menu" onmouseenter="openMenu()" data-trap="true">Services</div>
+  - |
+    <div class="cal" onclick="openCal()" data-trap="true">Pick a day</div>
+
+good:
+  - |
+    <label for="ka-g1">Date</label>
+    <input id="ka-g1" type="date">
+  - |
+    <button type="button">Save</button>
+  - |
+    <a href="/fees">Fee schedule</a>
+  - |
+    <label for="ka-g4">Day</label>
+    <input id="ka-g4" type="date">
+    <button type="button">Apply</button>
+  - |
+    <a href="/map">Open the map</a>
+  - |
+    <button type="button">Services</button>

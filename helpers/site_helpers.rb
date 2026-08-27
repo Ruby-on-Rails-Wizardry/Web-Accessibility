@@ -42,8 +42,33 @@ module SiteHelpers
 
 
   def page_title
+    window = current_page.data.window_title
+    return window.to_s unless window.nil? || window.to_s.strip.empty?
+
     parts = [current_page.data.title, site.title].compact
     parts.uniq.join(" · ")
+  end
+
+  def window_document_title
+    title = current_page.data.window_title
+    return title.to_s unless title.nil? || title.to_s.strip.empty?
+
+    current_page.data.title.to_s
+  end
+
+  def window_html_lang_attr
+    lang = current_page.data.html_lang
+    return "" if lang.nil? || lang == false || lang.to_s.strip.empty?
+
+    %( lang="#{CGI.escapeHTML(lang.to_s)}")
+  end
+
+  def window_back_path
+    url_for(current_page.url.to_s.sub(%r{window/?\z}, ""))
+  end
+
+  def specimen_has_window?
+    current_page.data.window == true || current_page.data.window.to_s == "true"
   end
 
   def page_description

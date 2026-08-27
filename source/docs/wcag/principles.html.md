@@ -5,7 +5,7 @@ description: Perceivable, Operable, Understandable, Robust.
 
 > **Local copy for agent and developer use.** This is not the official specification.
 >
-> **Sources:**
+> Sources:
 > - [Accessibility Principles](https://www.w3.org/WAI/fundamentals/accessibility-principles/) — W3C WAI
 > - [Introduction to Understanding WCAG 2.2 — Four Principles](https://www.w3.org/WAI/WCAG22/Understanding/intro#understanding-the-four-principles-of-accessibility)
 >

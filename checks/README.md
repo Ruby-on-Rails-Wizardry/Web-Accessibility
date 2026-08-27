@@ -39,8 +39,9 @@ Result.failures  # [{ id, title, details: [str] }, ...]
   of the page. Empty `details` means that rule passed.
 
 Fixture tests load `data/<id>_pick.yml`. Bad snippets must fail that rule;
-good snippets must pass. `headings_pick.yml` runs `heading-elements` and
-`heading-order` together.
+good snippets must pass. Family pools run the child cops together:
+`headings_pick.yml`, `form_errors_pick.yml`, `no_unexpected_change_pick.yml`,
+`keyboard_access_pick.yml`.
 
 ## Run
 
@@ -48,6 +49,7 @@ From the repo root:
 
 ```bash
 bundle exec rake test
+bundle exec rake test:site   # build + score the site (not specimen pages)
 ```
 
 Or one language:

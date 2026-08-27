@@ -1,6 +1,6 @@
 # Project TODO
 
-Last inventoried 2026-08-26. Knowledge-tree graph: `data/tree.yml`. Pages: `source/learn/<id>.html.md`. Official library: `source/docs/`. Internal (not published): `notes/`.
+Last inventoried 2026-08-27. Knowledge-tree graph: `data/tree.yml`. Pages: `source/learn/<id>.html.md`. Official library: `source/docs/`. Internal (not published): `notes/`.
 
 Per-node mastery checklists live in unpublished [notes/learn/](notes/learn/). Isolated-example and practice rollout: [notes/practice-rollout.md](notes/practice-rollout.md). This file is the whole-project view. Do not put “Still to write” on published pages.
 
@@ -82,9 +82,9 @@ Later: publish as real packages (npm / gem / PyPI) only if another repo needs th
 
 ## Next — finish the practice grain, then CSS and scenario
 
-Left off **2026-08-26 night** at `0aedfd6` (pushed). Pickup: [notes/pickup.md](notes/pickup.md). Detail: [notes/practice-rollout.md](notes/practice-rollout.md).
+Left off **2026-08-27**. Pickup: [notes/pickup.md](notes/pickup.md). Detail: [notes/practice-rollout.md](notes/practice-rollout.md).
 
-Slices 0–3 are done (chips, heading-order grain, heading-elements, combined headings). Slice 4 fragment-shaped HTML cops have isolated `{bad,good}` + pick + fix. Still parked (need a call): no-keyboard-trap, page-title, language-of-page, consistent-nav-order, captions.
+Slices 0–3 are done. Slice 4 fragment-shaped HTML cops have isolated `{bad,good}` + pick + fix. Whole-document cops use **Open example in a new window**: page-title, language-of-page, no-keyboard-trap. Family combined pick/fix: headings, form-errors, no-unexpected-change, keyboard-access. Still open: consistent-nav-order (two views), captions (media), decorative-vs-informative-image combined (cops assume one image class per fragment).
 
 | Slice | What |
 | --- | --- |
@@ -92,12 +92,26 @@ Slices 0–3 are done (chips, heading-order grain, heading-elements, combined he
 | 1 | Prove it on heading-order: multi-select pick, fix pool, keep Permits as the teaching specimen — **done** |
 | 2 | Copy that grain onto heading-elements — **done** |
 | 3 | Combined heading-family pick/fix (`heading-elements` + `heading-order`) — **done** |
-| 4 | HTML-snippet rules — **fragment-shaped done**; five awkward leftovers in [notes/pickup.md](notes/pickup.md) |
-| 5 | CSS / visual rules (contrast, focus, target size) — **next grain** if A is not chosen |
+| 4 | HTML-snippet rules — **fragment-shaped done**; window leftovers and image-family combined in [notes/pickup.md](notes/pickup.md) |
+| 5 | CSS / visual rules (contrast, focus, target size) — **next grain** |
 | 6 | Scenario / prose rules (login puzzles, multi-page nav, motion) — may stay text items, not live `<main>` specimens |
 | 7 | Foundations and orientation keep teaching Bad/Good; locator/constructed stay in [notes/learn/](notes/learn/), not this leaf set |
 
-Optional before slice 5: family combined pick/fix for **form-errors**, **decorative-vs-informative-image**, **no-unexpected-change** (those children already have checkers). Pattern families still do not get isolated Bad/Good pages.
+Optional before slice 5: family combined for **decorative-vs-informative-image** after the child cops can classify mixed images on one fragment. Pattern families still do not get isolated Bad/Good pages.
+
+---
+
+## Next — combined all-rule check
+
+A learner grain that scores **one** specimen against every implemented fragment cop (transfer, not a substitute for per-rule pick/fix). Not built.
+
+What *is* built: the **site** itself is scored with the cops that fail when a miss is present (plus document title, `lang`, skip link). Specimen, practice, and window pages are skipped — those are meant to fail. Chrome presence is asserted too (Open-in-new-window hosts, Check on isolated examples, trap stays off the host).
+
+```
+bundle exec rake test:site
+```
+
+CI: `.github/workflows/test.yml` job `site`. This is not a screenshot / visual-regression suite. Style work is still verified in a browser: interact, then confirm the right controls are visible (and hidden ones stay hidden) at desktop and compact widths. Playwright snapshots check the accessibility tree, not CSS `visibility`. Slice 5 (computed style) is the grain that will need a real layout engine.
 
 ---
 
@@ -142,7 +156,7 @@ Locator/constructed format for rules: [notes/practice-rollout.md](notes/practice
 
 ## Later — Screen reader sees
 
-Pick and fix already show HTML and Rendered. A third pane that approximates what a screen reader would announce (heading list, names) is deferred. Not a real screen reader. Notes: [notes/practice-rollout.md](notes/practice-rollout.md).
+**Done (approximate).** Pick, fix, and isolated examples show **Screen Reader** after Rendered (outside `<main>`). Heading list and names, not NVDA/JAWS/VoiceOver. Wide: HTML beside Rendered / Screen Reader. Compact: Error / HTML / Rendered / Screen Reader tabs.
 
 ---
 

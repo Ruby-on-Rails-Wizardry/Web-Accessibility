@@ -14,6 +14,13 @@ end
 desc "Run JS, Ruby, and Python checker tests"
 task test: %w[test:js test:ruby test:python]
 
+desc "Build the site and run in-house cops plus chrome presence"
+task "test:site" => :build do
+  Dir.chdir("checks/javascript") do
+    sh({ "BUILD_DIR" => File.join(__dir__, "build") }, "node", "site_audit.js")
+  end
+end
+
 namespace :test do
   desc "In-house JS checkers (jsdom + pick fixtures)"
   task :js do

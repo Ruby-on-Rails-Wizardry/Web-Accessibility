@@ -1,0 +1,13 @@
+---
+title: Fix the mouse-only control
+description: Live specimen. Make it operable from the keyboard and give Tab a way out, then Apply. Leftover failures name the child rule to restudy.
+node: keyboard-access-fix
+layout: practice
+practice: fix
+of: keyboard-access
+check_rules:
+  - keyboard-operable
+  - no-keyboard-trap
+practice_note: Restore a native control and remove the trap. Keep the same job, then Apply. What still fails is what to restudy. This page does not run a live trap.
+---
+<div class="datepicker" onclick="void(0)" data-trap="true">Choose a date</div>

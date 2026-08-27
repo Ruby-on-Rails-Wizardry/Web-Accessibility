@@ -19,19 +19,46 @@
   >
     <%= partial "skip_link" %>
     <%= partial "header" %>
+    <% page_body = yield.to_s %>
+    <% source = page_body.strip.gsub(/\n[ \t]+\n/, "\n\n").gsub(/\n[ \t]+/, "\n") %>
     <div class="specimen-shell">
       <div class="specimen-primary">
         <%= partial "specimen_banner" %>
-        <div
-          class="check-results"
-          id="check-results"
-          data-check-target="results"
-          tabindex="-1"
-          aria-live="polite"
-        ></div>
-        <main id="main" class="specimen-main" data-specimen-target="stage" data-check-target="section">
-          <%= yield %>
-        </main>
+        <% specimen_tabs = specimen_has_window? ? [["html", "HTML"], ["rendered", "Rendered"], ["reader", "Screen Reader"]] : [["html", "HTML"], ["error", "Error"], ["rendered", "Rendered"], ["reader", "Screen Reader"]] %>
+        <div class="practice-card" data-controller="reader tabs" data-action="practice:report->tabs#showError" data-tabs-current-value="html">
+          <%= partial "practice_tabs", locals: { tab_items: specimen_tabs, tab_label: "Specimen views" } %>
+          <div class="practice-card__source">
+            <% unless specimen_has_window? %>
+              <div class="practice-panel" data-tabs-target="panel" data-panel="error">
+                <div
+                  class="check-results"
+                  id="check-results"
+                  data-check-target="results"
+                  tabindex="-1"
+                  aria-live="polite"
+                ></div>
+              </div>
+            <% end %>
+            <div class="practice-panel is-active" data-tabs-target="panel" data-panel="html">
+              <p class="practice-caption">HTML</p>
+              <pre class="practice-choice__source"><code data-specimen-target="listing"><%= CGI.escapeHTML(source) %></code></pre>
+            </div>
+          </div>
+          <div class="practice-card__view">
+            <div class="practice-panel" data-tabs-target="panel" data-panel="rendered">
+              <p class="practice-caption">Rendered</p>
+              <div class="practice-preview">
+                <main id="main" class="specimen-main" data-specimen-target="stage" data-check-target="section" data-reader-target="root">
+                  <%= page_body.html_safe %>
+                </main>
+              </div>
+            </div>
+            <div class="practice-panel" data-tabs-target="panel" data-panel="reader">
+              <p class="practice-caption">Screen Reader</p>
+              <pre class="practice-reader" data-reader-target="output" title="Approximate. Not a real screen reader."></pre>
+            </div>
+          </div>
+        </div>
       </div>
       <aside class="specimen-aside">
         <%= partial "specimen_nav" %>

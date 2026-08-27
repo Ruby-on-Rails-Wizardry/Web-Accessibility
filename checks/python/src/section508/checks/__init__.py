@@ -14,6 +14,7 @@ from section508.checks.images_of_text import check as images_of_text
 from section508.checks.informative_image_alt import check as informative_image_alt
 from section508.checks.input_purpose import check as input_purpose
 from section508.checks.keyboard_operable import check as keyboard_operable
+from section508.checks.no_keyboard_trap import check as no_keyboard_trap
 from section508.checks.label_in_name import check as label_in_name
 from section508.checks.language_of_parts import check as language_of_parts
 from section508.checks.link_purpose import check as link_purpose
@@ -52,6 +53,7 @@ CHECKS = {
     "skip-link": skip_link,
     "color-not-only-cue": color_not_only_cue,
     "keyboard-operable": keyboard_operable,
+    "no-keyboard-trap": no_keyboard_trap,
     "focus-order": focus_order,
     "no-change-on-focus": no_change_on_focus,
     "no-change-on-input": no_change_on_input,

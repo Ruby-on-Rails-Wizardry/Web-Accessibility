@@ -25,6 +25,7 @@ module Section508
       "skip-link" => Checks::SkipLink,
       "color-not-only-cue" => Checks::ColorNotOnlyCue,
       "keyboard-operable" => Checks::KeyboardOperable,
+      "no-keyboard-trap" => Checks::NoKeyboardTrap,
       "focus-order" => Checks::FocusOrder,
       "no-change-on-focus" => Checks::NoChangeOnFocus,
       "no-change-on-input" => Checks::NoChangeOnInput,

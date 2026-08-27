@@ -83,11 +83,11 @@ Private ADA Title III has **no** WCAG edition in the regulation. Courts and DOJ 
 
 Start from 508 web (WCAG 2.0 AA). Then add:
 
-**Plus ADA Title II / WCAG 2.1 AA**
+### Plus ADA Title II / WCAG 2.1 AA
 
 1.3.4 Orientation, 1.3.5 Identify Input Purpose, 1.4.10 Reflow, 1.4.11 Non-text Contrast, 1.4.12 Text Spacing, 1.4.13 Content on Hover or Focus, 2.1.4 Character Key Shortcuts, 2.5.1 Pointer Gestures, 2.5.2 Pointer Cancellation, 2.5.3 Label in Name, 2.5.4 Motion Actuation, 4.1.3 Status Messages.
 
-**Plus WCAG 2.2 AA**
+### Plus WCAG 2.2 AA
 
 2.4.11 Focus Not Obscured (Minimum), 2.5.7 Dragging Movements, 2.5.8 Target Size (Minimum), 3.2.6 Consistent Help, 3.3.7 Redundant Entry, 3.3.8 Accessible Authentication (Minimum). Drop 4.1.1.
 

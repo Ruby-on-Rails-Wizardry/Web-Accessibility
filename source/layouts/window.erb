@@ -1,0 +1,45 @@
+<!doctype html>
+<html<%= window_html_lang_attr %>>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="<%= page_description %>">
+    <meta name="turbo-visit-control" content="reload">
+    <title><%= window_document_title %></title>
+    <style>:root { --accent: <%= accent_color %>; }</style>
+    <%= stylesheet_link_tag "site", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "site", type: "module", "data-turbo-track": "reload" %>
+    <link rel="icon" href="<%= image_path('mark.jpg') %>" type="image/jpeg">
+  </head>
+  <body
+    class="window-specimen window-specimen--<%= specimen_variant %>"
+    data-controller="check"
+    data-check-document-value="true"
+    data-check-catalog-value="<%= CGI.escapeHTML(check_catalog.to_json) %>"
+  >
+    <p class="window-banner">
+      This is an example.
+      <%= link_to "Close this example", window_back_path, class: "window-banner__close", "data-turbo": "false" %>
+      — or close the tab.
+      <button
+        type="button"
+        class="button button--small"
+        data-check-target="button"
+        data-action="check#run"
+        aria-controls="check-results"
+        hidden
+      >Check</button>
+    </p>
+    <div
+      class="check-results"
+      id="check-results"
+      data-check-target="results"
+      tabindex="-1"
+      aria-live="polite"
+    ></div>
+    <main id="main" class="window-main">
+      <%= yield %>
+    </main>
+  </body>
+</html>

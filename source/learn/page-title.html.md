@@ -3,6 +3,12 @@ title: The document has a unique title
 description: The title names this page, not the whole site. People use it to find the tab and the history entry.
 node: page-title
 rule: Give each view a unique document title that names that page, not only the site.
+sc:
+  - "2.4.2"
+profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
 ---
 
 [Operable](/learn/pour/): you have to know which page you are on without reading the banner. Screen-reader users hear the `title` first. Tab switchers and history lists show only that string.
@@ -21,6 +27,8 @@ The HTML `title` (and the document title in non-HTML) is the name of **this** vi
 
 Every view uses the same title. Tabs and history cannot tell them apart.
 
+<p><a href="bad/" data-turbo="false">Open this example</a>, then <strong>Open example in a new window</strong> to check the tab name. That window is supposed to fail.</p>
+
 </div>
 
 <div class="example example--good" markdown="1">
@@ -32,6 +40,8 @@ Every view uses the same title. Tabs and history cannot tell them apart.
 ```
 
 This view is named. The site name can still follow.
+
+<p><a href="good/" data-turbo="false">Open this example</a>, then <strong>Open example in a new window</strong> and check the tab name.</p>
 
 </div>
 

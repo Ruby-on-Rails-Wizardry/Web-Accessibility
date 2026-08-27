@@ -1,0 +1,49 @@
+---
+title: Bad example — Tab cannot leave
+description: Whole-document specimen. Tab cycles inside the editor. Close this tab to leave.
+node: no-keyboard-trap-bad
+layout: window
+specimen: bad
+of: no-keyboard-trap
+window_title: Edit date — City of Springfield
+html_lang: en
+check_rules:
+  - no-keyboard-trap
+---
+<h1>Edit date</h1>
+<p>Tab stays inside this editor. Close the tab to leave the example.</p>
+<div class="trap" data-trap="true">
+  <label for="trap-date">Date</label>
+  <input id="trap-date" type="text" value="2026-04-01">
+  <button type="button">Save</button>
+</div>
+<script>
+  (function () {
+    const root = document.querySelector("[data-trap]")
+    if (!root) return
+
+    function focusable() {
+      return [...root.querySelectorAll("a[href], button, input, select, textarea, [tabindex]:not([tabindex='-1'])")].filter((node) => {
+        return !node.disabled && !node.hidden
+      })
+    }
+
+    root.addEventListener("keydown", (event) => {
+      if (event.key !== "Tab") return
+      const list = focusable()
+      if (!list.length) {
+        event.preventDefault()
+        return
+      }
+      const first = list[0]
+      const last = list[list.length - 1]
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault()
+        last.focus()
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault()
+        first.focus()
+      }
+    })
+  })()
+</script>

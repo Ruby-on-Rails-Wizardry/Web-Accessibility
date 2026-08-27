@@ -8,6 +8,13 @@ WEAK = re.compile(
 )
 
 
+def link_name(link):
+    name = SPACE.sub(" ", link.get_text()).strip()
+    if name:
+        return name
+    return SPACE.sub(" ", (link.get("aria-label") or "")).strip()
+
+
 def check(root):
     if not root:
         return []
@@ -17,7 +24,7 @@ def check(root):
         return ["This section has no link."]
 
     for link in links:
-        name = SPACE.sub(" ", link.get_text()).strip()
+        name = link_name(link)
         if not name:
             return ["This link has no text name."]
         if WEAK.match(name):

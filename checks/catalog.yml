@@ -320,3 +320,33 @@ rules:
   profiles:
   - ada-title-ii
   - wcag-22-aa
+- id: page-title
+  title: The document has a unique title
+  rule: Give each view a unique document title that names that page, not only the site.
+  path: "/learn/page-title/"
+  sc:
+  - "2.4.2"
+  profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
+- id: language-of-page
+  title: The page language is declared
+  rule: Set lang on the root to the primary human language of the page.
+  path: "/learn/language-of-page/"
+  sc:
+  - "3.1.1"
+  profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa
+- id: no-keyboard-trap
+  title: No keyboard trap
+  rule: If the keyboard can move focus into a component, it can also move focus out using the keyboard.
+  path: "/learn/no-keyboard-trap/"
+  sc:
+  - "2.1.2"
+  profiles:
+  - section-508-web
+  - ada-title-ii
+  - wcag-22-aa

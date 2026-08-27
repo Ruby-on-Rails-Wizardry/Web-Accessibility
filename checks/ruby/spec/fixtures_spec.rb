@@ -4,10 +4,15 @@ require "yaml"
 
 DATA_DIR = File.expand_path("../../../data", __dir__)
 
-def rules_for(slug)
-  return %w[heading-elements heading-order] if slug == "headings"
+FAMILY_RULES = {
+  "headings" => %w[heading-elements heading-order],
+  "form_errors" => %w[error-identification error-suggestion],
+  "no_unexpected_change" => %w[no-change-on-focus no-change-on-input],
+  "keyboard_access" => %w[keyboard-operable no-keyboard-trap]
+}.freeze
 
-  [slug.tr("_", "-")]
+def rules_for(slug)
+  FAMILY_RULES[slug] || [slug.tr("_", "-")]
 end
 
 def snippets(list)

@@ -8,10 +8,16 @@ from section508 import check
 DATA_DIR = Path(__file__).resolve().parents[3] / "data"
 
 
+FAMILY_RULES = {
+    "headings": ["heading-elements", "heading-order"],
+    "form_errors": ["error-identification", "error-suggestion"],
+    "no_unexpected_change": ["no-change-on-focus", "no-change-on-input"],
+    "keyboard_access": ["keyboard-operable", "no-keyboard-trap"],
+}
+
+
 def rules_for(slug: str) -> list[str]:
-    if slug == "headings":
-        return ["heading-elements", "heading-order"]
-    return [slug.replace("_", "-")]
+    return FAMILY_RULES.get(slug) or [slug.replace("_", "-")]
 
 
 def snippets(items) -> list[str]:

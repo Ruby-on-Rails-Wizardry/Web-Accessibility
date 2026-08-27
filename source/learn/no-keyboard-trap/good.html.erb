@@ -1,0 +1,18 @@
+---
+title: Good example — a way out
+description: Tab can leave, and Escape or Close returns focus. Open the example in a new window.
+node: no-keyboard-trap-good
+layout: example
+specimen: good
+of: no-keyboard-trap
+window: true
+check_rules:
+  - no-keyboard-trap
+specimen_note: Open this example in a new window. Tab can leave the dialog, and Close is a way out.
+---
+<div role="dialog" aria-labelledby="dlg-title">
+  <h2 id="dlg-title">Edit date</h2>
+  <label for="host-date">Date</label>
+  <input id="host-date" type="text" value="2026-04-01">
+  <button type="button">Close</button>
+</div>

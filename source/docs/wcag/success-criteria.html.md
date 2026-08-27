@@ -5,7 +5,7 @@ description: Full catalog with level, version, and legal-profile tags.
 
 > **Local catalog for agent and developer use.** This is not the official specification.
 >
-> **Normative sources:**
+> Normative sources:
 > - [WCAG 2.2](https://www.w3.org/TR/WCAG22/)
 > - [WCAG 2.1](https://www.w3.org/TR/WCAG21/)
 > - [WCAG 2.0](https://www.w3.org/TR/WCAG20/)

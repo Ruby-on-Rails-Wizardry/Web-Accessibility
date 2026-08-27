@@ -6,7 +6,7 @@ const PICK_DRAW = 6
 
 export default class extends Controller {
   static targets = ["section", "choice", "results", "button", "source", "pool", "cardTemplate", "another"]
-  static values = { catalog: Array }
+  static values = { catalog: Array, document: Boolean }
 
   connect() {
     if (this.hasButtonTarget) this.buttonTarget.hidden = false
@@ -166,6 +166,7 @@ export default class extends Controller {
       list.append(item)
     })
     report.append(lead, list)
+    report.dispatchEvent(new CustomEvent("practice:report", { bubbles: true }))
   }
 
   updateSetStatus() {
@@ -240,6 +241,8 @@ export default class extends Controller {
       return selected ? this.sectionForChoice(selected) : null
     }
 
+    if (this.documentValue) return document.documentElement
+
     return this.hasSectionTarget ? this.sectionTarget : null
   }
 
@@ -281,15 +284,17 @@ export default class extends Controller {
     const status = document.createElement("p")
     status.className = "check-results__status"
 
+    const unit = this.documentValue ? "page" : "section"
+
     if (result.ok) {
-      status.append("Correct. This section follows ")
+      status.append(`Correct. This ${unit} follows `)
       status.append(this.ruleListPhrase(result.catalog))
       status.append(".")
       this.resultsTarget.append(status)
       this.markChoice(root, true)
     } else {
       const invalid = result.failures.some((failure) => failure.id === "valid-html")
-      status.textContent = invalid ? "This HTML is not valid:" : "This section does not follow:"
+      status.textContent = invalid ? "This HTML is not valid:" : `This ${unit} does not follow:`
       const list = document.createElement("ul")
       result.failures.forEach((failure) => {
         const item = document.createElement("li")
@@ -309,6 +314,7 @@ export default class extends Controller {
     }
 
     if (moveFocus) this.resultsTarget.focus()
+    this.resultsTarget.dispatchEvent(new CustomEvent("practice:report", { bubbles: true }))
   }
 
   ruleListPhrase(catalog) {

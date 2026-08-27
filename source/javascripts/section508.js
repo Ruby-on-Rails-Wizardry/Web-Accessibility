@@ -31,6 +31,9 @@ import { statusMessagesCheck } from "./status_messages_check.js"
 import { consistentIdentificationCheck } from "./consistent_identification_check.js"
 import { meaningfulSequenceCheck } from "./meaningful_sequence_check.js"
 import { pointerCancellationCheck } from "./pointer_cancellation_check.js"
+import { pageTitleCheck } from "./page_title_check.js"
+import { languageOfPageCheck } from "./language_of_page_check.js"
+import { noKeyboardTrapCheck } from "./no_keyboard_trap_check.js"
 
 export const CHECKS = {
   "heading-order": headingOrderCheck,
@@ -62,7 +65,10 @@ export const CHECKS = {
   "status-messages": statusMessagesCheck,
   "consistent-identification": consistentIdentificationCheck,
   "meaningful-sequence": meaningfulSequenceCheck,
-  "pointer-cancellation": pointerCancellationCheck
+  "pointer-cancellation": pointerCancellationCheck,
+  "page-title": pageTitleCheck,
+  "language-of-page": languageOfPageCheck,
+  "no-keyboard-trap": noKeyboardTrapCheck
 }
 
 export function check(root, options = {}) {

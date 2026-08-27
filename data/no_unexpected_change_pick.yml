@@ -1,0 +1,60 @@
+# Combined pool for /learn/no-unexpected-change/pick/ and /fix/.
+# Good = focus and changing a value do not navigate.
+# Bad = fails on-focus, on-input, or both.
+
+bad:
+  # focus only
+  - |
+    <label for="uc-b1">Language</label>
+    <select id="uc-b1" onfocus="void('location = /locale/' + this.value)">
+      <option value="en">English</option>
+    </select>
+  - |
+    <a href="/help" onfocus="void('window.open(/help-popup)')">Help</a>
+  # input only
+  - |
+    <label for="uc-b3">Language</label>
+    <select id="uc-b3" onchange="void('location = ' + this.value)">
+      <option value="/en">English</option>
+      <option value="/es">Español</option>
+    </select>
+  - |
+    <label><input type="checkbox" onchange="void('location = /ok')"> I agree</label>
+  # both
+  - |
+    <label for="uc-b5">Language</label>
+    <select id="uc-b5" onfocus="void('location = /locale/' + this.value)" onchange="void('location = ' + this.value)">
+      <option value="en">English</option>
+    </select>
+  - |
+    <input id="uc-b6" onfocus="void('location = /search')" onchange="void('href = /go')">
+
+good:
+  - |
+    <form action="/locale" method="get">
+      <label for="uc-g1">Language</label>
+      <select id="uc-g1" name="locale">
+        <option value="en">English</option>
+        <option value="es">Español</option>
+      </select>
+      <button type="submit">Change language</button>
+    </form>
+  - |
+    <label for="uc-g2">Search</label>
+    <input id="uc-g2" type="search">
+    <button type="submit">Search</button>
+  - |
+    <a href="/help">Help</a>
+  - |
+    <label for="uc-g4">Region</label>
+    <select id="uc-g4">
+      <option>North</option>
+    </select>
+    <button type="submit">Update</button>
+  - |
+    <label><input type="checkbox" id="uc-g5"> I agree</label>
+    <button type="submit">Continue</button>
+  - |
+    <label for="uc-g6">Notes</label>
+    <textarea id="uc-g6"></textarea>
+    <button type="submit">Save</button>

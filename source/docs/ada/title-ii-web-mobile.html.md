@@ -5,7 +5,7 @@ description: WCAG 2.1 AA for state and local web and mobile apps.
 
 > **Local copy of a U.S. government publication.** Works of the U.S. government are generally in the public domain.
 >
-> **Sources:**
+> Sources:
 > - [Fact Sheet: New Rule on the Accessibility of Web Content and Mobile Apps Provided by State and Local Governments](https://www.ada.gov/resources/2024-03-08-web-rule/) — ADA.gov (8 April 2024; updated for the 2026 IFR)
 > - Final rule: https://www.federalregister.gov/documents/2024/04/24/2024-07758/nondiscrimination-on-the-basis-of-disability-accessibility-of-web-information-and-services-of-state
 > - Rule PDF: https://www.ada.gov/assets/pdfs/web-rule.pdf

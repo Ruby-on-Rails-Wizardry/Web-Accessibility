@@ -670,11 +670,43 @@ nodes:
   - visible-focus
   - focus-order
   - character-key-shortcuts
+  - keyboard-access-pick
+  - keyboard-access-fix
   spine:
   - equal-worth
   - comparable-access
   - pour
   - keyboard-access
+  library: []
+- id: keyboard-access-pick
+  title: Pick the examples that the keyboard can use and leave
+  path: /learn/keyboard-access/pick/
+  kind: practice
+  layer: 6
+  prereqs:
+  - keyboard-access
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - keyboard-access
+  - keyboard-access-pick
+  library: []
+- id: keyboard-access-fix
+  title: Fix the mouse-only control
+  path: /learn/keyboard-access/fix/
+  kind: practice
+  layer: 6
+  prereqs:
+  - keyboard-access
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - keyboard-access
+  - keyboard-access-fix
   library: []
 - id: visible-focus
   title: Focus must be visible
@@ -699,7 +731,9 @@ nodes:
   layer: 4
   prereqs:
   - pour
-  children: []
+  children:
+  - page-title-bad
+  - page-title-good
   spine:
   - equal-worth
   - comparable-access
@@ -709,6 +743,36 @@ nodes:
   - &id002
     title: Success criteria catalog
     path: /docs/wcag/success-criteria/
+- id: page-title-bad
+  title: Bad example — site name for every view
+  path: /learn/page-title/bad/
+  kind: example
+  layer: 6
+  prereqs:
+  - page-title
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - page-title
+  - page-title-bad
+  library: []
+- id: page-title-good
+  title: Good example — this view is named
+  path: /learn/page-title/good/
+  kind: example
+  layer: 6
+  prereqs:
+  - page-title
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - page-title
+  - page-title-good
+  library: []
 - id: language-of-page
   title: The page language is declared
   path: /learn/language-of-page/
@@ -718,12 +782,44 @@ nodes:
   - pour
   children:
   - language-of-parts
+  - language-of-page-bad
+  - language-of-page-good
   spine:
   - equal-worth
   - comparable-access
   - pour
   - language-of-page
   library: *id001
+- id: language-of-page-bad
+  title: Bad example — no language on the root
+  path: /learn/language-of-page/bad/
+  kind: example
+  layer: 6
+  prereqs:
+  - language-of-page
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - language-of-page
+  - language-of-page-bad
+  library: []
+- id: language-of-page-good
+  title: Good example — page language declared
+  path: /learn/language-of-page/good/
+  kind: example
+  layer: 6
+  prereqs:
+  - language-of-page
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - language-of-page
+  - language-of-page-good
+  library: []
 - id: language-of-parts
   title: Language of parts
   path: /learn/language-of-parts/
@@ -1570,6 +1666,8 @@ nodes:
   - error-prevention
   - redundant-entry
   - accessible-authentication
+  - form-errors-pick
+  - form-errors-fix
   spine:
   - equal-worth
   - comparable-access
@@ -1578,6 +1676,40 @@ nodes:
   - visible-label
   - form-errors
   library: *id001
+- id: form-errors-pick
+  title: Pick the examples that identify the error and suggest a fix
+  path: /learn/form-errors/pick/
+  kind: practice
+  layer: 6
+  prereqs:
+  - form-errors
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - accessible-name
+  - visible-label
+  - form-errors
+  - form-errors-pick
+  library: []
+- id: form-errors-fix
+  title: Fix the error messages
+  path: /learn/form-errors/fix/
+  kind: practice
+  layer: 6
+  prereqs:
+  - form-errors
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - accessible-name
+  - visible-label
+  - form-errors
+  - form-errors-fix
+  library: []
 - id: input-purpose
   title: Identify input purpose
   path: /learn/input-purpose/
@@ -2300,12 +2432,44 @@ nodes:
   children:
   - no-change-on-focus
   - no-change-on-input
+  - no-unexpected-change-pick
+  - no-unexpected-change-fix
   spine:
   - equal-worth
   - comparable-access
   - pour
   - no-unexpected-change
   library: *id001
+- id: no-unexpected-change-pick
+  title: Pick the examples that do not change context
+  path: /learn/no-unexpected-change/pick/
+  kind: practice
+  layer: 6
+  prereqs:
+  - no-unexpected-change
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - no-unexpected-change
+  - no-unexpected-change-pick
+  library: []
+- id: no-unexpected-change-fix
+  title: Fix the unexpected change
+  path: /learn/no-unexpected-change/fix/
+  kind: practice
+  layer: 6
+  prereqs:
+  - no-unexpected-change
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - no-unexpected-change
+  - no-unexpected-change-fix
+  library: []
 - id: orientation
   title: Do not lock orientation
   path: /learn/orientation/
@@ -2850,7 +3014,9 @@ nodes:
   layer: 5
   prereqs:
   - keyboard-operable
-  children: []
+  children:
+  - no-keyboard-trap-bad
+  - no-keyboard-trap-good
   spine:
   - equal-worth
   - comparable-access
@@ -2859,6 +3025,40 @@ nodes:
   - keyboard-operable
   - no-keyboard-trap
   library: *id001
+- id: no-keyboard-trap-bad
+  title: Bad example — Tab cannot leave
+  path: /learn/no-keyboard-trap/bad/
+  kind: example
+  layer: 6
+  prereqs:
+  - no-keyboard-trap
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - keyboard-access
+  - keyboard-operable
+  - no-keyboard-trap
+  - no-keyboard-trap-bad
+  library: []
+- id: no-keyboard-trap-good
+  title: Good example — a way out
+  path: /learn/no-keyboard-trap/good/
+  kind: example
+  layer: 6
+  prereqs:
+  - no-keyboard-trap
+  children: []
+  spine:
+  - equal-worth
+  - comparable-access
+  - pour
+  - keyboard-access
+  - keyboard-operable
+  - no-keyboard-trap
+  - no-keyboard-trap-good
+  library: []
 - id: error-identification
   title: The error is identified in text
   path: /learn/error-identification/

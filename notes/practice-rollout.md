@@ -227,7 +227,7 @@ Do not copy a rule’s specimen walkthrough onto tool pages; link the rule.
 | done | accessible-name | Accessible name | same grain |
 | done | name-role-value | Name, role, and value | overlap with native-control; keep this cop smaller |
 | done | keyboard-operable | Keyboard can operate it | hover-only / non-focusable click; does not simulate Enter/Space |
-| | no-keyboard-trap | No keyboard trap | interactive; checker must not trap the tester |
+| done | no-keyboard-trap | No keyboard trap | live trap only in a new window; close the tab to leave |
 | done | focus-order | Focus order matches meaning | positive tabindex |
 | done | color-not-only-cue | Color is not the only cue | same grain |
 | done | images-of-text | Prefer real text to an image of text | same grain |
@@ -244,10 +244,10 @@ Awkward live specimens (still HTML, but the cop is not a fragment in `<main>`):
 
 | Status | id | Title | Why it waits |
 | --- | --- | --- | --- |
-| | page-title | The document has a unique title | cop is `<title>` in `<head>` |
-| | language-of-page | The page language is declared | cop is `lang` on `<html>` |
-| | consistent-nav-order | Repeated navigation stays in order | needs two views |
-| | captions | Captions for prerecorded video | media asset |
+| done | page-title | The document has a unique title | whole document in a new window |
+| done | language-of-page | The page language is declared | whole document in a new window |
+| | consistent-nav-order | Repeated navigation stays in order | two windows (two views) |
+| | captions | Captions for prerecorded video | window with a tiny silent video + track |
 
 Do those after the fragment-shaped HTML rules, or with a documented exception (banner explains the specimen is the whole document).
 
@@ -314,18 +314,18 @@ When a slice says “do this cop,” finish this list on that id before starting
 
 ---
 
-## Later — Screen reader sees
+## Screen reader sees
 
-Pick and fix already show **HTML** and **Rendered**. A third pane that approximates what a screen reader would announce (heading list, accessible names) is deferred. It is not a real screen reader; say so when we build it. Do not put that chrome in `<main>`.
+Pick, fix, and isolated examples show **Screen Reader** after Rendered. Approximate browse-mode (heading levels, names, lists, alt). Not a real screen reader — `title` on the pane says so. Chrome stays outside `<main>` (`screen_reader_text.js` + Stimulus `reader`). Wide: HTML beside Rendered / Screen Reader. Compact: tabs (Error, HTML, Rendered, Screen Reader). Compact pick cards hide panes when they collapse.
 
 ---
 
 ## Counts
 
-Slice 4 fragment-shaped rules have isolated `{bad,good}` + pick + fix. Pattern families (6) stay hubs. Combined pick/fix exists only for **headings** so far.
+Slice 4 fragment-shaped rules have isolated `{bad,good}` + pick + fix. Pattern families (6) stay hubs. Combined pick/fix: **headings**, **form-errors**, **no-unexpected-change**, **keyboard-access**.
 
-Ready for family combined (children already have checkers): form-errors, decorative-vs-informative-image, no-unexpected-change. Keyboard-access waits on no-keyboard-trap. Consistent-navigation waits on consistent-nav-order.
+Family combined pick/fix: headings, form-errors, no-unexpected-change, keyboard-access. Decorative-vs-informative-image waits (cops assume one class per fragment). Consistent-navigation waits on consistent-nav-order.
 
-Parked slice 4 (need a call, not a silent guess): no-keyboard-trap, page-title, language-of-page, consistent-nav-order, captions.
+Window leftovers: consistent-nav-order (two views), captions (tiny silent video + track). Page-title, language-of-page, no-keyboard-trap are done.
 
 Then slice 5 (computed style) and slice 6 (scenario/prose).

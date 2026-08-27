@@ -5,7 +5,7 @@ description: Binding 508 vocabulary (Access Board E103.4), GSA program terms, an
 
 > **Local copy of U.S. government publications, plus a pointer to the W3C glossary.** Works of the U.S. government are generally in the public domain (17 U.S.C. § 105). W3C glossary entries are **not** copied here; use the official URL.
 >
-> **Sources:**
+> Sources:
 > - [E103.4 Defined Terms](https://www.access-board.gov/ict/#E103-defined-terms) — Revised 508 Standards, U.S. Access Board
 > - [Glossary of Section 508 Terms](https://www.section508.gov/tools/glossary/) — GSA Section508.gov
 > - [Commonly Used Acronyms and Abbreviations](https://www.section508.gov/tools/acronyms-abbreviations/) — GSA (reviewed/updated June 2025)

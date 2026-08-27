@@ -6,9 +6,15 @@ import { check } from "../index.js"
 
 const dataDir = new URL("../../../data/", import.meta.url)
 
+const FAMILY_RULES = {
+  headings: ["heading-elements", "heading-order"],
+  form_errors: ["error-identification", "error-suggestion"],
+  no_unexpected_change: ["no-change-on-focus", "no-change-on-input"],
+  keyboard_access: ["keyboard-operable", "no-keyboard-trap"]
+}
+
 function rulesFor(slug) {
-  if (slug === "headings") return ["heading-elements", "heading-order"]
-  return [slug.replaceAll("_", "-")]
+  return FAMILY_RULES[slug] || [slug.replaceAll("_", "-")]
 }
 
 function snippets(list) {

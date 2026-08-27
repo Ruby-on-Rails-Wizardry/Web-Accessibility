@@ -14,7 +14,11 @@ Mirror the 30 fragment cops as test libraries. Contract: [../checks/README.md](.
 
 Did not publish the local `saving work in progres` commit (Playwright dumps + `heading-elements-fix-mobile.png`). Those stay gitignored.
 
-Practice-grain pickup below is unchanged. Default next: **B then C**.
+Family combined pick/fix now exists for headings, form-errors, no-unexpected-change, and keyboard-access. Image-family combined waits: the three image cops assume one class per fragment.
+
+Site self-check: `bundle exec rake test:site` (build + in-house cops on non-specimen pages + chrome presence). CI job `site` in `.github/workflows/test.yml`.
+
+Default next: **C** (slice 5), or remaining A leftovers.
 
 ---
 
@@ -51,27 +55,30 @@ Earlier the same grain: lists, data-tables, native-control, visible-label, place
 
 ## Tomorrow — pick one track (need a call on A)
 
-**A. Parked slice-4 exceptions** (need a decision before implementing):
+**A. Whole-document examples** (open in a new window):
 
-| id | Blocker | Options to decide |
-| --- | --- | --- |
-| no-keyboard-trap | A live trap would trap the tester | `data-` convention the checker flags; static `onkeydown` text without `preventDefault`; or skip live specimens |
-| page-title | Cop is `<title>` in `<head>` | Banner: specimen is the whole document; or keep as scenario/prose |
-| language-of-page | Cop is `lang` on `<html>` | Same whole-document exception |
-| consistent-nav-order | Needs two views | Two navs on one specimen (same trick as consistent-identification); or scenario pick |
-| captions | Needs a media asset | Tiny silent `<video>` + track; or scenario pick without a file |
+Cops that cannot live as a fragment in `<main>` get a host example plus **Open example in a new window**. The window is the real document (`<title>`, `lang` on `<html>`, or a live trap). Close that tab to leave. Layout: `source/layouts/window.erb`. Path: `/learn/<id>/bad/window/` (and `good`).
 
-**B. Family combined** (no decision needed; children already have checkers):
+| id | Status |
+| --- | --- |
+| page-title | host + window (bad/good) |
+| language-of-page | host + window (bad/good) |
+| no-keyboard-trap | host + window; live Tab trap only in the window |
+| consistent-nav-order | still open: two windows (two views) |
+| captions | still open: window with a tiny silent `<video>` + track |
 
-- form-errors → error-identification + error-suggestion
-- decorative-vs-informative-image → informative / decorative / functional
-- no-unexpected-change → no-change-on-focus + no-change-on-input
+**B. Family combined**
 
-Same shape as headings: pick/fix on the **family** hub, `check_rules` lists the children, no isolated Bad/Good on the hub. Keyboard-access still waits on no-keyboard-trap. Consistent-navigation waits on consistent-nav-order.
+- headings — done
+- form-errors — done
+- no-unexpected-change — done
+- keyboard-access — done (trap cop uses `data-trap`; pick/fix do not run a live trap)
+- decorative-vs-informative-image — still open: cops assume one image class per fragment
+- consistent-navigation — waits on consistent-nav-order
 
 **C. Slice 5** — CSS/visual, computed style: contrast-text first, then contrast-ui, visible-focus, … See the slice 5 table in [practice-rollout.md](practice-rollout.md).
 
-Default if nobody is here to choose: **B then C**, leave A until asked.
+Default if nobody is here to choose: **C**, then remaining A leftovers.
 
 ## Gotchas worth remembering
 
@@ -81,4 +88,4 @@ Default if nobody is here to choose: **B then C**, leave A until asked.
 - `void` elements must self-close for XML well-formedness; boolean attrs now get `attr="attr"`.
 - YAML tree insert: keep existing `children` (visible-label under accessible-name, error-suggestion under error-identification, …). Load with `aliases: true`. Do not dump the whole tree (destroys aliases).
 - Do not put a flashing specimen on three-flashes (slice 6).
-- Parked: Screen Reader sees pane (not a real screen reader; not in `<main>`).
+- Screen Reader pane is after Rendered on pick / fix / isolated examples (not a real screen reader; not in `<main>`). Compact widths use Error / HTML / Rendered / Screen Reader tabs.

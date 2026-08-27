@@ -116,19 +116,19 @@ Local: [../evaluation/wcag-em.md](../evaluation/wcag-em/).
 
 ## 8. Prompt patterns that stay small
 
-**Implement**
+### Implement
 
 > You are implementing under profile `ada-title-ii`. Read `source/docs/profiles/requirement-profiles.html.md` and only the **ADA-II = Y** rows in `source/docs/wcag/success-criteria.html.md` that apply to forms. Change only the password-reset flow. For each change, cite the criterion id and Understanding URL.
 
-**Review**
+### Review
 
 > Review this diff against `wcag-22-aa`. List fails, passes, and not-applicable for the *pointer* and *keyboard/focus* surfaces only. Do not mention AAA.
 
-**Gap between profiles**
+### Gap between profiles
 
 > We must ship `section-508-web` next month and want a path to `wcag-22-aa`. Using the catalog, list only the 2.1 and 2.2 A/AA criteria we will still fail if we stop at 508. Group them by surface.
 
-**Authoring-tool behavior**
+### Authoring-tool behavior
 
 > When you generate views, follow ATAG Part B: never omit alt on informative images; if I did not provide text, ask. Associate every input with a visible label. Do not use click handlers on `<div>` when a button will do.
 

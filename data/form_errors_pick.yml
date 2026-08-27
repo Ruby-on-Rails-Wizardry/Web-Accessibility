@@ -1,0 +1,57 @@
+# Combined pool for /learn/form-errors/pick/ and /fix/.
+# Good = the error is in text and the text says how to fix it.
+# Bad = fails error-identification, error-suggestion, or both.
+
+bad:
+  # identification only (message names the miss, no how-to)
+  - |
+    <label for="fe-b1">Email</label>
+    <input id="fe-b1" type="email" aria-invalid="true" aria-describedby="fe-b1-err">
+    <p id="fe-b1-err">Invalid email.</p>
+  - |
+    <label for="fe-b2">Date</label>
+    <input id="fe-b2" type="text" aria-invalid="true" aria-describedby="fe-b2-err">
+    <p id="fe-b2-err">Invalid date.</p>
+  # suggestion only (how-to text, but the field is not tied to an error in text)
+  - |
+    <label for="fe-b3">ZIP</label>
+    <input id="fe-b3" type="text" class="invalid">
+    <p>Use five digits, like 90210.</p>
+  - |
+    <label for="fe-b4">Phone</label>
+    <input id="fe-b4" type="tel" class="invalid">
+    <p>Try a phone like 555-0100.</p>
+  # both
+  - |
+    <label for="fe-b5">Email</label>
+    <input id="fe-b5" type="email" class="invalid">
+    <p>Invalid.</p>
+  - |
+    <label for="fe-b6">Name</label>
+    <input id="fe-b6" type="text" aria-invalid="true">
+
+good:
+  - |
+    <label for="fe-g1">Email</label>
+    <input id="fe-g1" type="email" aria-invalid="true" aria-describedby="fe-g1-err">
+    <p id="fe-g1-err">Email is missing an @ sign. Include an @, like name@example.gov.</p>
+  - |
+    <label for="fe-g2">Date</label>
+    <input id="fe-g2" type="text" aria-invalid="true" aria-describedby="fe-g2-err">
+    <p id="fe-g2-err">Date is not a valid calendar day. Use a date like 2026-04-26 (year-month-day).</p>
+  - |
+    <label for="fe-g3">ZIP</label>
+    <input id="fe-g3" type="text" aria-invalid="true" aria-describedby="fe-g3-err">
+    <p id="fe-g3-err">ZIP code must be five digits. Use five digits, like 90210.</p>
+  - |
+    <label for="fe-g4">Phone</label>
+    <input id="fe-g4" type="tel" aria-invalid="true" aria-describedby="fe-g4-err">
+    <p id="fe-g4-err">Phone number is missing digits. Try a phone like 555-0100.</p>
+  - |
+    <label for="fe-g5">Website</label>
+    <input id="fe-g5" type="url" aria-invalid="true" aria-describedby="fe-g5-err">
+    <p id="fe-g5-err">Website must start with https://. Use https://, like https://example.gov.</p>
+  - |
+    <label for="fe-g6">Time</label>
+    <input id="fe-g6" type="text" aria-invalid="true" aria-describedby="fe-g6-err">
+    <p id="fe-g6-err">Time is not a valid clock time. Use a time like 14:30 (hours:minutes).</p>

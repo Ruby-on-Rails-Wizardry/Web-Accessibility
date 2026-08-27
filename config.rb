@@ -47,6 +47,8 @@ page "/learn/*/bad.html", layout: "example"
 page "/learn/*/good.html", layout: "example"
 page "/learn/*/pick.html", layout: "practice"
 page "/learn/*/fix.html", layout: "practice"
+page "/learn/*/bad/window.html", layout: "window"
+page "/learn/*/good/window.html", layout: "window"
 
 configure :build do
   activate :minify_css

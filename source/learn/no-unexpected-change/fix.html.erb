@@ -1,0 +1,17 @@
+---
+title: Fix the unexpected change
+description: Live specimen. Stop focus and input from navigating, then Apply. Leftover failures name the child rule to restudy.
+node: no-unexpected-change-fix
+layout: practice
+practice: fix
+of: no-unexpected-change
+check_rules:
+  - no-change-on-focus
+  - no-change-on-input
+practice_note: Focus and changing a value must not navigate. Keep the same control, then Apply. What still fails is what to restudy.
+---
+<label for="uc-fix">Language</label>
+<select id="uc-fix" onfocus="void('location = /locale/' + this.value)" onchange="void('location = ' + this.value)">
+  <option value="en">English</option>
+  <option value="es">Español</option>
+</select>

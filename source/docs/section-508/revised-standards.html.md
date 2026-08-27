@@ -5,7 +5,7 @@ description: ICT Refresh; E205.4 incorporates WCAG 2.0 AA.
 
 > **Local copy of a U.S. government publication.** Works of the U.S. government are generally in the public domain (17 U.S.C. § 105).
 >
-> **Sources:**
+> Sources:
 > - [Revised 508 Standards and 255 Guidelines](https://www.access-board.gov/ict/) — U.S. Access Board
 > - [About the ICT Accessibility 508 Standards and 255 Guidelines](https://www.access-board.gov/ict/about/)
 > - Official PDF: https://www.access-board.gov/files/ict/ict-final-rule.pdf

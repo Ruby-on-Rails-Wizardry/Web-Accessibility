@@ -6,6 +6,14 @@ module Section508
     class LinkPurpose
       WEAK = /^(click here|here|read more|more|learn more|click|link|this link)$/i
 
+      def self.link_name(link)
+        name = Dom.norm(link)
+        return name unless name.empty?
+
+        Dom.attr(link, "aria-label").to_s.gsub(/\s+/, " ").strip
+      end
+      private_class_method :link_name
+
       def self.call(root)
         return [] unless root
         return [] unless root.respond_to?(:css)
@@ -14,7 +22,7 @@ module Section508
         return ["This section has no link."] if links.empty?
 
         links.each do |link|
-          name = Dom.norm(link)
+          name = link_name(link)
           return ["This link has no text name."] if name.empty?
           return ["“#{name}” does not name the destination."] if WEAK.match?(name)
         end

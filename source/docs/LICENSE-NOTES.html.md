@@ -20,7 +20,7 @@ The license **does not** grant a general right to create modifications or deriva
 
 > Copyright © 2023 W3C®. This software or document includes material copied from or derived from [title and URI of the W3C document].
 
-**Publication of derivative works of a W3C document for use as a technical specification is expressly prohibited.**
+Publication of derivative works of a W3C document for use as a technical specification is expressly prohibited.
 
 These local markdown files are supporting materials for developers and agents. They are not a substitute for, and must not be cited as, the W3C Recommendation.
 

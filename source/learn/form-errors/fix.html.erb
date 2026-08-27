@@ -1,0 +1,15 @@
+---
+title: Fix the error messages
+description: Live specimen. Identify the error in text and say how to fix it, then Apply. Leftover failures name the child rule to restudy.
+node: form-errors-fix
+layout: practice
+practice: fix
+of: form-errors
+check_rules:
+  - error-identification
+  - error-suggestion
+practice_note: Identify the error in text and say how to fix it. Keep the same field, then Apply. What still fails is what to restudy.
+---
+<label for="fe-fix">Email</label>
+<input id="fe-fix" type="email" class="invalid">
+<p>Invalid.</p>

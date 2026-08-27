@@ -1,0 +1,14 @@
+---
+title: Bad example — Tab cannot leave
+description: A live trap would trap this site. Open the example in a new window. Close that tab to leave.
+node: no-keyboard-trap-bad
+layout: example
+specimen: bad
+of: no-keyboard-trap
+window: true
+check_rules:
+  - no-keyboard-trap
+specimen_note: A live trap would trap this page. Open the example in a new window. Close that tab to get out.
+---
+<p>The editor on the live example traps Tab. This host does not.</p>
+<div class="editor" tabindex="0">Date field (the live trap is in the new window)</div>
