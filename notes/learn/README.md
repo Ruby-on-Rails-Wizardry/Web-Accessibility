@@ -9,7 +9,7 @@ Not published. One file per study node. The four checks are the same everywhere:
 
 Suggested order: equal-worth → comparable-access → pour → accessible-name → visible-label, then other layer-4 leaves.
 
-Rule-leaf locator/constructed items (isolated examples, pick, fix, profile tags): [../practice-rollout.md](../practice-rollout.md). Heading-order and heading-elements have the thin prototype; isomorphic retest is still open.
+Rule-leaf locator/constructed items (isolated examples, pick, fix, profile tags): [../practice-rollout.md](../practice-rollout.md). Resume: [../pickup.md](../pickup.md). Slice 4 fragment-shaped HTML cops have pick/fix; five awkward leftovers and slice 5 wait.
 
 | id | Title | Draft mastery |
 | --- | --- | --- |

@@ -2,13 +2,23 @@
 
 Locator (pick) + constructed (fix) + isolated `{bad,good}` + in-house Check.
 
-Last left off 2026-08-24 (`ecc19c0`): heading-elements copied the heading-order grain. Whole-project view: [../TODO.md](../TODO.md).
+Last left off **2026-08-26 night** (`0aedfd6` on `master`, pushed github / gitlab / gluttony). Whole-project view: [../TODO.md](../TODO.md). Pickup for the next session: [pickup.md](pickup.md).
 
-Per-rule leaves are this grain. Pattern families stay teaching hubs until a **combined** pick/fix exists for that group (slice 3). Suggested order after the prototype is deepened: heading family combined, then remaining HTML-snippet rules, then CSS/visual, then scenario.
+Per-rule leaves are this grain. Pattern families stay teaching hubs until a **combined** pick/fix exists for that group (slice 3). Heading family combined is done. Suggested order now: parked slice-4 exceptions (need a call), **or** family combined for groups whose children already have checkers, **or** slice 5 CSS/visual.
 
 ---
 
 ## Where we left off
+
+**2026-08-26 night.** Slice 0–3 done. Slice 4 fragment-shaped HTML cops are done except five awkward ones. HEAD `0aedfd6`. GitHub Pages deploys from `master`.
+
+Pick is 4–6 mixed cards, mark every card that follows the rule. Fix draws from the bad pool with **Another example**. Chips stay outside `<main>`. Checkers score only the given node. Teaching pairs stay on the rule page and isolated live pages (not in the pick YAML once the pool is large enough).
+
+Do not start a live **no-keyboard-trap** specimen that actually traps Tab. Do not nest `<main>` in a specimen. Skip-link targets use a unique id inside the specimen, not page `id="main"`. On-focus / on-input handlers stay inert (`void('location = …')`) so testers do not leave. Audio autoplay uses a missing `src`. HTML boolean attributes (`autoplay`, `hidden`, `controls`) are XML-quoted in `html_wellformed.js` so Apply does not false-fail Valid HTML.
+
+---
+
+## Where we left off (prototype sample)
 
 The sample that works:
 
@@ -312,4 +322,10 @@ Pick and fix already show **HTML** and **Rendered**. A third pane that approxima
 
 ## Counts
 
-58 rule nodes in the original table. Pattern families (6) stay hubs. 2 rules have the thin prototype. Slices 3–5 are the remaining 56, in three grains so we do not force a heading-order-shaped specimen onto a login-puzzle rule.
+Slice 4 fragment-shaped rules have isolated `{bad,good}` + pick + fix. Pattern families (6) stay hubs. Combined pick/fix exists only for **headings** so far.
+
+Ready for family combined (children already have checkers): form-errors, decorative-vs-informative-image, no-unexpected-change. Keyboard-access waits on no-keyboard-trap. Consistent-navigation waits on consistent-nav-order.
+
+Parked slice 4 (need a call, not a silent guess): no-keyboard-trap, page-title, language-of-page, consistent-nav-order, captions.
+
+Then slice 5 (computed style) and slice 6 (scenario/prose).

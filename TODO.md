@@ -60,43 +60,24 @@ Each study node has a teaching page. Mastery items still to write: [notes/learn/
 
 ---
 
-## Next — deepen the example/practice grain, then roll it out
+## Next — finish the practice grain, then CSS and scenario
 
-Left off 2026-08-24 at `ecc19c0`: the heading family has the full leaf set (rule page with Bad/Good, isolated live specimens, pick, fix, in-house Check). That is the sample. It is still thin as a *test*.
+Left off **2026-08-26 night** at `0aedfd6` (pushed). Pickup: [notes/pickup.md](notes/pickup.md). Detail: [notes/practice-rollout.md](notes/practice-rollout.md).
 
-What exists today:
-
-| Piece | heading-order | heading-elements | Other rules |
-| --- | --- | --- | --- |
-| Rule page Bad / Good snippet | yes (Permits) | yes (Shipping) | almost every rule page has a pair; most are snippets only |
-| Isolated live `{bad,good}` | yes | yes | none |
-| Pick | 6 mixed cards; mark every card that follows the rule | same | none |
-| Fix | draws from the bad pool; **Another example** | same | none |
-| Checker | `heading_order_check.js` | `heading_elements_check.js` | none |
-| Profile / SC tags on examples | chips on rule + banners | same | none |
-| Isomorphic retest | pick redraw + fix **Another example** | same | — |
-
-Three changes to prove on **heading-order** (then copy to heading-elements) before rolling the grain to other rules:
-
-1. **Separate illustrative from evaluative.** The labeled Bad/Good on the rule page and the isolated live pages are teaching specimens. Pick and fix draw from a larger unlabeled pool and must not be only the same Permits / Shipping pair.
-2. **Pick and fix need more than two items.** Pick is a **quick diagnostic**: mark every card that follows the rule (4–6 mixed cards). Fix is the thorough constructed item, drawn from a pool.
-3. **Tag good/bad with the rule set they meet.** Machine-readable success-criterion ids and profile names (`section-508-web`, `ada-title-ii`, `wcag-22-aa`) on the rule and on each example. Show chips on the rule Official block and on specimen banners (outside `<main>`). A good heading-order specimen meets 1.3.1 in all three profiles; a good target-size specimen meets 2.5.8 in `wcag-22-aa` only.
-4. **Combined examples for a group.** After child rules have checkers, a family-level pick/fix can miss more than one cop on the same specimen. Leftover failures name the child rules to restudy. First group: heading-elements + heading-order, hung on `headings`.
-
-Work one slice at a time. Detail and the remaining-rule list: [notes/practice-rollout.md](notes/practice-rollout.md).
+Slices 0–3 are done (chips, heading-order grain, heading-elements, combined headings). Slice 4 fragment-shaped HTML cops have isolated `{bad,good}` + pick + fix. Still parked (need a call): no-keyboard-trap, page-title, language-of-page, consistent-nav-order, captions.
 
 | Slice | What |
 | --- | --- |
 | 0 | Data shape: SC + profiles on a rule; chips outside `<main>` — **done** |
-| 1 | Prove it on heading-order: multi-select pick (every card that follows the rule), fix pool, keep Permits as the teaching specimen — **done** |
+| 1 | Prove it on heading-order: multi-select pick, fix pool, keep Permits as the teaching specimen — **done** |
 | 2 | Copy that grain onto heading-elements — **done** |
-| 3 | Combined heading-family pick/fix (`heading-elements` + `heading-order`); failures name the child rule to restudy — **done** |
-| 4 | Roll HTML-snippet rules, one cop at a time (next up: lists, data-tables, native-control, visible-label, …) |
-| 5 | CSS / visual rules (contrast, focus, target size) |
+| 3 | Combined heading-family pick/fix (`heading-elements` + `heading-order`) — **done** |
+| 4 | HTML-snippet rules — **fragment-shaped done**; five awkward leftovers in [notes/pickup.md](notes/pickup.md) |
+| 5 | CSS / visual rules (contrast, focus, target size) — **next grain** if A is not chosen |
 | 6 | Scenario / prose rules (login puzzles, multi-page nav, motion) — may stay text items, not live `<main>` specimens |
 | 7 | Foundations and orientation keep teaching Bad/Good; locator/constructed stay in [notes/learn/](notes/learn/), not this leaf set |
 
-Pattern families do not get isolated Bad/Good pages. Combined pick/fix on the hub is the family-level item; per-rule leaves stay on the children.
+Optional before slice 5: family combined pick/fix for **form-errors**, **decorative-vs-informative-image**, **no-unexpected-change** (those children already have checkers). Pattern families still do not get isolated Bad/Good pages.
 
 ---
 
